@@ -97,68 +97,118 @@ def init_centres(liste, nbG):
 	pass
 '''
 
-
+#pour une matrice, donne l'indice de ligne et de colone de la plus petite valeur
 def argsMinMatrix(liste):
-    #pour une matrice, donne l'indice de ligne et de colone de la plus petite valeur
-    
-    #on prend le tableau composé des listes des indices minimums de chaque ligne 
-    minIndexArray = getMinIndexOnEachRow(liste)
-    #on consruit la liste des valeurs correspondants à ces indices
-    listeValue=[]
-    #on va rajouter les valeurs correspondantes à ces indice
-    for i in range(len(minIndexArray)):
-        print(liste([minIndexArray[i]][0]))
-        listeValue.append(liste([minIndexArray[i]][0]))
+	print("entree dans aMM")
+	print("liste")    
+	print(liste)
 
-    #on prend l'indice de la plus faible valeur
-    indMin=argmin(listeValue)
-    #on en deduit les indices
-    return [indMin,minIndexArray[indMin]]
+	#tableau contenant les indice du minimum de chaque ligne
+	#ie minIndexArray[i] contient l'indice de colone du minimum de la ligne i de la matrice liste
+	minIndexArray=[]	
+		
+	#la liste des valeurs correspondants à ces indices
+	listeValue=[]
+
+	for i in range(len(liste)):
+		minIndexArray.append(argmin(liste[i],axis=0))
+		#on va rajouter les valeurs correspondantes à ces indices dans listeValue
+		listeValue.append(liste[i][minIndexArray[i]])
+        
+
+    #on prend l'indice de la plus faible valeur, on trouve ainsi la ligne ayant la plus petite
+	#valeur de minimum
+	indMin=argmin(listeValue,axis=0)
+    #on en deduit les indices, indMin pour la ligne, minIndexArray pour sa colone
+
+	print("sortie")
+	
+	print("indMin")
+	print(indMin)
+	print("minIndexArray[indMin]")
+	print(minIndexArray[indMin])
+
+
+	#return [indMin,minIndexArray[indMin]]
+	ret=[]
+	ret.append(indMin)
+	ret.append(minIndexArray[indMin])
 	
 
+	print("ret")
+	print(ret)
+	return ret
+
 def init_centres(liste, nbG):
+	print("entre dans init_centres")
 	# Question 3
 	# Sortie : liste des centres
 	# À vous de jouer... 
-	
 	#au debut on a len(liste) groupes
 	#chaque point est considéré comme un groupe
 	newList = []
 	for i in range(0,len(liste)):
-	    newList.append([liste[i]])
+		newList.append([liste[i]])
 	    
-	#MatDist va contenir les distances entre les régions
-	MatDist = []
-	#on initialise sa taille
-	for i in range(0,len(liste)-1):
-	   MatDist.append([])
-	   
-	print(MatDist)
-
+	
+	
+	
 	#tant que l'on a pas nbG groupes
-	#while len(liste) < nbG:
+	while len(newList) > nbG:
+		#MatDist va contenir les distances entre les régions
+		MatDist = []
+		#on initialise sa taille
+		for i in range(0,len(newList)-1):
+			MatDist.append([])
+			#print(liste)
+
+
 	    #pour chaque groupe
-	for i in range(0,len(newList)):
+		for i in range(0,len(newList)):
 	    #pour chacun des autre groupes
-	    for j in range(i+1,len(newList)):
-	        listeDist=[]
-	        #pour chacun des points de liste[i]
-	        for k in range(0,len(newList[i])):
+			for j in range(i+1,len(newList)):
+				listeDist=[]
+	        #pour chacune des regions k de liste[i]
+				for k in range(0,len(newList[i])):
 	           #pour chacun des points de liste[j]
-	            for l in range(0,len(newList[j])):
+					for l in range(0,len(newList[j])):
 	                #on calcule les distance entre les points de la region i et
 	                #ceux de la region j et on les ajoute à listeDist
-	                listeDist.append(calcul_distance(newList[i][k],newList[j][l]))
+						listeDist.append(calcul_distance(newList[i][k],newList[j][l]))
 	        #on ne garde que la distance minimal, c'est la distance entre deux regions
 	        #et on le concatene à MatDist[i]
 	        #resultat MatDist[a][b] contient la distance entre la region a et a+1+b
-	        MatDist[i].append(min(listeDist))
-	print("la")
-    
-	#print(argmin(MatDist))
+				MatDist[i].append(min(listeDist))
+		print("la")
+		print("MatDist")
+		print(MatDist)
 
-	 
-	pass
+	
+		argsMin=argsMinMatrix(MatDist)
+		print("x")
+		print(argsMin[0])
+		print("y")
+		print(argsMin[1])
+		x=argsMin[0]
+		y=argsMin[1]
+		print(" newList")
+		print(newList)
+		newList[x]=newList[x]+newList[x+1+y]
+		del newList[x+1+y]
+		print(" newList after")
+		print(newList)
+
+
+	print("sortie de aMM")   
+	listCentroide= [calcul_centroide(elem) for elem in newList]
+	print("listCentroide")
+	print(listCentroide)
+	
+	return(listCentroide)
+
+	#pass    
+    #on sait que newList[x] doit fusionner avec newList[x+1+
+	#print(argmin(MatDist))
    
 
 
@@ -183,9 +233,9 @@ def kmeans(data,nbGroupes):
 	ion()
 
 	# choix centres initiaux : initialisation plus robuste que le choix aléatoire (question 3)
-	#centres = 
-	init_centres(data, nbGroupes)
-	
+ 	
+	centres = init_centres(data, nbGroupes)	
+
 	# mise de la liste de point fournie en paramètres sous la forme
 	# d'une liste de groupes : le premier groupe contenant tous les points du départ,
 	# les autres étant vides
@@ -194,10 +244,11 @@ def kmeans(data,nbGroupes):
 		data.append([])
 	
 	# choix centres initiaux : tirage aleatoire dans les points présents.
+	'''	
 	centres = [ ]
 	for groupe in range(nbGroupes):
 		centres.append(random.choice(data[0]))
-
+	'''
 	
 	# boucle tant qu'il y a des changements sur la méthode
 	non_stabilise = True
