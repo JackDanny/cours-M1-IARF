@@ -1,0 +1,5 @@
+<map id="load" name="load">
+<area shape="rect" id="node2" href="$a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="101,5,267,49"/>
+<area shape="rect" id="node3" href="$a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="315,5,480,49"/>
+<area shape="rect" id="node4" href="$a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="529,5,674,49"/>
+</map>

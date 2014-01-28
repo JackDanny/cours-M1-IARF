@@ -1,0 +1,2286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - IG3D - Introduction à openGL: Référence de la classe obj_parser</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://www.mathjax.org/mathjax/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - IG3D - Introduction à openGL
+   &#160;<span id="projectnumber">2013-2014</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00015.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Types publics</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="a00166.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe obj_parser<div class="ingroups"><a class="el" href="a00085.html">Alias/Wavefront OBJ and MTL file format.</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Class to parse OBJ file.  
+ <a href="a00015.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00057_source.html">objfileparser.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de obj_parser:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00167.png" border="0" usemap="#obj__parser_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Types publics</h2></td></tr>
+<tr class="memitem:a75d959e49115b9725f45898e8e2e0953"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a75d959e49115b9725f45898e8e2e0953">ParseOptions</a> { <a class="el" href="a00015.html#a75d959e49115b9725f45898e8e2e0953a0831009eec8e23f5d0f71a33663c611b">parse_blank_lines_as_comment</a> = 1 &lt;&lt; 0, 
+<a class="el" href="a00015.html#a75d959e49115b9725f45898e8e2e0953a1ffd7e4533506e007c04d1246f6e914d">triangulate_faces</a> = 1 &lt;&lt; 1, 
+<a class="el" href="a00015.html#a75d959e49115b9725f45898e8e2e0953a4c9ae46f951a737d7831223b133c393d">translate_negative_indices</a> = 1 &lt;&lt; 2
+ }</td></tr>
+<tr class="separator:a75d959e49115b9725f45898e8e2e0953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c541473642bbabf661e7f95e73c6609"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(std::size_t, const <br class="typebreak"/>
+std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a4c541473642bbabf661e7f95e73c6609">info_callback_type</a></td></tr>
+<tr class="separator:a4c541473642bbabf661e7f95e73c6609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa42ae2d4b09825dbee2174ff7702d88"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(std::size_t, const <br class="typebreak"/>
+std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#afa42ae2d4b09825dbee2174ff7702d88">warning_callback_type</a></td></tr>
+<tr class="separator:afa42ae2d4b09825dbee2174ff7702d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3022887ff1bfc15328d646fa17db71"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(std::size_t, const <br class="typebreak"/>
+std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#afc3022887ff1bfc15328d646fa17db71">error_callback_type</a></td></tr>
+<tr class="separator:afc3022887ff1bfc15328d646fa17db71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb7eb4dbf4da5cb7ae600bec88b0555"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <br class="typebreak"/>
+<a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a2eb7eb4dbf4da5cb7ae600bec88b0555">geometric_vertex_callback_type</a></td></tr>
+<tr class="separator:a2eb7eb4dbf4da5cb7ae600bec88b0555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a0b22863f57c1514562401109cc162"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#af0a0b22863f57c1514562401109cc162">texture_vertex_callback_type</a></td></tr>
+<tr class="separator:af0a0b22863f57c1514562401109cc162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f2cd028e4759215197ef9ee41257c6"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <br class="typebreak"/>
+<a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ad4f2cd028e4759215197ef9ee41257c6">vertex_normal_callback_type</a></td></tr>
+<tr class="separator:ad4f2cd028e4759215197ef9ee41257c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755f7c5b6865296c9cb86762f955ced3"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>, <a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>, <br class="typebreak"/>
+<a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a755f7c5b6865296c9cb86762f955ced3">triangular_face_geometric_vertices_callback_type</a></td></tr>
+<tr class="separator:a755f7c5b6865296c9cb86762f955ced3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad264282fec08ffa9a1e7ba00036c1ab"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aad264282fec08ffa9a1e7ba00036c1ab">triangular_face_geometric_vertices_texture_vertices_callback_type</a></td></tr>
+<tr class="separator:aad264282fec08ffa9a1e7ba00036c1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e1a96b30b53ee83963a99cd61cffe0"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ae2e1a96b30b53ee83963a99cd61cffe0">triangular_face_geometric_vertices_vertex_normals_callback_type</a></td></tr>
+<tr class="separator:ae2e1a96b30b53ee83963a99cd61cffe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1d1b275cd14425bbab7929eefb5663"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const <br class="typebreak"/>
+<a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a> &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ade1d1b275cd14425bbab7929eefb5663">triangular_face_geometric_vertices_texture_vertices_vertex_normals_callback_type</a></td></tr>
+<tr class="separator:ade1d1b275cd14425bbab7929eefb5663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18affba72dc2fe04dc915635819ffd5e"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>, <a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>, <br class="typebreak"/>
+<a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>, <a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a18affba72dc2fe04dc915635819ffd5e">quadrilateral_face_geometric_vertices_callback_type</a></td></tr>
+<tr class="separator:a18affba72dc2fe04dc915635819ffd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52239d98472e86aa9a1e1f24d2da7be3"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a52239d98472e86aa9a1e1f24d2da7be3">quadrilateral_face_geometric_vertices_texture_vertices_callback_type</a></td></tr>
+<tr class="separator:a52239d98472e86aa9a1e1f24d2da7be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a21a30b5cae005be92f65f987dac531"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a3a21a30b5cae005be92f65f987dac531">quadrilateral_face_geometric_vertices_vertex_normals_callback_type</a></td></tr>
+<tr class="separator:a3a21a30b5cae005be92f65f987dac531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc47b579ccb554951a247e7b8b3e8f96"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const <br class="typebreak"/>
+<a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a> &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#acc47b579ccb554951a247e7b8b3e8f96">quadrilateral_face_geometric_vertices_texture_vertices_vertex_normals_callback_type</a></td></tr>
+<tr class="separator:acc47b579ccb554951a247e7b8b3e8f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1427f8affdb50f5bbf028bc3a312302"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>, <a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>, <br class="typebreak"/>
+<a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ab1427f8affdb50f5bbf028bc3a312302">polygonal_face_geometric_vertices_begin_callback_type</a></td></tr>
+<tr class="separator:ab1427f8affdb50f5bbf028bc3a312302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a4a87a7e566ac4eddb8d862408cac70"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a7a4a87a7e566ac4eddb8d862408cac70">polygonal_face_geometric_vertices_vertex_callback_type</a></td></tr>
+<tr class="separator:a7a4a87a7e566ac4eddb8d862408cac70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57cc23bedd09c5bf74786c47304f8102"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void() &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a57cc23bedd09c5bf74786c47304f8102">polygonal_face_geometric_vertices_end_callback_type</a></td></tr>
+<tr class="separator:a57cc23bedd09c5bf74786c47304f8102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f8a6f223ab69d859d0759ed3266af6"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a94f8a6f223ab69d859d0759ed3266af6">polygonal_face_geometric_vertices_texture_vertices_begin_callback_type</a></td></tr>
+<tr class="separator:a94f8a6f223ab69d859d0759ed3266af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9011716bddd043875914435cd2505d54"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a9011716bddd043875914435cd2505d54">polygonal_face_geometric_vertices_texture_vertices_vertex_callback_type</a></td></tr>
+<tr class="separator:a9011716bddd043875914435cd2505d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d597b6bb402e23ad2b88f5018870d78"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void() &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a5d597b6bb402e23ad2b88f5018870d78">polygonal_face_geometric_vertices_texture_vertices_end_callback_type</a></td></tr>
+<tr class="separator:a5d597b6bb402e23ad2b88f5018870d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5bcfc50f1722367571fafb69f7dc71c"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#af5bcfc50f1722367571fafb69f7dc71c">polygonal_face_geometric_vertices_vertex_normals_begin_callback_type</a></td></tr>
+<tr class="separator:af5bcfc50f1722367571fafb69f7dc71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7435cc552f922546cbd5a14fa1b98a72"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const <br class="typebreak"/>
+<a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a> &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a7435cc552f922546cbd5a14fa1b98a72">polygonal_face_geometric_vertices_vertex_normals_vertex_callback_type</a></td></tr>
+<tr class="separator:a7435cc552f922546cbd5a14fa1b98a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad726aa5939cdafca9298d131b4acbf91"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void() &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ad726aa5939cdafca9298d131b4acbf91">polygonal_face_geometric_vertices_vertex_normals_end_callback_type</a></td></tr>
+<tr class="separator:ad726aa5939cdafca9298d131b4acbf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c5036853278ac0664683167ce170ac"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const <br class="typebreak"/>
+<a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a> &amp;, const <br class="typebreak"/>
+<a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a> &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a67c5036853278ac0664683167ce170ac">polygonal_face_geometric_vertices_texture_vertices_vertex_normals_begin_callback_type</a></td></tr>
+<tr class="separator:a67c5036853278ac0664683167ce170ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63769df74a7c31937594657f96232d29"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const <br class="typebreak"/>
+<a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a> &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a63769df74a7c31937594657f96232d29">polygonal_face_geometric_vertices_texture_vertices_vertex_normals_vertex_callback_type</a></td></tr>
+<tr class="separator:a63769df74a7c31937594657f96232d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ce053a19bb685fb7657b121b97c538b"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void() &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a1ce053a19bb685fb7657b121b97c538b">polygonal_face_geometric_vertices_texture_vertices_vertex_normals_end_callback_type</a></td></tr>
+<tr class="separator:a1ce053a19bb685fb7657b121b97c538b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a809e54200770c627de2831e4f599b89b"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a809e54200770c627de2831e4f599b89b">group_name_callback_type</a></td></tr>
+<tr class="separator:a809e54200770c627de2831e4f599b89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea98a86be24c730df84951e21c7849dd"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00085.html#ga89a6dcafb6130e3e1bcd6d1285e0dd6f">size_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aea98a86be24c730df84951e21c7849dd">smoothing_group_callback_type</a></td></tr>
+<tr class="separator:aea98a86be24c730df84951e21c7849dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396dbc5d51a639f568bbea95bb411743"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a396dbc5d51a639f568bbea95bb411743">object_name_callback_type</a></td></tr>
+<tr class="separator:a396dbc5d51a639f568bbea95bb411743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f35e5d2ddb823d22fc97ddf448a53d"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ae5f35e5d2ddb823d22fc97ddf448a53d">material_library_callback_type</a></td></tr>
+<tr class="separator:ae5f35e5d2ddb823d22fc97ddf448a53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf25be941b83d2519777e5f70f43bb91"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#acf25be941b83d2519777e5f70f43bb91">material_name_callback_type</a></td></tr>
+<tr class="separator:acf25be941b83d2519777e5f70f43bb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6535fc6855ac24c7ea920b75172e1bf8"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a6535fc6855ac24c7ea920b75172e1bf8">comment_callback_type</a></td></tr>
+<tr class="separator:a6535fc6855ac24c7ea920b75172e1bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ab69a70383bb62f7fcc9fe9a501eba"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aa4ab69a70383bb62f7fcc9fe9a501eba">flags_type</a></td></tr>
+<tr class="separator:aa4ab69a70383bb62f7fcc9fe9a501eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a89204be18a4da25ce291053f0b155683"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a89204be18a4da25ce291053f0b155683">obj_parser</a> (<a class="el" href="a00015.html#aa4ab69a70383bb62f7fcc9fe9a501eba">flags_type</a> flags=0)</td></tr>
+<tr class="separator:a89204be18a4da25ce291053f0b155683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2732d6f92b18397b3fb191a955ed3b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#af2732d6f92b18397b3fb191a955ed3b4">info_callback</a> (const <a class="el" href="a00015.html#a4c541473642bbabf661e7f95e73c6609">info_callback_type</a> &amp;info_callback)</td></tr>
+<tr class="separator:af2732d6f92b18397b3fb191a955ed3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6e027ff93fde1d0c097f1761589482"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#acf6e027ff93fde1d0c097f1761589482">warning_callback</a> (const <a class="el" href="a00015.html#afa42ae2d4b09825dbee2174ff7702d88">warning_callback_type</a> &amp;warning_callback)</td></tr>
+<tr class="separator:acf6e027ff93fde1d0c097f1761589482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee382164283fabb36f0f5ed41f1e67c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a0ee382164283fabb36f0f5ed41f1e67c">error_callback</a> (const <a class="el" href="a00015.html#afc3022887ff1bfc15328d646fa17db71">error_callback_type</a> &amp;error_callback)</td></tr>
+<tr class="separator:a0ee382164283fabb36f0f5ed41f1e67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b745ec59f7805d3dd93c1626a73b58a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a0b745ec59f7805d3dd93c1626a73b58a">geometric_vertex_callback</a> (const <a class="el" href="a00015.html#a2eb7eb4dbf4da5cb7ae600bec88b0555">geometric_vertex_callback_type</a> &amp;geometric_vertex_callback)</td></tr>
+<tr class="separator:a0b745ec59f7805d3dd93c1626a73b58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7923f5922a4f65e0daa28937243818dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a7923f5922a4f65e0daa28937243818dc">texture_vertex_callback</a> (const <a class="el" href="a00015.html#af0a0b22863f57c1514562401109cc162">texture_vertex_callback_type</a> &amp;texture_vertex_callback)</td></tr>
+<tr class="separator:a7923f5922a4f65e0daa28937243818dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f32fcb6ca6bd722822bf0fd3658b1f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a1f32fcb6ca6bd722822bf0fd3658b1f8">vertex_normal_callback</a> (const <a class="el" href="a00015.html#ad4f2cd028e4759215197ef9ee41257c6">vertex_normal_callback_type</a> &amp;vertex_normal_callback)</td></tr>
+<tr class="separator:a1f32fcb6ca6bd722822bf0fd3658b1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d64bceaf553b7bad2c1a88e7deae289"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a2d64bceaf553b7bad2c1a88e7deae289">face_callbacks</a> (const <a class="el" href="a00015.html#a755f7c5b6865296c9cb86762f955ced3">triangular_face_geometric_vertices_callback_type</a> &amp;triangular_face_geometric_vertices_callback, const <a class="el" href="a00015.html#aad264282fec08ffa9a1e7ba00036c1ab">triangular_face_geometric_vertices_texture_vertices_callback_type</a> &amp;triangular_face_geometric_vertices_texture_vertices_callback, const <a class="el" href="a00015.html#ae2e1a96b30b53ee83963a99cd61cffe0">triangular_face_geometric_vertices_vertex_normals_callback_type</a> &amp;triangular_face_geometric_vertices_vertex_normals_callback, const <a class="el" href="a00015.html#ade1d1b275cd14425bbab7929eefb5663">triangular_face_geometric_vertices_texture_vertices_vertex_normals_callback_type</a> &amp;triangular_face_geometric_vertices_texture_vertices_vertex_normals_callback, const <a class="el" href="a00015.html#a18affba72dc2fe04dc915635819ffd5e">quadrilateral_face_geometric_vertices_callback_type</a> &amp;quadrilateral_face_geometric_vertices_callback, const <a class="el" href="a00015.html#a52239d98472e86aa9a1e1f24d2da7be3">quadrilateral_face_geometric_vertices_texture_vertices_callback_type</a> &amp;quadrilateral_face_geometric_vertices_texture_vertices_callback, const <a class="el" href="a00015.html#a3a21a30b5cae005be92f65f987dac531">quadrilateral_face_geometric_vertices_vertex_normals_callback_type</a> &amp;quadrilateral_face_geometric_vertices_vertex_normals_callback, const <a class="el" href="a00015.html#acc47b579ccb554951a247e7b8b3e8f96">quadrilateral_face_geometric_vertices_texture_vertices_vertex_normals_callback_type</a> &amp;quadrilateral_face_geometric_vertices_texture_vertices_vertex_normals_callback)</td></tr>
+<tr class="separator:a2d64bceaf553b7bad2c1a88e7deae289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a509d5b25fa534aa3789f4074afe7be70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a509d5b25fa534aa3789f4074afe7be70">group_name_callback</a> (const <a class="el" href="a00015.html#a809e54200770c627de2831e4f599b89b">group_name_callback_type</a> &amp;group_name_callback)</td></tr>
+<tr class="separator:a509d5b25fa534aa3789f4074afe7be70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeed6ec2367ec63536ae93aff8735344"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#afeed6ec2367ec63536ae93aff8735344">smoothing_group_callback</a> (const <a class="el" href="a00015.html#aea98a86be24c730df84951e21c7849dd">smoothing_group_callback_type</a> &amp;smoothing_group_callback)</td></tr>
+<tr class="separator:afeed6ec2367ec63536ae93aff8735344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67dc2cf8cc9512111d0c5330c7e0d71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aa67dc2cf8cc9512111d0c5330c7e0d71">object_name_callback</a> (const <a class="el" href="a00015.html#a396dbc5d51a639f568bbea95bb411743">object_name_callback_type</a> &amp;object_name_callback)</td></tr>
+<tr class="separator:aa67dc2cf8cc9512111d0c5330c7e0d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f32db53f16f42f6ba0ac665ab2b3a41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a9f32db53f16f42f6ba0ac665ab2b3a41">material_library_callback</a> (const <a class="el" href="a00015.html#ae5f35e5d2ddb823d22fc97ddf448a53d">material_library_callback_type</a> &amp;material_library_callback)</td></tr>
+<tr class="separator:a9f32db53f16f42f6ba0ac665ab2b3a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3fd7d679915787a48037dbc4bf38dc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ad3fd7d679915787a48037dbc4bf38dc4">material_name_callback</a> (const <a class="el" href="a00015.html#acf25be941b83d2519777e5f70f43bb91">material_name_callback_type</a> &amp;material_name_callback)</td></tr>
+<tr class="separator:ad3fd7d679915787a48037dbc4bf38dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e5340f01e656183cfc8033b21897d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ad0e5340f01e656183cfc8033b21897d3">comment_callback</a> (const <a class="el" href="a00015.html#a6535fc6855ac24c7ea920b75172e1bf8">comment_callback_type</a> &amp;comment_callback)</td></tr>
+<tr class="separator:ad0e5340f01e656183cfc8033b21897d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafa92a7789eb9eb29d7eaa9fec52d96d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aafa92a7789eb9eb29d7eaa9fec52d96d">parse</a> (std::istream &amp;istream)</td></tr>
+<tr class="separator:aafa92a7789eb9eb29d7eaa9fec52d96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a620db3a256dd6c1a9bd9f80c242aff62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a620db3a256dd6c1a9bd9f80c242aff62">parse</a> (const std::string &amp;filename)</td></tr>
+<tr class="separator:a620db3a256dd6c1a9bd9f80c242aff62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:aa56342618907fbd6b5ccd6830820b46b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#aa4ab69a70383bb62f7fcc9fe9a501eba">flags_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aa56342618907fbd6b5ccd6830820b46b">flags_</a></td></tr>
+<tr class="separator:aa56342618907fbd6b5ccd6830820b46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79e5152d14849484beaca4bfccf76c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a4c541473642bbabf661e7f95e73c6609">info_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ac79e5152d14849484beaca4bfccf76c3">info_callback_</a></td></tr>
+<tr class="separator:ac79e5152d14849484beaca4bfccf76c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e9f1caadfcf3478350ebceee0656048"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#afa42ae2d4b09825dbee2174ff7702d88">warning_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a9e9f1caadfcf3478350ebceee0656048">warning_callback_</a></td></tr>
+<tr class="separator:a9e9f1caadfcf3478350ebceee0656048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a39855abe0d4ab60338bfebc1824dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#afc3022887ff1bfc15328d646fa17db71">error_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ae8a39855abe0d4ab60338bfebc1824dd">error_callback_</a></td></tr>
+<tr class="separator:ae8a39855abe0d4ab60338bfebc1824dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec6d7d1d3dfcfacb7236a974acbeca9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a2eb7eb4dbf4da5cb7ae600bec88b0555">geometric_vertex_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a5ec6d7d1d3dfcfacb7236a974acbeca9">geometric_vertex_callback_</a></td></tr>
+<tr class="separator:a5ec6d7d1d3dfcfacb7236a974acbeca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae836196024df6f140af45f7aa803bac7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#af0a0b22863f57c1514562401109cc162">texture_vertex_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ae836196024df6f140af45f7aa803bac7">texture_vertex_callback_</a></td></tr>
+<tr class="separator:ae836196024df6f140af45f7aa803bac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c777c3342688b918d1108e7bbd02c85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#ad4f2cd028e4759215197ef9ee41257c6">vertex_normal_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a2c777c3342688b918d1108e7bbd02c85">vertex_normal_callback_</a></td></tr>
+<tr class="separator:a2c777c3342688b918d1108e7bbd02c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f7c7b73a3a99ce61a861ed01824865"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a755f7c5b6865296c9cb86762f955ced3">triangular_face_geometric_vertices_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ac9f7c7b73a3a99ce61a861ed01824865">triangular_face_geometric_vertices_callback_</a></td></tr>
+<tr class="separator:ac9f7c7b73a3a99ce61a861ed01824865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ac8ee79174b6b126db2165296f17fb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#aad264282fec08ffa9a1e7ba00036c1ab">triangular_face_geometric_vertices_texture_vertices_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a8ac8ee79174b6b126db2165296f17fb7">triangular_face_geometric_vertices_texture_vertices_callback_</a></td></tr>
+<tr class="separator:a8ac8ee79174b6b126db2165296f17fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f1c9c15c24a40dcb470d63f158cf39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#ae2e1a96b30b53ee83963a99cd61cffe0">triangular_face_geometric_vertices_vertex_normals_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a81f1c9c15c24a40dcb470d63f158cf39">triangular_face_geometric_vertices_vertex_normals_callback_</a></td></tr>
+<tr class="separator:a81f1c9c15c24a40dcb470d63f158cf39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24feeebe68d82d1564e5ae52c8857752"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#ade1d1b275cd14425bbab7929eefb5663">triangular_face_geometric_vertices_texture_vertices_vertex_normals_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a24feeebe68d82d1564e5ae52c8857752">triangular_face_geometric_vertices_texture_vertices_vertex_normals_callback_</a></td></tr>
+<tr class="separator:a24feeebe68d82d1564e5ae52c8857752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a716f5840f21deb71224e40d3ad7e23ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a18affba72dc2fe04dc915635819ffd5e">quadrilateral_face_geometric_vertices_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a716f5840f21deb71224e40d3ad7e23ed">quadrilateral_face_geometric_vertices_callback_</a></td></tr>
+<tr class="separator:a716f5840f21deb71224e40d3ad7e23ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c48061aa3883e01071b266165c989b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a52239d98472e86aa9a1e1f24d2da7be3">quadrilateral_face_geometric_vertices_texture_vertices_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a6c48061aa3883e01071b266165c989b4">quadrilateral_face_geometric_vertices_texture_vertices_callback_</a></td></tr>
+<tr class="separator:a6c48061aa3883e01071b266165c989b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac47abe5798908aea6bee5dd6fa7ef494"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a3a21a30b5cae005be92f65f987dac531">quadrilateral_face_geometric_vertices_vertex_normals_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ac47abe5798908aea6bee5dd6fa7ef494">quadrilateral_face_geometric_vertices_vertex_normals_callback_</a></td></tr>
+<tr class="separator:ac47abe5798908aea6bee5dd6fa7ef494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af739a50456b8ddbaf38e9506e6630c01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#acc47b579ccb554951a247e7b8b3e8f96">quadrilateral_face_geometric_vertices_texture_vertices_vertex_normals_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#af739a50456b8ddbaf38e9506e6630c01">quadrilateral_face_geometric_vertices_texture_vertices_vertex_normals_callback_</a></td></tr>
+<tr class="separator:af739a50456b8ddbaf38e9506e6630c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6517cefc9531bb259056f6853c008612"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#ab1427f8affdb50f5bbf028bc3a312302">polygonal_face_geometric_vertices_begin_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a6517cefc9531bb259056f6853c008612">polygonal_face_geometric_vertices_begin_callback_</a></td></tr>
+<tr class="separator:a6517cefc9531bb259056f6853c008612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c6480e16c2fc3a24efc05d9b428f7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a7a4a87a7e566ac4eddb8d862408cac70">polygonal_face_geometric_vertices_vertex_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a56c6480e16c2fc3a24efc05d9b428f7f">polygonal_face_geometric_vertices_vertex_callback_</a></td></tr>
+<tr class="separator:a56c6480e16c2fc3a24efc05d9b428f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2efa11cfcfc25297486d3d23b2c73173"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a57cc23bedd09c5bf74786c47304f8102">polygonal_face_geometric_vertices_end_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a2efa11cfcfc25297486d3d23b2c73173">polygonal_face_geometric_vertices_end_callback_</a></td></tr>
+<tr class="separator:a2efa11cfcfc25297486d3d23b2c73173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4b2cb4afb124c3d71332ccc6a06a53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a94f8a6f223ab69d859d0759ed3266af6">polygonal_face_geometric_vertices_texture_vertices_begin_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a3d4b2cb4afb124c3d71332ccc6a06a53">polygonal_face_geometric_vertices_texture_vertices_begin_callback_</a></td></tr>
+<tr class="separator:a3d4b2cb4afb124c3d71332ccc6a06a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb3c284135bb251adc6b28f5aa082198"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a9011716bddd043875914435cd2505d54">polygonal_face_geometric_vertices_texture_vertices_vertex_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#afb3c284135bb251adc6b28f5aa082198">polygonal_face_geometric_vertices_texture_vertices_vertex_callback_</a></td></tr>
+<tr class="separator:afb3c284135bb251adc6b28f5aa082198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae13fcb2a950bff4a5ce597726e73519"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a5d597b6bb402e23ad2b88f5018870d78">polygonal_face_geometric_vertices_texture_vertices_end_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aae13fcb2a950bff4a5ce597726e73519">polygonal_face_geometric_vertices_texture_vertices_end_callback_</a></td></tr>
+<tr class="separator:aae13fcb2a950bff4a5ce597726e73519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac95af73395ab219277bc9cfdd138060b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#af5bcfc50f1722367571fafb69f7dc71c">polygonal_face_geometric_vertices_vertex_normals_begin_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ac95af73395ab219277bc9cfdd138060b">polygonal_face_geometric_vertices_vertex_normals_begin_callback_</a></td></tr>
+<tr class="separator:ac95af73395ab219277bc9cfdd138060b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2bf5c42f325f75ccdb5fa0aef30e4e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a7435cc552f922546cbd5a14fa1b98a72">polygonal_face_geometric_vertices_vertex_normals_vertex_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ae2bf5c42f325f75ccdb5fa0aef30e4e4">polygonal_face_geometric_vertices_vertex_normals_vertex_callback_</a></td></tr>
+<tr class="separator:ae2bf5c42f325f75ccdb5fa0aef30e4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0656dfb06bebec257aa70b55ca3eb598"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#ad726aa5939cdafca9298d131b4acbf91">polygonal_face_geometric_vertices_vertex_normals_end_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a0656dfb06bebec257aa70b55ca3eb598">polygonal_face_geometric_vertices_vertex_normals_end_callback_</a></td></tr>
+<tr class="separator:a0656dfb06bebec257aa70b55ca3eb598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b125d6f4dbd5b49454ad9137b9d601"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a67c5036853278ac0664683167ce170ac">polygonal_face_geometric_vertices_texture_vertices_vertex_normals_begin_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#ac4b125d6f4dbd5b49454ad9137b9d601">polygonal_face_geometric_vertices_texture_vertices_vertex_normals_begin_callback_</a></td></tr>
+<tr class="separator:ac4b125d6f4dbd5b49454ad9137b9d601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14cab6f54e2e852b0dc9d119d868b424"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a63769df74a7c31937594657f96232d29">polygonal_face_geometric_vertices_texture_vertices_vertex_normals_vertex_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a14cab6f54e2e852b0dc9d119d868b424">polygonal_face_geometric_vertices_texture_vertices_vertex_normals_vertex_callback_</a></td></tr>
+<tr class="separator:a14cab6f54e2e852b0dc9d119d868b424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf34e9c078914022b9ecd4067828c5aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a1ce053a19bb685fb7657b121b97c538b">polygonal_face_geometric_vertices_texture_vertices_vertex_normals_end_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#abf34e9c078914022b9ecd4067828c5aa">polygonal_face_geometric_vertices_texture_vertices_vertex_normals_end_callback_</a></td></tr>
+<tr class="separator:abf34e9c078914022b9ecd4067828c5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa8795c636808f16e3a741e87f767d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a809e54200770c627de2831e4f599b89b">group_name_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a5fa8795c636808f16e3a741e87f767d5">group_name_callback_</a></td></tr>
+<tr class="separator:a5fa8795c636808f16e3a741e87f767d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19865ab12e86cacc036d3fb5348f0452"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#aea98a86be24c730df84951e21c7849dd">smoothing_group_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a19865ab12e86cacc036d3fb5348f0452">smoothing_group_callback_</a></td></tr>
+<tr class="separator:a19865ab12e86cacc036d3fb5348f0452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca220497bd721e4f455e2f5d595a23b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a396dbc5d51a639f568bbea95bb411743">object_name_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#aca220497bd721e4f455e2f5d595a23b5">object_name_callback_</a></td></tr>
+<tr class="separator:aca220497bd721e4f455e2f5d595a23b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19bc0e8514a798f06fde3e2646e3322e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#ae5f35e5d2ddb823d22fc97ddf448a53d">material_library_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a19bc0e8514a798f06fde3e2646e3322e">material_library_callback_</a></td></tr>
+<tr class="separator:a19bc0e8514a798f06fde3e2646e3322e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fe9acbb99d5909f73501dc0ca0b66b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#acf25be941b83d2519777e5f70f43bb91">material_name_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a44fe9acbb99d5909f73501dc0ca0b66b">material_name_callback_</a></td></tr>
+<tr class="separator:a44fe9acbb99d5909f73501dc0ca0b66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10cafef340adfd65c8cf7469c5273884"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00015.html#a6535fc6855ac24c7ea920b75172e1bf8">comment_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00015.html#a10cafef340adfd65c8cf7469c5273884">comment_callback_</a></td></tr>
+<tr class="separator:a10cafef340adfd65c8cf7469c5273884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Class to parse OBJ file. </p>
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00149">149</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+</div><h2 class="groupheader">Documentation des définitions de type membres</h2>
+<a class="anchor" id="a6535fc6855ac24c7ea920b75172e1bf8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00015.html#a6535fc6855ac24c7ea920b75172e1bf8">comment_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00187">187</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc3022887ff1bfc15328d646fa17db71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (std::size_t, const std::string&amp;) &gt; <a class="el" href="a00015.html#afc3022887ff1bfc15328d646fa17db71">error_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00153">153</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4ab69a70383bb62f7fcc9fe9a501eba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="a00015.html#aa4ab69a70383bb62f7fcc9fe9a501eba">flags_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00189">189</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2eb7eb4dbf4da5cb7ae600bec88b0555"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt; <a class="el" href="a00015.html#a2eb7eb4dbf4da5cb7ae600bec88b0555">geometric_vertex_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00155">155</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a809e54200770c627de2831e4f599b89b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00015.html#a809e54200770c627de2831e4f599b89b">group_name_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00182">182</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c541473642bbabf661e7f95e73c6609"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (std::size_t, const std::string&amp;) &gt; <a class="el" href="a00015.html#a4c541473642bbabf661e7f95e73c6609">info_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00151">151</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae5f35e5d2ddb823d22fc97ddf448a53d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00015.html#ae5f35e5d2ddb823d22fc97ddf448a53d">material_library_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00185">185</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acf25be941b83d2519777e5f70f43bb91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00015.html#acf25be941b83d2519777e5f70f43bb91">material_name_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00186">186</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a396dbc5d51a639f568bbea95bb411743"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00015.html#a396dbc5d51a639f568bbea95bb411743">object_name_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00184">184</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1427f8affdb50f5bbf028bc3a312302"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>, <a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>, <a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>) &gt; <a class="el" href="a00015.html#ab1427f8affdb50f5bbf028bc3a312302">polygonal_face_geometric_vertices_begin_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00169">169</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a57cc23bedd09c5bf74786c47304f8102"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void () &gt; <a class="el" href="a00015.html#a57cc23bedd09c5bf74786c47304f8102">polygonal_face_geometric_vertices_end_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00171">171</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a94f8a6f223ab69d859d0759ed3266af6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;, const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;, const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;) &gt; <a class="el" href="a00015.html#a94f8a6f223ab69d859d0759ed3266af6">polygonal_face_geometric_vertices_texture_vertices_begin_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00172">172</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d597b6bb402e23ad2b88f5018870d78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void () &gt; <a class="el" href="a00015.html#a5d597b6bb402e23ad2b88f5018870d78">polygonal_face_geometric_vertices_texture_vertices_end_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00174">174</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9011716bddd043875914435cd2505d54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;) &gt; <a class="el" href="a00015.html#a9011716bddd043875914435cd2505d54">polygonal_face_geometric_vertices_texture_vertices_vertex_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00173">173</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a67c5036853278ac0664683167ce170ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const <a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a>&amp;, const <a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a>&amp;, const <a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a>&amp;) &gt; <a class="el" href="a00015.html#a67c5036853278ac0664683167ce170ac">polygonal_face_geometric_vertices_texture_vertices_vertex_normals_begin_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00178">178</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ce053a19bb685fb7657b121b97c538b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void () &gt; <a class="el" href="a00015.html#a1ce053a19bb685fb7657b121b97c538b">polygonal_face_geometric_vertices_texture_vertices_vertex_normals_end_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00180">180</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a63769df74a7c31937594657f96232d29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const <a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a>&amp;) &gt; <a class="el" href="a00015.html#a63769df74a7c31937594657f96232d29">polygonal_face_geometric_vertices_texture_vertices_vertex_normals_vertex_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00179">179</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a4a87a7e566ac4eddb8d862408cac70"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>) &gt; <a class="el" href="a00015.html#a7a4a87a7e566ac4eddb8d862408cac70">polygonal_face_geometric_vertices_vertex_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00170">170</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af5bcfc50f1722367571fafb69f7dc71c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;, const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;, const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;) &gt; <a class="el" href="a00015.html#af5bcfc50f1722367571fafb69f7dc71c">polygonal_face_geometric_vertices_vertex_normals_begin_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00175">175</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad726aa5939cdafca9298d131b4acbf91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void () &gt; <a class="el" href="a00015.html#ad726aa5939cdafca9298d131b4acbf91">polygonal_face_geometric_vertices_vertex_normals_end_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00177">177</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7435cc552f922546cbd5a14fa1b98a72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;) &gt; <a class="el" href="a00015.html#a7435cc552f922546cbd5a14fa1b98a72">polygonal_face_geometric_vertices_vertex_normals_vertex_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00176">176</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a18affba72dc2fe04dc915635819ffd5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>, <a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>, <a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>, <a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>) &gt; <a class="el" href="a00015.html#a18affba72dc2fe04dc915635819ffd5e">quadrilateral_face_geometric_vertices_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00164">164</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a52239d98472e86aa9a1e1f24d2da7be3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;, const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;, const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;, const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;) &gt; <a class="el" href="a00015.html#a52239d98472e86aa9a1e1f24d2da7be3">quadrilateral_face_geometric_vertices_texture_vertices_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00165">165</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acc47b579ccb554951a247e7b8b3e8f96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const <a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a>&amp;, const <a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a>&amp;, const <a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a>&amp;, const <a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a>&amp;) &gt; <a class="el" href="a00015.html#acc47b579ccb554951a247e7b8b3e8f96">quadrilateral_face_geometric_vertices_texture_vertices_vertex_normals_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00167">167</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a21a30b5cae005be92f65f987dac531"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;, const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;, const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;, const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;) &gt; <a class="el" href="a00015.html#a3a21a30b5cae005be92f65f987dac531">quadrilateral_face_geometric_vertices_vertex_normals_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00166">166</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aea98a86be24c730df84951e21c7849dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00085.html#ga89a6dcafb6130e3e1bcd6d1285e0dd6f">size_type</a>) &gt; <a class="el" href="a00015.html#aea98a86be24c730df84951e21c7849dd">smoothing_group_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00183">183</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af0a0b22863f57c1514562401109cc162"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt; <a class="el" href="a00015.html#af0a0b22863f57c1514562401109cc162">texture_vertex_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00156">156</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a755f7c5b6865296c9cb86762f955ced3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>, <a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>, <a class="el" href="a00085.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>) &gt; <a class="el" href="a00015.html#a755f7c5b6865296c9cb86762f955ced3">triangular_face_geometric_vertices_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00159">159</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad264282fec08ffa9a1e7ba00036c1ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;, const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;, const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;) &gt; <a class="el" href="a00015.html#aad264282fec08ffa9a1e7ba00036c1ab">triangular_face_geometric_vertices_texture_vertices_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00160">160</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ade1d1b275cd14425bbab7929eefb5663"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const <a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a>&amp;, const <a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a>&amp;, const <a class="el" href="a00085.html#gaa980617de7f905759d0204f4778f6741">index_3_tuple_type</a>&amp;) &gt; <a class="el" href="a00015.html#ade1d1b275cd14425bbab7929eefb5663">triangular_face_geometric_vertices_texture_vertices_vertex_normals_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00162">162</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae2e1a96b30b53ee83963a99cd61cffe0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;, const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;, const <a class="el" href="a00085.html#ga334cde7a2e1c2c3a81dbac0ddf05807d">index_2_tuple_type</a>&amp;) &gt; <a class="el" href="a00015.html#ae2e1a96b30b53ee83963a99cd61cffe0">triangular_face_geometric_vertices_vertex_normals_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00161">161</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad4f2cd028e4759215197ef9ee41257c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00085.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt; <a class="el" href="a00015.html#ad4f2cd028e4759215197ef9ee41257c6">vertex_normal_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00157">157</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa42ae2d4b09825dbee2174ff7702d88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (std::size_t, const std::string&amp;) &gt; <a class="el" href="a00015.html#afa42ae2d4b09825dbee2174ff7702d88">warning_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00152">152</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des énumérations membres</h2>
+<a class="anchor" id="a75d959e49115b9725f45898e8e2e0953"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00015.html#a75d959e49115b9725f45898e8e2e0953">ParseOptions</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a75d959e49115b9725f45898e8e2e0953a0831009eec8e23f5d0f71a33663c611b"></a>parse_blank_lines_as_comment</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a75d959e49115b9725f45898e8e2e0953a1ffd7e4533506e007c04d1246f6e914d"></a>triangulate_faces</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a75d959e49115b9725f45898e8e2e0953a4c9ae46f951a737d7831223b133c393d"></a>translate_negative_indices</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00191">191</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a89204be18a4da25ce291053f0b155683"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html">obj_parser</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00015.html#aa4ab69a70383bb62f7fcc9fe9a501eba">flags_type</a>&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00251">251</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="ad0e5340f01e656183cfc8033b21897d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void comment_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html#a6535fc6855ac24c7ea920b75172e1bf8">comment_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>comment_callback</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00327">327</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ee382164283fabb36f0f5ed41f1e67c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void error_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html#afc3022887ff1bfc15328d646fa17db71">error_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>error_callback</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00268">268</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00073">ObjLoader::load()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00015_a0ee382164283fabb36f0f5ed41f1e67c_icgraph.png" border="0" usemap="#a00015_a0ee382164283fabb36f0f5ed41f1e67c_icgraph" alt=""/></div>
+<map name="a00015_a0ee382164283fabb36f0f5ed41f1e67c_icgraph" id="a00015_a0ee382164283fabb36f0f5ed41f1e67c_icgraph">
+<area shape="rect" id="node2" href="a00085.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="161,5,346,49"/><area shape="rect" id="node3" href="a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="395,5,560,49"/><area shape="rect" id="node4" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="608,5,773,49"/><area shape="rect" id="node5" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="822,5,967,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d64bceaf553b7bad2c1a88e7deae289"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void face_callbacks </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html#a755f7c5b6865296c9cb86762f955ced3">triangular_face_geometric_vertices_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>triangular_face_geometric_vertices_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00015.html#aad264282fec08ffa9a1e7ba00036c1ab">triangular_face_geometric_vertices_texture_vertices_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>triangular_face_geometric_vertices_texture_vertices_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00015.html#ae2e1a96b30b53ee83963a99cd61cffe0">triangular_face_geometric_vertices_vertex_normals_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>triangular_face_geometric_vertices_vertex_normals_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00015.html#ade1d1b275cd14425bbab7929eefb5663">triangular_face_geometric_vertices_texture_vertices_vertex_normals_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>triangular_face_geometric_vertices_texture_vertices_vertex_normals_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00015.html#a18affba72dc2fe04dc915635819ffd5e">quadrilateral_face_geometric_vertices_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>quadrilateral_face_geometric_vertices_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00015.html#a52239d98472e86aa9a1e1f24d2da7be3">quadrilateral_face_geometric_vertices_texture_vertices_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>quadrilateral_face_geometric_vertices_texture_vertices_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00015.html#a3a21a30b5cae005be92f65f987dac531">quadrilateral_face_geometric_vertices_vertex_normals_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>quadrilateral_face_geometric_vertices_vertex_normals_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00015.html#acc47b579ccb554951a247e7b8b3e8f96">quadrilateral_face_geometric_vertices_texture_vertices_vertex_normals_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>quadrilateral_face_geometric_vertices_texture_vertices_vertex_normals_callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00284">284</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00073">ObjLoader::load()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00015_a2d64bceaf553b7bad2c1a88e7deae289_icgraph.png" border="0" usemap="#a00015_a2d64bceaf553b7bad2c1a88e7deae289_icgraph" alt=""/></div>
+<map name="a00015_a2d64bceaf553b7bad2c1a88e7deae289_icgraph" id="a00015_a2d64bceaf553b7bad2c1a88e7deae289_icgraph">
+<area shape="rect" id="node2" href="a00085.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="163,5,349,49"/><area shape="rect" id="node3" href="a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="397,5,563,49"/><area shape="rect" id="node4" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="611,5,776,49"/><area shape="rect" id="node5" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="825,5,970,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b745ec59f7805d3dd93c1626a73b58a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void geometric_vertex_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html#a2eb7eb4dbf4da5cb7ae600bec88b0555">geometric_vertex_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>geometric_vertex_callback</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00272">272</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00073">ObjLoader::load()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00015_a0b745ec59f7805d3dd93c1626a73b58a_icgraph.png" border="0" usemap="#a00015_a0b745ec59f7805d3dd93c1626a73b58a_icgraph" alt=""/></div>
+<map name="a00015_a0b745ec59f7805d3dd93c1626a73b58a_icgraph" id="a00015_a0b745ec59f7805d3dd93c1626a73b58a_icgraph">
+<area shape="rect" id="node2" href="a00085.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="233,5,418,49"/><area shape="rect" id="node3" href="a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="467,5,632,49"/><area shape="rect" id="node4" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="680,5,845,49"/><area shape="rect" id="node5" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="894,5,1039,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a509d5b25fa534aa3789f4074afe7be70"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void group_name_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html#a809e54200770c627de2831e4f599b89b">group_name_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>group_name_callback</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00307">307</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00073">ObjLoader::load()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00015_a509d5b25fa534aa3789f4074afe7be70_icgraph.png" border="0" usemap="#a00015_a509d5b25fa534aa3789f4074afe7be70_icgraph" alt=""/></div>
+<map name="a00015_a509d5b25fa534aa3789f4074afe7be70_icgraph" id="a00015_a509d5b25fa534aa3789f4074afe7be70_icgraph">
+<area shape="rect" id="node2" href="a00085.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="206,5,391,49"/><area shape="rect" id="node3" href="a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="440,5,605,49"/><area shape="rect" id="node4" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="653,5,819,49"/><area shape="rect" id="node5" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="868,5,1012,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af2732d6f92b18397b3fb191a955ed3b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void info_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html#a4c541473642bbabf661e7f95e73c6609">info_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>info_callback</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00260">260</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00073">ObjLoader::load()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00015_af2732d6f92b18397b3fb191a955ed3b4_icgraph.png" border="0" usemap="#a00015_af2732d6f92b18397b3fb191a955ed3b4_icgraph" alt=""/></div>
+<map name="a00015_af2732d6f92b18397b3fb191a955ed3b4_icgraph" id="a00015_af2732d6f92b18397b3fb191a955ed3b4_icgraph">
+<area shape="rect" id="node2" href="a00085.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="153,5,338,49"/><area shape="rect" id="node3" href="a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="387,5,552,49"/><area shape="rect" id="node4" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="600,5,765,49"/><area shape="rect" id="node5" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="814,5,959,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f32db53f16f42f6ba0ac665ab2b3a41"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_library_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html#ae5f35e5d2ddb823d22fc97ddf448a53d">material_library_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>material_library_callback</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00319">319</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00073">ObjLoader::load()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00015_a9f32db53f16f42f6ba0ac665ab2b3a41_icgraph.png" border="0" usemap="#a00015_a9f32db53f16f42f6ba0ac665ab2b3a41_icgraph" alt=""/></div>
+<map name="a00015_a9f32db53f16f42f6ba0ac665ab2b3a41_icgraph" id="a00015_a9f32db53f16f42f6ba0ac665ab2b3a41_icgraph">
+<area shape="rect" id="node2" href="a00085.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="222,5,407,49"/><area shape="rect" id="node3" href="a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="456,5,621,49"/><area shape="rect" id="node4" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="669,5,835,49"/><area shape="rect" id="node5" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="884,5,1028,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3fd7d679915787a48037dbc4bf38dc4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_name_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html#acf25be941b83d2519777e5f70f43bb91">material_name_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>material_name_callback</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00323">323</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00073">ObjLoader::load()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00015_ad3fd7d679915787a48037dbc4bf38dc4_icgraph.png" border="0" usemap="#a00015_ad3fd7d679915787a48037dbc4bf38dc4_icgraph" alt=""/></div>
+<map name="a00015_ad3fd7d679915787a48037dbc4bf38dc4_icgraph" id="a00015_ad3fd7d679915787a48037dbc4bf38dc4_icgraph">
+<area shape="rect" id="node2" href="a00085.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="219,5,405,49"/><area shape="rect" id="node3" href="a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="453,5,619,49"/><area shape="rect" id="node4" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="667,5,832,49"/><area shape="rect" id="node5" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="881,5,1026,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa67dc2cf8cc9512111d0c5330c7e0d71"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void object_name_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html#a396dbc5d51a639f568bbea95bb411743">object_name_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>object_name_callback</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00315">315</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00073">ObjLoader::load()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00015_aa67dc2cf8cc9512111d0c5330c7e0d71_icgraph.png" border="0" usemap="#a00015_aa67dc2cf8cc9512111d0c5330c7e0d71_icgraph" alt=""/></div>
+<map name="a00015_aa67dc2cf8cc9512111d0c5330c7e0d71_icgraph" id="a00015_aa67dc2cf8cc9512111d0c5330c7e0d71_icgraph">
+<area shape="rect" id="node2" href="a00085.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="209,5,394,49"/><area shape="rect" id="node3" href="a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="443,5,608,49"/><area shape="rect" id="node4" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="656,5,821,49"/><area shape="rect" id="node5" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="870,5,1015,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aafa92a7789eb9eb29d7eaa9fec52d96d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool parse </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>istream</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00056_source.html#l00027">27</a> du fichier <a class="el" href="a00056_source.html">objfileparser.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00057_source.html#l00246">obj_parser::comment_callback_</a>, <a class="el" href="a00057_source.html#l00217">obj_parser::error_callback_</a>, <a class="el" href="a00057_source.html#l00214">obj_parser::flags_</a>, <a class="el" href="a00057_source.html#l00218">obj_parser::geometric_vertex_callback_</a>, <a class="el" href="a00057_source.html#l00241">obj_parser::group_name_callback_</a>, <a class="el" href="a00057_source.html#l00215">obj_parser::info_callback_</a>, <a class="el" href="a00057_source.html#l00244">obj_parser::material_library_callback_</a>, <a class="el" href="a00057_source.html#l00245">obj_parser::material_name_callback_</a>, <a class="el" href="a00057_source.html#l00243">obj_parser::object_name_callback_</a>, <a class="el" href="a00057_source.html#l00192">obj_parser::parse_blank_lines_as_comment</a>, <a class="el" href="a00057_source.html#l00229">obj_parser::polygonal_face_geometric_vertices_begin_callback_</a>, <a class="el" href="a00057_source.html#l00231">obj_parser::polygonal_face_geometric_vertices_end_callback_</a>, <a class="el" href="a00057_source.html#l00232">obj_parser::polygonal_face_geometric_vertices_texture_vertices_begin_callback_</a>, <a class="el" href="a00057_source.html#l00234">obj_parser::polygonal_face_geometric_vertices_texture_vertices_end_callback_</a>, <a class="el" href="a00057_source.html#l00233">obj_parser::polygonal_face_geometric_vertices_texture_vertices_vertex_callback_</a>, <a class="el" href="a00057_source.html#l00238">obj_parser::polygonal_face_geometric_vertices_texture_vertices_vertex_normals_begin_callback_</a>, <a class="el" href="a00057_source.html#l00240">obj_parser::polygonal_face_geometric_vertices_texture_vertices_vertex_normals_end_callback_</a>, <a class="el" href="a00057_source.html#l00239">obj_parser::polygonal_face_geometric_vertices_texture_vertices_vertex_normals_vertex_callback_</a>, <a class="el" href="a00057_source.html#l00230">obj_parser::polygonal_face_geometric_vertices_vertex_callback_</a>, <a class="el" href="a00057_source.html#l00235">obj_parser::polygonal_face_geometric_vertices_vertex_normals_begin_callback_</a>, <a class="el" href="a00057_source.html#l00237">obj_parser::polygonal_face_geometric_vertices_vertex_normals_end_callback_</a>, <a class="el" href="a00057_source.html#l00236">obj_parser::polygonal_face_geometric_vertices_vertex_normals_vertex_callback_</a>, <a class="el" href="a00057_source.html#l00225">obj_parser::quadrilateral_face_geometric_vertices_callback_</a>, <a class="el" href="a00057_source.html#l00226">obj_parser::quadrilateral_face_geometric_vertices_texture_vertices_callback_</a>, <a class="el" href="a00057_source.html#l00228">obj_parser::quadrilateral_face_geometric_vertices_texture_vertices_vertex_normals_callback_</a>, <a class="el" href="a00057_source.html#l00227">obj_parser::quadrilateral_face_geometric_vertices_vertex_normals_callback_</a>, <a class="el" href="a00057_source.html#l00242">obj_parser::smoothing_group_callback_</a>, <a class="el" href="a00057_source.html#l00219">obj_parser::texture_vertex_callback_</a>, <a class="el" href="a00057_source.html#l00194">obj_parser::translate_negative_indices</a>, <a class="el" href="a00057_source.html#l00221">obj_parser::triangular_face_geometric_vertices_callback_</a>, <a class="el" href="a00057_source.html#l00222">obj_parser::triangular_face_geometric_vertices_texture_vertices_callback_</a>, <a class="el" href="a00057_source.html#l00224">obj_parser::triangular_face_geometric_vertices_texture_vertices_vertex_normals_callback_</a>, <a class="el" href="a00057_source.html#l00223">obj_parser::triangular_face_geometric_vertices_vertex_normals_callback_</a>, <a class="el" href="a00057_source.html#l00193">obj_parser::triangulate_faces</a>, <a class="el" href="a00057_source.html#l00220">obj_parser::vertex_normal_callback_</a>, et <a class="el" href="a00057_source.html#l00216">obj_parser::warning_callback_</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00073">ObjLoader::load()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00015_aafa92a7789eb9eb29d7eaa9fec52d96d_icgraph.png" border="0" usemap="#a00015_aafa92a7789eb9eb29d7eaa9fec52d96d_icgraph" alt=""/></div>
+<map name="a00015_aafa92a7789eb9eb29d7eaa9fec52d96d_icgraph" id="a00015_aafa92a7789eb9eb29d7eaa9fec52d96d_icgraph">
+<area shape="rect" id="node2" href="a00085.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="110,5,295,49"/><area shape="rect" id="node3" href="a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="344,5,509,49"/><area shape="rect" id="node4" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="557,5,723,49"/><area shape="rect" id="node5" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="772,5,916,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a620db3a256dd6c1a9bd9f80c242aff62"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool parse </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00255">255</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afeed6ec2367ec63536ae93aff8735344"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void smoothing_group_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html#aea98a86be24c730df84951e21c7849dd">smoothing_group_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>smoothing_group_callback</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00311">311</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00073">ObjLoader::load()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00015_afeed6ec2367ec63536ae93aff8735344_icgraph.png" border="0" usemap="#a00015_afeed6ec2367ec63536ae93aff8735344_icgraph" alt=""/></div>
+<map name="a00015_afeed6ec2367ec63536ae93aff8735344_icgraph" id="a00015_afeed6ec2367ec63536ae93aff8735344_icgraph">
+<area shape="rect" id="node2" href="a00085.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="235,5,421,49"/><area shape="rect" id="node3" href="a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="469,5,635,49"/><area shape="rect" id="node4" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="683,5,848,49"/><area shape="rect" id="node5" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="897,5,1042,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7923f5922a4f65e0daa28937243818dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void texture_vertex_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html#af0a0b22863f57c1514562401109cc162">texture_vertex_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture_vertex_callback</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00276">276</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00073">ObjLoader::load()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00015_a7923f5922a4f65e0daa28937243818dc_icgraph.png" border="0" usemap="#a00015_a7923f5922a4f65e0daa28937243818dc_icgraph" alt=""/></div>
+<map name="a00015_a7923f5922a4f65e0daa28937243818dc_icgraph" id="a00015_a7923f5922a4f65e0daa28937243818dc_icgraph">
+<area shape="rect" id="node2" href="a00085.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="217,5,402,49"/><area shape="rect" id="node3" href="a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="451,5,616,49"/><area shape="rect" id="node4" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="664,5,829,49"/><area shape="rect" id="node5" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="878,5,1023,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f32fcb6ca6bd722822bf0fd3658b1f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vertex_normal_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html#ad4f2cd028e4759215197ef9ee41257c6">vertex_normal_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>vertex_normal_callback</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00280">280</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00073">ObjLoader::load()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00015_a1f32fcb6ca6bd722822bf0fd3658b1f8_icgraph.png" border="0" usemap="#a00015_a1f32fcb6ca6bd722822bf0fd3658b1f8_icgraph" alt=""/></div>
+<map name="a00015_a1f32fcb6ca6bd722822bf0fd3658b1f8_icgraph" id="a00015_a1f32fcb6ca6bd722822bf0fd3658b1f8_icgraph">
+<area shape="rect" id="node2" href="a00085.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="217,5,402,49"/><area shape="rect" id="node3" href="a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="451,5,616,49"/><area shape="rect" id="node4" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="664,5,829,49"/><area shape="rect" id="node5" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="878,5,1023,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acf6e027ff93fde1d0c097f1761589482"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void warning_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00015.html#afa42ae2d4b09825dbee2174ff7702d88">warning_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>warning_callback</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00264">264</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00073">ObjLoader::load()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00015_acf6e027ff93fde1d0c097f1761589482_icgraph.png" border="0" usemap="#a00015_acf6e027ff93fde1d0c097f1761589482_icgraph" alt=""/></div>
+<map name="a00015_acf6e027ff93fde1d0c097f1761589482_icgraph" id="a00015_acf6e027ff93fde1d0c097f1761589482_icgraph">
+<area shape="rect" id="node2" href="a00085.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="179,5,365,49"/><area shape="rect" id="node3" href="a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="413,5,579,49"/><area shape="rect" id="node4" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="627,5,792,49"/><area shape="rect" id="node5" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="841,5,986,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a10cafef340adfd65c8cf7469c5273884"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a6535fc6855ac24c7ea920b75172e1bf8">comment_callback_type</a> comment_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00246">246</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8a39855abe0d4ab60338bfebc1824dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#afc3022887ff1bfc15328d646fa17db71">error_callback_type</a> error_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00217">217</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa56342618907fbd6b5ccd6830820b46b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#aa4ab69a70383bb62f7fcc9fe9a501eba">flags_type</a> flags_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00214">214</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5ec6d7d1d3dfcfacb7236a974acbeca9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a2eb7eb4dbf4da5cb7ae600bec88b0555">geometric_vertex_callback_type</a> geometric_vertex_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00218">218</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5fa8795c636808f16e3a741e87f767d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a809e54200770c627de2831e4f599b89b">group_name_callback_type</a> group_name_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00241">241</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac79e5152d14849484beaca4bfccf76c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a4c541473642bbabf661e7f95e73c6609">info_callback_type</a> info_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00215">215</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a19bc0e8514a798f06fde3e2646e3322e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#ae5f35e5d2ddb823d22fc97ddf448a53d">material_library_callback_type</a> material_library_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00244">244</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a44fe9acbb99d5909f73501dc0ca0b66b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#acf25be941b83d2519777e5f70f43bb91">material_name_callback_type</a> material_name_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00245">245</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aca220497bd721e4f455e2f5d595a23b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a396dbc5d51a639f568bbea95bb411743">object_name_callback_type</a> object_name_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00243">243</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6517cefc9531bb259056f6853c008612"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#ab1427f8affdb50f5bbf028bc3a312302">polygonal_face_geometric_vertices_begin_callback_type</a> polygonal_face_geometric_vertices_begin_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00229">229</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2efa11cfcfc25297486d3d23b2c73173"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a57cc23bedd09c5bf74786c47304f8102">polygonal_face_geometric_vertices_end_callback_type</a> polygonal_face_geometric_vertices_end_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00231">231</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d4b2cb4afb124c3d71332ccc6a06a53"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a94f8a6f223ab69d859d0759ed3266af6">polygonal_face_geometric_vertices_texture_vertices_begin_callback_type</a> polygonal_face_geometric_vertices_texture_vertices_begin_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00232">232</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aae13fcb2a950bff4a5ce597726e73519"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a5d597b6bb402e23ad2b88f5018870d78">polygonal_face_geometric_vertices_texture_vertices_end_callback_type</a> polygonal_face_geometric_vertices_texture_vertices_end_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00234">234</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afb3c284135bb251adc6b28f5aa082198"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a9011716bddd043875914435cd2505d54">polygonal_face_geometric_vertices_texture_vertices_vertex_callback_type</a> polygonal_face_geometric_vertices_texture_vertices_vertex_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00233">233</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4b125d6f4dbd5b49454ad9137b9d601"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a67c5036853278ac0664683167ce170ac">polygonal_face_geometric_vertices_texture_vertices_vertex_normals_begin_callback_type</a> polygonal_face_geometric_vertices_texture_vertices_vertex_normals_begin_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00238">238</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abf34e9c078914022b9ecd4067828c5aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a1ce053a19bb685fb7657b121b97c538b">polygonal_face_geometric_vertices_texture_vertices_vertex_normals_end_callback_type</a> polygonal_face_geometric_vertices_texture_vertices_vertex_normals_end_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00240">240</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a14cab6f54e2e852b0dc9d119d868b424"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a63769df74a7c31937594657f96232d29">polygonal_face_geometric_vertices_texture_vertices_vertex_normals_vertex_callback_type</a> polygonal_face_geometric_vertices_texture_vertices_vertex_normals_vertex_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00239">239</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a56c6480e16c2fc3a24efc05d9b428f7f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a7a4a87a7e566ac4eddb8d862408cac70">polygonal_face_geometric_vertices_vertex_callback_type</a> polygonal_face_geometric_vertices_vertex_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00230">230</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac95af73395ab219277bc9cfdd138060b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#af5bcfc50f1722367571fafb69f7dc71c">polygonal_face_geometric_vertices_vertex_normals_begin_callback_type</a> polygonal_face_geometric_vertices_vertex_normals_begin_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00235">235</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0656dfb06bebec257aa70b55ca3eb598"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#ad726aa5939cdafca9298d131b4acbf91">polygonal_face_geometric_vertices_vertex_normals_end_callback_type</a> polygonal_face_geometric_vertices_vertex_normals_end_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00237">237</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae2bf5c42f325f75ccdb5fa0aef30e4e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a7435cc552f922546cbd5a14fa1b98a72">polygonal_face_geometric_vertices_vertex_normals_vertex_callback_type</a> polygonal_face_geometric_vertices_vertex_normals_vertex_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00236">236</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a716f5840f21deb71224e40d3ad7e23ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a18affba72dc2fe04dc915635819ffd5e">quadrilateral_face_geometric_vertices_callback_type</a> quadrilateral_face_geometric_vertices_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00225">225</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c48061aa3883e01071b266165c989b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a52239d98472e86aa9a1e1f24d2da7be3">quadrilateral_face_geometric_vertices_texture_vertices_callback_type</a> quadrilateral_face_geometric_vertices_texture_vertices_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00226">226</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af739a50456b8ddbaf38e9506e6630c01"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#acc47b579ccb554951a247e7b8b3e8f96">quadrilateral_face_geometric_vertices_texture_vertices_vertex_normals_callback_type</a> quadrilateral_face_geometric_vertices_texture_vertices_vertex_normals_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00228">228</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac47abe5798908aea6bee5dd6fa7ef494"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a3a21a30b5cae005be92f65f987dac531">quadrilateral_face_geometric_vertices_vertex_normals_callback_type</a> quadrilateral_face_geometric_vertices_vertex_normals_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00227">227</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a19865ab12e86cacc036d3fb5348f0452"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#aea98a86be24c730df84951e21c7849dd">smoothing_group_callback_type</a> smoothing_group_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00242">242</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae836196024df6f140af45f7aa803bac7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#af0a0b22863f57c1514562401109cc162">texture_vertex_callback_type</a> texture_vertex_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00219">219</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9f7c7b73a3a99ce61a861ed01824865"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#a755f7c5b6865296c9cb86762f955ced3">triangular_face_geometric_vertices_callback_type</a> triangular_face_geometric_vertices_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00221">221</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ac8ee79174b6b126db2165296f17fb7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#aad264282fec08ffa9a1e7ba00036c1ab">triangular_face_geometric_vertices_texture_vertices_callback_type</a> triangular_face_geometric_vertices_texture_vertices_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00222">222</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a24feeebe68d82d1564e5ae52c8857752"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#ade1d1b275cd14425bbab7929eefb5663">triangular_face_geometric_vertices_texture_vertices_vertex_normals_callback_type</a> triangular_face_geometric_vertices_texture_vertices_vertex_normals_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00224">224</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a81f1c9c15c24a40dcb470d63f158cf39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#ae2e1a96b30b53ee83963a99cd61cffe0">triangular_face_geometric_vertices_vertex_normals_callback_type</a> triangular_face_geometric_vertices_vertex_normals_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00223">223</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c777c3342688b918d1108e7bbd02c85"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#ad4f2cd028e4759215197ef9ee41257c6">vertex_normal_callback_type</a> vertex_normal_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00220">220</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e9f1caadfcf3478350ebceee0656048"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00015.html#afa42ae2d4b09825dbee2174ff7702d88">warning_callback_type</a> warning_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00216">216</a> du fichier <a class="el" href="a00057_source.html">objfileparser.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00027">obj_parser::parse()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="a00057_source.html">objfileparser.h</a></li>
+<li><a class="el" href="a00056_source.html">objfileparser.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00078.html">loaders</a></li><li class="navelem"><a class="el" href="a00079.html">obj_mtl</a></li><li class="navelem"><a class="el" href="a00015.html">obj_parser</a></li>
+    <li class="footer">Généré le Mardi Janvier 21 2014 21:32:05 pour M1 Informatique - IG3D - Introduction à openGL par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

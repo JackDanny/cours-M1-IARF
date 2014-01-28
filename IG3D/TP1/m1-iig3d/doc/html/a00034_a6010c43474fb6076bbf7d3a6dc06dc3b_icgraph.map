@@ -1,0 +1,4 @@
+<map id="initLighting" name="initLighting">
+<area shape="rect" id="node2" href="$a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="139,13,248,41"/>
+<area shape="rect" id="node3" href="$a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="297,5,442,49"/>
+</map>

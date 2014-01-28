@@ -1,0 +1,5 @@
+<map id="GlEntity" name="GlEntity">
+<area shape="rect" id="node2" href="$a00026.html" title="{GlMaterial\n|&#45; kd_\l&#45; ks_\l&#45; ns_\l|+ GlMaterial()\l+ getParameters()\l+ setTexture()\l+ bindGL()\l}" alt="" coords="5,361,133,522"/>
+<area shape="rect" id="node3" href="$a00035.html" title="{Texture\n|+ pixels_\l+ format_\l+ pixOrder_\l+ width_\l+ height_\l&#45; mTexId\l|+ Texture()\l+ Texture()\l+ initGL()\l+ useMipMap()\l+ setFilter()\l+ setClamp()\l+ bind()\l+ deleteGL()\l+ getPixel()\l}" alt="" coords="14,6,124,295"/>
+<area shape="rect" id="node4" href="$a00024.html" title="{GlDrawable\n||+ GlDrawable()\l+ ~GlDrawable()\l+ drawGL()\l+ getData()\l}" alt="" coords="158,377,276,506"/>
+</map>

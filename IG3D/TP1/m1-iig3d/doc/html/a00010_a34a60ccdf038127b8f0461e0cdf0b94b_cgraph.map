@@ -1,0 +1,8 @@
+<map id="reloadShaders" name="reloadShaders">
+<area shape="rect" id="node2" href="$a00034.html#a9f0fe0c105c553fe28c933db8169ef60" title="Initialise the shader configuration. " alt="" coords="163,49,328,93"/>
+<area shape="rect" id="node3" href="$a00034.html#a04ad50fc380882e045a19e4e63d57f26" title="rendersystem::Renderer\l::initShader" alt="" coords="376,49,541,93"/>
+<area shape="rect" id="node4" href="$a00083.html#gac6f6b953cc9968777de7507139a884c9" title="loaders::text::loadFile" alt="" coords="590,5,738,33"/>
+<area shape="rect" id="node6" href="$a00088.html#gad2c864f425d8580c40739a4ccc464e91" title="Print to stderr compilation log of a shader. " alt="" coords="597,57,731,85"/>
+<area shape="rect" id="node7" href="$a00088.html#ga3cfb5a2081d90f8203c12fd2155a40d9" title="Print to stderr link log of a program. " alt="" coords="593,109,735,137"/>
+<area shape="rect" id="node5" href="$a00083.html#gad30baeb3fe93ad7f61c2bc2bc63b3bf9" title="side effect : seekg to begin of file " alt="" coords="788,5,970,33"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="initShaders" name="initShaders">
+<area shape="rect" id="node2" href="$a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="160,13,269,41"/>
+<area shape="rect" id="node4" href="$a00010.html#a34a60ccdf038127b8f0461e0cdf0b94b" title="gui::OpenGLWidget::\lreloadShaders" alt="" coords="142,65,287,109"/>
+<area shape="rect" id="node3" href="$a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="373,5,518,49"/>
+<area shape="rect" id="node5" href="$a00009.html#a34a60ccdf038127b8f0461e0cdf0b94b" title="gui::MainWindow::reloadShaders" alt="" coords="337,73,554,101"/>
+<area shape="rect" id="node6" href="$a00009.html#a5176c9496a29e21eacb0f81ca1a29923" title="gui::MainWindow::createActions" alt="" coords="602,73,814,101"/>
+<area shape="rect" id="node7" href="$a00009.html#aeb676574b78bda84d687fdcfd65d84a6" title="gui::MainWindow::MainWindow" alt="" coords="862,73,1069,101"/>
+</map>

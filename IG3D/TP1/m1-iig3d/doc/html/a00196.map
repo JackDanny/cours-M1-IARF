@@ -1,0 +1,4 @@
+<map id="GlMesh" name="GlMesh">
+<area shape="rect" id="node2" href="$a00011.html" title="Represents a triangular mesh as an array of vertex and an array of triangluar faces. " alt="" coords="5,6,152,311"/>
+<area shape="rect" id="node3" href="$a00024.html" title="{GlDrawable\n||+ GlDrawable()\l+ ~GlDrawable()\l+ drawGL()\l+ getData()\l}" alt="" coords="176,94,295,223"/>
+</map>

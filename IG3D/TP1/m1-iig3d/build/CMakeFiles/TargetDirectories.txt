@@ -1,0 +1,2 @@
+/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders/CMakeFiles/fileloaders.dir
+/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/CMakeFiles/minimalrenderer.dir

@@ -1,0 +1,4 @@
+<map id="ParametricCone" name="ParametricCone">
+<area shape="rect" id="node2" href="$a00032.html" title="{ParametricMesh\n||+ ParametricMesh()\l+ generateMesh()\l# evalSurface()\l# toLinear()\l}" alt="" coords="9,361,148,490"/>
+<area shape="rect" id="node3" href="$a00011.html" title="Represents a triangular mesh as an array of vertex and an array of triangluar faces. " alt="" coords="5,6,152,311"/>
+</map>

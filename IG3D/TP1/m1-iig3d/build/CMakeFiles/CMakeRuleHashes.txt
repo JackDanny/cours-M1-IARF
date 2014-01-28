@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+e799a96fd780f9ce06bee8a63d39917b src/rendersystem/moc_mainwindow.cxx
+9108993aaedeb64f56dfcc61f930db49 src/rendersystem/moc_openglwidget.cxx

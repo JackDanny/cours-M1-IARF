@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - IG3D - Introduction à openGL: Scéance 1 : mise en place d&#39;un environnement logiciel.</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://www.mathjax.org/mathjax/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - IG3D - Introduction à openGL
+   &#160;<span id="projectnumber">2013-2014</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li class="current"><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00001.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Scéance 1 : mise en place d'un environnement logiciel. </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>L'objectif de cette séance et de comprendre et de mettre en place l'architecture générale d'une application de synthèse d'images 3D.</p>
+<p>Une telle application est généralement développée selon le motif de conception Modèle-Vue-Contrôleur</p>
+<ul>
+<li>Le modèle est la scène 3D et est représenté par des classes gérant les maillages, les textures, les caméra, ... </li>
+<li>La vue est implantée par un system de rendu construit au dessus des interfaces de programmation d'application de bas niveau (OpenGL ou DirectX). </li>
+<li>Le contrôleur est l'interface entre le système et la vue et gère les interactions avec l'utilisateur.</li>
+</ul>
+<p>Dans notre application, le modèle est écrit en C++, la vue en C++/OpenGL et le contrôleur utilise l'API Qt.</p>
+<p>Nous nous fondons sur la spécification <a href="http://www.opengl.org/registry/doc/glspec32.core.20091207.pdf">OpenGL 3.2 core</a> comme API de bas niveau. Il est recommandé de consulter cette spécification ainsi que le <a href="http://www.opengl.org/sdk/docs/man3/">manuel de référence</a> de cette API pour bien comprendre les concepts manipulés.</p>
+<h1><a class="anchor" id="managingGeometries"></a>
+1 - Représentation de la géométrie pour un affichage par OpenGL.</h1>
+<p>Fichier <a class="el" href="a00049.html">glmesh.cpp</a>, classe <a class="el" href="a00027.html" title="A mesh with OpenGL rendering capabilities. ">rendersystem::GlMesh</a>.</p>
+<p>Les données géométriques affichées par notre application sont des maillages, définis dans le code source ou chargés depuis des fichiers externes, qui doivent être préparés pour un affichage par OpenGL.</p>
+<p>La première étape de cette séance de travaux pratiques concerne la programmation de la classe <a class="el" href="a00027.html" title="A mesh with OpenGL rendering capabilities. ">rendersystem::GlMesh</a>, qui est chargée de faire ces opérations. Cette classe est déclarée (et partielement vide) dans le fichier <a class="el" href="a00049.html">glmesh.cpp</a>. <a class="el" href="a00027.html" title="A mesh with OpenGL rendering capabilities. ">rendersystem::GlMesh</a> hérite de la classe <a class="el" href="a00011.html" title="Represents a triangular mesh as an array of vertex and an array of triangluar faces. ">loaders::Mesh</a> et rajoute à la représentation des maillages les fonctionalités nécessaires pour un affichage par OpenGL.</p>
+<p>Pour pouvoir être affiché en OpenGL, un maillage doit être représenté sous la forme d'un <b>Vertex Array Object</b>, objet abstrait OpenGL permettant de décrire l'organisation des données du maillage en mémoire et comment y accéder. Lorsque notre maillage est ainsi représenté, son tracé peut alors être réalisé simplement en demandat à OpenGL d'utiliser l'objet et d'en dessiner les éléments.</p>
+<p>Deux méthodes doivent être programmées pour implanter la classe <a class="el" href="a00027.html" title="A mesh with OpenGL rendering capabilities. ">rendersystem::GlMesh</a> : </p>
+<ul>
+<li><a class="el" href="a00027.html#a45fa26bf6414428cf68afa8d5a35d1fe" title="Build VartexArrayObjects for the mesh. ">rendersystem::GlMesh::compileGL()</a></li>
+</ul>
+<p>Le rôle de cette fonction est de créer les objets OpenGL et de décrire l'organisation des données dans ces objets pour en permettre le tracé. Nous utilisons dans notre application les notions de VertexArrayObject et de VertexBufferObject pour représenter nos maillages. Les explications concernant l'utilisation de ces objets vous seront données en scéance. La spécification de ces concepts est sur le site <a href="http://www.opengl.org/">opengl.org</a>. Se reporter aux commentaires de la fonction dans le fichier <a class="el" href="a00049.html">glmesh.cpp</a> ou dans la documentation de la fonction pour avoir des indications sur la marche à suivre.</p>
+<ul>
+<li><a class="el" href="a00027.html#a81552b64abf3926a0e40751c85d06b3e" title="Draws the VartexArrayObjects of the mesh. ">rendersystem::GlMesh::drawGL()</a></li>
+</ul>
+<p>Le rôle de cette fonction est de donner les ordres OpenGL pour le dessin d'un maillage.</p>
+<p><b>Avant de continuer</b>, vous devez ecrire le code de ces deux fonctions et compiler votre programme. Se reporter aux commentaires de la fonction dans le fichier <a class="el" href="a00049.html">glmesh.cpp</a> ou dans la documentation de la fonction pour avoir des indications sur la marche à suivre.</p>
+<h1><a class="anchor" id="initOpenGL"></a>
+2 - Initialisation générale de l'application.</h1>
+<p>Fichier <a class="el" href="a00069.html">renderer.cpp</a>, fonction <a class="el" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... ">rendersystem::Renderer::initRessources()</a></p>
+<p>Au lancement de l'application, les différents paramètres et états du pipeline de discrétisation OpenGL doivent être définis et initialisés. Ces états vont paramétrer le pipeline ou le contrôleur pour permettre à l'application de réaliser ses tâches. Dans notre cas, les paramètres et états à initialiser concernent </p>
+<ul>
+<li>le mode de rendu OPENGL_H </li>
+<li>les paramètres de caméra pour la visualisation de la scène</li>
+</ul>
+<p>Toute application de synthèse d'images nécessite l'utilisation de resources externes pour fonctionner. Lors de l'initialisation de l'application, les resources dont la durée de vie est celle de l'application doivent être initialisées. Dans le cas de notre applicaiton exemple, développée dans le cadre de ces travaux pratiques, ces resources seront : </p>
+<ul>
+<li>le maillage à visualiser </li>
+<li>les shaders pour les étages <code>Vertex</code> et <code>Fragment</code> </li>
+<li>les paramètres d'apparence de l'objet à visualiser (textures, materiau, ...)</li>
+</ul>
+<h2><a class="anchor" id="generalSttings"></a>
+2.1 - Initialisation des paramètres OpenGL.</h2>
+<p>Dans notre application, nous souhaitons visualiser nos modèles sous forme de faces pleines avec élimination des parties cachées. Cette initialisation est réalisée dans la fonction <a class="el" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... ">rendersystem::Renderer::initRessources()</a> les états OpenGL nécessaires.</p>
+<h2><a class="anchor" id="viewSettings"></a>
+2.2 - Initialisation des paramètres de vue.</h2>
+<p>La fonction <a class="el" href="a00034.html#aafcf982312922a03e9bb1f072c10b3ca" title="Initialise the viewing configuration. ">rendersystem::Renderer::initView()</a> permet de définir les paramètres par défaut pour la visualisation d'un maillage. La matrice de vue rendersystem::Renderer::g_viewMatrix est initialisée dans la fonction <a class="el" href="a00034.html#aafcf982312922a03e9bb1f072c10b3ca" title="Initialise the viewing configuration. ">rendersystem::Renderer::initView()</a> et peut être changée si vous souhaitez un autre point de vue par défaut.</p>
+<h2><a class="anchor" id="loadingGeometry"></a>
+2.3 - Chargement et compilation des données géométriques de l'application.</h2>
+<p>Cet exercice n'est pas à faire pour ce TP</p>
+<p>En utilisant la classe <a class="el" href="a00016.html" title="Class to load geometry in OBJ/MTL format. ">loaders::obj_mtl::ObjLoader</a> de chargement de fichier Alias/Wavefront OBJ, charger l'objet "../data/camel.obj" et stockez ses différentes composantes dans un vecteur (std::vector&lt;loaders::Mesh*&gt;). Transformez ces composantes en vecteur de primitives affichables en utilisant votre classe rendersystem::MyGLMesh.</p>
+<h2><a class="anchor" id="loadingShaders"></a>
+2.4 - Chargement et compilation des shaders.</h2>
+<p>Cet exercice n'est pas à faire pour ce TP</p>
+<p>La spécification OpenGL 3.2 core nécessite la définition de <code>shaders</code> pour la gestion des différentes données transitant dans le pipeline de discrétisation. Dans notre application, les shaders sont définis dans des fichiers sources glsl qui doivent être chargés, compilés et liés avant de pouvoir être utilisés pour le rendu. L'objectif de la fonction <a class="el" href="a00034.html#a9f0fe0c105c553fe28c933db8169ef60" title="Initialise the shader configuration. ">rendersystem::Renderer::initShaders()</a> est de préparer l'application afin qu'elle utilise par défaut les shaders "../shaders/vertexdefault.glsl" et "../shaders/fragmentdefault.glsl". Il est à noter qu'un shader doit être vue comme une unité de compilation qui est ensuite intégrée dans un programme.</p>
+<p>Les opérations devant être faites pour pouvoir utiliser des shaders OpenGL dans notre application sont les suivantes : </p>
+<ol>
+<li>
+Vertex shader : <ol>
+<li>
+Charger le source depuis le fichier "../shaders/vertexdefault.glsl" </li>
+<li>
+Créer un objet OpenGL VERTEX_SHADER et y associer le source </li>
+<li>
+Compiler le shader </li>
+<li>
+Vérifier les erreurs de compilation </li>
+</ol>
+</li>
+<li>
+Fragment shader : <ol>
+<li>
+Charger le source depuis le fichier "../shaders/fragmentdefault.glsl" </li>
+<li>
+Créer un objet OpenGL FRAGMENT_SHADER et y associer le source </li>
+<li>
+Compiler le shader </li>
+<li>
+Vérifier les erreurs de compilation </li>
+</ol>
+</li>
+<li>
+Programme : <ol>
+<li>
+Créer un programme OpenGL et y associer les shaders </li>
+<li>
+Fixer les positions des attributs géométriques en accord avec la classe rendersystem::MyGLMesh et les convention d'écriture du source GLSL <ul>
+<li>
+inPosition &ndash;&gt; index 0 </li>
+<li>
+inNormal &ndash;&gt; index 1 </li>
+<li>
+inTexCoord &ndash;&gt; index 2. </li>
+</ul>
+</li>
+<li>
+Lier le programme </li>
+<li>
+Vérifier les erreurs d'édition de lien </li>
+</ol>
+</li>
+</ol>
+<h1><a class="anchor" id="mainRenderfunction"></a>
+3 - Fonction générale de rendu.</h1>
+<p>La fonction <a class="el" href="a00034.html#abe1317bc098889c2e1accbc2b0f76a3f" title="Render the scene. ">rendersystem::Renderer::render()</a> est la fonction principale de calcul d'une image de synthèse. Appelée à chaque rafraichissement de l'image son rôle est de séquencer l'ensemble des ordres de dessin de l'API de bas niveau. Dans notre application simple, cette fonction à le rôle suivant.</p>
+<ol>
+<li>
+Préparer de l'image pour le rendu : <ul>
+<li>
+Effacer les buffers de destination </li>
+</ul>
+</li>
+<li>
+Construire les matrices de vue et de projection : <ul>
+<li>
+Définir une matrice de projection perspective </li>
+<li>
+Définir la matrice de vue </li>
+<li>
+Calculer la matrice de transformation des normales </li>
+<li>
+Calculer la matrice MVP de passage du repère objet au repère image </li>
+</ul>
+</li>
+<li>
+Activer et paramétrer les shader par defaut : <ul>
+<li>
+Activer le programme par défaut </li>
+<li>
+Positionner les paramètres indépendants des objets : les matrices dans notre cas </li>
+</ul>
+</li>
+<li>
+Dessiner les objets de la scène : <ul>
+<li>
+Dessiner tous les objets de la collection <a class="el" href="a00034.html#a80c58ef650c514aa7f2fd950f4107f72" title="Vector of entities to be drawn. ">rendersystem::Renderer::entities_</a> </li>
+</ul>
+</li>
+</ol>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Généré le Mardi Janvier 21 2014 21:32:05 pour M1 Informatique - IG3D - Introduction à openGL par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

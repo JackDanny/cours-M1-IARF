@@ -1,0 +1,1180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - IG3D - Introduction à openGL: Référence de la classe Renderer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://www.mathjax.org/mathjax/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - IG3D - Introduction à openGL
+   &#160;<span id="projectnumber">2013-2014</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00034.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="a00211.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Renderer<div class="ingroups"><a class="el" href="a00089.html">Simple OpenGL Rendering system</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>OpenGL renderer.  
+ <a href="a00034.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00070_source.html">renderer.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de Renderer:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00212.png" border="0" usemap="#_renderer_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a94e2ce8e86114e35c8b87db89ae4fadd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a94e2ce8e86114e35c8b87db89ae4fadd">Renderer</a> ()</td></tr>
+<tr class="memdesc:a94e2ce8e86114e35c8b87db89ae4fadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a94e2ce8e86114e35c8b87db89ae4fadd">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a94e2ce8e86114e35c8b87db89ae4fadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc9cbaea238bd343019321b8628a2462"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#afc9cbaea238bd343019321b8628a2462">~Renderer</a> ()</td></tr>
+<tr class="memdesc:afc9cbaea238bd343019321b8628a2462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#afc9cbaea238bd343019321b8628a2462">Plus de détails...</a><br/></td></tr>
+<tr class="separator:afc9cbaea238bd343019321b8628a2462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac080cc4e58f7a83a315077a1335da646"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#ac080cc4e58f7a83a315077a1335da646">setViewport</a> (int <a class="el" href="a00034.html#a3eeed61a3424d2f907c8a1e420fddf6d">width</a>, int <a class="el" href="a00034.html#a822ae85493a742654ba563619492b26a">height</a>)</td></tr>
+<tr class="memdesc:ac080cc4e58f7a83a315077a1335da646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Viewport management.  <a href="#ac080cc4e58f7a83a315077a1335da646">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ac080cc4e58f7a83a315077a1335da646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe1317bc098889c2e1accbc2b0f76a3f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#abe1317bc098889c2e1accbc2b0f76a3f">render</a> (const glm::mat4x4 &amp;modelViewMatrix, const glm::mat4x4 &amp;projectionMatrix)</td></tr>
+<tr class="memdesc:abe1317bc098889c2e1accbc2b0f76a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the scene.  <a href="#abe1317bc098889c2e1accbc2b0f76a3f">Plus de détails...</a><br/></td></tr>
+<tr class="separator:abe1317bc098889c2e1accbc2b0f76a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae639a035ad857244a5fd8f25432ef33b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#ae639a035ad857244a5fd8f25432ef33b">renderDebug</a> (const glm::mat4x4 &amp;modelViewMatrix, const glm::mat4x4 &amp;projectionMatrix)</td></tr>
+<tr class="separator:ae639a035ad857244a5fd8f25432ef33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98bf2f211e3840eefca37ca1c16e50cd"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a98bf2f211e3840eefca37ca1c16e50cd">handleMouseEvent</a> (const <a class="el" href="a00028.html">MouseEvent</a> &amp;event)</td></tr>
+<tr class="memdesc:a98bf2f211e3840eefca37ca1c16e50cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle mouse event given by the vortexEngine.  <a href="#a98bf2f211e3840eefca37ca1c16e50cd">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a98bf2f211e3840eefca37ca1c16e50cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183631354912d24b225e17b111cc699f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a183631354912d24b225e17b111cc699f">handleKeyEvent</a> (char key)</td></tr>
+<tr class="memdesc:a183631354912d24b225e17b111cc699f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle key event given by the vortexEngine.  <a href="#a183631354912d24b225e17b111cc699f">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a183631354912d24b225e17b111cc699f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8316182754a20571b5294b42994eb00"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#ae8316182754a20571b5294b42994eb00">initRessources</a> ()</td></tr>
+<tr class="memdesc:ae8316182754a20571b5294b42994eb00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise all the resources needed for rendering : shaders, geometries, teture, ...  <a href="#ae8316182754a20571b5294b42994eb00">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ae8316182754a20571b5294b42994eb00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafcf982312922a03e9bb1f072c10b3ca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#aafcf982312922a03e9bb1f072c10b3ca">initView</a> ()</td></tr>
+<tr class="memdesc:aafcf982312922a03e9bb1f072c10b3ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the viewing configuration.  <a href="#aafcf982312922a03e9bb1f072c10b3ca">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aafcf982312922a03e9bb1f072c10b3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7b3e6e127d37369ab24d53127b8f6b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b">initGeometry</a> ()</td></tr>
+<tr class="memdesc:a3d7b3e6e127d37369ab24d53127b8f6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the geometric content.  <a href="#a3d7b3e6e127d37369ab24d53127b8f6b">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a3d7b3e6e127d37369ab24d53127b8f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6010c43474fb6076bbf7d3a6dc06dc3b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a6010c43474fb6076bbf7d3a6dc06dc3b">initLighting</a> ()</td></tr>
+<tr class="memdesc:a6010c43474fb6076bbf7d3a6dc06dc3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the lighting configuration.  <a href="#a6010c43474fb6076bbf7d3a6dc06dc3b">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a6010c43474fb6076bbf7d3a6dc06dc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f0fe0c105c553fe28c933db8169ef60"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a9f0fe0c105c553fe28c933db8169ef60">initShaders</a> ()</td></tr>
+<tr class="memdesc:a9f0fe0c105c553fe28c933db8169ef60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the shader configuration.  <a href="#a9f0fe0c105c553fe28c933db8169ef60">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a9f0fe0c105c553fe28c933db8169ef60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eeed61a3424d2f907c8a1e420fddf6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a3eeed61a3424d2f907c8a1e420fddf6d">width</a> ()</td></tr>
+<tr class="separator:a3eeed61a3424d2f907c8a1e420fddf6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a822ae85493a742654ba563619492b26a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a822ae85493a742654ba563619492b26a">height</a> ()</td></tr>
+<tr class="separator:a822ae85493a742654ba563619492b26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad6dce14091d9aa100708e4fe928f99"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="a00025.html">GlEntity</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a2ad6dce14091d9aa100708e4fe928f99">getEntities</a> ()</td></tr>
+<tr class="separator:a2ad6dce14091d9aa100708e4fe928f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5ce1e2845f72364ef566e2d5729dd1"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="a00029.html">MyGlLight</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#ada5ce1e2845f72364ef566e2d5729dd1">getLights</a> ()</td></tr>
+<tr class="separator:ada5ce1e2845f72364ef566e2d5729dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c7c56d0f0158d920deb05074dd013e"><td class="memItemLeft" align="right" valign="top">glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#ae5c7c56d0f0158d920deb05074dd013e">getViewMatrix</a> ()</td></tr>
+<tr class="separator:ae5c7c56d0f0158d920deb05074dd013e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
+<tr class="memitem:ad2af7588ca87bfadebd74fb4939e64dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#ad2af7588ca87bfadebd74fb4939e64dc">width_</a></td></tr>
+<tr class="separator:ad2af7588ca87bfadebd74fb4939e64dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a159d389017b03a58e3508186fb445"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a45a159d389017b03a58e3508186fb445">height_</a></td></tr>
+<tr class="separator:a45a159d389017b03a58e3508186fb445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a04ad50fc380882e045a19e4e63d57f26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a04ad50fc380882e045a19e4e63d57f26">initShader</a> (std::string vsFileName, std::string fsFileName)</td></tr>
+<tr class="separator:a04ad50fc380882e045a19e4e63d57f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a3781e62d60048b863f29b8f1fc24b81b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a00027.html">GlMesh</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a3781e62d60048b863f29b8f1fc24b81b">meshes_</a></td></tr>
+<tr class="memdesc:a3781e62d60048b863f29b8f1fc24b81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of meshes of the scene.  <a href="#a3781e62d60048b863f29b8f1fc24b81b">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a3781e62d60048b863f29b8f1fc24b81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c58ef650c514aa7f2fd950f4107f72"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a00025.html">GlEntity</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a80c58ef650c514aa7f2fd950f4107f72">entities_</a></td></tr>
+<tr class="memdesc:a80c58ef650c514aa7f2fd950f4107f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of entities to be drawn.  <a href="#a80c58ef650c514aa7f2fd950f4107f72">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a80c58ef650c514aa7f2fd950f4107f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14bb9bd774e7d6ea7cd026e1ce59c867"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a00029.html">MyGlLight</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a14bb9bd774e7d6ea7cd026e1ce59c867">lights_</a></td></tr>
+<tr class="memdesc:a14bb9bd774e7d6ea7cd026e1ce59c867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of lights.  <a href="#a14bb9bd774e7d6ea7cd026e1ce59c867">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a14bb9bd774e7d6ea7cd026e1ce59c867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc0c7e959d48b6d3a28abf4fa7e2efc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a1cc0c7e959d48b6d3a28abf4fa7e2efc">program_</a></td></tr>
+<tr class="memdesc:a1cc0c7e959d48b6d3a28abf4fa7e2efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenGl Shader Program to be used when drawing.  <a href="#a1cc0c7e959d48b6d3a28abf4fa7e2efc">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a1cc0c7e959d48b6d3a28abf4fa7e2efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302f5481bcf28782d9f50b4acf8a946a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a302f5481bcf28782d9f50b4acf8a946a">programLine_</a></td></tr>
+<tr class="separator:a302f5481bcf28782d9f50b4acf8a946a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace600ec6b552770724450db077784958"><td class="memItemLeft" align="right" valign="top">glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#ace600ec6b552770724450db077784958">viewMatrix_</a></td></tr>
+<tr class="memdesc:ace600ec6b552770724450db077784958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Viewing matrix for the rendering.  <a href="#ace600ec6b552770724450db077784958">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ace600ec6b552770724450db077784958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>OpenGL renderer. </p>
+<p>Manages all of the OpenGL operation to render a scene. </p>
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00052">52</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a94e2ce8e86114e35c8b87db89ae4fadd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00034.html">Renderer</a> </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00057">57</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc9cbaea238bd343019321b8628a2462"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="a00034.html">Renderer</a> </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00061">61</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a2ad6dce14091d9aa100708e4fe928f99"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;<a class="el" href="a00025.html">GlEntity</a>*&gt;&amp; getEntities </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00114">114</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+
+<p>Références <a class="el" href="a00070_source.html#l00133">Renderer::entities_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ada5ce1e2845f72364ef566e2d5729dd1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;<a class="el" href="a00029.html">MyGlLight</a>*&gt;&amp; getLights </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00116">116</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+
+<p>Références <a class="el" href="a00070_source.html#l00138">Renderer::lights_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae5c7c56d0f0158d920deb05074dd013e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::mat4 getViewMatrix </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00118">118</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+
+<p>Références <a class="el" href="a00070_source.html#l00155">Renderer::viewMatrix_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a183631354912d24b225e17b111cc699f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int handleKeyEvent </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>key</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handle key event given by the vortexEngine. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>1 if event is understood and fully managed. 0 otherwise. </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="a00069_source.html#l00410">410</a> du fichier <a class="el" href="a00069_source.html">renderer.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00040_source.html#l00051">glAssert</a>.</p>
+
+<p>Référencé par <a class="el" href="a00063_source.html#l00108">OpenGLWidget::keyPressEvent()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_a183631354912d24b225e17b111cc699f_icgraph.png" border="0" usemap="#a00034_a183631354912d24b225e17b111cc699f_icgraph" alt=""/></div>
+<map name="a00034_a183631354912d24b225e17b111cc699f_icgraph" id="a00034_a183631354912d24b225e17b111cc699f_icgraph">
+<area shape="rect" id="node2" href="a00010.html#a9e53392568d47bcb31ccbde9917efb0c" title="gui::OpenGLWidget::\lkeyPressEvent" alt="" coords="174,5,319,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a98bf2f211e3840eefca37ca1c16e50cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int handleMouseEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00028.html">MouseEvent</a> &amp;&#160;</td>
+          <td class="paramname"><em>event</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handle mouse event given by the vortexEngine. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>1 if event is understood and fully managed. 0 otherwise. </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="a00069_source.html#l00424">424</a> du fichier <a class="el" href="a00069_source.html">renderer.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00070_source.html#l00037">MouseEvent::button</a>, <a class="el" href="a00070_source.html#l00038">MouseEvent::click</a>, <a class="el" href="a00070_source.html#l00121">Renderer::height_</a>, <a class="el" href="a00070_source.html#l00036">MouseEvent::LEFT</a>, <a class="el" href="a00070_source.html#l00036">MouseEvent::MIDDLE</a>, <a class="el" href="a00070_source.html#l00036">MouseEvent::MOVE</a>, <a class="el" href="a00070_source.html#l00036">MouseEvent::RIGHT</a>, <a class="el" href="a00070_source.html#l00036">MouseEvent::WHEEL</a>, <a class="el" href="a00070_source.html#l00120">Renderer::width_</a>, <a class="el" href="a00070_source.html#l00040">MouseEvent::x</a>, et <a class="el" href="a00070_source.html#l00041">MouseEvent::y</a>.</p>
+
+<p>Référencé par <a class="el" href="a00063_source.html#l00125">OpenGLWidget::mouseMoveEvent()</a>, <a class="el" href="a00063_source.html#l00183">OpenGLWidget::mousePressEvent()</a>, et <a class="el" href="a00063_source.html#l00148">OpenGLWidget::mouseReleaseEvent()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_a98bf2f211e3840eefca37ca1c16e50cd_icgraph.png" border="0" usemap="#a00034_a98bf2f211e3840eefca37ca1c16e50cd_icgraph" alt=""/></div>
+<map name="a00034_a98bf2f211e3840eefca37ca1c16e50cd_icgraph" id="a00034_a98bf2f211e3840eefca37ca1c16e50cd_icgraph">
+<area shape="rect" id="node2" href="a00010.html#a69f8b856a74f015b817c36689f9aa18a" title="gui::OpenGLWidget::\lmouseMoveEvent" alt="" coords="190,5,335,49"/><area shape="rect" id="node3" href="a00010.html#a3571373ca6fedac4299977ab5fa2b88a" title="gui::OpenGLWidget::\lmousePressEvent" alt="" coords="190,73,335,117"/><area shape="rect" id="node4" href="a00010.html#a6be117e92e9375a28092144242dd29a4" title="gui::OpenGLWidget::\lmouseReleaseEvent" alt="" coords="190,141,335,185"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a822ae85493a742654ba563619492b26a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int height </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00112">112</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+
+<p>Références <a class="el" href="a00070_source.html#l00121">Renderer::height_</a>.</p>
+
+<p>Référencé par <a class="el" href="a00069_source.html#l00489">Renderer::setViewport()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_a822ae85493a742654ba563619492b26a_icgraph.png" border="0" usemap="#a00034_a822ae85493a742654ba563619492b26a_icgraph" alt=""/></div>
+<map name="a00034_a822ae85493a742654ba563619492b26a_icgraph" id="a00034_a822ae85493a742654ba563619492b26a_icgraph">
+<area shape="rect" id="node2" href="a00034.html#ac080cc4e58f7a83a315077a1335da646" title="Viewport management. " alt="" coords="112,13,203,41"/><area shape="rect" id="node3" href="a00010.html#a2eca4fded8705575e80cd5a0a1a53ba6" title="gui::OpenGLWidget::\lresizeGL" alt="" coords="252,5,396,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d7b3e6e127d37369ab24d53127b8f6b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initGeometry </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialise the geometric content. </p>
+
+<p>Définition à la ligne <a class="el" href="a00069_source.html#l00106">106</a> du fichier <a class="el" href="a00069_source.html">renderer.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00070_source.html#l00133">Renderer::entities_</a>, <a class="el" href="a00065_source.html#l00013">ParametricMesh::generateMesh()</a>, <a class="el" href="a00058_source.html#l00778">ObjLoader::getObjects()</a>, <a class="el" href="a00058_source.html#l00073">ObjLoader::load()</a>, <a class="el" href="a00070_source.html#l00128">Renderer::meshes_</a>, <a class="el" href="a00047_source.html#l00010">GlMaterial::setTexture()</a>, et <a class="el" href="a00072_source.html#l00040">Texture::useMipMap()</a>.</p>
+
+<p>Référencé par <a class="el" href="a00069_source.html#l00057">Renderer::initRessources()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_a3d7b3e6e127d37369ab24d53127b8f6b_cgraph.png" border="0" usemap="#a00034_a3d7b3e6e127d37369ab24d53127b8f6b_cgraph" alt=""/></div>
+<map name="a00034_a3d7b3e6e127d37369ab24d53127b8f6b_cgraph" id="a00034_a3d7b3e6e127d37369ab24d53127b8f6b_cgraph">
+<area shape="rect" id="node2" href="a00032.html#ab8f2fc15aafbab4b028bac26ac3bfb85" title="rendersystem::Parametric\lMesh::generateMesh" alt="" coords="158,73,332,117"/><area shape="rect" id="node5" href="a00085.html#gaab2a186f26924656a41cac89527cdc0e" title="loaders::obj_mtl::ObjLoader\l::getObjects" alt="" coords="153,481,338,525"/><area shape="rect" id="node17" href="a00085.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="153,1829,338,1873"/><area shape="rect" id="node49" href="a00026.html#a3fb5ae84fa678ec4b2a35f21ccf3a4f1" title="rendersystem::GlMaterial\l::setTexture" alt="" coords="160,1897,330,1941"/><area shape="rect" id="node50" href="a00035.html#ac6e4bc6cb29baeff99f02cc1dafd631d" title="rendersystem::Texture\l::useMipMap" alt="" coords="169,1965,322,2009"/><area shape="rect" id="node3" href="a00032.html#aa9b2ad8425d6e60dfd567214627cf383" title="rendersystem::Parametric\lMesh::evalSurface" alt="" coords="414,73,588,117"/><area shape="rect" id="node4" href="a00032.html#a32c5a7117e04a81cef83dcd8631a205e" title="rendersystem::Parametric\lMesh::toLinear" alt="" coords="414,5,588,49"/><area shape="rect" id="node6" href="a00085.html#ga068e536d6aa068dfd109f862cfd17b84" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeNormalPart" alt="" coords="408,141,594,185"/><area shape="rect" id="node8" href="a00085.html#gab9d6ef6b7b658014c8267e2a8497cb68" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeNormalTexturePart" alt="" coords="387,209,616,253"/><area shape="rect" id="node9" href="a00085.html#gaca43bd93250aec9113172ddcb415376c" title="loaders::obj_mtl::ObjLoader\l::addRawVerticePart" alt="" coords="409,277,594,321"/><area shape="rect" id="node10" href="a00085.html#gae3ea1dfbc37a05bebd977b5ba003eb69" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeTexturePart" alt="" coords="408,345,595,389"/><area shape="rect" id="node11" href="a00085.html#ga41cfa418f3332378833540f18e9c2c86" title="loaders::obj_mtl::ObjLoader\l::addVerticeNormalPart" alt="" coords="409,413,594,457"/><area shape="rect" id="node12" href="a00085.html#ga46e8d1f27326d18e5d72c638593b78bb" title="loaders::obj_mtl::ObjLoader\l::addVerticeNormalTexturePart" alt="" coords="400,481,603,525"/><area shape="rect" id="node13" href="a00085.html#gaa7e542e6c72b4bbac36c2ec56b5ae0ad" title="loaders::obj_mtl::ObjLoader\l::addVerticePart" alt="" coords="409,549,594,593"/><area shape="rect" id="node14" href="a00085.html#gac5ccd0a395f4cd80817f5e9b62d08c7c" title="loaders::obj_mtl::ObjLoader\l::addVerticeTexturePart" alt="" coords="409,753,594,797"/><area shape="rect" id="node15" href="a00021.html#ac8377a9ac6b479650f7b1a4db575ca01" title="loaders::obj_mtl::ObjMesh\l::compile" alt="" coords="413,617,589,661"/><area shape="rect" id="node16" href="a00085.html#gaec31976dbe84753ddc557bd23ab36fc9" title="loaders::obj_mtl::ObjLoader\l::faceType" alt="" coords="409,685,594,729"/><area shape="rect" id="node7" href="a00021.html#a9164e7f5a44ef57583f9256f843b1527" title="loaders::obj_mtl::ObjMesh\l::addSmoothGroup" alt="" coords="669,379,845,423"/><area shape="rect" id="node18" href="a00085.html#ga96725c5f853c387715fb0814c4f8f9bc" title="loaders::obj_mtl::ObjLoader\l::add_face_Q_vertices" alt="" coords="409,1193,594,1237"/><area shape="rect" id="node19" href="a00085.html#gaf6489fc7cfb021ff37ca716684b1bea9" title="loaders::obj_mtl::ObjLoader\l::add_face_Q_vertices_normals" alt="" coords="397,1261,606,1305"/><area shape="rect" id="node20" href="a00085.html#ga3a48cecdc1f0cc468ad7e24fb16820b6" title="loaders::obj_mtl::ObjLoader\l::add_face_Q_vertices_textures" alt="" coords="397,1329,606,1373"/><area shape="rect" id="node21" href="a00085.html#gaebf5718528dc6916f87cbab3ceca7ca2" title="loaders::obj_mtl::ObjLoader\l::add_face_Q_vertices_textures\l_normals" alt="" coords="397,1397,606,1457"/><area shape="rect" id="node22" href="a00085.html#gaf397baad0cca83478d1fb3fe555cf7b8" title="loaders::obj_mtl::ObjLoader\l::add_face_T_vertices" alt="" coords="409,1481,594,1525"/><area shape="rect" id="node23" href="a00085.html#gae4cedee9d2c60bab465035991942d4a5" title="loaders::obj_mtl::ObjLoader\l::add_face_T_vertices_normals" alt="" coords="398,1549,605,1593"/><area shape="rect" id="node24" href="a00085.html#ga173cd7261a2bad6a1cb11cefefbdc6b6" title="loaders::obj_mtl::ObjLoader\l::add_face_T_vertices_textures" alt="" coords="398,1617,605,1661"/><area shape="rect" id="node25" href="a00085.html#gafcd9b634c6eec7bd6c0e1a52eb58e6c8" title="loaders::obj_mtl::ObjLoader\l::add_face_T_vertices_textures\l_normals" alt="" coords="398,1685,605,1745"/><area shape="rect" id="node26" href="a00015.html#a0ee382164283fabb36f0f5ed41f1e67c" title="loaders::obj_mtl::obj\l_parser::error_callback" alt="" coords="422,1769,580,1813"/><area shape="rect" id="node27" href="a00085.html#ga3175f52129456c23cd66d6b9d089470c" title="loaders::obj_mtl::ObjLoader\l::error_callback" alt="" coords="665,1846,850,1890"/><area shape="rect" id="node28" href="a00015.html#a2d64bceaf553b7bad2c1a88e7deae289" title="loaders::obj_mtl::obj\l_parser::face_callbacks" alt="" coords="421,2059,582,2103"/><area shape="rect" id="node29" href="a00015.html#a0b745ec59f7805d3dd93c1626a73b58a" title="loaders::obj_mtl::obj\l_parser::geometric_vertex\l_callback" alt="" coords="413,2127,589,2187"/><area shape="rect" id="node30" href="a00015.html#a509d5b25fa534aa3789f4074afe7be70" title="loaders::obj_mtl::obj\l_parser::group_name_callback" alt="" coords="399,2211,604,2255"/><area shape="rect" id="node31" href="a00015.html#af2732d6f92b18397b3fb191a955ed3b4" title="loaders::obj_mtl::obj\l_parser::info_callback" alt="" coords="426,2279,577,2323"/><area shape="rect" id="node32" href="a00085.html#ga0fdb975a2a45ccd7e096c0149bdf9574" title="loaders::obj_mtl::ObjLoader\l::info_callback" alt="" coords="665,1918,850,1962"/><area shape="rect" id="node33" href="a00015.html#a9f32db53f16f42f6ba0ac665ab2b3a41" title="loaders::obj_mtl::obj\l_parser::material_library\l_callback" alt="" coords="419,2347,584,2407"/><area shape="rect" id="node34" href="a00015.html#ad3fd7d679915787a48037dbc4bf38dc4" title="loaders::obj_mtl::obj\l_parser::material_name\l_callback" alt="" coords="420,2431,582,2491"/><area shape="rect" id="node35" href="a00085.html#gad3402e39bf64a8a6cacd3dbf6ec33292" title="loaders::obj_mtl::ObjLoader\l::normal_callback" alt="" coords="409,2515,594,2559"/><area shape="rect" id="node36" href="a00015.html#aa67dc2cf8cc9512111d0c5330c7e0d71" title="loaders::obj_mtl::obj\l_parser::object_name\l_callback" alt="" coords="426,2583,576,2643"/><area shape="rect" id="node37" href="a00015.html#aafa92a7789eb9eb29d7eaa9fec52d96d" title="loaders::obj_mtl::obj\l_parser::parse" alt="" coords="431,2667,572,2711"/><area shape="rect" id="node38" href="a00085.html#ga6c96423c9983a3fa68b4caf603b6650f" title="loaders::obj_mtl::ObjLoader\l::parse_material_library" alt="" coords="409,1939,594,1983"/><area shape="rect" id="node40" href="a00085.html#ga229db95a87d68493145c3ed280b0ea44" title="loaders::obj_mtl::ObjLoader\l::set_group" alt="" coords="409,2735,594,2779"/><area shape="rect" id="node41" href="a00085.html#gafb35d1a496a7f1faacef0622c8281273" title="loaders::obj_mtl::ObjLoader\l::set_material" alt="" coords="409,2803,594,2847"/><area shape="rect" id="node42" href="a00085.html#ga5eb51577365300bac98067737ed2fd03" title="loaders::obj_mtl::ObjLoader\l::smooth_group" alt="" coords="409,2871,594,2915"/><area shape="rect" id="node43" href="a00015.html#afeed6ec2367ec63536ae93aff8735344" title="loaders::obj_mtl::obj\l_parser::smoothing_group\l_callback" alt="" coords="413,2939,590,2999"/><area shape="rect" id="node44" href="a00085.html#gaf80c85f73ef15cec4326e692411049a2" title="loaders::obj_mtl::ObjLoader\l::texture_callback" alt="" coords="409,821,594,865"/><area shape="rect" id="node45" href="a00015.html#a7923f5922a4f65e0daa28937243818dc" title="loaders::obj_mtl::obj\l_parser::texture_vertex\l_callback" alt="" coords="422,889,581,949"/><area shape="rect" id="node46" href="a00085.html#ga31c745065be97574fcb1628d1251bd3e" title="loaders::obj_mtl::ObjLoader\l::vertex_callback" alt="" coords="409,973,594,1017"/><area shape="rect" id="node47" href="a00015.html#a1f32fcb6ca6bd722822bf0fd3658b1f8" title="loaders::obj_mtl::obj\l_parser::vertex_normal\l_callback" alt="" coords="422,1041,581,1101"/><area shape="rect" id="node48" href="a00015.html#acf6e027ff93fde1d0c097f1761589482" title="loaders::obj_mtl::obj\l_parser::warning_callback" alt="" coords="413,1125,589,1169"/><area shape="rect" id="node39" href="a00085.html#gafbe3328e6a7d34a2e36e314c9dfe975f" title="loaders::obj_mtl::ObjLoader\l::warning_callback" alt="" coords="665,1994,850,2038"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_a3d7b3e6e127d37369ab24d53127b8f6b_icgraph.png" border="0" usemap="#a00034_a3d7b3e6e127d37369ab24d53127b8f6b_icgraph" alt=""/></div>
+<map name="a00034_a3d7b3e6e127d37369ab24d53127b8f6b_icgraph" id="a00034_a3d7b3e6e127d37369ab24d53127b8f6b_icgraph">
+<area shape="rect" id="node2" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="152,13,261,41"/><area shape="rect" id="node3" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="310,5,455,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6010c43474fb6076bbf7d3a6dc06dc3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initLighting </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialise the lighting configuration. </p>
+
+<p>Définition à la ligne <a class="el" href="a00069_source.html#l00496">496</a> du fichier <a class="el" href="a00069_source.html">renderer.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00070_source.html#l00138">Renderer::lights_</a>.</p>
+
+<p>Référencé par <a class="el" href="a00069_source.html#l00057">Renderer::initRessources()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_a6010c43474fb6076bbf7d3a6dc06dc3b_icgraph.png" border="0" usemap="#a00034_a6010c43474fb6076bbf7d3a6dc06dc3b_icgraph" alt=""/></div>
+<map name="a00034_a6010c43474fb6076bbf7d3a6dc06dc3b_icgraph" id="a00034_a6010c43474fb6076bbf7d3a6dc06dc3b_icgraph">
+<area shape="rect" id="node2" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="139,13,248,41"/><area shape="rect" id="node3" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="297,5,442,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8316182754a20571b5294b42994eb00"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initRessources </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialise all the resources needed for rendering : shaders, geometries, teture, ... </p>
+
+<p>Définition à la ligne <a class="el" href="a00069_source.html#l00057">57</a> du fichier <a class="el" href="a00069_source.html">renderer.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00040_source.html#l00051">glAssert</a>, <a class="el" href="a00069_source.html#l00106">Renderer::initGeometry()</a>, <a class="el" href="a00069_source.html#l00496">Renderer::initLighting()</a>, <a class="el" href="a00069_source.html#l00341">Renderer::initShaders()</a>, et <a class="el" href="a00069_source.html#l00086">Renderer::initView()</a>.</p>
+
+<p>Référencé par <a class="el" href="a00063_source.html#l00066">OpenGLWidget::initializeGL()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_ae8316182754a20571b5294b42994eb00_cgraph.png" border="0" usemap="#a00034_ae8316182754a20571b5294b42994eb00_cgraph" alt=""/></div>
+<map name="a00034_ae8316182754a20571b5294b42994eb00_cgraph" id="a00034_ae8316182754a20571b5294b42994eb00_cgraph">
+<area shape="rect" id="node2" href="a00034.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="164,1062,260,1090"/><area shape="rect" id="node47" href="a00034.html#a6010c43474fb6076bbf7d3a6dc06dc3b" title="Initialise the lighting configuration. " alt="" coords="169,1126,255,1154"/><area shape="rect" id="node48" href="a00034.html#a9f0fe0c105c553fe28c933db8169ef60" title="Initialise the shader configuration. " alt="" coords="168,1178,256,1206"/><area shape="rect" id="node50" href="a00034.html#aafcf982312922a03e9bb1f072c10b3ca" title="Initialise the viewing configuration. " alt="" coords="178,1230,246,1258"/><area shape="rect" id="node3" href="a00032.html#ab8f2fc15aafbab4b028bac26ac3bfb85" title="rendersystem::Parametric\lMesh::generateMesh" alt="" coords="316,243,490,287"/><area shape="rect" id="node6" href="a00085.html#gaab2a186f26924656a41cac89527cdc0e" title="loaders::obj_mtl::ObjLoader\l::getObjects" alt="" coords="310,481,495,525"/><area shape="rect" id="node17" href="a00085.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="310,1663,495,1707"/><area shape="rect" id="node45" href="a00026.html#a3fb5ae84fa678ec4b2a35f21ccf3a4f1" title="rendersystem::GlMaterial\l::setTexture" alt="" coords="318,1731,488,1775"/><area shape="rect" id="node46" href="a00035.html#ac6e4bc6cb29baeff99f02cc1dafd631d" title="rendersystem::Texture\l::useMipMap" alt="" coords="326,175,479,219"/><area shape="rect" id="node4" href="a00032.html#aa9b2ad8425d6e60dfd567214627cf383" title="rendersystem::Parametric\lMesh::evalSurface" alt="" coords="572,73,746,117"/><area shape="rect" id="node5" href="a00032.html#a32c5a7117e04a81cef83dcd8631a205e" title="rendersystem::Parametric\lMesh::toLinear" alt="" coords="572,5,746,49"/><area shape="rect" id="node7" href="a00085.html#ga068e536d6aa068dfd109f862cfd17b84" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeNormalPart" alt="" coords="566,753,752,797"/><area shape="rect" id="node8" href="a00085.html#gab9d6ef6b7b658014c8267e2a8497cb68" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeNormalTexturePart" alt="" coords="544,141,773,185"/><area shape="rect" id="node9" href="a00085.html#gaca43bd93250aec9113172ddcb415376c" title="loaders::obj_mtl::ObjLoader\l::addRawVerticePart" alt="" coords="566,209,751,253"/><area shape="rect" id="node10" href="a00085.html#gae3ea1dfbc37a05bebd977b5ba003eb69" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeTexturePart" alt="" coords="565,277,752,321"/><area shape="rect" id="node11" href="a00085.html#ga41cfa418f3332378833540f18e9c2c86" title="loaders::obj_mtl::ObjLoader\l::addVerticeNormalPart" alt="" coords="566,345,751,389"/><area shape="rect" id="node12" href="a00085.html#ga46e8d1f27326d18e5d72c638593b78bb" title="loaders::obj_mtl::ObjLoader\l::addVerticeNormalTexturePart" alt="" coords="557,413,760,457"/><area shape="rect" id="node13" href="a00085.html#gaa7e542e6c72b4bbac36c2ec56b5ae0ad" title="loaders::obj_mtl::ObjLoader\l::addVerticePart" alt="" coords="566,481,751,525"/><area shape="rect" id="node14" href="a00085.html#gac5ccd0a395f4cd80817f5e9b62d08c7c" title="loaders::obj_mtl::ObjLoader\l::addVerticeTexturePart" alt="" coords="566,549,751,593"/><area shape="rect" id="node15" href="a00021.html#ac8377a9ac6b479650f7b1a4db575ca01" title="loaders::obj_mtl::ObjMesh\l::compile" alt="" coords="571,617,747,661"/><area shape="rect" id="node16" href="a00085.html#gaec31976dbe84753ddc557bd23ab36fc9" title="loaders::obj_mtl::ObjLoader\l::faceType" alt="" coords="566,685,751,729"/><area shape="rect" id="node18" href="a00085.html#ga96725c5f853c387715fb0814c4f8f9bc" title="loaders::obj_mtl::ObjLoader\l::add_face_Q_vertices" alt="" coords="566,1701,751,1745"/><area shape="rect" id="node19" href="a00085.html#gaf6489fc7cfb021ff37ca716684b1bea9" title="loaders::obj_mtl::ObjLoader\l::add_face_Q_vertices_normals" alt="" coords="554,1769,763,1813"/><area shape="rect" id="node20" href="a00085.html#ga3a48cecdc1f0cc468ad7e24fb16820b6" title="loaders::obj_mtl::ObjLoader\l::add_face_Q_vertices_textures" alt="" coords="554,1837,763,1881"/><area shape="rect" id="node21" href="a00085.html#gaebf5718528dc6916f87cbab3ceca7ca2" title="loaders::obj_mtl::ObjLoader\l::add_face_Q_vertices_textures\l_normals" alt="" coords="554,1905,763,1965"/><area shape="rect" id="node22" href="a00085.html#gaf397baad0cca83478d1fb3fe555cf7b8" title="loaders::obj_mtl::ObjLoader\l::add_face_T_vertices" alt="" coords="566,1989,751,2033"/><area shape="rect" id="node23" href="a00085.html#gae4cedee9d2c60bab465035991942d4a5" title="loaders::obj_mtl::ObjLoader\l::add_face_T_vertices_normals" alt="" coords="555,2057,762,2101"/><area shape="rect" id="node24" href="a00085.html#ga173cd7261a2bad6a1cb11cefefbdc6b6" title="loaders::obj_mtl::ObjLoader\l::add_face_T_vertices_textures" alt="" coords="555,2125,762,2169"/><area shape="rect" id="node25" href="a00085.html#gafcd9b634c6eec7bd6c0e1a52eb58e6c8" title="loaders::obj_mtl::ObjLoader\l::add_face_T_vertices_textures\l_normals" alt="" coords="555,2193,762,2253"/><area shape="rect" id="node26" href="a00015.html#a0ee382164283fabb36f0f5ed41f1e67c" title="loaders::obj_mtl::obj\l_parser::error_callback" alt="" coords="580,2277,738,2321"/><area shape="rect" id="node27" href="a00085.html#ga3175f52129456c23cd66d6b9d089470c" title="loaders::obj_mtl::ObjLoader\l::error_callback" alt="" coords="822,2241,1007,2285"/><area shape="rect" id="node28" href="a00015.html#a2d64bceaf553b7bad2c1a88e7deae289" title="loaders::obj_mtl::obj\l_parser::face_callbacks" alt="" coords="578,2413,739,2457"/><area shape="rect" id="node29" href="a00015.html#a0b745ec59f7805d3dd93c1626a73b58a" title="loaders::obj_mtl::obj\l_parser::geometric_vertex\l_callback" alt="" coords="571,2481,747,2541"/><area shape="rect" id="node30" href="a00015.html#a509d5b25fa534aa3789f4074afe7be70" title="loaders::obj_mtl::obj\l_parser::group_name_callback" alt="" coords="556,2565,761,2609"/><area shape="rect" id="node31" href="a00015.html#af2732d6f92b18397b3fb191a955ed3b4" title="loaders::obj_mtl::obj\l_parser::info_callback" alt="" coords="583,2633,734,2677"/><area shape="rect" id="node32" href="a00085.html#ga0fdb975a2a45ccd7e096c0149bdf9574" title="loaders::obj_mtl::ObjLoader\l::info_callback" alt="" coords="822,2449,1007,2493"/><area shape="rect" id="node33" href="a00015.html#a9f32db53f16f42f6ba0ac665ab2b3a41" title="loaders::obj_mtl::obj\l_parser::material_library\l_callback" alt="" coords="576,821,741,881"/><area shape="rect" id="node34" href="a00015.html#ad3fd7d679915787a48037dbc4bf38dc4" title="loaders::obj_mtl::obj\l_parser::material_name\l_callback" alt="" coords="578,905,740,965"/><area shape="rect" id="node35" href="a00085.html#gad3402e39bf64a8a6cacd3dbf6ec33292" title="loaders::obj_mtl::ObjLoader\l::normal_callback" alt="" coords="566,989,751,1033"/><area shape="rect" id="node36" href="a00015.html#aa67dc2cf8cc9512111d0c5330c7e0d71" title="loaders::obj_mtl::obj\l_parser::object_name\l_callback" alt="" coords="584,1057,734,1117"/><area shape="rect" id="node37" href="a00015.html#aafa92a7789eb9eb29d7eaa9fec52d96d" title="loaders::obj_mtl::obj\l_parser::parse" alt="" coords="588,1141,729,1185"/><area shape="rect" id="node38" href="a00085.html#ga6c96423c9983a3fa68b4caf603b6650f" title="loaders::obj_mtl::ObjLoader\l::parse_material_library" alt="" coords="566,2345,751,2389"/><area shape="rect" id="node39" href="a00085.html#ga229db95a87d68493145c3ed280b0ea44" title="loaders::obj_mtl::ObjLoader\l::set_group" alt="" coords="566,1261,751,1305"/><area shape="rect" id="node40" href="a00085.html#gafb35d1a496a7f1faacef0622c8281273" title="loaders::obj_mtl::ObjLoader\l::set_material" alt="" coords="566,1329,751,1373"/><area shape="rect" id="node41" href="a00085.html#ga5eb51577365300bac98067737ed2fd03" title="loaders::obj_mtl::ObjLoader\l::smooth_group" alt="" coords="566,1397,751,1441"/><area shape="rect" id="node42" href="a00015.html#afeed6ec2367ec63536ae93aff8735344" title="loaders::obj_mtl::obj\l_parser::smoothing_group\l_callback" alt="" coords="570,1465,747,1525"/><area shape="rect" id="node43" href="a00085.html#gaf80c85f73ef15cec4326e692411049a2" title="loaders::obj_mtl::ObjLoader\l::texture_callback" alt="" coords="566,1549,751,1593"/><area shape="rect" id="node44" href="a00015.html#a7923f5922a4f65e0daa28937243818dc" title="loaders::obj_mtl::obj\l_parser::texture_vertex\l_callback" alt="" coords="579,1617,738,1677"/><area shape="rect" id="node49" href="a00034.html#a04ad50fc380882e045a19e4e63d57f26" title="initShader" alt="" coords="362,1799,443,1827"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_ae8316182754a20571b5294b42994eb00_icgraph.png" border="0" usemap="#a00034_ae8316182754a20571b5294b42994eb00_icgraph" alt=""/></div>
+<map name="a00034_ae8316182754a20571b5294b42994eb00_icgraph" id="a00034_ae8316182754a20571b5294b42994eb00_icgraph">
+<area shape="rect" id="node2" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="164,5,308,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a04ad50fc380882e045a19e4e63d57f26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int initShader </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>vsFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>fsFileName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00069_source.html#l00276">276</a> du fichier <a class="el" href="a00069_source.html">renderer.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00040_source.html#l00051">glAssert</a>, <a class="el" href="a00038_source.html#l00037">loaders::text::loadFile()</a>, <a class="el" href="a00062_source.html#l00059">printProgramInfoLog()</a>, et <a class="el" href="a00062_source.html#l00040">printShaderInfoLog()</a>.</p>
+
+<p>Référencé par <a class="el" href="a00069_source.html#l00341">Renderer::initShaders()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_a04ad50fc380882e045a19e4e63d57f26_cgraph.png" border="0" usemap="#a00034_a04ad50fc380882e045a19e4e63d57f26_cgraph" alt=""/></div>
+<map name="a00034_a04ad50fc380882e045a19e4e63d57f26_cgraph" id="a00034_a04ad50fc380882e045a19e4e63d57f26_cgraph">
+<area shape="rect" id="node2" href="a00083.html#gac6f6b953cc9968777de7507139a884c9" title="loaders::text::loadFile" alt="" coords="137,5,285,33"/><area shape="rect" id="node4" href="a00088.html#ga3cfb5a2081d90f8203c12fd2155a40d9" title="Print to stderr link log of a program. " alt="" coords="139,57,282,85"/><area shape="rect" id="node5" href="a00088.html#gad2c864f425d8580c40739a4ccc464e91" title="Print to stderr compilation log of a shader. " alt="" coords="143,109,278,137"/><area shape="rect" id="node3" href="a00083.html#gad30baeb3fe93ad7f61c2bc2bc63b3bf9" title="side effect : seekg to begin of file " alt="" coords="334,5,516,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_a04ad50fc380882e045a19e4e63d57f26_icgraph.png" border="0" usemap="#a00034_a04ad50fc380882e045a19e4e63d57f26_icgraph" alt=""/></div>
+<map name="a00034_a04ad50fc380882e045a19e4e63d57f26_icgraph" id="a00034_a04ad50fc380882e045a19e4e63d57f26_icgraph">
+<area shape="rect" id="node2" href="a00034.html#a9f0fe0c105c553fe28c933db8169ef60" title="Initialise the shader configuration. " alt="" coords="136,43,224,71"/><area shape="rect" id="node3" href="a00010.html#a34a60ccdf038127b8f0461e0cdf0b94b" title="gui::OpenGLWidget::\lreloadShaders" alt="" coords="273,5,418,49"/><area shape="rect" id="node7" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="291,73,400,101"/><area shape="rect" id="node4" href="a00009.html#a34a60ccdf038127b8f0461e0cdf0b94b" title="gui::MainWindow::reloadShaders" alt="" coords="468,13,684,41"/><area shape="rect" id="node5" href="a00009.html#a5176c9496a29e21eacb0f81ca1a29923" title="gui::MainWindow::createActions" alt="" coords="733,13,944,41"/><area shape="rect" id="node6" href="a00009.html#aeb676574b78bda84d687fdcfd65d84a6" title="gui::MainWindow::MainWindow" alt="" coords="993,13,1199,41"/><area shape="rect" id="node8" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="504,65,648,109"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f0fe0c105c553fe28c933db8169ef60"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initShaders </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialise the shader configuration. </p>
+
+<p>Définition à la ligne <a class="el" href="a00069_source.html#l00341">341</a> du fichier <a class="el" href="a00069_source.html">renderer.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00069_source.html#l00276">Renderer::initShader()</a>, <a class="el" href="a00070_source.html#l00143">Renderer::program_</a>, et <a class="el" href="a00070_source.html#l00144">Renderer::programLine_</a>.</p>
+
+<p>Référencé par <a class="el" href="a00069_source.html#l00057">Renderer::initRessources()</a>, et <a class="el" href="a00063_source.html#l00224">OpenGLWidget::reloadShaders()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_a9f0fe0c105c553fe28c933db8169ef60_cgraph.png" border="0" usemap="#a00034_a9f0fe0c105c553fe28c933db8169ef60_cgraph" alt=""/></div>
+<map name="a00034_a9f0fe0c105c553fe28c933db8169ef60_cgraph" id="a00034_a9f0fe0c105c553fe28c933db8169ef60_cgraph">
+<area shape="rect" id="node2" href="a00034.html#a04ad50fc380882e045a19e4e63d57f26" title="initShader" alt="" coords="142,57,223,85"/><area shape="rect" id="node3" href="a00083.html#gac6f6b953cc9968777de7507139a884c9" title="loaders::text::loadFile" alt="" coords="273,5,421,33"/><area shape="rect" id="node5" href="a00088.html#ga3cfb5a2081d90f8203c12fd2155a40d9" title="Print to stderr link log of a program. " alt="" coords="275,57,418,85"/><area shape="rect" id="node6" href="a00088.html#gad2c864f425d8580c40739a4ccc464e91" title="Print to stderr compilation log of a shader. " alt="" coords="279,109,414,137"/><area shape="rect" id="node4" href="a00083.html#gad30baeb3fe93ad7f61c2bc2bc63b3bf9" title="side effect : seekg to begin of file " alt="" coords="470,5,652,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_a9f0fe0c105c553fe28c933db8169ef60_icgraph.png" border="0" usemap="#a00034_a9f0fe0c105c553fe28c933db8169ef60_icgraph" alt=""/></div>
+<map name="a00034_a9f0fe0c105c553fe28c933db8169ef60_icgraph" id="a00034_a9f0fe0c105c553fe28c933db8169ef60_icgraph">
+<area shape="rect" id="node2" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="160,13,269,41"/><area shape="rect" id="node4" href="a00010.html#a34a60ccdf038127b8f0461e0cdf0b94b" title="gui::OpenGLWidget::\lreloadShaders" alt="" coords="142,65,287,109"/><area shape="rect" id="node3" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="373,5,518,49"/><area shape="rect" id="node5" href="a00009.html#a34a60ccdf038127b8f0461e0cdf0b94b" title="gui::MainWindow::reloadShaders" alt="" coords="337,73,554,101"/><area shape="rect" id="node6" href="a00009.html#a5176c9496a29e21eacb0f81ca1a29923" title="gui::MainWindow::createActions" alt="" coords="602,73,814,101"/><area shape="rect" id="node7" href="a00009.html#aeb676574b78bda84d687fdcfd65d84a6" title="gui::MainWindow::MainWindow" alt="" coords="862,73,1069,101"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aafcf982312922a03e9bb1f072c10b3ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initView </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialise the viewing configuration. </p>
+
+<p>Définition à la ligne <a class="el" href="a00069_source.html#l00086">86</a> du fichier <a class="el" href="a00069_source.html">renderer.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00070_source.html#l00155">Renderer::viewMatrix_</a>.</p>
+
+<p>Référencé par <a class="el" href="a00069_source.html#l00057">Renderer::initRessources()</a>, et <a class="el" href="a00063_source.html#l00220">OpenGLWidget::resetView()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_aafcf982312922a03e9bb1f072c10b3ca_icgraph.png" border="0" usemap="#a00034_aafcf982312922a03e9bb1f072c10b3ca_icgraph" alt=""/></div>
+<map name="a00034_aafcf982312922a03e9bb1f072c10b3ca_icgraph" id="a00034_aafcf982312922a03e9bb1f072c10b3ca_icgraph">
+<area shape="rect" id="node2" href="a00034.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="139,13,248,41"/><area shape="rect" id="node4" href="a00010.html#a0ca9011af09843d4bcfb7b68c0530101" title="gui::OpenGLWidget::\lresetView" alt="" coords="121,65,266,109"/><area shape="rect" id="node3" href="a00010.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="346,5,491,49"/><area shape="rect" id="node5" href="a00009.html#a395cfd3b5286442312051da532ffa579" title="gui::MainWindow::resetCamera" alt="" coords="315,73,522,101"/><area shape="rect" id="node6" href="a00009.html#a5176c9496a29e21eacb0f81ca1a29923" title="gui::MainWindow::createActions" alt="" coords="1213,73,1424,101"/><area shape="rect" id="node8" href="a00009.html#ad20897c5c8bd47f5d4005989bead0e55" title="gui::MainWindow::reset" alt="" coords="571,98,731,126"/><area shape="rect" id="node7" href="a00009.html#aeb676574b78bda84d687fdcfd65d84a6" title="gui::MainWindow::MainWindow" alt="" coords="1473,73,1679,101"/><area shape="rect" id="node9" href="a00009.html#a0e7976b09c57824b1241e7c3d30a67fd" title="gui::MainWindow::loadFile" alt="" coords="780,98,956,126"/><area shape="rect" id="node10" href="a00009.html#a9e8555112049fc2b4945120b3c45f8ab" title="gui::MainWindow::open" alt="" coords="1005,98,1165,126"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abe1317bc098889c2e1accbc2b0f76a3f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void render </td>
+          <td>(</td>
+          <td class="paramtype">const glm::mat4x4 &amp;&#160;</td>
+          <td class="paramname"><em>modelViewMatrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat4x4 &amp;&#160;</td>
+          <td class="paramname"><em>projectionMatrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Render the scene. </p>
+
+<p>Définition à la ligne <a class="el" href="a00069_source.html#l00352">352</a> du fichier <a class="el" href="a00069_source.html">renderer.cpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00063_source.html#l00078">OpenGLWidget::paintGL()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_abe1317bc098889c2e1accbc2b0f76a3f_icgraph.png" border="0" usemap="#a00034_abe1317bc098889c2e1accbc2b0f76a3f_icgraph" alt=""/></div>
+<map name="a00034_abe1317bc098889c2e1accbc2b0f76a3f_icgraph" id="a00034_abe1317bc098889c2e1accbc2b0f76a3f_icgraph">
+<area shape="rect" id="node2" href="a00010.html#ac5cbfafb28ef4c0474ae96437294f547" title="gui::OpenGLWidget::\lpaintGL" alt="" coords="116,5,260,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae639a035ad857244a5fd8f25432ef33b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void renderDebug </td>
+          <td>(</td>
+          <td class="paramtype">const glm::mat4x4 &amp;&#160;</td>
+          <td class="paramname"><em>modelViewMatrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::mat4x4 &amp;&#160;</td>
+          <td class="paramname"><em>projectionMatrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00069_source.html#l00381">381</a> du fichier <a class="el" href="a00069_source.html">renderer.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00040_source.html#l00051">glAssert</a>, <a class="el" href="a00070_source.html#l00121">Renderer::height_</a>, <a class="el" href="a00070_source.html#l00144">Renderer::programLine_</a>, <a class="el" href="a00070_source.html#l00155">Renderer::viewMatrix_</a>, et <a class="el" href="a00070_source.html#l00120">Renderer::width_</a>.</p>
+
+<p>Référencé par <a class="el" href="a00063_source.html#l00078">OpenGLWidget::paintGL()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_ae639a035ad857244a5fd8f25432ef33b_icgraph.png" border="0" usemap="#a00034_ae639a035ad857244a5fd8f25432ef33b_icgraph" alt=""/></div>
+<map name="a00034_ae639a035ad857244a5fd8f25432ef33b_icgraph" id="a00034_ae639a035ad857244a5fd8f25432ef33b_icgraph">
+<area shape="rect" id="node2" href="a00010.html#ac5cbfafb28ef4c0474ae96437294f547" title="gui::OpenGLWidget::\lpaintGL" alt="" coords="153,5,298,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac080cc4e58f7a83a315077a1335da646"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setViewport </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Viewport management. </p>
+
+<p>Définition à la ligne <a class="el" href="a00069_source.html#l00489">489</a> du fichier <a class="el" href="a00069_source.html">renderer.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00040_source.html#l00051">glAssert</a>, <a class="el" href="a00070_source.html#l00112">Renderer::height()</a>, <a class="el" href="a00070_source.html#l00121">Renderer::height_</a>, <a class="el" href="a00070_source.html#l00111">Renderer::width()</a>, et <a class="el" href="a00070_source.html#l00120">Renderer::width_</a>.</p>
+
+<p>Référencé par <a class="el" href="a00063_source.html#l00071">OpenGLWidget::resizeGL()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_ac080cc4e58f7a83a315077a1335da646_cgraph.png" border="0" usemap="#a00034_ac080cc4e58f7a83a315077a1335da646_cgraph" alt=""/></div>
+<map name="a00034_ac080cc4e58f7a83a315077a1335da646_cgraph" id="a00034_ac080cc4e58f7a83a315077a1335da646_cgraph">
+<area shape="rect" id="node2" href="a00034.html#a822ae85493a742654ba563619492b26a" title="height" alt="" coords="145,5,202,33"/><area shape="rect" id="node3" href="a00034.html#a3eeed61a3424d2f907c8a1e420fddf6d" title="width" alt="" coords="147,57,200,85"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_ac080cc4e58f7a83a315077a1335da646_icgraph.png" border="0" usemap="#a00034_ac080cc4e58f7a83a315077a1335da646_icgraph" alt=""/></div>
+<map name="a00034_ac080cc4e58f7a83a315077a1335da646_icgraph" id="a00034_ac080cc4e58f7a83a315077a1335da646_icgraph">
+<area shape="rect" id="node2" href="a00010.html#a2eca4fded8705575e80cd5a0a1a53ba6" title="gui::OpenGLWidget::\lresizeGL" alt="" coords="145,5,290,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3eeed61a3424d2f907c8a1e420fddf6d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int width </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00111">111</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+
+<p>Références <a class="el" href="a00070_source.html#l00120">Renderer::width_</a>.</p>
+
+<p>Référencé par <a class="el" href="a00069_source.html#l00489">Renderer::setViewport()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00034_a3eeed61a3424d2f907c8a1e420fddf6d_icgraph.png" border="0" usemap="#a00034_a3eeed61a3424d2f907c8a1e420fddf6d_icgraph" alt=""/></div>
+<map name="a00034_a3eeed61a3424d2f907c8a1e420fddf6d_icgraph" id="a00034_a3eeed61a3424d2f907c8a1e420fddf6d_icgraph">
+<area shape="rect" id="node2" href="a00034.html#ac080cc4e58f7a83a315077a1335da646" title="Viewport management. " alt="" coords="107,13,197,41"/><area shape="rect" id="node3" href="a00010.html#a2eca4fded8705575e80cd5a0a1a53ba6" title="gui::OpenGLWidget::\lresizeGL" alt="" coords="246,5,391,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a80c58ef650c514aa7f2fd950f4107f72"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="a00025.html">GlEntity</a>*&gt; entities_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vector of entities to be drawn. </p>
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00133">133</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00070_source.html#l00114">Renderer::getEntities()</a>, et <a class="el" href="a00069_source.html#l00106">Renderer::initGeometry()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45a159d389017b03a58e3508186fb445"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int height_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00121">121</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00069_source.html#l00424">Renderer::handleMouseEvent()</a>, <a class="el" href="a00070_source.html#l00112">Renderer::height()</a>, <a class="el" href="a00069_source.html#l00381">Renderer::renderDebug()</a>, et <a class="el" href="a00069_source.html#l00489">Renderer::setViewport()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a14bb9bd774e7d6ea7cd026e1ce59c867"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="a00029.html">MyGlLight</a>*&gt; lights_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vector of lights. </p>
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00138">138</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00070_source.html#l00116">Renderer::getLights()</a>, et <a class="el" href="a00069_source.html#l00496">Renderer::initLighting()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3781e62d60048b863f29b8f1fc24b81b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="a00027.html">GlMesh</a>*&gt; meshes_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vector of meshes of the scene. </p>
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00128">128</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00069_source.html#l00106">Renderer::initGeometry()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1cc0c7e959d48b6d3a28abf4fa7e2efc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int program_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>OpenGl Shader Program to be used when drawing. </p>
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00143">143</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00069_source.html#l00341">Renderer::initShaders()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a302f5481bcf28782d9f50b4acf8a946a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int programLine_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00144">144</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00069_source.html#l00341">Renderer::initShaders()</a>, et <a class="el" href="a00069_source.html#l00381">Renderer::renderDebug()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ace600ec6b552770724450db077784958"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::mat4 viewMatrix_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Viewing matrix for the rendering. </p>
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00155">155</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00070_source.html#l00118">Renderer::getViewMatrix()</a>, <a class="el" href="a00069_source.html#l00086">Renderer::initView()</a>, et <a class="el" href="a00069_source.html#l00381">Renderer::renderDebug()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2af7588ca87bfadebd74fb4939e64dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int width_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00070_source.html#l00120">120</a> du fichier <a class="el" href="a00070_source.html">renderer.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00069_source.html#l00424">Renderer::handleMouseEvent()</a>, <a class="el" href="a00069_source.html#l00381">Renderer::renderDebug()</a>, <a class="el" href="a00069_source.html#l00489">Renderer::setViewport()</a>, et <a class="el" href="a00070_source.html#l00111">Renderer::width()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="a00070_source.html">renderer.h</a></li>
+<li><a class="el" href="a00069_source.html">renderer.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00081.html">rendersystem</a></li><li class="navelem"><a class="el" href="a00034.html">Renderer</a></li>
+    <li class="footer">Généré le Mardi Janvier 21 2014 21:32:05 pour M1 Informatique - IG3D - Introduction à openGL par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

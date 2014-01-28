@@ -1,0 +1,8 @@
+<map id="paintGL" name="paintGL">
+<area shape="rect" id="node2" href="$a00034.html#abe1317bc098889c2e1accbc2b0f76a3f" title="Render the scene. " alt="" coords="123,5,288,49"/>
+<area shape="rect" id="node3" href="$a00034.html#ae639a035ad857244a5fd8f25432ef33b" title="rendersystem::Renderer\l::renderDebug" alt="" coords="123,73,288,117"/>
+<area shape="rect" id="node4" href="$a00036.html#aedc96a40e844bc2efc8bbef1b0782702" title="rendersystem::Timer\l::start" alt="" coords="134,141,277,185"/>
+<area shape="rect" id="node6" href="$a00036.html#aacf6bf8e121fea8b0a92d7197b73fe27" title="rendersystem::Timer\l::stop" alt="" coords="134,209,277,253"/>
+<area shape="rect" id="node7" href="$a00036.html#a3cc3a64f968a6a443db35229e83f5e2d" title="rendersystem::Timer\l::value" alt="" coords="134,277,277,321"/>
+<area shape="rect" id="node5" href="$a00036.html#a9c2a764670feb841e29c8ada67031868" title="rendersystem::Timer\l::getTime" alt="" coords="336,175,480,219"/>
+</map>

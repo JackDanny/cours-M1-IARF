@@ -1,0 +1,8 @@
+<map id="resetView" name="resetView">
+<area shape="rect" id="node2" href="$a00009.html#a395cfd3b5286442312051da532ffa579" title="gui::MainWindow::resetCamera" alt="" coords="134,6,341,34"/>
+<area shape="rect" id="node3" href="$a00009.html#a5176c9496a29e21eacb0f81ca1a29923" title="gui::MainWindow::createActions" alt="" coords="1032,6,1243,34"/>
+<area shape="rect" id="node5" href="$a00009.html#ad20897c5c8bd47f5d4005989bead0e55" title="gui::MainWindow::reset" alt="" coords="389,31,549,59"/>
+<area shape="rect" id="node4" href="$a00009.html#aeb676574b78bda84d687fdcfd65d84a6" title="gui::MainWindow::MainWindow" alt="" coords="1291,6,1498,34"/>
+<area shape="rect" id="node6" href="$a00009.html#a0e7976b09c57824b1241e7c3d30a67fd" title="gui::MainWindow::loadFile" alt="" coords="598,31,775,59"/>
+<area shape="rect" id="node7" href="$a00009.html#a9e8555112049fc2b4945120b3c45f8ab" title="gui::MainWindow::open" alt="" coords="824,31,984,59"/>
+</map>
