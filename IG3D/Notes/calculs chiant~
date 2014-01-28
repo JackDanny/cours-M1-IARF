@@ -1,0 +1,144 @@
+AB = 
+
+(Xb - Xa)
+(Yb - Ya)
+
+AC =
+
+(Xc - Xa)
+(Yc - Ya)
+
+
+
+BA=
+
+(Xa – Xb)
+(Ya – Yb)
+
+BC=
+
+(Xc - Xb)
+(Yc - Yb)
+
+BM=
+
+(Xm - Xb)
+(Ym - Yb)
+
+AM=
+
+(Xm - Xa)
+(Ym - Ya)
+
+
+AB ^ AC = (Xb - Xa)(Yc - Ya) - (Yb - Ya)(Xc - Xa)
+
+BM ^ BA =(Xm - Xb)(Ya – Yb) - (Ym - Yb)(Xa – Xb)
+
+BM ^ BC =(Xm - Xb)(Yc - Yb) - (Ym - Yb)(Xc - Xb)
+
+AM ^ AC =(Xm - Xa)(Yc - Ya) - (Ym - Ya)(Xc - Xa)
+
+
+
+
+(Xb - Xa)(Yc - Ya) - (Yb - Ya)(Xc - Xa)
+=
+(Xm - Xb)(Ya – Yb) - (Ym - Yb)(Xa – Xb)
++
+(Xm - Xb)(Yc - Yb) - (Ym - Yb)(Xc - Xb)
++
+(Xm - Xa)(Yc - Ya) - (Ym - Ya)(Xc - Xa)
+=
+
+(Xm - Xb)(Ya – Yb)
++
+(Xb – Xa)(Ym - Yb)
++
+(Xm - Xb)(Yc - Yb) 
++
+(Xb - Xc)(Ym - Yb)
++
+(Xm - Xa)(Yc - Ya) 
++ 
+(Xa - Xc)(Ym - Ya)
+=
+
+Xm( (Ya – Yb)+(Yc - Yb) +(Yc - Ya) )
++
+Xb( (- Ya + Yb) + (Ym - Yb) + (- Yc + Yb) + (Ym - Yb))
++
+Xa( (-Ym + Yb)+(-Yc + Ya) + (Ym - Ya) )
++
+Xc( (-Ym + Yb) +(-Ym + Ya) )
+=
+
+Xm( -2Yb+2Yc)
++
+Xb( -Ya +2Ym-Yc)
++
+Xa(Yb-Yc)
++
+Xc(Yb+Ya-2Ym)
+
+======================
+
+(Xb - Xa)(Yc - Ya) - (Yb - Ya)(Xc - Xa)
+=
+
+(Xb - Xa)(Yc - Ya) 
++
+(Xc - Xa)(Ya - Yb)
+=
+
+Xb(Yc - Ya)
++
+Xa(Yc + Yb)
++
+Xc(Ya - Yb)
+
+=
+
+
+Xm( -2Yb+2Yc)
++
+Xb( -Ya +2Ym-Yc)
++
+Xa(Yb-Yc)
++
+Xc(Yb+Ya-2Ym)
+
+donc
+
+
+Xm( -2Yb+2Yc)
++
+Xb( -Ya +2Ym-Yc-Yc+Ya)
++
+Xa(Yb-Yc-Yc-Yb)
++
+Xc(Yb+Ya-2Ym-Yb-Ya-2ym)
+=0
+
+Xm( -2Yb+2Yc)
++
+Xb( 2Ym-2Yc)
++
+Xa(-2Yc)
++
+Xc(-4ym)
+=0
+
+demander à Laurent si:
+
+Dans R2 
+étant donné un triangle ABC et un point M quelconque
+
+M situé à l'intérieur du triangle ABC <=> Aire(ABM)+Aire(ACM)+Aire(BCM) = Aire (ABC) 
+
+M situé à l'extérieur du triangle ABC <=> Aire(ABM)+Aire(ACM)+Aire(BCM) > Aire (ABC)
+
+
+
+
+
