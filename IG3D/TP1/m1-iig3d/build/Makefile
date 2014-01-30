@@ -30,24 +30,30 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = "/Applications/CMake 2.8-12.app/Contents/bin/cmake"
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E remove -f
+RM = "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E remove -f
+
+# Escaping for special characters.
+EQUALS = =
+
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = "/Applications/CMake 2.8-12.app/Contents/bin/ccmake"
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d"
+CMAKE_SOURCE_DIR = "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build"
+CMAKE_BINARY_DIR = "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	"/Applications/CMake 2.8-12.app/Contents/bin/ccmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -57,19 +63,19 @@ edit_cache/fast: edit_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
+	"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
+	"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
@@ -79,7 +85,7 @@ install/local/fast: install/local
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
@@ -98,7 +104,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -107,9 +113,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -150,17 +156,17 @@ fileloaders/fast:
 .PHONY : fileloaders/fast
 
 #=============================================================================
-# Target rules for targets named minimalrenderer
+# Target rules for targets named minimalRenderer
 
 # Build rule for target.
-minimalrenderer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 minimalrenderer
-.PHONY : minimalrenderer
+minimalRenderer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 minimalRenderer
+.PHONY : minimalRenderer
 
 # fast build rule for target.
-minimalrenderer/fast:
-	$(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/build
-.PHONY : minimalrenderer/fast
+minimalRenderer/fast:
+	$(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/build
+.PHONY : minimalRenderer/fast
 
 # Help Target
 help:
@@ -175,7 +181,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... fileloaders"
-	@echo "... minimalrenderer"
+	@echo "... minimalRenderer"
 .PHONY : help
 
 

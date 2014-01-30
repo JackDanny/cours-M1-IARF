@@ -1,4 +1,4 @@
-# Install script for directory: /home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders
+# Install script for directory: /Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,38 +27,33 @@ IF(NOT CMAKE_INSTALL_COMPONENT)
   ENDIF(COMPONENT)
 ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
-# Install shared libraries without execute permission?
-IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "1")
-ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FOREACH(file
-      "$ENV{DESTDIR}/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.so.0.1.0"
-      "$ENV{DESTDIR}/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.so.0.1"
-      "$ENV{DESTDIR}/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.so"
-      )
-    IF(EXISTS "${file}" AND
-       NOT IS_SYMLINK "${file}")
-      FILE(RPATH_CHECK
-           FILE "${file}"
-           RPATH "")
-    ENDIF()
-  ENDFOREACH()
-  list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.so.0.1.0;/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.so.0.1;/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.so")
-FILE(INSTALL DESTINATION "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib" TYPE SHARED_LIBRARY FILES
-    "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.so.0.1.0"
-    "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.so.0.1"
-    "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.so"
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.0.1.0.dylib;/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.0.1.dylib;/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.dylib")
+  IF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  ENDIF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+  IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+FILE(INSTALL DESTINATION "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib" TYPE SHARED_LIBRARY FILES
+    "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.0.1.0.dylib"
+    "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.0.1.dylib"
+    "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.dylib"
     )
   FOREACH(file
-      "$ENV{DESTDIR}/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.so.0.1.0"
-      "$ENV{DESTDIR}/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.so.0.1"
-      "$ENV{DESTDIR}/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.so"
+      "$ENV{DESTDIR}/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.0.1.0.dylib"
+      "$ENV{DESTDIR}/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.0.1.dylib"
+      "$ENV{DESTDIR}/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/lib/libfileloaders.dylib"
       )
     IF(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
+      EXECUTE_PROCESS(COMMAND "/usr/bin/install_name_tool"
+        -id "libfileloaders.0.1.dylib"
+        "${file}")
+      execute_process(COMMAND /usr/bin/install_name_tool
+        -delete_rpath "/Applications/Canopy.app/appdata/canopy-1.2.0.1610.macosx-x86_64/Canopy.app/Contents/lib"
+        "${file}")
       IF(CMAKE_INSTALL_DO_STRIP)
         EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "${file}")
       ENDIF(CMAKE_INSTALL_DO_STRIP)

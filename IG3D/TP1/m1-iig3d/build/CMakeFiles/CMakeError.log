@@ -1,84 +1,84 @@
-Determining if the Q_WS_WIN exist failed with the following output:
-Change Dir: /home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp
+Determining if the Q_WS_X11 exist failed with the following output:
+Change Dir: /Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-make[1]: entrant dans le répertoire « /home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
-Building CXX object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -g -Wall -ansi -fPIC   -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o -c "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx"
-/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main()’:
-/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:25: erreur: ‘Q_WS_WIN’ was not declared in this scope
-make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o] Erreur 1
-make[1]: quittant le répertoire « /home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp »
-make: *** [cmTryCompileExec/fast] Erreur 2
+Run Build Command:/usr/bin/make "cmTryCompileExec456091342/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec456091342.dir/build.make CMakeFiles/cmTryCompileExec456091342.dir/build
+"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec456091342.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -g -Wall -ansi -fPIC  -I/Applications/Canopy.app/appdata/canopy-1.2.0.1610.macosx-x86_64/Canopy.app/Contents/include -F/Applications/Canopy.app/appdata/canopy-1.2.0.1610.macosx-x86_64/Canopy.app/Contents/lib    -o CMakeFiles/cmTryCompileExec456091342.dir/CheckSymbolExists.cxx.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx"
+/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8: error: ‘Q_WS_X11’ was not declared in this scope
+make[1]: *** [CMakeFiles/cmTryCompileExec456091342.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTryCompileExec456091342/fast] Error 2
 
-File /home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+File /Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
 #include <QtCore/qglobal.h>
 
-void cmakeRequireSymbol(int dummy,...){(void)dummy;}
-int main()
+int main(int argc, char** argv)
 {
-#ifndef Q_WS_WIN
-  cmakeRequireSymbol(0,&Q_WS_WIN);
-#endif
+  (void)argv;
+#ifndef Q_WS_X11
+  return ((int*)(&Q_WS_X11))[argc];
+#else
+  (void)argc;
   return 0;
+#endif
+}
+
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec207720364/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec207720364.dir/build.make CMakeFiles/cmTryCompileExec207720364.dir/build
+"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec207720364.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -g -Wall -ansi -fPIC  -I/Applications/Canopy.app/appdata/canopy-1.2.0.1610.macosx-x86_64/Canopy.app/Contents/include -F/Applications/Canopy.app/appdata/canopy-1.2.0.1610.macosx-x86_64/Canopy.app/Contents/lib    -o CMakeFiles/cmTryCompileExec207720364.dir/CheckSymbolExists.cxx.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx"
+/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8: error: ‘Q_WS_WIN’ was not declared in this scope
+make[1]: *** [CMakeFiles/cmTryCompileExec207720364.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTryCompileExec207720364/fast] Error 2
+
+File /Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
 }
 
 Determining if the Q_WS_QWS exist failed with the following output:
-Change Dir: /home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-make[1]: entrant dans le répertoire « /home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
-Building CXX object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -g -Wall -ansi -fPIC   -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o -c "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx"
-/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main()’:
-/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:25: erreur: ‘Q_WS_QWS’ was not declared in this scope
-make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o] Erreur 1
-make[1]: quittant le répertoire « /home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp »
-make: *** [cmTryCompileExec/fast] Erreur 2
+Run Build Command:/usr/bin/make "cmTryCompileExec256023514/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec256023514.dir/build.make CMakeFiles/cmTryCompileExec256023514.dir/build
+"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec256023514.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -g -Wall -ansi -fPIC  -I/Applications/Canopy.app/appdata/canopy-1.2.0.1610.macosx-x86_64/Canopy.app/Contents/include -F/Applications/Canopy.app/appdata/canopy-1.2.0.1610.macosx-x86_64/Canopy.app/Contents/lib    -o CMakeFiles/cmTryCompileExec256023514.dir/CheckSymbolExists.cxx.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx"
+/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8: error: ‘Q_WS_QWS’ was not declared in this scope
+make[1]: *** [CMakeFiles/cmTryCompileExec256023514.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTryCompileExec256023514/fast] Error 2
 
-File /home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+File /Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
 #include <QtCore/qglobal.h>
 
-void cmakeRequireSymbol(int dummy,...){(void)dummy;}
-int main()
+int main(int argc, char** argv)
 {
+  (void)argv;
 #ifndef Q_WS_QWS
-  cmakeRequireSymbol(0,&Q_WS_QWS);
-#endif
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
   return 0;
-}
-
-Determining if the Q_WS_MAC exist failed with the following output:
-Change Dir: /home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-make[1]: entrant dans le répertoire « /home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
-Building CXX object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -g -Wall -ansi -fPIC   -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o -c "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx"
-/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main()’:
-/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:25: erreur: ‘Q_WS_MAC’ was not declared in this scope
-make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o] Erreur 1
-make[1]: quittant le répertoire « /home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp »
-make: *** [cmTryCompileExec/fast] Erreur 2
-
-File /home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
-/* */
-#include <QtCore/qglobal.h>
-
-void cmakeRequireSymbol(int dummy,...){(void)dummy;}
-int main()
-{
-#ifndef Q_WS_MAC
-  cmakeRequireSymbol(0,&Q_WS_MAC);
 #endif
-  return 0;
 }
 

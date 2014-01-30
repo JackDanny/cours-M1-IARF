@@ -30,24 +30,30 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = "/Applications/CMake 2.8-12.app/Contents/bin/cmake"
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E remove -f
+RM = "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E remove -f
+
+# Escaping for special characters.
+EQUALS = =
+
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = "/Applications/CMake 2.8-12.app/Contents/bin/ccmake"
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d"
+CMAKE_SOURCE_DIR = "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build"
+CMAKE_BINARY_DIR = "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	"/Applications/CMake 2.8-12.app/Contents/bin/ccmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -57,19 +63,19 @@ edit_cache/fast: edit_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
+	"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
+	"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
@@ -79,7 +85,7 @@ install/local/fast: install/local
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
@@ -98,7 +104,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -107,14 +113,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders/CMakeFiles/progress.marks"
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f CMakeFiles/Makefile2 src/fileloaders/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" 0
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders/CMakeFiles/progress.marks"
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f CMakeFiles/Makefile2 src/fileloaders/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f CMakeFiles/Makefile2 src/fileloaders/clean
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f CMakeFiles/Makefile2 src/fileloaders/clean
 .PHONY : clean
 
 # The main clean target
@@ -123,22 +129,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f CMakeFiles/Makefile2 src/fileloaders/preinstall
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f CMakeFiles/Makefile2 src/fileloaders/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f CMakeFiles/Makefile2 src/fileloaders/preinstall
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f CMakeFiles/Makefile2 src/fileloaders/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/fileloaders/CMakeFiles/fileloaders.dir/rule:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f CMakeFiles/Makefile2 src/fileloaders/CMakeFiles/fileloaders.dir/rule
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f CMakeFiles/Makefile2 src/fileloaders/CMakeFiles/fileloaders.dir/rule
 .PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/rule
 
 # Convenience name for target.
@@ -147,7 +153,7 @@ fileloaders: src/fileloaders/CMakeFiles/fileloaders.dir/rule
 
 # fast build rule for target.
 fileloaders/fast:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/build
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/build
 .PHONY : fileloaders/fast
 
 fileloader.o: fileloader.cpp.o
@@ -155,7 +161,7 @@ fileloader.o: fileloader.cpp.o
 
 # target to build an object file
 fileloader.cpp.o:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o
 .PHONY : fileloader.cpp.o
 
 fileloader.i: fileloader.cpp.i
@@ -163,7 +169,7 @@ fileloader.i: fileloader.cpp.i
 
 # target to preprocess a source file
 fileloader.cpp.i:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.i
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.i
 .PHONY : fileloader.cpp.i
 
 fileloader.s: fileloader.cpp.s
@@ -171,7 +177,7 @@ fileloader.s: fileloader.cpp.s
 
 # target to generate assembly for a file
 fileloader.cpp.s:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.s
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.s
 .PHONY : fileloader.cpp.s
 
 mesh.o: mesh.cpp.o
@@ -179,7 +185,7 @@ mesh.o: mesh.cpp.o
 
 # target to build an object file
 mesh.cpp.o:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o
 .PHONY : mesh.cpp.o
 
 mesh.i: mesh.cpp.i
@@ -187,7 +193,7 @@ mesh.i: mesh.cpp.i
 
 # target to preprocess a source file
 mesh.cpp.i:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.i
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.i
 .PHONY : mesh.cpp.i
 
 mesh.s: mesh.cpp.s
@@ -195,7 +201,7 @@ mesh.s: mesh.cpp.s
 
 # target to generate assembly for a file
 mesh.cpp.s:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.s
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.s
 .PHONY : mesh.cpp.s
 
 objfileparser.o: objfileparser.cpp.o
@@ -203,7 +209,7 @@ objfileparser.o: objfileparser.cpp.o
 
 # target to build an object file
 objfileparser.cpp.o:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o
 .PHONY : objfileparser.cpp.o
 
 objfileparser.i: objfileparser.cpp.i
@@ -211,7 +217,7 @@ objfileparser.i: objfileparser.cpp.i
 
 # target to preprocess a source file
 objfileparser.cpp.i:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.i
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.i
 .PHONY : objfileparser.cpp.i
 
 objfileparser.s: objfileparser.cpp.s
@@ -219,7 +225,7 @@ objfileparser.s: objfileparser.cpp.s
 
 # target to generate assembly for a file
 objfileparser.cpp.s:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.s
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.s
 .PHONY : objfileparser.cpp.s
 
 objloader.o: objloader.cpp.o
@@ -227,7 +233,7 @@ objloader.o: objloader.cpp.o
 
 # target to build an object file
 objloader.cpp.o:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.o
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.o
 .PHONY : objloader.cpp.o
 
 objloader.i: objloader.cpp.i
@@ -235,7 +241,7 @@ objloader.i: objloader.cpp.i
 
 # target to preprocess a source file
 objloader.cpp.i:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.i
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.i
 .PHONY : objloader.cpp.i
 
 objloader.s: objloader.cpp.s
@@ -243,7 +249,7 @@ objloader.s: objloader.cpp.s
 
 # target to generate assembly for a file
 objloader.cpp.s:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.s
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.s
 .PHONY : objloader.cpp.s
 
 objmesh.o: objmesh.cpp.o
@@ -251,7 +257,7 @@ objmesh.o: objmesh.cpp.o
 
 # target to build an object file
 objmesh.cpp.o:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.o
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.o
 .PHONY : objmesh.cpp.o
 
 objmesh.i: objmesh.cpp.i
@@ -259,7 +265,7 @@ objmesh.i: objmesh.cpp.i
 
 # target to preprocess a source file
 objmesh.cpp.i:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.i
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.i
 .PHONY : objmesh.cpp.i
 
 objmesh.s: objmesh.cpp.s
@@ -267,7 +273,7 @@ objmesh.s: objmesh.cpp.s
 
 # target to generate assembly for a file
 objmesh.cpp.s:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.s
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.s
 .PHONY : objmesh.cpp.s
 
 pointloader.o: pointloader.cpp.o
@@ -275,7 +281,7 @@ pointloader.o: pointloader.cpp.o
 
 # target to build an object file
 pointloader.cpp.o:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.o
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.o
 .PHONY : pointloader.cpp.o
 
 pointloader.i: pointloader.cpp.i
@@ -283,7 +289,7 @@ pointloader.i: pointloader.cpp.i
 
 # target to preprocess a source file
 pointloader.cpp.i:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.i
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.i
 .PHONY : pointloader.cpp.i
 
 pointloader.s: pointloader.cpp.s
@@ -291,7 +297,7 @@ pointloader.s: pointloader.cpp.s
 
 # target to generate assembly for a file
 pointloader.cpp.s:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.s
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.s
 .PHONY : pointloader.cpp.s
 
 # Help Target
@@ -336,6 +342,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/home/jackdanny/Bureau/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

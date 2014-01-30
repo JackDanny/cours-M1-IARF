@@ -1,14 +1,14 @@
 FILE(REMOVE_RECURSE
+  "CMakeFiles/fileloaders.dir/fileloader.cpp.o"
+  "CMakeFiles/fileloaders.dir/mesh.cpp.o"
+  "CMakeFiles/fileloaders.dir/objfileparser.cpp.o"
   "CMakeFiles/fileloaders.dir/objloader.cpp.o"
   "CMakeFiles/fileloaders.dir/objmesh.cpp.o"
-  "CMakeFiles/fileloaders.dir/fileloader.cpp.o"
-  "CMakeFiles/fileloaders.dir/objfileparser.cpp.o"
   "CMakeFiles/fileloaders.dir/pointloader.cpp.o"
-  "CMakeFiles/fileloaders.dir/mesh.cpp.o"
   "../../../lib/libfileloaders.pdb"
-  "../../../lib/libfileloaders.so"
-  "../../../lib/libfileloaders.so.0.1.0"
-  "../../../lib/libfileloaders.so.0.1"
+  "../../../lib/libfileloaders.dylib"
+  "../../../lib/libfileloaders.0.1.0.dylib"
+  "../../../lib/libfileloaders.0.1.dylib"
 )
 
 # Per-language clean rules from dependency scanning.
