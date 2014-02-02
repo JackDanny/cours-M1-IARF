@@ -354,23 +354,47 @@ void Renderer::render(const glm::mat4x4 &modelViewMatrix, const glm::mat4x4 &pro
     // Fonction principale de calcul d'une image, son rôle est de séquencer l'ensemble des ordres de dessin de l'API de bas niveau.
     // 1 -  Préparer de l'image pour le rendu :
     //    1.1 - Effacer les buffers de destination
+    glClearColor(0.5,0.5,0.5,0.5);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+
 
     // 2 - Construire les matrices de vue et de projection :
     //    2.1 - Définir une matrice de projection perspective
-
+    glm::mat4 P = glm::perspective(90.f,(float)width_/height_,0.1f,10.f);
     //    2.2 - Définir la matrice de vue à partir de g_viewMatrix et de modelViewMatrix
+    glm::mat4 MV = viewMatrix_  *  modelViewMatrix;
+
+
+
 
     // 3 - Activer et paramétrer les shader par défaut :
     //    3.1 - Activer le programme par défaut
+    glUseProgram(program_);
+
+    GLint transformationLoc[4];
+    GLint materiel[4];
+
 
     //    3.2 - Récupérer les adresses des paramètres
+    glAssert(transformationLoc[0] = glGetUniformLocation(program_, "modelViewMatrix"));
+    glAssert(transformationLoc[1] = glGetUniformLocation(program_, "projectionMatrix"));
+    glAssert(transformationLoc[2] = glGetUniformLocation(program_, "normalMatrix"));
+    glAssert(transformationLoc[3] = glGetUniformLocation(program_, "MVP"));
+
+    materiel[0]=glGetUniformLocation(program_, "keyLightColor");
+    materiel[1]=glGetUniformLocation(program_, "fillLightColor");
+    materiel[2]=glGetUniformLocation(program_, "backLightColor");
 
     //  3.3 - positionnez les paramètres indépendants des objets (source de lumière, ...)
+
 
     // lights Binding
 
     // 4 - Dessiner les objets de la scène :
-
+    for(std::vector<GlEntity*>::iterator it = entities_.begin();it != entities_.end();it ++){
+        (*it)->drawGL(MV,P,transformationLoc,materiel);
+    }
     // Fin du code à écrire
 
 
@@ -421,6 +445,9 @@ int Renderer::handleKeyEvent(char key)
 }
 int Renderer::handleMouseEvent(const MouseEvent & event)
 {
+    //glm::mat4 MV = viewMatrix_  *  modelViewMatrix;
+
+
     static int modifiers = 0;
     static int x = 0;
     static int y = 0;
@@ -441,8 +468,15 @@ int Renderer::handleMouseEvent(const MouseEvent & event)
         case MouseEvent::LEFT : {
             // Début du code à écrire
             // 1 - Récupérer les axes xvec et yvec de la caméra
+
+            //glm::vec3 xvec = glm::row(viewMatrix_,0);
+            //glm::vec3 yvec = glm::row(viewMatrix_,1);
+
             // 2 - Modifier g_viewMatrix pour y ajouter une rotation de dy*360.f degrés autour de xvec
+            //glm::glRotatef(dy*360.f,1,0,0);
+
             // 3 - Modifier viewMatrix_ pour y ajouter une rotation de dx*360.f degrés autour de yvec
+            //glm::glRotatef(dx*360.f,0,1,0);
             // Fin du code à écrire
 
         }

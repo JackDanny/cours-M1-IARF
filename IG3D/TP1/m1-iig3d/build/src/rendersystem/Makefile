@@ -30,30 +30,24 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Applications/CMake 2.8-12.app/Contents/bin/cmake"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E remove -f
-
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = "/Applications/CMake 2.8-12.app/Contents/bin/ccmake"
+RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d"
+CMAKE_SOURCE_DIR = /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build"
+CMAKE_BINARY_DIR = /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	"/Applications/CMake 2.8-12.app/Contents/bin/ccmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -63,19 +57,19 @@ edit_cache/fast: edit_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -P cmake_install.cmake
+	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -P cmake_install.cmake
+	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
@@ -85,7 +79,7 @@ install/local/fast: install/local
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
@@ -104,7 +98,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Applications/CMake 2.8-12.app/Contents/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -113,14 +107,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/CMakeFiles/progress.marks"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f CMakeFiles/Makefile2 src/rendersystem/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" 0
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/CMakeFiles/progress.marks
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f CMakeFiles/Makefile2 src/rendersystem/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f CMakeFiles/Makefile2 src/rendersystem/clean
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f CMakeFiles/Makefile2 src/rendersystem/clean
 .PHONY : clean
 
 # The main clean target
@@ -129,63 +123,39 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f CMakeFiles/Makefile2 src/rendersystem/preinstall
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f CMakeFiles/Makefile2 src/rendersystem/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f CMakeFiles/Makefile2 src/rendersystem/preinstall
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f CMakeFiles/Makefile2 src/rendersystem/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-src/rendersystem/CMakeFiles/minimalRenderer.dir/rule:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f CMakeFiles/Makefile2 src/rendersystem/CMakeFiles/minimalRenderer.dir/rule
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/rule
+src/rendersystem/CMakeFiles/minimalrenderer.dir/rule:
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f CMakeFiles/Makefile2 src/rendersystem/CMakeFiles/minimalrenderer.dir/rule
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/rule
 
 # Convenience name for target.
-minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/rule
-.PHONY : minimalRenderer
+minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/rule
+.PHONY : minimalrenderer
 
 # fast build rule for target.
-minimalRenderer/fast:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/build
-.PHONY : minimalRenderer/fast
-
-core_profile_attributes.o: core_profile_attributes.mm.o
-.PHONY : core_profile_attributes.o
-
-# target to build an object file
-core_profile_attributes.mm.o:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o
-.PHONY : core_profile_attributes.mm.o
-
-core_profile_attributes.i: core_profile_attributes.mm.i
-.PHONY : core_profile_attributes.i
-
-# target to preprocess a source file
-core_profile_attributes.mm.i:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.i
-.PHONY : core_profile_attributes.mm.i
-
-core_profile_attributes.s: core_profile_attributes.mm.s
-.PHONY : core_profile_attributes.s
-
-# target to generate assembly for a file
-core_profile_attributes.mm.s:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.s
-.PHONY : core_profile_attributes.mm.s
+minimalrenderer/fast:
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/build
+.PHONY : minimalrenderer/fast
 
 gldrawable.o: gldrawable.cpp.o
 .PHONY : gldrawable.o
 
 # target to build an object file
 gldrawable.cpp.o:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o
 .PHONY : gldrawable.cpp.o
 
 gldrawable.i: gldrawable.cpp.i
@@ -193,7 +163,7 @@ gldrawable.i: gldrawable.cpp.i
 
 # target to preprocess a source file
 gldrawable.cpp.i:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.i
 .PHONY : gldrawable.cpp.i
 
 gldrawable.s: gldrawable.cpp.s
@@ -201,7 +171,7 @@ gldrawable.s: gldrawable.cpp.s
 
 # target to generate assembly for a file
 gldrawable.cpp.s:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.s
 .PHONY : gldrawable.cpp.s
 
 glentity.o: glentity.cpp.o
@@ -209,7 +179,7 @@ glentity.o: glentity.cpp.o
 
 # target to build an object file
 glentity.cpp.o:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.o
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.o
 .PHONY : glentity.cpp.o
 
 glentity.i: glentity.cpp.i
@@ -217,7 +187,7 @@ glentity.i: glentity.cpp.i
 
 # target to preprocess a source file
 glentity.cpp.i:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.i
 .PHONY : glentity.cpp.i
 
 glentity.s: glentity.cpp.s
@@ -225,7 +195,7 @@ glentity.s: glentity.cpp.s
 
 # target to generate assembly for a file
 glentity.cpp.s:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.s
 .PHONY : glentity.cpp.s
 
 gllight.o: gllight.cpp.o
@@ -233,7 +203,7 @@ gllight.o: gllight.cpp.o
 
 # target to build an object file
 gllight.cpp.o:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.o
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.o
 .PHONY : gllight.cpp.o
 
 gllight.i: gllight.cpp.i
@@ -241,7 +211,7 @@ gllight.i: gllight.cpp.i
 
 # target to preprocess a source file
 gllight.cpp.i:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.i
 .PHONY : gllight.cpp.i
 
 gllight.s: gllight.cpp.s
@@ -249,7 +219,7 @@ gllight.s: gllight.cpp.s
 
 # target to generate assembly for a file
 gllight.cpp.s:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.s
 .PHONY : gllight.cpp.s
 
 glmaterial.o: glmaterial.cpp.o
@@ -257,7 +227,7 @@ glmaterial.o: glmaterial.cpp.o
 
 # target to build an object file
 glmaterial.cpp.o:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o
 .PHONY : glmaterial.cpp.o
 
 glmaterial.i: glmaterial.cpp.i
@@ -265,7 +235,7 @@ glmaterial.i: glmaterial.cpp.i
 
 # target to preprocess a source file
 glmaterial.cpp.i:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.i
 .PHONY : glmaterial.cpp.i
 
 glmaterial.s: glmaterial.cpp.s
@@ -273,7 +243,7 @@ glmaterial.s: glmaterial.cpp.s
 
 # target to generate assembly for a file
 glmaterial.cpp.s:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.s
 .PHONY : glmaterial.cpp.s
 
 glmesh.o: glmesh.cpp.o
@@ -281,7 +251,7 @@ glmesh.o: glmesh.cpp.o
 
 # target to build an object file
 glmesh.cpp.o:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.o
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.o
 .PHONY : glmesh.cpp.o
 
 glmesh.i: glmesh.cpp.i
@@ -289,7 +259,7 @@ glmesh.i: glmesh.cpp.i
 
 # target to preprocess a source file
 glmesh.cpp.i:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.i
 .PHONY : glmesh.cpp.i
 
 glmesh.s: glmesh.cpp.s
@@ -297,7 +267,7 @@ glmesh.s: glmesh.cpp.s
 
 # target to generate assembly for a file
 glmesh.cpp.s:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.s
 .PHONY : glmesh.cpp.s
 
 main.o: main.cpp.o
@@ -305,7 +275,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.o
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -313,7 +283,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -321,7 +291,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 mainwindow.o: mainwindow.cpp.o
@@ -329,7 +299,7 @@ mainwindow.o: mainwindow.cpp.o
 
 # target to build an object file
 mainwindow.cpp.o:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o
 .PHONY : mainwindow.cpp.o
 
 mainwindow.i: mainwindow.cpp.i
@@ -337,7 +307,7 @@ mainwindow.i: mainwindow.cpp.i
 
 # target to preprocess a source file
 mainwindow.cpp.i:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.i
 .PHONY : mainwindow.cpp.i
 
 mainwindow.s: mainwindow.cpp.s
@@ -345,7 +315,7 @@ mainwindow.s: mainwindow.cpp.s
 
 # target to generate assembly for a file
 mainwindow.cpp.s:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
 moc_mainwindow.o: moc_mainwindow.cxx.o
@@ -353,7 +323,7 @@ moc_mainwindow.o: moc_mainwindow.cxx.o
 
 # target to build an object file
 moc_mainwindow.cxx.o:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o
 .PHONY : moc_mainwindow.cxx.o
 
 moc_mainwindow.i: moc_mainwindow.cxx.i
@@ -361,7 +331,7 @@ moc_mainwindow.i: moc_mainwindow.cxx.i
 
 # target to preprocess a source file
 moc_mainwindow.cxx.i:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.i
 .PHONY : moc_mainwindow.cxx.i
 
 moc_mainwindow.s: moc_mainwindow.cxx.s
@@ -369,7 +339,7 @@ moc_mainwindow.s: moc_mainwindow.cxx.s
 
 # target to generate assembly for a file
 moc_mainwindow.cxx.s:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.s
 .PHONY : moc_mainwindow.cxx.s
 
 moc_openglwidget.o: moc_openglwidget.cxx.o
@@ -377,7 +347,7 @@ moc_openglwidget.o: moc_openglwidget.cxx.o
 
 # target to build an object file
 moc_openglwidget.cxx.o:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o
 .PHONY : moc_openglwidget.cxx.o
 
 moc_openglwidget.i: moc_openglwidget.cxx.i
@@ -385,7 +355,7 @@ moc_openglwidget.i: moc_openglwidget.cxx.i
 
 # target to preprocess a source file
 moc_openglwidget.cxx.i:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.i
 .PHONY : moc_openglwidget.cxx.i
 
 moc_openglwidget.s: moc_openglwidget.cxx.s
@@ -393,7 +363,7 @@ moc_openglwidget.s: moc_openglwidget.cxx.s
 
 # target to generate assembly for a file
 moc_openglwidget.cxx.s:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.s
 .PHONY : moc_openglwidget.cxx.s
 
 openglwidget.o: openglwidget.cpp.o
@@ -401,7 +371,7 @@ openglwidget.o: openglwidget.cpp.o
 
 # target to build an object file
 openglwidget.cpp.o:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o
 .PHONY : openglwidget.cpp.o
 
 openglwidget.i: openglwidget.cpp.i
@@ -409,7 +379,7 @@ openglwidget.i: openglwidget.cpp.i
 
 # target to preprocess a source file
 openglwidget.cpp.i:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.i
 .PHONY : openglwidget.cpp.i
 
 openglwidget.s: openglwidget.cpp.s
@@ -417,7 +387,7 @@ openglwidget.s: openglwidget.cpp.s
 
 # target to generate assembly for a file
 openglwidget.cpp.s:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.s
 .PHONY : openglwidget.cpp.s
 
 parametricmeshes.o: parametricmeshes.cpp.o
@@ -425,7 +395,7 @@ parametricmeshes.o: parametricmeshes.cpp.o
 
 # target to build an object file
 parametricmeshes.cpp.o:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o
 .PHONY : parametricmeshes.cpp.o
 
 parametricmeshes.i: parametricmeshes.cpp.i
@@ -433,7 +403,7 @@ parametricmeshes.i: parametricmeshes.cpp.i
 
 # target to preprocess a source file
 parametricmeshes.cpp.i:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.i
 .PHONY : parametricmeshes.cpp.i
 
 parametricmeshes.s: parametricmeshes.cpp.s
@@ -441,7 +411,7 @@ parametricmeshes.s: parametricmeshes.cpp.s
 
 # target to generate assembly for a file
 parametricmeshes.cpp.s:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.s
 .PHONY : parametricmeshes.cpp.s
 
 renderer.o: renderer.cpp.o
@@ -449,7 +419,7 @@ renderer.o: renderer.cpp.o
 
 # target to build an object file
 renderer.cpp.o:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.o
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o
 .PHONY : renderer.cpp.o
 
 renderer.i: renderer.cpp.i
@@ -457,7 +427,7 @@ renderer.i: renderer.cpp.i
 
 # target to preprocess a source file
 renderer.cpp.i:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.i
 .PHONY : renderer.cpp.i
 
 renderer.s: renderer.cpp.s
@@ -465,7 +435,7 @@ renderer.s: renderer.cpp.s
 
 # target to generate assembly for a file
 renderer.cpp.s:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.s
 .PHONY : renderer.cpp.s
 
 texture.o: texture.cpp.o
@@ -473,7 +443,7 @@ texture.o: texture.cpp.o
 
 # target to build an object file
 texture.cpp.o:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.o
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.o
 .PHONY : texture.cpp.o
 
 texture.i: texture.cpp.i
@@ -481,7 +451,7 @@ texture.i: texture.cpp.i
 
 # target to preprocess a source file
 texture.cpp.i:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.i
 .PHONY : texture.cpp.i
 
 texture.s: texture.cpp.s
@@ -489,7 +459,7 @@ texture.s: texture.cpp.s
 
 # target to generate assembly for a file
 texture.cpp.s:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.s
 .PHONY : texture.cpp.s
 
 # Help Target
@@ -503,11 +473,8 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
-	@echo "... minimalRenderer"
+	@echo "... minimalrenderer"
 	@echo "... rebuild_cache"
-	@echo "... core_profile_attributes.o"
-	@echo "... core_profile_attributes.i"
-	@echo "... core_profile_attributes.s"
 	@echo "... gldrawable.o"
 	@echo "... gldrawable.i"
 	@echo "... gldrawable.s"
@@ -558,6 +525,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

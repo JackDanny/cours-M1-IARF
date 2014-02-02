@@ -26,430 +26,410 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Applications/CMake 2.8-12.app/Contents/bin/cmake"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E remove -f
-
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = "/Applications/CMake 2.8-12.app/Contents/bin/ccmake"
+RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d"
+CMAKE_SOURCE_DIR = /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build"
+CMAKE_BINARY_DIR = /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build
 
 # Include any dependencies generated for this target.
-include src/rendersystem/CMakeFiles/minimalRenderer.dir/depend.make
+include src/rendersystem/CMakeFiles/minimalrenderer.dir/depend.make
 
 # Include the progress variables for this target.
-include src/rendersystem/CMakeFiles/minimalRenderer.dir/progress.make
+include src/rendersystem/CMakeFiles/minimalrenderer.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include src/rendersystem/CMakeFiles/minimalRenderer.dir/flags.make
+include src/rendersystem/CMakeFiles/minimalrenderer.dir/flags.make
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.o: src/rendersystem/CMakeFiles/minimalrenderer.dir/flags.make
+src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.o: ../src/rendersystem/texture.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalrenderer.dir/texture.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/texture.cpp
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalrenderer.dir/texture.cpp.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/texture.cpp > CMakeFiles/minimalrenderer.dir/texture.cpp.i
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalrenderer.dir/texture.cpp.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/texture.cpp -o CMakeFiles/minimalrenderer.dir/texture.cpp.s
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.o.requires:
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.o.requires
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.o.provides: src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.o.requires
+	$(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.o.provides.build
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.o.provides
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.o
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o: src/rendersystem/CMakeFiles/minimalrenderer.dir/flags.make
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o: ../src/rendersystem/glmaterial.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmaterial.cpp
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalrenderer.dir/glmaterial.cpp.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmaterial.cpp > CMakeFiles/minimalrenderer.dir/glmaterial.cpp.i
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalrenderer.dir/glmaterial.cpp.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmaterial.cpp -o CMakeFiles/minimalrenderer.dir/glmaterial.cpp.s
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o.requires:
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o.requires
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o.provides: src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o.requires
+	$(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o.provides.build
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o.provides
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.o: src/rendersystem/CMakeFiles/minimalrenderer.dir/flags.make
+src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.o: ../src/rendersystem/gllight.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalrenderer.dir/gllight.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gllight.cpp
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalrenderer.dir/gllight.cpp.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gllight.cpp > CMakeFiles/minimalrenderer.dir/gllight.cpp.i
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalrenderer.dir/gllight.cpp.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gllight.cpp -o CMakeFiles/minimalrenderer.dir/gllight.cpp.s
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.o.requires:
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.o.requires
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.o.provides: src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.o.requires
+	$(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.o.provides.build
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.o.provides
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.o
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.o: src/rendersystem/CMakeFiles/minimalrenderer.dir/flags.make
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.o: ../src/rendersystem/glmesh.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalrenderer.dir/glmesh.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmesh.cpp
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalrenderer.dir/glmesh.cpp.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmesh.cpp > CMakeFiles/minimalrenderer.dir/glmesh.cpp.i
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalrenderer.dir/glmesh.cpp.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmesh.cpp -o CMakeFiles/minimalrenderer.dir/glmesh.cpp.s
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.o.requires:
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.o.requires
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.o.provides: src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.o.requires
+	$(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.o.provides.build
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.o.provides
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.o
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o: src/rendersystem/CMakeFiles/minimalrenderer.dir/flags.make
+src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o: ../src/rendersystem/renderer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalrenderer.dir/renderer.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/renderer.cpp
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalrenderer.dir/renderer.cpp.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/renderer.cpp > CMakeFiles/minimalrenderer.dir/renderer.cpp.i
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalrenderer.dir/renderer.cpp.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/renderer.cpp -o CMakeFiles/minimalrenderer.dir/renderer.cpp.s
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o.requires:
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o.requires
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o.provides: src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o.requires
+	$(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o.provides.build
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o.provides
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o: src/rendersystem/CMakeFiles/minimalrenderer.dir/flags.make
+src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o: ../src/rendersystem/parametricmeshes.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/parametricmeshes.cpp
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/parametricmeshes.cpp > CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.i
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/parametricmeshes.cpp -o CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.s
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o.requires:
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o.requires
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o.provides: src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o.requires
+	$(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o.provides.build
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o.provides
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.o: src/rendersystem/CMakeFiles/minimalrenderer.dir/flags.make
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.o: ../src/rendersystem/glentity.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalrenderer.dir/glentity.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glentity.cpp
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalrenderer.dir/glentity.cpp.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glentity.cpp > CMakeFiles/minimalrenderer.dir/glentity.cpp.i
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalrenderer.dir/glentity.cpp.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glentity.cpp -o CMakeFiles/minimalrenderer.dir/glentity.cpp.s
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.o.requires:
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.o.requires
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.o.provides: src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.o.requires
+	$(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.o.provides.build
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.o.provides
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.o
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o: src/rendersystem/CMakeFiles/minimalrenderer.dir/flags.make
+src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o: ../src/rendersystem/mainwindow.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/mainwindow.cpp
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalrenderer.dir/mainwindow.cpp.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/mainwindow.cpp > CMakeFiles/minimalrenderer.dir/mainwindow.cpp.i
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalrenderer.dir/mainwindow.cpp.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/mainwindow.cpp -o CMakeFiles/minimalrenderer.dir/mainwindow.cpp.s
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o.requires:
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o.requires
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o.provides: src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o.requires
+	$(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o.provides.build
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o.provides
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o: src/rendersystem/CMakeFiles/minimalrenderer.dir/flags.make
+src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o: ../src/rendersystem/openglwidget.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/openglwidget.cpp
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalrenderer.dir/openglwidget.cpp.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/openglwidget.cpp > CMakeFiles/minimalrenderer.dir/openglwidget.cpp.i
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalrenderer.dir/openglwidget.cpp.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/openglwidget.cpp -o CMakeFiles/minimalrenderer.dir/openglwidget.cpp.s
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o.requires:
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o.requires
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o.provides: src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o.requires
+	$(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o.provides.build
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o.provides
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o: src/rendersystem/CMakeFiles/minimalrenderer.dir/flags.make
+src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o: ../src/rendersystem/gldrawable.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gldrawable.cpp
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalrenderer.dir/gldrawable.cpp.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gldrawable.cpp > CMakeFiles/minimalrenderer.dir/gldrawable.cpp.i
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalrenderer.dir/gldrawable.cpp.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gldrawable.cpp -o CMakeFiles/minimalrenderer.dir/gldrawable.cpp.s
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o.requires:
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o.requires
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o.provides: src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o.requires
+	$(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o.provides.build
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o.provides
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.o: src/rendersystem/CMakeFiles/minimalrenderer.dir/flags.make
+src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.o: ../src/rendersystem/main.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalrenderer.dir/main.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/main.cpp
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalrenderer.dir/main.cpp.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/main.cpp > CMakeFiles/minimalrenderer.dir/main.cpp.i
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalrenderer.dir/main.cpp.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/main.cpp -o CMakeFiles/minimalrenderer.dir/main.cpp.s
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.o.requires:
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.o.requires
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.o.provides: src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.o.requires
+	$(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.o.provides.build
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.o.provides
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.o
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o: src/rendersystem/CMakeFiles/minimalrenderer.dir/flags.make
+src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o: src/rendersystem/moc_mainwindow.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_mainwindow.cxx
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_mainwindow.cxx > CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.i
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_mainwindow.cxx -o CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.s
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o.requires:
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o.requires
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o.provides: src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o.requires
+	$(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o.provides.build
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o.provides
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o.provides.build: src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o: src/rendersystem/CMakeFiles/minimalrenderer.dir/flags.make
+src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o: src/rendersystem/moc_openglwidget.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_openglwidget.cxx
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_openglwidget.cxx > CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.i
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_openglwidget.cxx -o CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.s
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o.requires:
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o.requires
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o.provides: src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o.requires
+	$(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o.provides.build
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o.provides
+
+src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o.provides.build: src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o
 
 src/rendersystem/moc_mainwindow.cxx: ../src/rendersystem/mainwindow.h
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_mainwindow.cxx"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /Applications/Canopy.app/appdata/canopy-1.2.0.1610.macosx-x86_64/Canopy.app/Contents/bin/moc "@/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_mainwindow.cxx_parameters"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/moc-qt4 -I/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/. -I/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src -I/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders -o /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_mainwindow.cxx /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/mainwindow.h
 
 src/rendersystem/moc_openglwidget.cxx: ../src/rendersystem/openglwidget.h
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_openglwidget.cxx"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /Applications/Canopy.app/appdata/canopy-1.2.0.1610.macosx-x86_64/Canopy.app/Contents/bin/moc "@/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_openglwidget.cxx_parameters"
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o: src/rendersystem/CMakeFiles/minimalRenderer.dir/flags.make
-src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o: ../src/rendersystem/gldrawable.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gldrawable.cpp"
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalRenderer.dir/gldrawable.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gldrawable.cpp" > CMakeFiles/minimalRenderer.dir/gldrawable.cpp.i
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalRenderer.dir/gldrawable.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gldrawable.cpp" -o CMakeFiles/minimalRenderer.dir/gldrawable.cpp.s
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o.requires:
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o.requires
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o.provides: src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o.requires
-	$(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o.provides.build
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o.provides
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.o: src/rendersystem/CMakeFiles/minimalRenderer.dir/flags.make
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.o: ../src/rendersystem/glentity.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalRenderer.dir/glentity.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glentity.cpp"
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalRenderer.dir/glentity.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glentity.cpp" > CMakeFiles/minimalRenderer.dir/glentity.cpp.i
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalRenderer.dir/glentity.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glentity.cpp" -o CMakeFiles/minimalRenderer.dir/glentity.cpp.s
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.o.requires:
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.o.requires
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.o.provides: src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.o.requires
-	$(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.o.provides.build
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.o.provides
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.o
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.o: src/rendersystem/CMakeFiles/minimalRenderer.dir/flags.make
-src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.o: ../src/rendersystem/gllight.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalRenderer.dir/gllight.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gllight.cpp"
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalRenderer.dir/gllight.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gllight.cpp" > CMakeFiles/minimalRenderer.dir/gllight.cpp.i
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalRenderer.dir/gllight.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gllight.cpp" -o CMakeFiles/minimalRenderer.dir/gllight.cpp.s
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.o.requires:
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.o.requires
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.o.provides: src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.o.requires
-	$(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.o.provides.build
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.o.provides
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.o
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o: src/rendersystem/CMakeFiles/minimalRenderer.dir/flags.make
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o: ../src/rendersystem/glmaterial.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmaterial.cpp"
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalRenderer.dir/glmaterial.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmaterial.cpp" > CMakeFiles/minimalRenderer.dir/glmaterial.cpp.i
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalRenderer.dir/glmaterial.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmaterial.cpp" -o CMakeFiles/minimalRenderer.dir/glmaterial.cpp.s
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o.requires:
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o.requires
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o.provides: src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o.requires
-	$(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o.provides.build
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o.provides
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.o: src/rendersystem/CMakeFiles/minimalRenderer.dir/flags.make
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.o: ../src/rendersystem/glmesh.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalRenderer.dir/glmesh.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmesh.cpp"
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalRenderer.dir/glmesh.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmesh.cpp" > CMakeFiles/minimalRenderer.dir/glmesh.cpp.i
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalRenderer.dir/glmesh.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmesh.cpp" -o CMakeFiles/minimalRenderer.dir/glmesh.cpp.s
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.o.requires:
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.o.requires
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.o.provides: src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.o.requires
-	$(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.o.provides.build
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.o.provides
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.o
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.o: src/rendersystem/CMakeFiles/minimalRenderer.dir/flags.make
-src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.o: ../src/rendersystem/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalRenderer.dir/main.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/main.cpp"
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalRenderer.dir/main.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/main.cpp" > CMakeFiles/minimalRenderer.dir/main.cpp.i
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalRenderer.dir/main.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/main.cpp" -o CMakeFiles/minimalRenderer.dir/main.cpp.s
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.o.requires:
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.o.requires
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.o.provides: src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.o.requires
-	$(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.o.provides.build
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.o.provides
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.o
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o: src/rendersystem/CMakeFiles/minimalRenderer.dir/flags.make
-src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o: ../src/rendersystem/mainwindow.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/mainwindow.cpp"
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalRenderer.dir/mainwindow.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/mainwindow.cpp" > CMakeFiles/minimalRenderer.dir/mainwindow.cpp.i
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalRenderer.dir/mainwindow.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/mainwindow.cpp" -o CMakeFiles/minimalRenderer.dir/mainwindow.cpp.s
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o.requires:
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o.requires
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o.provides: src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o.requires
-	$(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o.provides.build
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o.provides
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o: src/rendersystem/CMakeFiles/minimalRenderer.dir/flags.make
-src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o: ../src/rendersystem/openglwidget.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_10)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/openglwidget.cpp"
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalRenderer.dir/openglwidget.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/openglwidget.cpp" > CMakeFiles/minimalRenderer.dir/openglwidget.cpp.i
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalRenderer.dir/openglwidget.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/openglwidget.cpp" -o CMakeFiles/minimalRenderer.dir/openglwidget.cpp.s
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o.requires:
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o.requires
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o.provides: src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o.requires
-	$(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o.provides.build
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o.provides
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o: src/rendersystem/CMakeFiles/minimalRenderer.dir/flags.make
-src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o: ../src/rendersystem/parametricmeshes.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_11)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/parametricmeshes.cpp"
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/parametricmeshes.cpp" > CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.i
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/parametricmeshes.cpp" -o CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.s
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o.requires:
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o.requires
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o.provides: src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o.requires
-	$(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o.provides.build
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o.provides
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.o: src/rendersystem/CMakeFiles/minimalRenderer.dir/flags.make
-src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.o: ../src/rendersystem/renderer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalRenderer.dir/renderer.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/renderer.cpp"
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalRenderer.dir/renderer.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/renderer.cpp" > CMakeFiles/minimalRenderer.dir/renderer.cpp.i
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalRenderer.dir/renderer.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/renderer.cpp" -o CMakeFiles/minimalRenderer.dir/renderer.cpp.s
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.o.requires:
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.o.requires
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.o.provides: src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.o.requires
-	$(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.o.provides.build
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.o.provides
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.o
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.o: src/rendersystem/CMakeFiles/minimalRenderer.dir/flags.make
-src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.o: ../src/rendersystem/texture.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_13)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalRenderer.dir/texture.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/texture.cpp"
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalRenderer.dir/texture.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/texture.cpp" > CMakeFiles/minimalRenderer.dir/texture.cpp.i
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalRenderer.dir/texture.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/texture.cpp" -o CMakeFiles/minimalRenderer.dir/texture.cpp.s
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.o.requires:
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.o.requires
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.o.provides: src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.o.requires
-	$(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.o.provides.build
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.o.provides
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.o.provides.build: src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.o
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o: src/rendersystem/CMakeFiles/minimalRenderer.dir/flags.make
-src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o: src/rendersystem/moc_mainwindow.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_14)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_mainwindow.cxx"
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_mainwindow.cxx" > CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.i
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_mainwindow.cxx" -o CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.s
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o.requires:
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o.requires
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o.provides: src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o.requires
-	$(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o.provides.build
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o.provides
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o.provides.build: src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o: src/rendersystem/CMakeFiles/minimalRenderer.dir/flags.make
-src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o: src/rendersystem/moc_openglwidget.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_15)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_openglwidget.cxx"
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_openglwidget.cxx" > CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.i
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_openglwidget.cxx" -o CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.s
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o.requires:
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o.requires
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o.provides: src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o.requires
-	$(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o.provides.build
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o.provides
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o.provides.build: src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o: src/rendersystem/CMakeFiles/minimalRenderer.dir/flags.make
-src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o: ../src/rendersystem/core_profile_attributes.mm
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_16)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/core_profile_attributes.mm"
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/core_profile_attributes.mm" > CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.i
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/core_profile_attributes.mm" -o CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.s
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o.requires:
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o.requires
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o.provides: src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o.requires
-	$(MAKE) -f src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o.provides.build
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o.provides
-
-src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o.provides.build: src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o
-
-# Object files for target minimalRenderer
-minimalRenderer_OBJECTS = \
-"CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o" \
-"CMakeFiles/minimalRenderer.dir/glentity.cpp.o" \
-"CMakeFiles/minimalRenderer.dir/gllight.cpp.o" \
-"CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o" \
-"CMakeFiles/minimalRenderer.dir/glmesh.cpp.o" \
-"CMakeFiles/minimalRenderer.dir/main.cpp.o" \
-"CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o" \
-"CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o" \
-"CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o" \
-"CMakeFiles/minimalRenderer.dir/renderer.cpp.o" \
-"CMakeFiles/minimalRenderer.dir/texture.cpp.o" \
-"CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o" \
-"CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o" \
-"CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o"
-
-# External object files for target minimalRenderer
-minimalRenderer_EXTERNAL_OBJECTS =
-
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.o
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.o
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.o
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.o
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.o
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.o
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/build.make
-../bin/minimalRenderer: ../lib/libfileloaders.0.1.0.dylib
-../bin/minimalRenderer: src/rendersystem/CMakeFiles/minimalRenderer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../../bin/minimalRenderer"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minimalRenderer.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && /usr/bin/moc-qt4 -I/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/. -I/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src -I/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders -o /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/moc_openglwidget.cxx /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/openglwidget.h
+
+# Object files for target minimalrenderer
+minimalrenderer_OBJECTS = \
+"CMakeFiles/minimalrenderer.dir/texture.cpp.o" \
+"CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o" \
+"CMakeFiles/minimalrenderer.dir/gllight.cpp.o" \
+"CMakeFiles/minimalrenderer.dir/glmesh.cpp.o" \
+"CMakeFiles/minimalrenderer.dir/renderer.cpp.o" \
+"CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o" \
+"CMakeFiles/minimalrenderer.dir/glentity.cpp.o" \
+"CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o" \
+"CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o" \
+"CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o" \
+"CMakeFiles/minimalrenderer.dir/main.cpp.o" \
+"CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o" \
+"CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o"
+
+# External object files for target minimalrenderer
+minimalrenderer_EXTERNAL_OBJECTS =
+
+../bin/minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.o
+../bin/minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o
+../bin/minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.o
+../bin/minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.o
+../bin/minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o
+../bin/minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o
+../bin/minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.o
+../bin/minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o
+../bin/minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o
+../bin/minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o
+../bin/minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.o
+../bin/minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o
+../bin/minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o
+../bin/minimalrenderer: /usr/lib/i386-linux-gnu/libQtGui.so
+../bin/minimalrenderer: /usr/lib/i386-linux-gnu/libQtCore.so
+../bin/minimalrenderer: /usr/lib/i386-linux-gnu/libQtGui.so
+../bin/minimalrenderer: /usr/lib/i386-linux-gnu/libQtOpenGL.so
+../bin/minimalrenderer: /usr/lib/i386-linux-gnu/libGLU.so
+../bin/minimalrenderer: /usr/lib/i386-linux-gnu/libGL.so
+../bin/minimalrenderer: /usr/lib/i386-linux-gnu/libSM.so
+../bin/minimalrenderer: /usr/lib/i386-linux-gnu/libICE.so
+../bin/minimalrenderer: /usr/lib/i386-linux-gnu/libX11.so
+../bin/minimalrenderer: /usr/lib/i386-linux-gnu/libXext.so
+../bin/minimalrenderer: ../lib/libfileloaders.so.0.1.0
+../bin/minimalrenderer: /usr/lib/i386-linux-gnu/libQtGui.so
+../bin/minimalrenderer: /usr/lib/i386-linux-gnu/libQtCore.so
+../bin/minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make
+../bin/minimalrenderer: src/rendersystem/CMakeFiles/minimalrenderer.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../../bin/minimalrenderer"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minimalrenderer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-src/rendersystem/CMakeFiles/minimalRenderer.dir/build: ../bin/minimalRenderer
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/build
+src/rendersystem/CMakeFiles/minimalrenderer.dir/build: ../bin/minimalrenderer
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/build
 
-src/rendersystem/CMakeFiles/minimalRenderer.dir/requires: src/rendersystem/CMakeFiles/minimalRenderer.dir/gldrawable.cpp.o.requires
-src/rendersystem/CMakeFiles/minimalRenderer.dir/requires: src/rendersystem/CMakeFiles/minimalRenderer.dir/glentity.cpp.o.requires
-src/rendersystem/CMakeFiles/minimalRenderer.dir/requires: src/rendersystem/CMakeFiles/minimalRenderer.dir/gllight.cpp.o.requires
-src/rendersystem/CMakeFiles/minimalRenderer.dir/requires: src/rendersystem/CMakeFiles/minimalRenderer.dir/glmaterial.cpp.o.requires
-src/rendersystem/CMakeFiles/minimalRenderer.dir/requires: src/rendersystem/CMakeFiles/minimalRenderer.dir/glmesh.cpp.o.requires
-src/rendersystem/CMakeFiles/minimalRenderer.dir/requires: src/rendersystem/CMakeFiles/minimalRenderer.dir/main.cpp.o.requires
-src/rendersystem/CMakeFiles/minimalRenderer.dir/requires: src/rendersystem/CMakeFiles/minimalRenderer.dir/mainwindow.cpp.o.requires
-src/rendersystem/CMakeFiles/minimalRenderer.dir/requires: src/rendersystem/CMakeFiles/minimalRenderer.dir/openglwidget.cpp.o.requires
-src/rendersystem/CMakeFiles/minimalRenderer.dir/requires: src/rendersystem/CMakeFiles/minimalRenderer.dir/parametricmeshes.cpp.o.requires
-src/rendersystem/CMakeFiles/minimalRenderer.dir/requires: src/rendersystem/CMakeFiles/minimalRenderer.dir/renderer.cpp.o.requires
-src/rendersystem/CMakeFiles/minimalRenderer.dir/requires: src/rendersystem/CMakeFiles/minimalRenderer.dir/texture.cpp.o.requires
-src/rendersystem/CMakeFiles/minimalRenderer.dir/requires: src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_mainwindow.cxx.o.requires
-src/rendersystem/CMakeFiles/minimalRenderer.dir/requires: src/rendersystem/CMakeFiles/minimalRenderer.dir/moc_openglwidget.cxx.o.requires
-src/rendersystem/CMakeFiles/minimalRenderer.dir/requires: src/rendersystem/CMakeFiles/minimalRenderer.dir/core_profile_attributes.mm.o.requires
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/requires
+src/rendersystem/CMakeFiles/minimalrenderer.dir/requires: src/rendersystem/CMakeFiles/minimalrenderer.dir/texture.cpp.o.requires
+src/rendersystem/CMakeFiles/minimalrenderer.dir/requires: src/rendersystem/CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o.requires
+src/rendersystem/CMakeFiles/minimalrenderer.dir/requires: src/rendersystem/CMakeFiles/minimalrenderer.dir/gllight.cpp.o.requires
+src/rendersystem/CMakeFiles/minimalrenderer.dir/requires: src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.o.requires
+src/rendersystem/CMakeFiles/minimalrenderer.dir/requires: src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o.requires
+src/rendersystem/CMakeFiles/minimalrenderer.dir/requires: src/rendersystem/CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o.requires
+src/rendersystem/CMakeFiles/minimalrenderer.dir/requires: src/rendersystem/CMakeFiles/minimalrenderer.dir/glentity.cpp.o.requires
+src/rendersystem/CMakeFiles/minimalrenderer.dir/requires: src/rendersystem/CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o.requires
+src/rendersystem/CMakeFiles/minimalrenderer.dir/requires: src/rendersystem/CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o.requires
+src/rendersystem/CMakeFiles/minimalrenderer.dir/requires: src/rendersystem/CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o.requires
+src/rendersystem/CMakeFiles/minimalrenderer.dir/requires: src/rendersystem/CMakeFiles/minimalrenderer.dir/main.cpp.o.requires
+src/rendersystem/CMakeFiles/minimalrenderer.dir/requires: src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_mainwindow.cxx.o.requires
+src/rendersystem/CMakeFiles/minimalrenderer.dir/requires: src/rendersystem/CMakeFiles/minimalrenderer.dir/moc_openglwidget.cxx.o.requires
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/requires
 
-src/rendersystem/CMakeFiles/minimalRenderer.dir/clean:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" && $(CMAKE_COMMAND) -P CMakeFiles/minimalRenderer.dir/cmake_clean.cmake
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/clean
+src/rendersystem/CMakeFiles/minimalrenderer.dir/clean:
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem && $(CMAKE_COMMAND) -P CMakeFiles/minimalrenderer.dir/cmake_clean.cmake
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/clean
 
-src/rendersystem/CMakeFiles/minimalRenderer.dir/depend: src/rendersystem/moc_mainwindow.cxx
-src/rendersystem/CMakeFiles/minimalRenderer.dir/depend: src/rendersystem/moc_openglwidget.cxx
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d" "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem" "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem" "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/CMakeFiles/minimalRenderer.dir/DependInfo.cmake" --color=$(COLOR)
-.PHONY : src/rendersystem/CMakeFiles/minimalRenderer.dir/depend
+src/rendersystem/CMakeFiles/minimalrenderer.dir/depend: src/rendersystem/moc_mainwindow.cxx
+src/rendersystem/CMakeFiles/minimalrenderer.dir/depend: src/rendersystem/moc_openglwidget.cxx
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/CMakeFiles/minimalrenderer.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : src/rendersystem/CMakeFiles/minimalrenderer.dir/depend
 

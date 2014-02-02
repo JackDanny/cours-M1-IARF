@@ -26,22 +26,16 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Applications/CMake 2.8-12.app/Contents/bin/cmake"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -E remove -f
-
-# Escaping for special characters.
-EQUALS = =
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = "/Applications/CMake 2.8-12.app/Contents/bin/ccmake"
+RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d"
+CMAKE_SOURCE_DIR = /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build"
+CMAKE_BINARY_DIR = /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build
 
 # Include any dependencies generated for this target.
 include src/fileloaders/CMakeFiles/fileloaders.dir/depend.make
@@ -52,88 +46,19 @@ include src/fileloaders/CMakeFiles/fileloaders.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/fileloaders/CMakeFiles/fileloaders.dir/flags.make
 
-src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o: src/fileloaders/CMakeFiles/fileloaders.dir/flags.make
-src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o: ../src/fileloaders/fileloader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/fileloaders.dir/fileloader.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/fileloader.cpp"
-
-src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fileloaders.dir/fileloader.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/fileloader.cpp" > CMakeFiles/fileloaders.dir/fileloader.cpp.i
-
-src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fileloaders.dir/fileloader.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/fileloader.cpp" -o CMakeFiles/fileloaders.dir/fileloader.cpp.s
-
-src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.requires:
-.PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.requires
-
-src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.provides: src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.requires
-	$(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.provides.build
-.PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.provides
-
-src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.provides.build: src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o
-
-src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o: src/fileloaders/CMakeFiles/fileloaders.dir/flags.make
-src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o: ../src/fileloaders/mesh.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/fileloaders.dir/mesh.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/mesh.cpp"
-
-src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fileloaders.dir/mesh.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/mesh.cpp" > CMakeFiles/fileloaders.dir/mesh.cpp.i
-
-src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fileloaders.dir/mesh.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/mesh.cpp" -o CMakeFiles/fileloaders.dir/mesh.cpp.s
-
-src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.requires:
-.PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.requires
-
-src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.provides: src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.requires
-	$(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.provides.build
-.PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.provides
-
-src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.provides.build: src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o
-
-src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o: src/fileloaders/CMakeFiles/fileloaders.dir/flags.make
-src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o: ../src/fileloaders/objfileparser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/fileloaders.dir/objfileparser.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objfileparser.cpp"
-
-src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fileloaders.dir/objfileparser.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objfileparser.cpp" > CMakeFiles/fileloaders.dir/objfileparser.cpp.i
-
-src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fileloaders.dir/objfileparser.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objfileparser.cpp" -o CMakeFiles/fileloaders.dir/objfileparser.cpp.s
-
-src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.requires:
-.PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.requires
-
-src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.provides: src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.requires
-	$(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.provides.build
-.PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.provides
-
-src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.provides.build: src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o
-
 src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.o: src/fileloaders/CMakeFiles/fileloaders.dir/flags.make
 src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.o: ../src/fileloaders/objloader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/fileloaders.dir/objloader.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objloader.cpp"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/fileloaders.dir/objloader.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objloader.cpp
 
 src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fileloaders.dir/objloader.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objloader.cpp" > CMakeFiles/fileloaders.dir/objloader.cpp.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objloader.cpp > CMakeFiles/fileloaders.dir/objloader.cpp.i
 
 src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fileloaders.dir/objloader.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objloader.cpp" -o CMakeFiles/fileloaders.dir/objloader.cpp.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objloader.cpp -o CMakeFiles/fileloaders.dir/objloader.cpp.s
 
 src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.o.requires:
 .PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.o.requires
@@ -146,17 +71,17 @@ src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.o.provides.build: src/f
 
 src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.o: src/fileloaders/CMakeFiles/fileloaders.dir/flags.make
 src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.o: ../src/fileloaders/objmesh.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/fileloaders.dir/objmesh.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objmesh.cpp"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/fileloaders.dir/objmesh.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objmesh.cpp
 
 src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fileloaders.dir/objmesh.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objmesh.cpp" > CMakeFiles/fileloaders.dir/objmesh.cpp.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objmesh.cpp > CMakeFiles/fileloaders.dir/objmesh.cpp.i
 
 src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fileloaders.dir/objmesh.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objmesh.cpp" -o CMakeFiles/fileloaders.dir/objmesh.cpp.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objmesh.cpp -o CMakeFiles/fileloaders.dir/objmesh.cpp.s
 
 src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.o.requires:
 .PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.o.requires
@@ -167,19 +92,65 @@ src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.o.provides: src/fileloade
 
 src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.o.provides.build: src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.o
 
+src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o: src/fileloaders/CMakeFiles/fileloaders.dir/flags.make
+src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o: ../src/fileloaders/fileloader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/fileloaders.dir/fileloader.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/fileloader.cpp
+
+src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fileloaders.dir/fileloader.cpp.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/fileloader.cpp > CMakeFiles/fileloaders.dir/fileloader.cpp.i
+
+src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fileloaders.dir/fileloader.cpp.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/fileloader.cpp -o CMakeFiles/fileloaders.dir/fileloader.cpp.s
+
+src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.requires:
+.PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.requires
+
+src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.provides: src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.requires
+	$(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.provides.build
+.PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.provides
+
+src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.provides.build: src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o
+
+src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o: src/fileloaders/CMakeFiles/fileloaders.dir/flags.make
+src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o: ../src/fileloaders/objfileparser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/fileloaders.dir/objfileparser.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objfileparser.cpp
+
+src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fileloaders.dir/objfileparser.cpp.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objfileparser.cpp > CMakeFiles/fileloaders.dir/objfileparser.cpp.i
+
+src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fileloaders.dir/objfileparser.cpp.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/objfileparser.cpp -o CMakeFiles/fileloaders.dir/objfileparser.cpp.s
+
+src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.requires:
+.PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.requires
+
+src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.provides: src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.requires
+	$(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.provides.build
+.PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.provides
+
+src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.provides.build: src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o
+
 src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.o: src/fileloaders/CMakeFiles/fileloaders.dir/flags.make
 src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.o: ../src/fileloaders/pointloader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles" $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.o"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/fileloaders.dir/pointloader.cpp.o -c "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/pointloader.cpp"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/fileloaders.dir/pointloader.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/pointloader.cpp
 
 src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fileloaders.dir/pointloader.cpp.i"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/pointloader.cpp" > CMakeFiles/fileloaders.dir/pointloader.cpp.i
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/pointloader.cpp > CMakeFiles/fileloaders.dir/pointloader.cpp.i
 
 src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fileloaders.dir/pointloader.cpp.s"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/pointloader.cpp" -o CMakeFiles/fileloaders.dir/pointloader.cpp.s
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/pointloader.cpp -o CMakeFiles/fileloaders.dir/pointloader.cpp.s
 
 src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.o.requires:
 .PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.o.requires
@@ -190,51 +161,76 @@ src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.o.provides: src/filel
 
 src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.o.provides.build: src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.o
 
+src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o: src/fileloaders/CMakeFiles/fileloaders.dir/flags.make
+src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o: ../src/fileloaders/mesh.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/fileloaders.dir/mesh.cpp.o -c /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/mesh.cpp
+
+src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fileloaders.dir/mesh.cpp.i"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/mesh.cpp > CMakeFiles/fileloaders.dir/mesh.cpp.i
+
+src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fileloaders.dir/mesh.cpp.s"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/mesh.cpp -o CMakeFiles/fileloaders.dir/mesh.cpp.s
+
+src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.requires:
+.PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.requires
+
+src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.provides: src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.requires
+	$(MAKE) -f src/fileloaders/CMakeFiles/fileloaders.dir/build.make src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.provides.build
+.PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.provides
+
+src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.provides.build: src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o
+
 # Object files for target fileloaders
 fileloaders_OBJECTS = \
-"CMakeFiles/fileloaders.dir/fileloader.cpp.o" \
-"CMakeFiles/fileloaders.dir/mesh.cpp.o" \
-"CMakeFiles/fileloaders.dir/objfileparser.cpp.o" \
 "CMakeFiles/fileloaders.dir/objloader.cpp.o" \
 "CMakeFiles/fileloaders.dir/objmesh.cpp.o" \
-"CMakeFiles/fileloaders.dir/pointloader.cpp.o"
+"CMakeFiles/fileloaders.dir/fileloader.cpp.o" \
+"CMakeFiles/fileloaders.dir/objfileparser.cpp.o" \
+"CMakeFiles/fileloaders.dir/pointloader.cpp.o" \
+"CMakeFiles/fileloaders.dir/mesh.cpp.o"
 
 # External object files for target fileloaders
 fileloaders_EXTERNAL_OBJECTS =
 
-../lib/libfileloaders.0.1.0.dylib: src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o
-../lib/libfileloaders.0.1.0.dylib: src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o
-../lib/libfileloaders.0.1.0.dylib: src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o
-../lib/libfileloaders.0.1.0.dylib: src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.o
-../lib/libfileloaders.0.1.0.dylib: src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.o
-../lib/libfileloaders.0.1.0.dylib: src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.o
-../lib/libfileloaders.0.1.0.dylib: src/fileloaders/CMakeFiles/fileloaders.dir/build.make
-../lib/libfileloaders.0.1.0.dylib: src/fileloaders/CMakeFiles/fileloaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../../lib/libfileloaders.dylib"
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fileloaders.dir/link.txt --verbose=$(VERBOSE)
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && $(CMAKE_COMMAND) -E cmake_symlink_library ../../../lib/libfileloaders.0.1.0.dylib ../../../lib/libfileloaders.0.1.dylib ../../../lib/libfileloaders.dylib
+../lib/libfileloaders.so.0.1.0: src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.o
+../lib/libfileloaders.so.0.1.0: src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.o
+../lib/libfileloaders.so.0.1.0: src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o
+../lib/libfileloaders.so.0.1.0: src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o
+../lib/libfileloaders.so.0.1.0: src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.o
+../lib/libfileloaders.so.0.1.0: src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o
+../lib/libfileloaders.so.0.1.0: /usr/lib/i386-linux-gnu/libQtGui.so
+../lib/libfileloaders.so.0.1.0: /usr/lib/i386-linux-gnu/libQtCore.so
+../lib/libfileloaders.so.0.1.0: src/fileloaders/CMakeFiles/fileloaders.dir/build.make
+../lib/libfileloaders.so.0.1.0: src/fileloaders/CMakeFiles/fileloaders.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../../lib/libfileloaders.so"
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fileloaders.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && $(CMAKE_COMMAND) -E cmake_symlink_library ../../../lib/libfileloaders.so.0.1.0 ../../../lib/libfileloaders.so.0.1 ../../../lib/libfileloaders.so
 
-../lib/libfileloaders.0.1.dylib: ../lib/libfileloaders.0.1.0.dylib
+../lib/libfileloaders.so.0.1: ../lib/libfileloaders.so.0.1.0
 
-../lib/libfileloaders.dylib: ../lib/libfileloaders.0.1.0.dylib
+../lib/libfileloaders.so: ../lib/libfileloaders.so.0.1.0
 
 # Rule to build all files generated by this target.
-src/fileloaders/CMakeFiles/fileloaders.dir/build: ../lib/libfileloaders.dylib
+src/fileloaders/CMakeFiles/fileloaders.dir/build: ../lib/libfileloaders.so
 .PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/build
 
-src/fileloaders/CMakeFiles/fileloaders.dir/requires: src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.requires
-src/fileloaders/CMakeFiles/fileloaders.dir/requires: src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.requires
-src/fileloaders/CMakeFiles/fileloaders.dir/requires: src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.requires
 src/fileloaders/CMakeFiles/fileloaders.dir/requires: src/fileloaders/CMakeFiles/fileloaders.dir/objloader.cpp.o.requires
 src/fileloaders/CMakeFiles/fileloaders.dir/requires: src/fileloaders/CMakeFiles/fileloaders.dir/objmesh.cpp.o.requires
+src/fileloaders/CMakeFiles/fileloaders.dir/requires: src/fileloaders/CMakeFiles/fileloaders.dir/fileloader.cpp.o.requires
+src/fileloaders/CMakeFiles/fileloaders.dir/requires: src/fileloaders/CMakeFiles/fileloaders.dir/objfileparser.cpp.o.requires
 src/fileloaders/CMakeFiles/fileloaders.dir/requires: src/fileloaders/CMakeFiles/fileloaders.dir/pointloader.cpp.o.requires
+src/fileloaders/CMakeFiles/fileloaders.dir/requires: src/fileloaders/CMakeFiles/fileloaders.dir/mesh.cpp.o.requires
 .PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/requires
 
 src/fileloaders/CMakeFiles/fileloaders.dir/clean:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" && $(CMAKE_COMMAND) -P CMakeFiles/fileloaders.dir/cmake_clean.cmake
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders && $(CMAKE_COMMAND) -P CMakeFiles/fileloaders.dir/cmake_clean.cmake
 .PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/clean
 
 src/fileloaders/CMakeFiles/fileloaders.dir/depend:
-	cd "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d" "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders" "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build" "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders" "/Users/Wedge/Desktop/M1 IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders/CMakeFiles/fileloaders.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/fileloaders/CMakeFiles/fileloaders.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/fileloaders/CMakeFiles/fileloaders.dir/depend
 
