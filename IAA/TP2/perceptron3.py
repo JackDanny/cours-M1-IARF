@@ -9,6 +9,7 @@ import random
 def attente_touche():
     raw_input()
 
+#affichage des deux classes et de la droite séparatrice
 def affichage_perceptron(data1,data2,w):
     assert type(data1) is list
     assert type(data2) is list
@@ -22,13 +23,15 @@ def affichage_perceptron(data1,data2,w):
     for point in data2:
         plot(point[0],point[1],forme2)
     vectAxes = axis()
-    plot([vectAxes[0],vectAxes[1]],[-(vectAxes[0]*w[1]+w[0])/w[2],-(vectAxes[1]*w[1]+w[0])/w[2]],'m:')
-
+    plot([vectAxes[0],vectAxes[1]],[-(vectAxes[0]*w[0]+w[2])/w[1],-(vectAxes[1]*w[0]+w[2])/w[1]],'m:')
+    title("perceptron sur 2 jeux de donnees")
     axis(vectAxes)
 
     show()
     hold(False)
 
+
+#affichage des 3 classes et des 3 droites séparatrices
 def affichage_perceptron_3data(data1,data2,data3,w1,w2,w3):
     assert type(data1) is list
     assert type(data2) is list
@@ -37,6 +40,7 @@ def affichage_perceptron_3data(data1,data2,data3,w1,w2,w3):
     assert type(w2) is list
     assert type(w3) is list
 	
+
     forme1 = 'b+'
     forme2 = 'r*'
     forme3 = 'gx'
@@ -51,10 +55,10 @@ def affichage_perceptron_3data(data1,data2,data3,w1,w2,w3):
     vectAxes = axis()
 
 
-    plot([vectAxes[0],vectAxes[1]],[-(vectAxes[0]*w1[1]+w1[0])/w1[2],-(vectAxes[1]*w1[1]+w1[0])/w1[2]],'y:')
+    plot([vectAxes[0],vectAxes[1]],[-(vectAxes[0]*w1[0]+w1[2])/w1[1],-(vectAxes[1]*w1[0]+w1[2])/w1[1]],'y:')
 
-    plot([vectAxes[0],vectAxes[1]],[-(vectAxes[0]*w2[1]+w2[0])/w2[2],-(vectAxes[1]*w2[1]+w2[0])/w2[2]],'k:')
-    plot([vectAxes[0],vectAxes[1]],[-(vectAxes[0]*w3[1]+w3[0])/w3[2],-(vectAxes[1]*w3[1]+w3[0])/w3[2]],'c:')
+    plot([vectAxes[0],vectAxes[1]],[-(vectAxes[0]*w2[0]+w2[2])/w2[1],-(vectAxes[1]*w2[0]+w2[2])/w2[1]],'k:')
+    plot([vectAxes[0],vectAxes[1]],[-(vectAxes[0]*w3[0]+w3[2])/w3[1],-(vectAxes[1]*w3[0]+w3[2])/w3[1]],'c:')
 
     
     title("perceptron sur 3 jeux de donnees")
@@ -63,13 +67,17 @@ def affichage_perceptron_3data(data1,data2,data3,w1,w2,w3):
     show()
     hold(False)
 
+#concaténation de la coordonnée 1 à la fin d'un point(vecteur)
 def pointbarre(point):
-    ret=[1.]
+    ret=[]
     for i in range(len(point)):
         ret.append(point[i])
+
+    ret.append(1.)
     
     return ret
 
+#concaténation de la coordonnée 1 à la fin de tous les points de la liste
 def initVecteur(vect):
     ret=[]
     for v in vect:
@@ -77,16 +85,20 @@ def initVecteur(vect):
         ret.append(pointbarre(v))
     return ret
 
+#multiplication d'un point(vecteur) par un scalaire
 def mulrpp (point,coeff):
     ret=[]
     for i in range(len(point)):
         ret.append(point[i]*coeff)
     return ret
 
+#algorithme du perceptron généralisé à toutes les dimensions
 def perceptron(dataGroupe1,dataGroupe2,mu):
     assert type(dataGroupe1) is list
     assert type(dataGroupe2) is list
     assert type(mu) is float
+    #on veut mu >0
+    mu=abs(mu)
 
     classe1=list(dataGroupe1)
     classe2=list(dataGroupe2)
@@ -101,37 +113,27 @@ def perceptron(dataGroupe1,dataGroupe2,mu):
 	# Sortie :
 	# - w : coefficients de l'hyperplan séparateur
     
-    
-
-	# w[1]x + w[2]y + w[0] =0 
+    #w est initialisé avec que des 1.
+    #on initialise pas avec que des zeros sinon en dimension 3
+    #on a la droite 0y+0x+0=0 ce qui est foireux
     w = list(ones(len(dataGroupe1[0])+1))
     
 
-    
+    #on rajoute une coordonée 1. à chaque point de la classe
     dataGroupe1=initVecteur(dataGroupe1)
-
-    
+    #on rajoute une coordonée 1. à chaque point de la classe
     dataGroupe2=initVecteur(dataGroupe2)
-	 
-	
-
-
-	
-	
-	
-	
 	
     # descente du gradient
     non_stabilise = True
     iteration = 1
-    mu=1.
     
     while non_stabilise:
         delta = +1
+        #on creer une liste de 0 de taille la dimension dans laquelle on se trouve
         erreurs=list(zeros(len(dataGroupe1[0])))
         for point in dataGroupe1:
             # calcul du produit scalaire entre le point\ et w
-            #dot(w,point)
             pscal=dot(point,w)
             #pointw =
             if (pscal*delta)<0 :
@@ -164,6 +166,9 @@ def perceptron(dataGroupe1,dataGroupe2,mu):
 
         # mise a jour de w
         #w = w + ...
+
+        #on stocke w dans wold pour pouvoir le comparer par la suite, c'est plus simple en prenant des array que des lists
+        wold=array(w)
         for i in range(len(w)):
             w[i]=w[i]-mu*erreurs[i]
        
@@ -174,19 +179,37 @@ def perceptron(dataGroupe1,dataGroupe2,mu):
 
 		#mise a jour du compteur d'iteration
         iteration = iteration + 1
+
+        #mu -> 0 à chaque itération
         mu=mu/1.01
 		
 		# mise a jour de la condition de sortie
 	
         
-        #affichage_perceptron(classe1,classe2,w)
-        print(norm(erreurs))
-        
-        if(norm(erreurs)<0.011):
+        #print(norm(erreurs))
+
+        #on stocke w sous forme d'Array pour le comparer à l'ancien w
+        wnew=array(w);
+
+        #on soustraie des array donc on soustraie bien membre à membre
+        print(norm(wnew - wold) / norm(wold))
+
+        if((norm(wnew - wold) / norm(wold))<0.001):
             non_stabilise = False
             print("nb iteration=" + str(iteration))
             print("w=" + str(w))
-        
+
+
+
+
+
+        '''
+        #ancienne condition
+        if(norm(erreurs)<0.011 or (iteration>10000)):
+            non_stabilise = False
+            print("nb iteration=" + str(iteration))
+            print("w=" + str(w))
+        '''
        
     
     return w
@@ -217,11 +240,22 @@ w1 = perceptron(classe1,classe2,1.)
 w2 = perceptron(classe2,classe3,1.)
 w3 = perceptron(classe1,classe3,1.)
 
+#pour effacer la derniere figure
 clf()
 affichage_perceptron_3data(classe1,classe2,classe3,w1,w2,w3)
 attente_touche()
 
 
+#pour exo 3
+'''
+classe4 =[[0.,0.,0.],[0.,1.,0.]]
+
+classe5 = [[1.,1.,1.],[1.,0.,1.]]
+
+w3 = perceptron(classe4,classe5,1.)
+
+print("w3=" + str(w3))
+'''
 w = [ +0.1 , -0.1 , 1 ]
 
 #affichage_perceptron(classe1,classe2,w)
