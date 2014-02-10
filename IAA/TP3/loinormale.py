@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+    #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # prerequis : librairie pylab installée (regroupe scypy, matplotlib, numpy et ipython)
 # codage de la méthode de classification par loi normale
@@ -6,14 +6,23 @@
 from pylab import *
 import random
 
-
+#attend l'appuie d'une touche
 def attente_touche():
 	raw_input()
+
 
 def affichage_lois_normales(liste_donnees_classes,liste_parametres_classes):
 	assert type(liste_donnees_classes) is list
 	assert type(liste_parametres_classes) is list
 	assert len(liste_donnees_classes)==len(liste_parametres_classes)
+
+# affichage_lois_normales affiche les données si elles sont de dimension 2 et trace les ellipses représentant les lois normales
+#
+# Entrée :
+# - liste_donnees_classe : liste de classes (classe = listes de points (1 point = 1 vecteur de dimension 2)):
+# - liste_parametres : liste des paramètres
+#     element1 : centroïde (au format "array")
+#     element2 : matrice de variance-covariance (au format "array")
 	
 	nb_classes = len(liste_donnees_classes)
 	couleurs= [ 'b', 'g', 'r', 'c', 'm', 'y', 'k', 'w' ]
@@ -35,9 +44,61 @@ def affichage_lois_normales(liste_donnees_classes,liste_parametres_classes):
 		vecteur_moyenne = liste_parametres_classes[classe][0]
 		plot(vecteur_moyenne[0],vecteur_moyenne[1],stylecentre)
 
-		# Affichage des ellipses de dispertion
+                # Affichage des ellipses de dispertion
 
-		sigma=liste_parametres_classes[classe][1]
+
+                mu=liste_parametres_classes[classe][0]
+                sigma=liste_parametres_classes[classe][1]
+
+
+        vectAxes = axis()
+
+        coul_ellipse=0;
+        #oblige de faire deuxieme boucle pour avoir une bonne valeur de vectAxes apres avoir placé tout les points
+        for classe in range(nb_classes):
+                #on prends les parametres de la classe en cours de traitement
+                mu=liste_parametres_classes[classe][0]
+                sigma=liste_parametres_classes[classe][1]
+
+                #pour chacune des autres classes suivantes, on va tracer l'ellipse
+                for classe2 in range(classe+1,nb_classes):
+                    #X1 et Y1 sont les coordonnées de l'ellipses
+                    X1=[]
+                    Y1=[]
+                    #on recupere les parametres de la classe à comparer
+                    mu2=liste_parametres_classes[classe2][0]
+                    sigma2=liste_parametres_classes[classe2][1]
+                    #on se fait un vecteur pour représenter l'axe X du graphique
+                    X=linspace(vectAxes[0],vectAxes[1],150)
+
+                    for x in X :
+                        #Pour chaque X,on se fait un vecteur Y. Les vecteurs X et Y peuvent être vu comme une matrice de points de taille len(X)*len(Y) dans laquelle on
+                        #ne garde que les points (x,y) verifiant une propriété
+                        Y = linspace(vectAxes[2],vectAxes[3],100)
+                        for y in Y :
+                            #on calcul la classe et le score pour les deux lois pour le point (x,y). Mais ici seul le score nous interesse.
+                            [c,score]=calcul_vraisemblance_loi_normale([x,y],[[mu,sigma]])
+                            [c,score2]=calcul_vraisemblance_loi_normale([x,y],[[mu2,sigma2]])
+
+                            #lorsqu'on a le même score pour le même point pour les deux classes, on est à la frontiere de décision
+                            #comme on a des valeurs échantilloné, on ne fait pas en sorte que les deux scores soient égaux mais on se laisse une
+                            #marge epsillon assez grande pour que le résultat soit visible.
+                            if (abs(score[0]-score2[0])<=0.3):
+                                X1.append(x)
+                                Y1.append(y)
+                    #axis(vectAxes)
+
+                    coul_ellipse=(coul_ellipse+1)%len(couleurs);
+                    plot(X1,Y1,couleurs[coul_ellipse]+'.')
+                    #axis(vectAxes)
+
+
+
+
+
+
+                #axis(vectAxes)
+
 		# ...
 		
 	show()
@@ -51,7 +112,11 @@ def affichage_histogramme_loinormale(data):
     
     n, bins, patches = plt.hist(data,30, normed=1, facecolor='green', alpha=0.75)
     y = normpdf( bins, mean(data), std(data))
+
     l = plt.plot(bins, y, 'r--', linewidth=1)
+
+
+
     
 
 def affichage_point(point,numero_forme):
@@ -123,10 +188,10 @@ def calcul_vraisemblance_loi_normale(donnee,liste_parametres):
         #on recupère la matrice de covariance de la classe i
         mat_covariance = array(liste_parametres[i][1])
         
-        
+        '''
         print("mat cov: ")
         print(mat_covariance)
-        
+        '''
         #on recupère x sous forme d'array        
         x = array(donnee)   
     
