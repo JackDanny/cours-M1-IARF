@@ -6,6 +6,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/minimalrenderer.dir/renderer.cpp.o"
   "CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o"
   "CMakeFiles/minimalrenderer.dir/glentity.cpp.o"
+  "CMakeFiles/minimalrenderer.dir/icosahedre.cpp.o"
   "CMakeFiles/minimalrenderer.dir/mainwindow.cpp.o"
   "CMakeFiles/minimalrenderer.dir/openglwidget.cpp.o"
   "CMakeFiles/minimalrenderer.dir/gldrawable.cpp.o"

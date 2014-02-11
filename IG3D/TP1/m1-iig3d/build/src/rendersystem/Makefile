@@ -270,6 +270,30 @@ glmesh.cpp.s:
 	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/glmesh.cpp.s
 .PHONY : glmesh.cpp.s
 
+icosahedre.o: icosahedre.cpp.o
+.PHONY : icosahedre.o
+
+# target to build an object file
+icosahedre.cpp.o:
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/icosahedre.cpp.o
+.PHONY : icosahedre.cpp.o
+
+icosahedre.i: icosahedre.cpp.i
+.PHONY : icosahedre.i
+
+# target to preprocess a source file
+icosahedre.cpp.i:
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/icosahedre.cpp.i
+.PHONY : icosahedre.cpp.i
+
+icosahedre.s: icosahedre.cpp.s
+.PHONY : icosahedre.s
+
+# target to generate assembly for a file
+icosahedre.cpp.s:
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/icosahedre.cpp.s
+.PHONY : icosahedre.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -490,6 +514,9 @@ help:
 	@echo "... glmesh.o"
 	@echo "... glmesh.i"
 	@echo "... glmesh.s"
+	@echo "... icosahedre.o"
+	@echo "... icosahedre.i"
+	@echo "... icosahedre.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -220,6 +220,8 @@
       </Unit>
       <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmesh.cpp">
       </Unit>
+      <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/icosahedre.cpp">
+      </Unit>
       <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/main.cpp">
       </Unit>
       <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/mainwindow.cpp">
@@ -265,6 +267,8 @@
       <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmaterial.h">
       </Unit>
       <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmesh.h">
+      </Unit>
+      <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/icosahedre.h">
       </Unit>
       <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/mainwindow.h">
       </Unit>

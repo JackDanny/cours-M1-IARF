@@ -16,7 +16,7 @@
 
 #include "glmaterial.h"
 #include "parametricmeshes.h"
-
+#include "icosahedre.h"
 
 
 
@@ -193,9 +193,15 @@ void Renderer::initGeometry()
 
     */
 
+    Icosahedre *ico = new Icosahedre();
+    ico->generateMesh();
+    GlMesh *mesh_plane = new GlMesh(*ico);
+    meshes_.push_back(mesh_plane);
+    delete ico;
+    glm::mat4 theTransformation(1.0f);
 
-
-
+    GlEntity *entity = new GlEntity(mesh_plane,defaultMaterial,theTransformation);
+    entities_.push_back(entity);
 
 
 
@@ -267,59 +273,6 @@ void Renderer::initGeometry()
 
     }
 
-    triangles_.clear();
-    vertices_.clear();
-
-
-    delete loader;
-
-
-    float phi=(1+sqrt(5))/2.;
-
-
-    GLfloat vdata[12][3] = {
-        {phi,1,0.0},
-        {phi,-1,0.0},
-        {-phi,1,0.0},
-        {-phi,-1,0.0},
-
-        {1,0,phi},
-        {1,0,-phi},
-        {-1,0,phi},
-        {-1,0,-phi},
-
-        {0,phi,1},
-        {0,phi,-1},
-        {0,-phi,1},
-        {0,-phi,-1}
-    };
-    int i;
-    for(i=0;i<12;i++){
-        Vertex vert;
-        vert.position_ = glm::vec3(vdata[i][0], vdata[i][1], vdata[i][2]);
-        vertices_.push_back(vert);
-    }
-
-
-    GLuint tindices[20][3] ={
-      {2,8,9},{9,8,0},{0,8,4},{4,8,6},{6,8,2},
-      {10,11,1},{1,11,5},{8,11,7},{7,11,3},{3,11,10},
-        {10,2,3},{3,2,9},{3,9,7},{7,9,0},{7,0,5},{5,0,4},{5,4,1},{1,4,6},{1,6,10},{10,6,2}
-
-    };
-    for(i=0;i<12;i++){
-        triangles_.push_back( TriangleIndex(tindices[i][0],tindices[i][1],tindices[i][2] );
-    }
-    glBegin(GL_TRIANGLES);
-    /*
-    int i;
-    for(i=0;i<20;i++){
-        glVertex3fv(&vdata[tindices[i][0]][0]);
-        glVertex3fv(&vdata[tindices[i][1]][0]);
-        glVertex3fv(&vdata[tindices[i][1]][0]);
-    }
-    glEnd();
-    */
 
 
 
