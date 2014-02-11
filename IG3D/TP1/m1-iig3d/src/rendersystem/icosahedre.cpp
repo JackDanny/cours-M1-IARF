@@ -35,8 +35,8 @@ void Icosahedre::generateMesh() {
         xyz[0]=vdata[i][0];
         xyz[1]=vdata[i][1];
         xyz[2]=vdata[i][2];
-        vert.position_ = xyz;
-        vert.normal_ = xyz;
+        vert.position_ = glm::normalize(xyz);
+        vert.normal_ = glm::normalize(xyz);
 
         vertices_.push_back(vert);
     }
