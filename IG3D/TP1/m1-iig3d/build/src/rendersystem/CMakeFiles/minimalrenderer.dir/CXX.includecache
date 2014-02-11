@@ -6,63 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../src/fileloaders/fileloader.h
-iostream
--
-fstream
--
-
 ../src/fileloaders/mesh.h
 vector
 -
 glm/glm.hpp
 ../src/fileloaders/glm/glm.hpp
-
-../src/fileloaders/objfileparser.h
-cstddef
--
-tr1/tuple
--
-fstream
--
-istream
--
-string
--
-tr1/functional
--
-
-../src/fileloaders/objloader.h
-QString
--
-vector
--
-map
--
-iostream
--
-sstream
--
-glm/glm.hpp
-../src/fileloaders/glm/glm.hpp
-objfileparser.h
-../src/fileloaders/objfileparser.h
-objmesh.h
-../src/fileloaders/objmesh.h
-utils.h
-../src/fileloaders/utils.h
-
-../src/fileloaders/objmesh.h
-mesh.h
-../src/fileloaders/mesh.h
-vector
--
-string
--
-
-../src/fileloaders/utils.h
-ostream
--
 
 ../src/glm/./core/_detail.hpp
 setup.hpp
@@ -486,14 +434,6 @@ quaternion.inl
 limits
 -
 
-../src/glm/gtc/matrix_access.hpp
-../glm.hpp
-../src/glm/gtc/../glm.hpp
-matrix_access.inl
-../src/glm/gtc/matrix_access.inl
-
-../src/glm/gtc/matrix_access.inl
-
 ../src/glm/gtc/matrix_transform.hpp
 ../glm.hpp
 ../src/glm/gtc/../glm.hpp
@@ -597,6 +537,8 @@ glentity.h
 ../src/rendersystem/./glentity.h
 gllight.h
 ../src/rendersystem/./gllight.h
+mesh.h
+../src/rendersystem/./mesh.h
 
 ../src/rendersystem/./texture.h
 tp_defines.h
@@ -707,6 +649,8 @@ glentity.h
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/../../../src/rendersystem/glentity.h
 gllight.h
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/../../../src/rendersystem/gllight.h
+mesh.h
+/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/../../../src/rendersystem/mesh.h
 
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build/src/rendersystem/../../../src/rendersystem/texture.h
 tp_defines.h
@@ -734,21 +678,9 @@ iostream
 cassert
 -
 
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gldrawable.cpp
-gldrawable.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gldrawable.h
-
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gldrawable.h
 vector
 -
-
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glentity.cpp
-tp_defines.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/tp_defines.h
-glentity.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glentity.h
-parametricmeshes.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/parametricmeshes.h
 
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glentity.h
 tp_defines.h
@@ -760,27 +692,15 @@ glmesh.h
 glmaterial.h
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmaterial.h
 
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gllight.cpp
-gllight.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gllight.h
-
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gllight.h
 opengl.h
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/opengl.h
-
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmaterial.cpp
-glmaterial.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmaterial.h
 
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmaterial.h
 opengl.h
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/opengl.h
 texture.h
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/texture.h
-
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmesh.cpp
-glmesh.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmesh.h
 
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmesh.h
 tp_defines.h
@@ -874,32 +794,6 @@ QGLWidget
 QImage
 -
 
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/parametricmeshes.cpp
-parametricmeshes.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/parametricmeshes.h
-
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/parametricmeshes.h
-tp_defines.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/tp_defines.h
-mesh.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/mesh.h
-
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/renderer.cpp
-tp_defines.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/tp_defines.h
-renderer.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/renderer.h
-objloader.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/objloader.h
-fileloader.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/fileloader.h
-glmaterial.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glmaterial.h
-parametricmeshes.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/parametricmeshes.h
-glm/gtc/matrix_access.hpp
--
-
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/renderer.h
 opengl.h
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/opengl.h
@@ -911,12 +805,8 @@ glentity.h
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glentity.h
 gllight.h
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gllight.h
-
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/texture.cpp
-texture.h
-/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/texture.h
-iostream
--
+mesh.h
+/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/mesh.h
 
 /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/texture.h
 tp_defines.h
@@ -975,10 +865,6 @@ qpoint.h
 /usr/include/qt4/QtCore/QPointF
 qpoint.h
 /usr/include/qt4/QtCore/qpoint.h
-
-/usr/include/qt4/QtCore/QString
-qstring.h
-/usr/include/qt4/QtCore/qstring.h
 
 /usr/include/qt4/QtCore/QTextStream
 qtextstream.h

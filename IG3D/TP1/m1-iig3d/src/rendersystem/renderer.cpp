@@ -25,8 +25,6 @@
 
 
 
-
-
 #include <glm/gtc/matrix_access.hpp>
 
 
@@ -105,14 +103,19 @@ void Renderer::initView()
 //-------------------------------------------
 void Renderer::initGeometry()
 {
+
+    /*
     glm::mat4 theTransformation(1.0f);
+
+    */
+
     GlMaterial *defaultMaterial = new GlMaterial(glm::vec3(0.8f, 0.8f, 0.8f), glm::vec3(1.0f, 1.0f, 1.0f), 25.f);
 
     unsigned char white[3];
     white[0] = white[1] = white[2] = 255;
+
     Texture *defaultTex = new Texture(white);
     defaultMaterial->setTexture(defaultTex);
-
 
 
 #ifdef ASDSI_TP0_G
@@ -177,7 +180,18 @@ void Renderer::initGeometry()
     }
 #endif
 
+    /*
+    ParametricMesh *plane = new ParametricSphere();
+    plane->generateMesh(32,32);
+    GlMesh *mesh_plane = new GlMesh(*plane);
+    meshes_.push_back(mesh_plane);
+    delete plane;
+    glm::mat4 theTransformation(1.0f);
 
+    GlEntity *entity = new GlEntity(mesh_plane,defaultMaterial,theTransformation);
+    entities_.push_back(entity);
+
+    */
 
 
 
@@ -250,11 +264,62 @@ void Renderer::initGeometry()
         GlEntity * newEntity = new GlEntity(newObject, trashMaterial, theTransformation);
         entities_.push_back(newEntity);
         delete(*it);
+
     }
+
+    triangles_.clear();
+    vertices_.clear();
+
 
     delete loader;
 
 
+    float phi=(1+sqrt(5))/2.;
+
+
+    GLfloat vdata[12][3] = {
+        {phi,1,0.0},
+        {phi,-1,0.0},
+        {-phi,1,0.0},
+        {-phi,-1,0.0},
+
+        {1,0,phi},
+        {1,0,-phi},
+        {-1,0,phi},
+        {-1,0,-phi},
+
+        {0,phi,1},
+        {0,phi,-1},
+        {0,-phi,1},
+        {0,-phi,-1}
+    };
+    int i;
+    for(i=0;i<12;i++){
+        Vertex vert;
+        vert.position_ = glm::vec3(vdata[i][0], vdata[i][1], vdata[i][2]);
+        vertices_.push_back(vert);
+    }
+
+
+    GLuint tindices[20][3] ={
+      {2,8,9},{9,8,0},{0,8,4},{4,8,6},{6,8,2},
+      {10,11,1},{1,11,5},{8,11,7},{7,11,3},{3,11,10},
+        {10,2,3},{3,2,9},{3,9,7},{7,9,0},{7,0,5},{5,0,4},{5,4,1},{1,4,6},{1,6,10},{10,6,2}
+
+    };
+    for(i=0;i<12;i++){
+        triangles_.push_back( TriangleIndex(tindices[i][0],tindices[i][1],tindices[i][2] );
+    }
+    glBegin(GL_TRIANGLES);
+    /*
+    int i;
+    for(i=0;i<20;i++){
+        glVertex3fv(&vdata[tindices[i][0]][0]);
+        glVertex3fv(&vdata[tindices[i][1]][0]);
+        glVertex3fv(&vdata[tindices[i][1]][0]);
+    }
+    glEnd();
+    */
 
 
 
@@ -464,19 +529,26 @@ int Renderer::handleMouseEvent(const MouseEvent & event)
     if (event.button == MouseEvent::MOVE) {
         float dx = (float)(event.x - x) / (float) width_;
         float dy = (float)(event.y - y) / (float) height_;
+
+
         switch (button) {
         case MouseEvent::LEFT : {
             // Début du code à écrire
             // 1 - Récupérer les axes xvec et yvec de la caméra
 
-            //glm::vec3 xvec = glm::row(viewMatrix_,0);
-            //glm::vec3 yvec = glm::row(viewMatrix_,1);
+
+
+
+
+            glm::vec3 xvec = glm::vec3(glm::row(viewMatrix_,0));
+            glm::vec3 yvec = glm::vec3(glm::row(viewMatrix_,1));
 
             // 2 - Modifier g_viewMatrix pour y ajouter une rotation de dy*360.f degrés autour de xvec
-            //glm::glRotatef(dy*360.f,1,0,0);
+            viewMatrix_ = glm::rotate(viewMatrix_,dy*360.f,xvec);
+
 
             // 3 - Modifier viewMatrix_ pour y ajouter une rotation de dx*360.f degrés autour de yvec
-            //glm::glRotatef(dx*360.f,0,1,0);
+             viewMatrix_ = glm::rotate(viewMatrix_,dx*360.f,yvec);
             // Fin du code à écrire
 
         }
@@ -484,16 +556,28 @@ int Renderer::handleMouseEvent(const MouseEvent & event)
         case MouseEvent::RIGHT : {
             // Début du code à écrire
             // 1 - Calculer les vecteurs déplacement xvec et yvec selon les axes X et Y de la caméra
+            glm::vec3 xvec = glm::vec3(glm::row(viewMatrix_,0));
+            glm::vec3 yvec = glm::vec3(glm::row(viewMatrix_,1));
+
+
+
+
             // 2 - Modifier viewMatrix_ pour y ajouter une translation de xvec+yvec
             // Fin du code à écrire
+            viewMatrix_= glm::translate(viewMatrix_,glm::vec3(xvec*dx) - glm::vec3(yvec*dy));
+
+
 
         }
         break;
         case MouseEvent::MIDDLE : {
             // Début du code à écrire
             // 1 - Calculer le vecteur déplacement zvec selon l'axe Z de la caméra
+            glm::vec3 zvec = glm::vec3(glm::row(viewMatrix_,2));
+
             // 2 - Modifier viewMatrix_ pour y ajouter une translation de zvec
             // Fin du code à écrire
+             viewMatrix_= glm::translate(viewMatrix_,glm::vec3(-zvec*dy));
 
         }
         break;
@@ -550,5 +634,8 @@ void Renderer::initLighting()
     lights_.push_back(light);
 
 }
+
+
+
 
 } // namespace rendersystem

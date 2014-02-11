@@ -67,9 +67,20 @@ namespace rendersystem {
 //-------------------------------------------
 
     loaders::Mesh::Vertex ParametricSphere::evalSurface(float u, float v) const {
+        loaders::Mesh::Vertex vert;
+        glm::vec3 xyz;
 
-        return loaders::Mesh::Vertex();
+        float pi=3.14159265359;
 
+        xyz[0]=cos(u*2.*pi)*sin(v*pi);
+        xyz[1]=sin(u*2.*pi)*sin(v*pi);
+        xyz[2]=cos(v*pi);
+
+        vert.position_ = xyz;
+        vert.normal_ = xyz;
+        vert.texcoord_ = glm::vec2(u,v);
+
+        return vert;
     }
 
 //-------------------------------------------
@@ -78,7 +89,28 @@ namespace rendersystem {
 
     loaders::Mesh::Vertex ParametricCylindre::evalSurface(float u, float v) const {
 
-        return loaders::Mesh::Vertex();
+
+        loaders::Mesh::Vertex vert;
+        glm::vec3 xyz;
+
+        float pi=3.14159265359;
+
+        xyz[0]=cos(u*2.*pi);
+        xyz[1]=sin(u*2.*pi);
+        xyz[2]=v;
+
+        vert.position_ = xyz;
+        vert.normal_ = glm::vec3(cos(u*2.*pi),sin(u*2.*pi),0.);
+        vert.texcoord_ = glm::vec2(u,v);
+
+        return vert;
+
+
+
+
+
+
+
 
 
     }
@@ -89,7 +121,20 @@ namespace rendersystem {
 
     loaders::Mesh::Vertex ParametricCone::evalSurface(float u, float v) const {
 
-        return loaders::Mesh::Vertex();
+        loaders::Mesh::Vertex vert;
+        glm::vec3 xyz;
+
+        float pi=3.14159265359;
+        float a=pi/8.;
+        xyz[0]=v*tan(a)*cos(2*pi*u);
+        xyz[1]=v*tan(a)*sin(2*pi*u);
+        xyz[2]=v;
+
+        vert.position_ = xyz;
+        vert.normal_ = xyz;
+        vert.texcoord_ = glm::vec2(u,v);
+
+        return vert;
 
     }
 
