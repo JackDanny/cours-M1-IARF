@@ -17,6 +17,7 @@
 #include "glmaterial.h"
 #include "parametricmeshes.h"
 #include "icosahedre.h"
+#include "geodesique.h"
 
 
 
@@ -193,11 +194,21 @@ void Renderer::initGeometry()
 
     */
 
-    Icosahedre *ico = new Icosahedre();
-    ico->generateMesh();
-    GlMesh *mesh_plane = new GlMesh(*ico);
+    /*ParametricSphere *ico = new ParametricSphere();
+    ico->generateMesh(32,32);
+    */
+    /*
+    Icosahedre *obj = new Icosahedre();
+    obj->generateMesh();
+    */
+    /*
+    Geodesique *obj = new Geodesique();
+    obj->generateMesh();
+    */
+
+    GlMesh *mesh_plane = new GlMesh(*obj);
     meshes_.push_back(mesh_plane);
-    delete ico;
+    delete obj;
     glm::mat4 theTransformation(1.0f);
 
     GlEntity *entity = new GlEntity(mesh_plane,defaultMaterial,theTransformation);

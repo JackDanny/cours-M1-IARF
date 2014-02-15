@@ -150,6 +150,30 @@ minimalrenderer/fast:
 	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/build
 .PHONY : minimalrenderer/fast
 
+geodesique.o: geodesique.cpp.o
+.PHONY : geodesique.o
+
+# target to build an object file
+geodesique.cpp.o:
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/geodesique.cpp.o
+.PHONY : geodesique.cpp.o
+
+geodesique.i: geodesique.cpp.i
+.PHONY : geodesique.i
+
+# target to preprocess a source file
+geodesique.cpp.i:
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/geodesique.cpp.i
+.PHONY : geodesique.cpp.i
+
+geodesique.s: geodesique.cpp.s
+.PHONY : geodesique.s
+
+# target to generate assembly for a file
+geodesique.cpp.s:
+	cd /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/build && $(MAKE) -f src/rendersystem/CMakeFiles/minimalrenderer.dir/build.make src/rendersystem/CMakeFiles/minimalrenderer.dir/geodesique.cpp.s
+.PHONY : geodesique.cpp.s
+
 gldrawable.o: gldrawable.cpp.o
 .PHONY : gldrawable.o
 
@@ -499,6 +523,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... minimalrenderer"
 	@echo "... rebuild_cache"
+	@echo "... geodesique.o"
+	@echo "... geodesique.i"
+	@echo "... geodesique.s"
 	@echo "... gldrawable.o"
 	@echo "... gldrawable.i"
 	@echo "... gldrawable.s"

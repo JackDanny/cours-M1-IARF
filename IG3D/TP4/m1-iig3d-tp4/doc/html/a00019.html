@@ -1,0 +1,764 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>M1 Informatique - IG3D - Introduction à openGL: Référence de la classe OpenGLWidget</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://www.mathjax.org/mathjax/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - IG3D - Introduction à openGL
+   &#160;<span id="projectnumber">2013-2014</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00019.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">Signaux</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="a00164.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe OpenGLWidget<div class="ingroups"><a class="el" href="a00096.html">Qt-OpenGL graphical interface</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Qt-OpenGL interface component.  
+ <a href="a00019.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00073_source.html">openglwidget.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe d'héritage de OpenGLWidget:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00165.png" border="0" usemap="#_open_g_l_widget_inherit__map" alt="Inheritance graph"/></div>
+<map name="_open_g_l_widget_inherit__map" id="_open_g_l_widget_inherit__map">
+</map>
+</div>
+<div class="dynheader">
+Graphe de collaboration de OpenGLWidget:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00166.png" border="0" usemap="#_open_g_l_widget_coll__map" alt="Collaboration graph"/></div>
+<map name="_open_g_l_widget_coll__map" id="_open_g_l_widget_coll__map">
+<area shape="rect" id="node3" href="a00043.html" title="OpenGL renderer. " alt="" coords="118,6,273,375"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signaux</h2></td></tr>
+<tr class="memitem:aad5e456d4458b2b47cd38dd11891cb0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#aad5e456d4458b2b47cd38dd11891cb0a">fpsChanged</a> (const QString &amp;)</td></tr>
+<tr class="separator:aad5e456d4458b2b47cd38dd11891cb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:afced02f0566d1fd754f7f1a44e410a55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#afced02f0566d1fd754f7f1a44e410a55">OpenGLWidget</a> (QWidget *parent)</td></tr>
+<tr class="separator:afced02f0566d1fd754f7f1a44e410a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846efa7a3ff39717eacaac05305ab5d5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a846efa7a3ff39717eacaac05305ab5d5">~OpenGLWidget</a> ()</td></tr>
+<tr class="separator:a846efa7a3ff39717eacaac05305ab5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
+<tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ca9011af09843d4bcfb7b68c0530101"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a0ca9011af09843d4bcfb7b68c0530101">resetView</a> ()</td></tr>
+<tr class="separator:a0ca9011af09843d4bcfb7b68c0530101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a60ccdf038127b8f0461e0cdf0b94b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a34a60ccdf038127b8f0461e0cdf0b94b">reloadShaders</a> ()</td></tr>
+<tr class="separator:a34a60ccdf038127b8f0461e0cdf0b94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr class="memitem:a2d3d45239c78255c23a70ca558b4d4f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a2d3d45239c78255c23a70ca558b4d4f1">initializeGL</a> ()</td></tr>
+<tr class="separator:a2d3d45239c78255c23a70ca558b4d4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eca4fded8705575e80cd5a0a1a53ba6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a2eca4fded8705575e80cd5a0a1a53ba6">resizeGL</a> (int w, int h)</td></tr>
+<tr class="separator:a2eca4fded8705575e80cd5a0a1a53ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5cbfafb28ef4c0474ae96437294f547"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ac5cbfafb28ef4c0474ae96437294f547">paintGL</a> ()</td></tr>
+<tr class="separator:ac5cbfafb28ef4c0474ae96437294f547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3571373ca6fedac4299977ab5fa2b88a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a3571373ca6fedac4299977ab5fa2b88a">mousePressEvent</a> (QMouseEvent *e)</td></tr>
+<tr class="separator:a3571373ca6fedac4299977ab5fa2b88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be117e92e9375a28092144242dd29a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a6be117e92e9375a28092144242dd29a4">mouseReleaseEvent</a> (QMouseEvent *e)</td></tr>
+<tr class="separator:a6be117e92e9375a28092144242dd29a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69f8b856a74f015b817c36689f9aa18a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a69f8b856a74f015b817c36689f9aa18a">mouseMoveEvent</a> (QMouseEvent *e)</td></tr>
+<tr class="separator:a69f8b856a74f015b817c36689f9aa18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02de04457ef8554159ce7795177b057"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ab02de04457ef8554159ce7795177b057">wheelEvent</a> (QWheelEvent *e)</td></tr>
+<tr class="separator:ab02de04457ef8554159ce7795177b057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e53392568d47bcb31ccbde9917efb0c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a9e53392568d47bcb31ccbde9917efb0c">keyPressEvent</a> (QKeyEvent *e)</td></tr>
+<tr class="separator:a9e53392568d47bcb31ccbde9917efb0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:ad2af7588ca87bfadebd74fb4939e64dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ad2af7588ca87bfadebd74fb4939e64dc">width_</a></td></tr>
+<tr class="separator:ad2af7588ca87bfadebd74fb4939e64dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a159d389017b03a58e3508186fb445"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a45a159d389017b03a58e3508186fb445">height_</a></td></tr>
+<tr class="separator:a45a159d389017b03a58e3508186fb445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8765208b949170388cd453bf4244c188"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00043.html">rendersystem::Renderer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a8765208b949170388cd453bf4244c188">renderer_</a></td></tr>
+<tr class="separator:a8765208b949170388cd453bf4244c188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Qt-OpenGL interface component. </p>
+<p>This specialized QGLWidget manage the OpenGL rendering and its interaction with the windowing system. </p>
+
+<p>Définition à la ligne <a class="el" href="a00073_source.html#l00018">18</a> du fichier <a class="el" href="a00073_source.html">openglwidget.h</a>.</p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="afced02f0566d1fd754f7f1a44e410a55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00019.html">OpenGLWidget</a> </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00072_source.html#l00050">50</a> du fichier <a class="el" href="a00072_source.html">openglwidget.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00072_source.html#l00013">gui::cerrInfoGL()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00019_afced02f0566d1fd754f7f1a44e410a55_cgraph.png" border="0" usemap="#a00019_afced02f0566d1fd754f7f1a44e410a55_cgraph" alt=""/></div>
+<map name="a00019_afced02f0566d1fd754f7f1a44e410a55_cgraph" id="a00019_afced02f0566d1fd754f7f1a44e410a55_cgraph">
+<area shape="rect" id="node2" href="a00086.html#a747a8fcc8e8b2eaf2a4305d97c7469ff" title="gui::cerrInfoGL" alt="" coords="165,5,275,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a846efa7a3ff39717eacaac05305ab5d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="a00019.html">OpenGLWidget</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00072_source.html#l00058">58</a> du fichier <a class="el" href="a00072_source.html">openglwidget.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="ac8bb3912a3ce86b15842e79d0b421204"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00072_source.html#l00062">62</a> du fichier <a class="el" href="a00072_source.html">openglwidget.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad5e456d4458b2b47cd38dd11891cb0a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fpsChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="a00072_source.html#l00078">OpenGLWidget::paintGL()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00019_aad5e456d4458b2b47cd38dd11891cb0a_icgraph.png" border="0" usemap="#a00019_aad5e456d4458b2b47cd38dd11891cb0a_icgraph" alt=""/></div>
+<map name="a00019_aad5e456d4458b2b47cd38dd11891cb0a_icgraph" id="a00019_aad5e456d4458b2b47cd38dd11891cb0a_icgraph">
+<area shape="rect" id="node2" href="a00019.html#ac5cbfafb28ef4c0474ae96437294f547" title="paintGL" alt="" coords="147,5,215,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d3d45239c78255c23a70ca558b4d4f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initializeGL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00072_source.html#l00066">66</a> du fichier <a class="el" href="a00072_source.html">openglwidget.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00078_source.html#l00057">Renderer::initRessources()</a>, et <a class="el" href="a00073_source.html#l00051">OpenGLWidget::renderer_</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00019_a2d3d45239c78255c23a70ca558b4d4f1_cgraph.png" border="0" usemap="#a00019_a2d3d45239c78255c23a70ca558b4d4f1_cgraph" alt=""/></div>
+<map name="a00019_a2d3d45239c78255c23a70ca558b4d4f1_cgraph" id="a00019_a2d3d45239c78255c23a70ca558b4d4f1_cgraph">
+<area shape="rect" id="node2" href="a00043.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="141,2481,307,2525"/><area shape="rect" id="node3" href="a00043.html#aafcf982312922a03e9bb1f072c10b3ca" title="Initialise the viewing configuration. " alt="" coords="355,2378,520,2422"/><area shape="rect" id="node4" href="a00043.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="355,2446,520,2490"/><area shape="rect" id="node48" href="a00043.html#a6010c43474fb6076bbf7d3a6dc06dc3b" title="Initialise the lighting configuration. " alt="" coords="355,2514,520,2558"/><area shape="rect" id="node49" href="a00043.html#a9f0fe0c105c553fe28c933db8169ef60" title="Initialise the shader configuration. " alt="" coords="355,2582,520,2626"/><area shape="rect" id="node5" href="a00035.html#a3fb5ae84fa678ec4b2a35f21ccf3a4f1" title="rendersystem::GlMaterial\l::setTexture" alt="" coords="576,2479,746,2523"/><area shape="rect" id="node6" href="a00041.html#ab8f2fc15aafbab4b028bac26ac3bfb85" title="rendersystem::Parametric\lMesh::generateMesh" alt="" coords="574,2547,748,2591"/><area shape="rect" id="node9" href="a00094.html#ga980a2a667e8b9970943db084c2077703" title="loaders::obj_mtl::ObjLoader\l::load" alt="" coords="569,1155,754,1199"/><area shape="rect" id="node41" href="a00094.html#gaab2a186f26924656a41cac89527cdc0e" title="loaders::obj_mtl::ObjLoader\l::getObjects" alt="" coords="569,2343,754,2387"/><area shape="rect" id="node47" href="a00044.html#ac6e4bc6cb29baeff99f02cc1dafd631d" title="rendersystem::Texture\l::useMipMap" alt="" coords="585,2411,738,2455"/><area shape="rect" id="node7" href="a00041.html#aa9b2ad8425d6e60dfd567214627cf383" title="rendersystem::Parametric\lMesh::evalSurface" alt="" coords="830,2547,1004,2591"/><area shape="rect" id="node8" href="a00041.html#a32c5a7117e04a81cef83dcd8631a205e" title="rendersystem::Parametric\lMesh::toLinear" alt="" coords="830,2615,1004,2659"/><area shape="rect" id="node10" href="a00094.html#ga96725c5f853c387715fb0814c4f8f9bc" title="loaders::obj_mtl::ObjLoader\l::add_face_Q_vertices" alt="" coords="825,1189,1010,1233"/><area shape="rect" id="node11" href="a00094.html#gaf6489fc7cfb021ff37ca716684b1bea9" title="loaders::obj_mtl::ObjLoader\l::add_face_Q_vertices_normals" alt="" coords="813,1257,1022,1301"/><area shape="rect" id="node12" href="a00094.html#ga3a48cecdc1f0cc468ad7e24fb16820b6" title="loaders::obj_mtl::ObjLoader\l::add_face_Q_vertices_textures" alt="" coords="813,1325,1022,1369"/><area shape="rect" id="node13" href="a00094.html#gaebf5718528dc6916f87cbab3ceca7ca2" title="loaders::obj_mtl::ObjLoader\l::add_face_Q_vertices_textures\l_normals" alt="" coords="813,1393,1022,1453"/><area shape="rect" id="node14" href="a00094.html#gaf397baad0cca83478d1fb3fe555cf7b8" title="loaders::obj_mtl::ObjLoader\l::add_face_T_vertices" alt="" coords="825,1477,1010,1521"/><area shape="rect" id="node15" href="a00094.html#gae4cedee9d2c60bab465035991942d4a5" title="loaders::obj_mtl::ObjLoader\l::add_face_T_vertices_normals" alt="" coords="814,1545,1021,1589"/><area shape="rect" id="node16" href="a00094.html#ga173cd7261a2bad6a1cb11cefefbdc6b6" title="loaders::obj_mtl::ObjLoader\l::add_face_T_vertices_textures" alt="" coords="814,1613,1021,1657"/><area shape="rect" id="node17" href="a00094.html#gafcd9b634c6eec7bd6c0e1a52eb58e6c8" title="loaders::obj_mtl::ObjLoader\l::add_face_T_vertices_textures\l_normals" alt="" coords="814,1681,1021,1741"/><area shape="rect" id="node18" href="a00024.html#a0ee382164283fabb36f0f5ed41f1e67c" title="loaders::obj_mtl::obj\l_parser::error_callback" alt="" coords="838,1765,996,1809"/><area shape="rect" id="node19" href="a00094.html#ga3175f52129456c23cd66d6b9d089470c" title="loaders::obj_mtl::ObjLoader\l::error_callback" alt="" coords="1081,1830,1266,1874"/><area shape="rect" id="node20" href="a00024.html#a2d64bceaf553b7bad2c1a88e7deae289" title="loaders::obj_mtl::obj\l_parser::face_callbacks" alt="" coords="837,2055,998,2099"/><area shape="rect" id="node21" href="a00024.html#a0b745ec59f7805d3dd93c1626a73b58a" title="loaders::obj_mtl::obj\l_parser::geometric_vertex\l_callback" alt="" coords="829,2123,1005,2183"/><area shape="rect" id="node22" href="a00024.html#a509d5b25fa534aa3789f4074afe7be70" title="loaders::obj_mtl::obj\l_parser::group_name_callback" alt="" coords="815,5,1020,49"/><area shape="rect" id="node23" href="a00024.html#af2732d6f92b18397b3fb191a955ed3b4" title="loaders::obj_mtl::obj\l_parser::info_callback" alt="" coords="842,73,993,117"/><area shape="rect" id="node24" href="a00094.html#ga0fdb975a2a45ccd7e096c0149bdf9574" title="loaders::obj_mtl::ObjLoader\l::info_callback" alt="" coords="1081,1902,1266,1946"/><area shape="rect" id="node25" href="a00024.html#a9f32db53f16f42f6ba0ac665ab2b3a41" title="loaders::obj_mtl::obj\l_parser::material_library\l_callback" alt="" coords="835,141,1000,201"/><area shape="rect" id="node26" href="a00024.html#ad3fd7d679915787a48037dbc4bf38dc4" title="loaders::obj_mtl::obj\l_parser::material_name\l_callback" alt="" coords="836,225,998,285"/><area shape="rect" id="node27" href="a00094.html#gad3402e39bf64a8a6cacd3dbf6ec33292" title="loaders::obj_mtl::ObjLoader\l::normal_callback" alt="" coords="825,309,1010,353"/><area shape="rect" id="node28" href="a00024.html#aa67dc2cf8cc9512111d0c5330c7e0d71" title="loaders::obj_mtl::obj\l_parser::object_name\l_callback" alt="" coords="842,377,992,437"/><area shape="rect" id="node29" href="a00024.html#aafa92a7789eb9eb29d7eaa9fec52d96d" title="loaders::obj_mtl::obj\l_parser::parse" alt="" coords="847,461,988,505"/><area shape="rect" id="node30" href="a00094.html#ga6c96423c9983a3fa68b4caf603b6650f" title="loaders::obj_mtl::ObjLoader\l::parse_material_library" alt="" coords="825,1885,1010,1929"/><area shape="rect" id="node32" href="a00094.html#ga229db95a87d68493145c3ed280b0ea44" title="loaders::obj_mtl::ObjLoader\l::set_group" alt="" coords="825,529,1010,573"/><area shape="rect" id="node33" href="a00094.html#gafb35d1a496a7f1faacef0622c8281273" title="loaders::obj_mtl::ObjLoader\l::set_material" alt="" coords="825,597,1010,641"/><area shape="rect" id="node34" href="a00094.html#ga5eb51577365300bac98067737ed2fd03" title="loaders::obj_mtl::ObjLoader\l::smooth_group" alt="" coords="825,665,1010,709"/><area shape="rect" id="node35" href="a00024.html#afeed6ec2367ec63536ae93aff8735344" title="loaders::obj_mtl::obj\l_parser::smoothing_group\l_callback" alt="" coords="829,733,1006,793"/><area shape="rect" id="node36" href="a00094.html#gaf80c85f73ef15cec4326e692411049a2" title="loaders::obj_mtl::ObjLoader\l::texture_callback" alt="" coords="825,817,1010,861"/><area shape="rect" id="node37" href="a00024.html#a7923f5922a4f65e0daa28937243818dc" title="loaders::obj_mtl::obj\l_parser::texture_vertex\l_callback" alt="" coords="838,885,997,945"/><area shape="rect" id="node38" href="a00094.html#ga31c745065be97574fcb1628d1251bd3e" title="loaders::obj_mtl::ObjLoader\l::vertex_callback" alt="" coords="825,969,1010,1013"/><area shape="rect" id="node39" href="a00024.html#a1f32fcb6ca6bd722822bf0fd3658b1f8" title="loaders::obj_mtl::obj\l_parser::vertex_normal\l_callback" alt="" coords="838,1037,997,1097"/><area shape="rect" id="node40" href="a00024.html#acf6e027ff93fde1d0c097f1761589482" title="loaders::obj_mtl::obj\l_parser::warning_callback" alt="" coords="829,1121,1005,1165"/><area shape="rect" id="node31" href="a00094.html#gafbe3328e6a7d34a2e36e314c9dfe975f" title="loaders::obj_mtl::ObjLoader\l::warning_callback" alt="" coords="1081,1978,1266,2022"/><area shape="rect" id="node42" href="a00094.html#ga068e536d6aa068dfd109f862cfd17b84" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeNormalPart" alt="" coords="824,2411,1010,2455"/><area shape="rect" id="node43" href="a00094.html#gab9d6ef6b7b658014c8267e2a8497cb68" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeNormalTexturePart" alt="" coords="803,2479,1032,2523"/><area shape="rect" id="node44" href="a00094.html#gaca43bd93250aec9113172ddcb415376c" title="loaders::obj_mtl::ObjLoader\l::addRawVerticePart" alt="" coords="825,2207,1010,2251"/><area shape="rect" id="node45" href="a00094.html#gae3ea1dfbc37a05bebd977b5ba003eb69" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeTexturePart" alt="" coords="824,2275,1011,2319"/><area shape="rect" id="node46" href="a00094.html#ga41cfa418f3332378833540f18e9c2c86" title="loaders::obj_mtl::ObjLoader\l::addVerticeNormalPart" alt="" coords="825,2343,1010,2387"/><area shape="rect" id="node50" href="a00043.html#a04ad50fc380882e045a19e4e63d57f26" title="rendersystem::Renderer\l::initShader" alt="" coords="579,2615,744,2659"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e53392568d47bcb31ccbde9917efb0c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void keyPressEvent </td>
+          <td>(</td>
+          <td class="paramtype">QKeyEvent *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00072_source.html#l00108">108</a> du fichier <a class="el" href="a00072_source.html">openglwidget.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00078_source.html#l00563">Renderer::handleKeyEvent()</a>, et <a class="el" href="a00073_source.html#l00051">OpenGLWidget::renderer_</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00019_a9e53392568d47bcb31ccbde9917efb0c_cgraph.png" border="0" usemap="#a00019_a9e53392568d47bcb31ccbde9917efb0c_cgraph" alt=""/></div>
+<map name="a00019_a9e53392568d47bcb31ccbde9917efb0c_cgraph" id="a00019_a9e53392568d47bcb31ccbde9917efb0c_cgraph">
+<area shape="rect" id="node2" href="a00043.html#a183631354912d24b225e17b111cc699f" title="Handle key event given by the vortexEngine. " alt="" coords="165,5,331,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a69f8b856a74f015b817c36689f9aa18a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mouseMoveEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00072_source.html#l00125">125</a> du fichier <a class="el" href="a00072_source.html">openglwidget.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00079_source.html#l00035">MouseEvent::ALT</a>, <a class="el" href="a00079_source.html#l00037">MouseEvent::button</a>, <a class="el" href="a00079_source.html#l00038">MouseEvent::click</a>, <a class="el" href="a00079_source.html#l00035">MouseEvent::CONTROL</a>, <a class="el" href="a00078_source.html#l00577">Renderer::handleMouseEvent()</a>, <a class="el" href="a00079_source.html#l00039">MouseEvent::modifiers</a>, <a class="el" href="a00079_source.html#l00036">MouseEvent::MOVE</a>, <a class="el" href="a00079_source.html#l00035">MouseEvent::NONE</a>, <a class="el" href="a00073_source.html#l00051">OpenGLWidget::renderer_</a>, <a class="el" href="a00079_source.html#l00035">MouseEvent::SHIFT</a>, et <a class="el" href="a00079_source.html#l00040">MouseEvent::x</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00019_a69f8b856a74f015b817c36689f9aa18a_cgraph.png" border="0" usemap="#a00019_a69f8b856a74f015b817c36689f9aa18a_cgraph" alt=""/></div>
+<map name="a00019_a69f8b856a74f015b817c36689f9aa18a_cgraph" id="a00019_a69f8b856a74f015b817c36689f9aa18a_cgraph">
+<area shape="rect" id="node2" href="a00043.html#a98bf2f211e3840eefca37ca1c16e50cd" title="Handle mouse event given by the vortexEngine. " alt="" coords="181,5,347,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3571373ca6fedac4299977ab5fa2b88a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mousePressEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00072_source.html#l00183">183</a> du fichier <a class="el" href="a00072_source.html">openglwidget.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00079_source.html#l00035">MouseEvent::ALT</a>, <a class="el" href="a00079_source.html#l00037">MouseEvent::button</a>, <a class="el" href="a00079_source.html#l00035">MouseEvent::CONTROL</a>, <a class="el" href="a00078_source.html#l00577">Renderer::handleMouseEvent()</a>, <a class="el" href="a00079_source.html#l00036">MouseEvent::LEFT</a>, <a class="el" href="a00079_source.html#l00036">MouseEvent::MIDDLE</a>, <a class="el" href="a00079_source.html#l00039">MouseEvent::modifiers</a>, <a class="el" href="a00079_source.html#l00035">MouseEvent::NONE</a>, <a class="el" href="a00073_source.html#l00051">OpenGLWidget::renderer_</a>, <a class="el" href="a00079_source.html#l00036">MouseEvent::RIGHT</a>, et <a class="el" href="a00079_source.html#l00035">MouseEvent::SHIFT</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00019_a3571373ca6fedac4299977ab5fa2b88a_cgraph.png" border="0" usemap="#a00019_a3571373ca6fedac4299977ab5fa2b88a_cgraph" alt=""/></div>
+<map name="a00019_a3571373ca6fedac4299977ab5fa2b88a_cgraph" id="a00019_a3571373ca6fedac4299977ab5fa2b88a_cgraph">
+<area shape="rect" id="node2" href="a00043.html#a98bf2f211e3840eefca37ca1c16e50cd" title="Handle mouse event given by the vortexEngine. " alt="" coords="184,5,349,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6be117e92e9375a28092144242dd29a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mouseReleaseEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00072_source.html#l00148">148</a> du fichier <a class="el" href="a00072_source.html">openglwidget.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00079_source.html#l00035">MouseEvent::ALT</a>, <a class="el" href="a00079_source.html#l00037">MouseEvent::button</a>, <a class="el" href="a00079_source.html#l00035">MouseEvent::CONTROL</a>, <a class="el" href="a00078_source.html#l00577">Renderer::handleMouseEvent()</a>, <a class="el" href="a00079_source.html#l00036">MouseEvent::LEFT</a>, <a class="el" href="a00079_source.html#l00036">MouseEvent::MIDDLE</a>, <a class="el" href="a00079_source.html#l00039">MouseEvent::modifiers</a>, <a class="el" href="a00079_source.html#l00035">MouseEvent::NONE</a>, <a class="el" href="a00073_source.html#l00051">OpenGLWidget::renderer_</a>, <a class="el" href="a00079_source.html#l00036">MouseEvent::RIGHT</a>, et <a class="el" href="a00079_source.html#l00035">MouseEvent::SHIFT</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00019_a6be117e92e9375a28092144242dd29a4_cgraph.png" border="0" usemap="#a00019_a6be117e92e9375a28092144242dd29a4_cgraph" alt=""/></div>
+<map name="a00019_a6be117e92e9375a28092144242dd29a4_cgraph" id="a00019_a6be117e92e9375a28092144242dd29a4_cgraph">
+<area shape="rect" id="node2" href="a00043.html#a98bf2f211e3840eefca37ca1c16e50cd" title="Handle mouse event given by the vortexEngine. " alt="" coords="197,5,363,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5cbfafb28ef4c0474ae96437294f547"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void paintGL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00072_source.html#l00078">78</a> du fichier <a class="el" href="a00072_source.html">openglwidget.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00019.html#aad5e456d4458b2b47cd38dd11891cb0a">OpenGLWidget::fpsChanged()</a>, <a class="el" href="a00078_source.html#l00480">Renderer::render()</a>, <a class="el" href="a00078_source.html#l00534">Renderer::renderDebug()</a>, <a class="el" href="a00073_source.html#l00051">OpenGLWidget::renderer_</a>, <a class="el" href="a00083_source.html#l00029">Timer::start()</a>, <a class="el" href="a00083_source.html#l00032">Timer::stop()</a>, et <a class="el" href="a00083_source.html#l00039">Timer::value()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00019_ac5cbfafb28ef4c0474ae96437294f547_cgraph.png" border="0" usemap="#a00019_ac5cbfafb28ef4c0474ae96437294f547_cgraph" alt=""/></div>
+<map name="a00019_ac5cbfafb28ef4c0474ae96437294f547_cgraph" id="a00019_ac5cbfafb28ef4c0474ae96437294f547_cgraph">
+<area shape="rect" id="node2" href="a00043.html#abe1317bc098889c2e1accbc2b0f76a3f" title="Render the scene. " alt="" coords="123,5,288,49"/><area shape="rect" id="node3" href="a00043.html#ae639a035ad857244a5fd8f25432ef33b" title="rendersystem::Renderer\l::renderDebug" alt="" coords="123,73,288,117"/><area shape="rect" id="node4" href="a00045.html#aedc96a40e844bc2efc8bbef1b0782702" title="rendersystem::Timer\l::start" alt="" coords="134,141,277,185"/><area shape="rect" id="node6" href="a00045.html#aacf6bf8e121fea8b0a92d7197b73fe27" title="rendersystem::Timer\l::stop" alt="" coords="134,209,277,253"/><area shape="rect" id="node7" href="a00045.html#a3cc3a64f968a6a443db35229e83f5e2d" title="rendersystem::Timer\l::value" alt="" coords="134,277,277,321"/><area shape="rect" id="node5" href="a00045.html#a9c2a764670feb841e29c8ada67031868" title="rendersystem::Timer\l::getTime" alt="" coords="336,175,480,219"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a34a60ccdf038127b8f0461e0cdf0b94b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reloadShaders </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00072_source.html#l00224">224</a> du fichier <a class="el" href="a00072_source.html">openglwidget.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00078_source.html#l00469">Renderer::initShaders()</a>, et <a class="el" href="a00073_source.html#l00051">OpenGLWidget::renderer_</a>.</p>
+
+<p>Référencé par <a class="el" href="a00061_source.html#l00193">MainWindow::reloadShaders()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00019_a34a60ccdf038127b8f0461e0cdf0b94b_cgraph.png" border="0" usemap="#a00019_a34a60ccdf038127b8f0461e0cdf0b94b_cgraph" alt=""/></div>
+<map name="a00019_a34a60ccdf038127b8f0461e0cdf0b94b_cgraph" id="a00019_a34a60ccdf038127b8f0461e0cdf0b94b_cgraph">
+<area shape="rect" id="node2" href="a00043.html#a9f0fe0c105c553fe28c933db8169ef60" title="Initialise the shader configuration. " alt="" coords="163,49,328,93"/><area shape="rect" id="node3" href="a00043.html#a04ad50fc380882e045a19e4e63d57f26" title="rendersystem::Renderer\l::initShader" alt="" coords="376,49,541,93"/><area shape="rect" id="node4" href="a00092.html#gac6f6b953cc9968777de7507139a884c9" title="loaders::text::loadFile" alt="" coords="590,5,738,33"/><area shape="rect" id="node6" href="a00097.html#gad2c864f425d8580c40739a4ccc464e91" title="Print to stderr compilation log of a shader. " alt="" coords="597,57,731,85"/><area shape="rect" id="node7" href="a00097.html#ga3cfb5a2081d90f8203c12fd2155a40d9" title="Print to stderr link log of a program. " alt="" coords="593,109,735,137"/><area shape="rect" id="node5" href="a00092.html#gad30baeb3fe93ad7f61c2bc2bc63b3bf9" title="side effect : seekg to begin of file " alt="" coords="788,5,970,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00019_a34a60ccdf038127b8f0461e0cdf0b94b_icgraph.png" border="0" usemap="#a00019_a34a60ccdf038127b8f0461e0cdf0b94b_icgraph" alt=""/></div>
+<map name="a00019_a34a60ccdf038127b8f0461e0cdf0b94b_icgraph" id="a00019_a34a60ccdf038127b8f0461e0cdf0b94b_icgraph">
+<area shape="rect" id="node2" href="a00018.html#a34a60ccdf038127b8f0461e0cdf0b94b" title="gui::MainWindow::reloadShaders" alt="" coords="164,5,380,33"/><area shape="rect" id="node3" href="a00018.html#a5176c9496a29e21eacb0f81ca1a29923" title="gui::MainWindow::createActions" alt="" coords="429,5,640,33"/><area shape="rect" id="node4" href="a00018.html#aeb676574b78bda84d687fdcfd65d84a6" title="gui::MainWindow::MainWindow" alt="" coords="689,5,895,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ca9011af09843d4bcfb7b68c0530101"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void resetView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00072_source.html#l00220">220</a> du fichier <a class="el" href="a00072_source.html">openglwidget.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00078_source.html#l00086">Renderer::initView()</a>, et <a class="el" href="a00073_source.html#l00051">OpenGLWidget::renderer_</a>.</p>
+
+<p>Référencé par <a class="el" href="a00061_source.html#l00198">MainWindow::resetCamera()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00019_a0ca9011af09843d4bcfb7b68c0530101_cgraph.png" border="0" usemap="#a00019_a0ca9011af09843d4bcfb7b68c0530101_cgraph" alt=""/></div>
+<map name="a00019_a0ca9011af09843d4bcfb7b68c0530101_cgraph" id="a00019_a0ca9011af09843d4bcfb7b68c0530101_cgraph">
+<area shape="rect" id="node2" href="a00043.html#aafcf982312922a03e9bb1f072c10b3ca" title="Initialise the viewing configuration. " alt="" coords="133,5,299,49"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00019_a0ca9011af09843d4bcfb7b68c0530101_icgraph.png" border="0" usemap="#a00019_a0ca9011af09843d4bcfb7b68c0530101_icgraph" alt=""/></div>
+<map name="a00019_a0ca9011af09843d4bcfb7b68c0530101_icgraph" id="a00019_a0ca9011af09843d4bcfb7b68c0530101_icgraph">
+<area shape="rect" id="node2" href="a00018.html#a395cfd3b5286442312051da532ffa579" title="gui::MainWindow::resetCamera" alt="" coords="134,6,341,34"/><area shape="rect" id="node3" href="a00018.html#a5176c9496a29e21eacb0f81ca1a29923" title="gui::MainWindow::createActions" alt="" coords="1032,6,1243,34"/><area shape="rect" id="node5" href="a00018.html#ad20897c5c8bd47f5d4005989bead0e55" title="gui::MainWindow::reset" alt="" coords="389,31,549,59"/><area shape="rect" id="node4" href="a00018.html#aeb676574b78bda84d687fdcfd65d84a6" title="gui::MainWindow::MainWindow" alt="" coords="1291,6,1498,34"/><area shape="rect" id="node6" href="a00018.html#a0e7976b09c57824b1241e7c3d30a67fd" title="gui::MainWindow::loadFile" alt="" coords="598,31,775,59"/><area shape="rect" id="node7" href="a00018.html#a9e8555112049fc2b4945120b3c45f8ab" title="gui::MainWindow::open" alt="" coords="824,31,984,59"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2eca4fded8705575e80cd5a0a1a53ba6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void resizeGL </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00072_source.html#l00071">71</a> du fichier <a class="el" href="a00072_source.html">openglwidget.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00073_source.html#l00049">OpenGLWidget::height_</a>, <a class="el" href="a00073_source.html#l00051">OpenGLWidget::renderer_</a>, <a class="el" href="a00078_source.html#l00652">Renderer::setViewport()</a>, et <a class="el" href="a00073_source.html#l00048">OpenGLWidget::width_</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00019_a2eca4fded8705575e80cd5a0a1a53ba6_cgraph.png" border="0" usemap="#a00019_a2eca4fded8705575e80cd5a0a1a53ba6_cgraph" alt=""/></div>
+<map name="a00019_a2eca4fded8705575e80cd5a0a1a53ba6_cgraph" id="a00019_a2eca4fded8705575e80cd5a0a1a53ba6_cgraph">
+<area shape="rect" id="node2" href="a00043.html#ac080cc4e58f7a83a315077a1335da646" title="Viewport management. " alt="" coords="128,39,293,83"/><area shape="rect" id="node3" href="a00043.html#a3eeed61a3424d2f907c8a1e420fddf6d" title="rendersystem::Renderer\l::width" alt="" coords="341,5,507,49"/><area shape="rect" id="node4" href="a00043.html#a822ae85493a742654ba563619492b26a" title="rendersystem::Renderer\l::height" alt="" coords="341,73,507,117"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab02de04457ef8554159ce7795177b057"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wheelEvent </td>
+          <td>(</td>
+          <td class="paramtype">QWheelEvent *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00072_source.html#l00120">120</a> du fichier <a class="el" href="a00072_source.html">openglwidget.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a45a159d389017b03a58e3508186fb445"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int height_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00073_source.html#l00049">49</a> du fichier <a class="el" href="a00073_source.html">openglwidget.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00072_source.html#l00071">OpenGLWidget::resizeGL()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8765208b949170388cd453bf4244c188"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00043.html">rendersystem::Renderer</a> renderer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00073_source.html#l00051">51</a> du fichier <a class="el" href="a00073_source.html">openglwidget.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00072_source.html#l00066">OpenGLWidget::initializeGL()</a>, <a class="el" href="a00072_source.html#l00108">OpenGLWidget::keyPressEvent()</a>, <a class="el" href="a00072_source.html#l00125">OpenGLWidget::mouseMoveEvent()</a>, <a class="el" href="a00072_source.html#l00183">OpenGLWidget::mousePressEvent()</a>, <a class="el" href="a00072_source.html#l00148">OpenGLWidget::mouseReleaseEvent()</a>, <a class="el" href="a00072_source.html#l00078">OpenGLWidget::paintGL()</a>, <a class="el" href="a00072_source.html#l00224">OpenGLWidget::reloadShaders()</a>, <a class="el" href="a00072_source.html#l00220">OpenGLWidget::resetView()</a>, et <a class="el" href="a00072_source.html#l00071">OpenGLWidget::resizeGL()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2af7588ca87bfadebd74fb4939e64dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int width_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00073_source.html#l00048">48</a> du fichier <a class="el" href="a00073_source.html">openglwidget.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00072_source.html#l00071">OpenGLWidget::resizeGL()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="a00073_source.html">openglwidget.h</a></li>
+<li><a class="el" href="a00072_source.html">openglwidget.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00086.html">gui</a></li><li class="navelem"><a class="el" href="a00019.html">OpenGLWidget</a></li>
+    <li class="footer">Généré le Jeudi Février 13 2014 15:22:46 pour M1 Informatique - IG3D - Introduction à openGL par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -3,6 +3,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/minimalrenderer.dir/glmaterial.cpp.o"
   "CMakeFiles/minimalrenderer.dir/gllight.cpp.o"
   "CMakeFiles/minimalrenderer.dir/glmesh.cpp.o"
+  "CMakeFiles/minimalrenderer.dir/geodesique.cpp.o"
   "CMakeFiles/minimalrenderer.dir/renderer.cpp.o"
   "CMakeFiles/minimalrenderer.dir/parametricmeshes.cpp.o"
   "CMakeFiles/minimalrenderer.dir/glentity.cpp.o"

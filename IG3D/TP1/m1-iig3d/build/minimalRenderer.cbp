@@ -210,6 +210,8 @@
       </Unit>
       <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/pointloader.cpp">
       </Unit>
+      <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/geodesique.cpp">
+      </Unit>
       <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/gldrawable.cpp">
       </Unit>
       <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glentity.cpp">
@@ -240,7 +242,11 @@
       </Unit>
       <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/shaders/fragmentdefault.glsl">
       </Unit>
+      <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/shaders/fragmentline.glsl">
+      </Unit>
       <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/shaders/vertexdefault.glsl">
+      </Unit>
+      <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/shaders/vertexline.glsl">
       </Unit>
       <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/fileloader.h">
       </Unit>
@@ -255,6 +261,8 @@
       <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/pointloader.h">
       </Unit>
       <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/fileloaders/utils.h">
+      </Unit>
+      <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/geodesique.h">
       </Unit>
       <Unit filename="/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/TP1/m1-iig3d/src/rendersystem/glassert.h">
       </Unit>
