@@ -52,55 +52,7 @@ def affichage_lois_normales(liste_donnees_classes,liste_parametres_classes):
 
 
         vectAxes = axis()
-        '''
-        coul_ellipse=0;
-        #oblige de faire deuxieme boucle pour avoir une bonne valeur de vectAxes apres avoir placé tout les points
-        for classe in range(nb_classes):
-                #on prends les parametres de la classe en cours de traitement
-                mu=liste_parametres_classes[classe][0]
-                sigma=liste_parametres_classes[classe][1]
-
-                #pour chacune des autres classes suivantes, on va tracer l'ellipse
-                for classe2 in range(classe+1,nb_classes):
-                    #X1 et Y1 sont les coordonnées de l'ellipses
-                    X1=[]
-                    Y1=[]
-                    #on recupere les parametres de la classe à comparer
-                    mu2=liste_parametres_classes[classe2][0]
-                    sigma2=liste_parametres_classes[classe2][1]
-                    #on se fait un vecteur pour représenter l'axe X du graphique
-                    X=linspace(vectAxes[0],vectAxes[1],150)
-
-                    for x in X :
-                        #Pour chaque X,on se fait un vecteur Y. Les vecteurs X et Y peuvent être vu comme une matrice de points de taille len(X)*len(Y) dans laquelle on
-                        #ne garde que les points (x,y) verifiant une propriété
-                        Y = linspace(vectAxes[2],vectAxes[3],100)
-                        for y in Y :
-                            #on calcul la classe et le score pour les deux lois pour le point (x,y). Mais ici seul le score nous interesse.
-                            [c,score]=calcul_vraisemblance_loi_normale([x,y],[[mu,sigma]])
-                            [c,score2]=calcul_vraisemblance_loi_normale([x,y],[[mu2,sigma2]])
-
-                            #lorsqu'on a le même score pour le même point pour les deux classes, on est à la frontiere de décision
-                            #comme on a des valeurs échantilloné, on ne fait pas en sorte que les deux scores soient égaux mais on se laisse une
-                            #marge epsillon assez grande pour que le résultat soit visible.
-                            if (abs(score[0]-score2[0])<=0.3):
-                                X1.append(x)
-                                Y1.append(y)
-                    #axis(vectAxes)
-
-                    coul_ellipse=(coul_ellipse+1)%len(couleurs);
-                    plot(X1,Y1,couleurs[coul_ellipse]+'.')
-                    #axis(vectAxes)
-
-
-
-
-
-
-                #axis(vectAxes)
-
-		# ...
-        '''	
+      
 
         coul_ellipse=-1;
         for classe in range(nb_classes):
@@ -192,6 +144,7 @@ def apprentissage_loi_normale(liste_donnees_classe):
     
     vect_moyenne=mean(liste_donnees_classe,0)
 
+    print("moyenne= " +str(vect_moyenne))
 	# calcul de la patrice de covariance
 	#   utilisez la fonction cov() directement sur tab_donnees, en utilisant transpose() si nécessaire
 	#   cov calcule la matrice de covariance si l'on présente les données 
@@ -201,8 +154,6 @@ def apprentissage_loi_normale(liste_donnees_classe):
     mat_covariance = cov(tab_donnees.transpose())
     
     return [vect_moyenne, mat_covariance]
-
-
 
 def calcul_vraisemblance_loi_normale(donnee,liste_parametres):
     assert type(donnee) is list
@@ -221,74 +172,118 @@ def calcul_vraisemblance_loi_normale(donnee,liste_parametres):
         #on recupère la moyenne de la classe i
         vect_moyenne = array(liste_parametres[i][0])
 
-        '''        
-        print("vect_moyenne: ")
-        print(array(vect_moyenne))
-        '''
         #on recupère la matrice de covariance de la classe i
         mat_covariance = array(liste_parametres[i][1])
-        
-        '''
-        print("mat cov: ")
-        print(mat_covariance)
-        '''
+
         #on recupère x sous forme d'array        
         x = array(donnee)   
-    
-        '''
-        print("x: ")
-        print(x)    
-        '''
 
         #on stocke le vecteur x-mu dans v_diff_mean
         v_diff_mean = x -  vect_moyenne 
         
-        '''
-        print("v_diff_mean: ")
-        print(v_diff_mean)
-        '''
-
         #on stocke l'inverse de la matrice de covariance dans inv_cov 
         inv_cov = inv(mat_covariance)   
         
         #on effectue le produit entre inv_cov et v_diff_mean
         
-        
         prod=dot(inv_cov,v_diff_mean)
-
-        '''
-        print("produit")
-        print(prod)
-        '''
 
         #puis le produit de v_diff mean par le resultat trouvé
         
         prod2=dot(v_diff_mean,prod)
         
-        '''
-        print("prod2")
-        print(prod2)
-        '''
-
-
         #on ajoute log(det(cov)) au resultat pour obtenir le score
         res =  log(det(mat_covariance)) + prod2 
+
         
-        '''
-        print("res: ")
-        print(res) 
-        '''
+        
         score.append(res)
-    '''
-    print("scores")
-    print(score)
-    '''
     c=argmin(score)
     return [c,score] 
 
+def calcul_vraisemblance_loi_normale_apriori(donnee,liste_parametres,probaclasses):
+    assert type(donnee) is list
+    assert type(liste_parametres) is list
 
+    # calcul de la log vraisemblance
+    #  (attention, restez sur le type array, si vous utilisez matrix vous ne pourrez pas transposer un vecteur)
+    #   fonctions à utiliser :
+    #       - dot(A,B) (produit matriciel de A par B)
+    #       - inv(A)   (matrice inverse de A)
+    #       - argmax : renvoi le numero de l'élément le plus grand
+    #       - transpose(A) : transposee de A (qu'il soit un vecteur ou une matrice)
+    # ... a faire
+    score=[]
+    for i in range(len(liste_parametres)) :
+        #on recupère la moyenne de la classe i
+        vect_moyenne = array(liste_parametres[i][0])
 
+        #on recupère la matrice de covariance de la classe i
+        mat_covariance = array(liste_parametres[i][1])
+
+        #on recupère x sous forme d'array        
+        x = array(donnee)   
+
+        #on stocke le vecteur x-mu dans v_diff_mean
+        v_diff_mean = x -  vect_moyenne 
         
+        #on stocke l'inverse de la matrice de covariance dans inv_cov 
+        inv_cov = inv(mat_covariance)   
+        
+        #on effectue le produit entre inv_cov et v_diff_mean
+        
+        prod=dot(inv_cov,v_diff_mean)
+
+        #puis le produit de v_diff mean par le resultat trouvé
+        
+        prod2=dot(v_diff_mean,prod)
+        
+        #on ajoute log(det(cov)) au resultat
+        res =  log(det(mat_covariance)) + prod2 
+
+        #on enlève 2*log de la proba pour obtenir le score final
+        res = res - (2*log(probaclasses[i]))
+        
+        
+        score.append(res)
+    c=argmin(score)
+    return [c,score] 
+
+def genere_donnee():
+    X1=[]    
+    X2=[]
+    X3=[]
+    X4=[]
+    
+    d11=normal(0.,2.,100.)
+    d12=normal(0.,2.,100.)
+    d13=normal(0.,2.,100.)
+
+    d21=normal(3.,2.,100.)
+    d22=normal(3.,2.,100.)
+    d23=normal(3.,2.,100.)
+    
+    d31=normal(0.,2.,100.)
+    d32=normal(0.,2.,100.)
+    d33=normal(3.,2.,100.)
+    
+    d41=normal(0.,2.,100.)
+    d42=normal(3.,2.,100.)
+    d43=normal(0.,2.,100.)
+
+
+
+
+    for i in range(len(d1)):
+        X1.append([d11[i],d12[i],d13[i]])
+        X2.append([d21[i],d22[i],d23[i]])
+        X3.append([d31[i],d32[i],d33[i]])
+        X4.append([d41[i],d42[i],d43[i]])
+
+
+
+    return (X1,X2,X3,X4)
+     
 
 
 
@@ -364,7 +359,6 @@ figure()
 affichage_lois_normales(liste_donnees_classes,liste_parametres_classes)
 
 [classe_trouvee,liste_vraisemblances] = calcul_vraisemblance_loi_normale(donnee_test_classe1,liste_parametres_classes)
-
 print "La donnee de classe 1 a ete reconnue comme une donnee de classe ",int(classe_trouvee)+1
 print "Vraisemblances : ",list(liste_vraisemblances)
 
@@ -375,4 +369,119 @@ print "Vraisemblances : ",list(liste_vraisemblances)
 [classe_trouvee,liste_vraisemblances] = calcul_vraisemblance_loi_normale(donnee_test_classe3,liste_parametres_classes)
 print "La donnee de classe 3 a ete reconnue comme une donnee de classe ",int(classe_trouvee)+1
 print "Vraisemblances : ",list(liste_vraisemblances)
+
+
+
+
+probaclasses=[9998./10000.,1./10000.,1./10000.]
+
+[classe_trouvee,liste_vraisemblances] = calcul_vraisemblance_loi_normale_apriori(donnee_test_classe1,liste_parametres_classes,probaclasses)
+
+print "La donnee de classe 1 a ete reconnue a priori comme une donnee de classe ",int(classe_trouvee)+1
+print "Vraisemblances : ",list(liste_vraisemblances)
+
+[classe_trouvee,liste_vraisemblances] = calcul_vraisemblance_loi_normale_apriori(donnee_test_classe2,liste_parametres_classes,probaclasses)
+print "La donnee de classe 2 a ete reconnue a priori comme une donnee de classe ",int(classe_trouvee)+1
+print "Vraisemblances : ",list(liste_vraisemblances)
+
+[classe_trouvee,liste_vraisemblances] = calcul_vraisemblance_loi_normale_apriori(donnee_test_classe3,liste_parametres_classes,probaclasses)
+print "La donnee de classe 3 a ete reconnue a priori comme une donnee de classe ",int(classe_trouvee)+1
+print "Vraisemblances : ",list(liste_vraisemblances)
+
+
+
+(X1,X2,X3,X4)=genere_donnee()
+
+liste_donnees_classes = [X1,X2,X3,X4]
+
+
+d1=array(X1)
+d2=array(X2)
+d3=array(X3)
+d4=array(X4)
+
+
+#on ferme toutes les fenetres ouvertes
+close('all')
+
+
+#on affiche les 6 histogrammes en leur donnant un titre pour les identifier
+affichage_histogramme_loinormale(d1[:,0])
+title("donnees_classe1 x")
+show()
+
+affichage_histogramme_loinormale(d1[:,1])
+title("donnees_classe1 y")
+show()
+
+affichage_histogramme_loinormale(d1[:,2])
+title("donnees_classe1 z")
+show()
+
+
+affichage_histogramme_loinormale(d2[:,0])
+title("donnees_classe2 x")
+show()
+affichage_histogramme_loinormale(d2[:,1])
+title("donnees_classe2 y")
+show()
+
+affichage_histogramme_loinormale(d2[:,2])
+title("donnees_classe2 z")
+show()
+
+
+affichage_histogramme_loinormale(d3[:,0])
+title("donnees_classe3 x")
+show()
+affichage_histogramme_loinormale(d3[:,1])
+title("donnees_classe3 y")
+show()
+
+affichage_histogramme_loinormale(d3[:,2])
+title("donnees_classe3 z")
+show()
+
+affichage_histogramme_loinormale(d4[:,0])
+title("donnees_classe4 x")
+show()
+affichage_histogramme_loinormale(d4[:,1])
+title("donnees_classe4 y")
+show()
+affichage_histogramme_loinormale(d4[:,2])
+title("donnees_classe4 z")
+show()
+
+
+liste_parametres_classe1 = apprentissage_loi_normale(X1)
+liste_parametres_classe2 = apprentissage_loi_normale(X2)
+liste_parametres_classe3 = apprentissage_loi_normale(X3)
+liste_parametres_classe4 = apprentissage_loi_normale(X4)
+
+
+liste_parametres_classes = [liste_parametres_classe1, liste_parametres_classe2, liste_parametres_classe3,liste_parametres_classe4]
+
+donnee_test_classe1 = [0.,0.,0.]
+donnee_test_classe2 = [3.,3.,3.]
+donnee_test_classe3 = [0.,0.,3.]
+donnee_test_classe4 = [0.,3.,0.]
+
+[classe_trouvee,liste_vraisemblances] = calcul_vraisemblance_loi_normale(donnee_test_classe1,liste_parametres_classes)
+print "La donnee de classe 1 a ete reconnue comme une donnee de classe ",int(classe_trouvee)+1
+print "Vraisemblances : ",list(liste_vraisemblances)
+
+[classe_trouvee,liste_vraisemblances] = calcul_vraisemblance_loi_normale(donnee_test_classe2,liste_parametres_classes)
+print "La donnee de classe 2 a ete reconnue comme une donnee de classe ",int(classe_trouvee)+1
+print "Vraisemblances : ",list(liste_vraisemblances)
+
+[classe_trouvee,liste_vraisemblances] = calcul_vraisemblance_loi_normale(donnee_test_classe3,liste_parametres_classes)
+print "La donnee de classe 3 a ete reconnue comme une donnee de classe ",int(classe_trouvee)+1
+print "Vraisemblances : ",list(liste_vraisemblances)
+
+
+[classe_trouvee,liste_vraisemblances] = calcul_vraisemblance_loi_normale(donnee_test_classe4,liste_parametres_classes)
+print "La donnee de classe 4 a ete reconnue comme une donnee de classe ",int(classe_trouvee)+1
+print "Vraisemblances : ",list(liste_vraisemblances)
+
+
 

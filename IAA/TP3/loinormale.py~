@@ -202,6 +202,40 @@ def apprentissage_loi_normale(liste_donnees_classe):
     
     return [vect_moyenne, mat_covariance]
 
+def genere_donnee():
+    X1=[]    
+    X2=[]
+    X3=[]
+
+    
+    d11=normal(0.,2.,100.)
+    d12=normal(0.,2.,100.)
+    d13=normal(0.,2.,100.)
+
+    d21=normal(3.,2.,100.)
+    d22=normal(3.,2.,100.)
+    d23=normal(3.,2.,100.)
+    
+    d31=normal(0.,2.,100.)
+    d32=normal(0.,2.,100.)
+    d33=normal(3.,2.,100.)
+    
+    d41=normal(0.,2.,100.)
+    d42=normal(3.,2.,100.)
+    d43=normal(0.,2.,100.)
+
+
+
+
+    for i in range(len(d1))
+        X1.append(d11[i],d12[i],d13[i])
+        X2.append(d21[i],d22[i],d23[i])
+        X3.append(d31[i],d32[i],d33[i])
+        X4.append(d41[i],d42[i],d43[i])
+
+
+
+    return (X1,X2,X3,X4)
 
 
 def calcul_vraisemblance_loi_normale(donnee,liste_parametres):
