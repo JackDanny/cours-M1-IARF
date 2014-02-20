@@ -38,43 +38,39 @@ def affichage_kppv(liste_donnees_classes,point_a_classer,K):
 		
 	# Affichage du point a classer
 	# ...
-
+        print("point a classer " +str(point_a_classer))
         plot(point_a_classer[0],point_a_classer[1],'Dk')
 
 	# Affichage des segments sur les K points les plus proches
 	# ...
 
-        #liste des distances du point à classer à chaque points de liste_donnees_classes
+
         distances_class = []
 
         for i  in range(nb_classes):
-                #on stock aussi le num de la classe i et sa position dans cette classe j
+
                 for j in range(len(liste_donnees_classes[i])):
                         distances_class.append( (norm(  (array(point_a_classer)) - (array(liste_donnees_classes[i][j]))  ),i,j ))
 
-        #on trie la liste par distances croissantes
+        print("distances_class avant sort" + str(distances_class))
         distances_class.sort(comp)
-        #print("distances_class apres sort" + str(distances_class))
 
-        #on va relier les K plus proches voisins
+        print("distances_class apres sort" + str(distances_class))
         for i in range(K):
-            #on recupere l'indice de la classe à laquelle appartient le ieme point le plus prêt
             i1=distances_class[i][1]
-            #... ainsi que sa position dans la sous-liste
             i2=distances_class[i][2]
 
 
-            #on recupère donc l'abcisse du point de la i1 ieme classe à la position i2
+            print("dc 1" +str(liste_donnees_classes[i1][i2][0]))
             x=liste_donnees_classes[i1][i2][0]
-            #print("dc 1" +str(liste_donnees_classes[i1][i2][1]))
-
-            #et l'ordonnée du point de la i1 ieme classe à la position i2
+            print("dc 1" +str(liste_donnees_classes[i1][i2][1]))
             y=liste_donnees_classes[i1][i2][1]
 
-            #on relie le point à classer au point de coordonées x y
-            plot([point_a_classer[0],x],[point_a_classer[1],y],'r-')
 
-        #on normalise les axes pour mieux "voir" les distances
+
+
+            plot([point_a_classer[0],x],[point_a_classer[1],y],'r:')
+
         axis('equal')
 
 	show()
@@ -96,14 +92,12 @@ def decision_kppv(liste_points_classes,point_a_classer,K):
 	nb_classes = len(liste_points_classes)
 	nb_points_representatifs = len(liste_points_classes[0])
 	
-
-
 	# calcul des distances à chacun des points représentatifs
 	# ...
 	
 	distances_class = []
         for i  in range(nb_classes):
-                #pour chaque distance on va aussi stocker la classe à laquelle il appartient
+		
 		for j in range(len(liste_points_classes[i])):
                         distances_class.append( (norm(array(point_a_classer)-array(liste_points_classes[i][j])),i ))
 		
@@ -116,134 +110,58 @@ def decision_kppv(liste_points_classes,point_a_classer,K):
 	# recherche des points les plus proches
 	# ...
 	
-        #on compte le nombre d'occurence des classes auxquelles appartiennent les points
 	nbOccClass=[0]
         for i in range(len(liste_points_classes)-1):
 		nbOccClass.append(0)
 	
 
+
 	for i in range(K):
-                #le ieme point le plus proche appatient à la classe c
-                c=distances_class[i][1]
-                #on incrémente donc nbOccClass de 1
+		c=distances_class[i][1]
 		nbOccClass[c]=nbOccClass[c]+1
 	
-        print("nbOccClasse = "+str(nbOccClass))
-        # décision sur les classes
+	# décision sur les classes
 	# ...
 
-        #on prend l'indice de l'élément de plus grande valeur de nbOccClass
+
         classe_la_plus_proche=argmax(nbOccClass)
 
-        #liste des classes ayant max(nbOccClass) occurences
-        #ceci sert à savoir si on a un cas d'indécision
-        classArgmax=[]
+        #liste des classes ayant argmax(nbOccClass) occurences
 
+        classArgmax=[]
         for i in range(len(nbOccClass)):
             if(nbOccClass[i] == max(nbOccClass)):
                 classArgmax.append(i)
 
-        #print("classArgmax" + str(classArgmax))
+        print("classArgmax" + str(classArgmax))
 
-        #si la liste n'a pas 1 éléments, elle en a plusieurs donc on est dans un cas d'indécision
         if(nbOccClass.count(nbOccClass[classe_la_plus_proche]) != 1):
-            #prendPasDecision(nbOccClass,classArgmax)
-            #classe_la_plus_proche = prendDecisionRandom(classArgmax)
-            #classe_la_plus_proche = DecisionIncrementeK(liste_points_classes,point_a_classer,K)
-            #classe_la_plus_proche = DecisionDecrementeK(liste_points_classes,point_a_classer,K)
-            #print("distances classes: " + str(distances_class))
-            classe_la_plus_proche = DecisionPoidsDistance(distances_class,nb_classes,K)
+            print(nbOccClass)
+            raise Exception("indecision")
+
+
+
 	
 	# classe_la_plus_proche = ...
-
+        '''
+	for i in range(len(nbOccClass)):
+		if ( (i!= classe_la_plus_proche) and (nbOccClass[i] == nbOccClass[classe_la_plus_proche]) ):
+		    print("erreur, indécision!!!")
+        '''
+		
+    
 	return classe_la_plus_proche
 
 
-def prendPasDecision(nbOccClass,classArgmax):
-    print("nbOccClass = " + str(nbOccClass))
-
-    print("les classes qui portent soucis sont:" +str(array(classArgmax)+1))
-
-    raise Exception("indecision")
-    pass
-
 def prendDecisionRandom(listeClasse):
     r=randint(0,len(listeClasse))
-    return listeClasse[r]
-
-def DecisionIncrementeK(liste_points_classes,point_a_classer,K):
-    print("indecision, on decremente K. K= " + str(K+1))
-    c=decision_kppv(liste_points_classes,point_a_classer,K+1)
-    return c
-
-def DecisionDecrementeK(liste_points_classes,point_a_classer,K):
-    print("indecision, on decremente K. K= " + str(K-1))
-    c=decision_kppv(liste_points_classes,point_a_classer,K-1)
-    return c
-
-def DecisionPoidsDistance(distances_class,nb_classes,K):
-
-    valeurClasses=zeros(nb_classes)
-
-    for i in range(K):
-        #la classe dans laquelle ajouter la valeur
-        classAugm=distances_class[i][1]
-        #la valeur à ajouter
-        val=1./(1.+distances_class[i][0])
-        #print("on rajoute:" + str(val) + " à " + str(classAugm))
-        #on rajoute la valeur
-        valeurClasses[classAugm]=valeurClasses[classAugm]+val
-
-    print("valeurs Classes " + str(valeurClasses))
-    #on retourne la classe qui a la plus grande valeur
+    return c[r]
 
 
-    c=argmax(valeurClasses)
-    return c
+
 
 # Programme principal : préparation points représentatifs et
 #                       test sur 3 points
-
-
-def genere_donnee():
-    #fonction servant à generer les donnees pour verifier la generalisation
-    #on se met en dimension 3 avec 4 classes
-    X1=[]
-    X2=[]
-    X3=[]
-    X4=[]
-
-    #la fonction normal du module numpy.random sert à générerune liste de valeurs
-    #suivant une loi normal
-    d11=normal(0.,2.,100.)
-    d12=normal(0.,2.,100.)
-    d13=normal(0.,2.,100.)
-
-    d21=normal(3.,2.,100.)
-    d22=normal(3.,2.,100.)
-    d23=normal(3.,2.,100.)
-
-    d31=normal(0.,2.,100.)
-    d32=normal(0.,2.,100.)
-    d33=normal(3.,2.,100.)
-
-    d41=normal(0.,2.,100.)
-    d42=normal(3.,2.,100.)
-    d43=normal(0.,2.,100.)
-
-
-
-
-    for i in range(len(d11)):
-        X1.append([d11[i],d12[i],d13[i]])
-        X2.append([d21[i],d22[i],d23[i]])
-        X3.append([d31[i],d32[i],d33[i]])
-        X4.append([d41[i],d42[i],d43[i]])
-
-
-
-    return (X1,X2,X3,X4)
-
 
 close('all')
 
@@ -261,75 +179,28 @@ K=5
 
 print "Decision par K-PPV, avec K = ",int(K)
 
-print("point a classer " +str(donnee_test_classe1))
 decision1 = decision_kppv(liste_donnees_classes,donnee_test_classe1,K)
-print "La donnee de classe 1 a ete reconnue comme une donnee de classe ",int(decision1+1)
+print "La donnee de classe 1 a ete reconnue comme une donnee de classe ",int(decision1)
 figure()
 affichage_kppv(liste_donnees_classes,donnee_test_classe1,K)
 
-print ""
-print("point a classer " +str(donnee_test_classe2))
 decision2 = decision_kppv(liste_donnees_classes,donnee_test_classe2,K)
-print "La donnee de classe 2 a ete reconnue comme une donnee de classe ",int(decision2+1)
+print "La donnee de classe 2 a ete reconnue comme une donnee de classe ",int(decision2)
 figure()
 affichage_kppv(liste_donnees_classes,donnee_test_classe2,K)
 
-
-print ""
-print("point a classer " +str(donnee_test_classe3))
 decision3 = decision_kppv(liste_donnees_classes,donnee_test_classe3,K)
-print "La donnee de classe 3 a ete reconnue comme une donnee de classe ",int(decision3+1)
+print "La donnee de classe 3 a ete reconnue comme une donnee de classe ",int(decision3)
 figure()
 affichage_kppv(liste_donnees_classes,donnee_test_classe3,K)
 
-
-
-
-print("\n5.Generalisation\n")
-
-
-(donnees_classe1,donnees_classe2,donnees_classe3,donnees_classe4)=genere_donnee()
-
-liste_donnees_classes = [donnees_classe1,donnees_classe2,donnees_classe3,donnees_classe4]
-
-
-donnee_test_classe1 = [0.,0.,0.]
-donnee_test_classe2 = [3.,3.,3.]
-donnee_test_classe3 = [0.,0.,3.]
-donnee_test_classe4 = [0.,3.,0.]
-
-
-print "point a classer : ",donnee_test_classe1
-decision1 = decision_kppv(liste_donnees_classes,donnee_test_classe1,K)
-print "La donnee de classe 1 a ete reconnue comme une donnee de classe ",int(decision1+1)
-
-print "\n"
-
-print "point a classer : ",donnee_test_classe2
-decision2 = decision_kppv(liste_donnees_classes,donnee_test_classe2,K)
-print "La donnee de classe 2 a ete reconnue comme une donnee de classe ",int(decision2+1)
-
-print "\n"
-
-print "point a classer : ",donnee_test_classe3
-decision3 = decision_kppv(liste_donnees_classes,donnee_test_classe3,K)
-print "La donnee de classe 3 a ete reconnue comme une donnee de classe ",int(decision3+1)
-
-print "\n"
-
-print "point a classer : ",donnee_test_classe4
-decision4 = decision_kppv(liste_donnees_classes,donnee_test_classe4,K)
-print "La donnee de classe 4 a ete reconnue comme une donnee de classe ",int(decision4+1)
-
-
-'''
 print "Cas d'indécision (K=5)"
 donnee_test_indecidable = [1.65, 1.02]
 decision = decision_kppv(liste_donnees_classes,donnee_test_indecidable,5)
 print "La donnee a ete reconnue comme une donnee de classe ",int(decision)," Normalement : indecidable."
 figure()
 affichage_kppv(liste_donnees_classes,donnee_test_indecidable,K)
-'''
+
 
 #traitement du cas d'égalité
 
