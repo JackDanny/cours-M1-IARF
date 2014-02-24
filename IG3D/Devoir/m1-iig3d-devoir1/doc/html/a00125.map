@@ -1,0 +1,14 @@
+<map id="mainwindow.h" name="mainwindow.h">
+<area shape="rect" id="node8" href="$a00073.html" title="openglwidget.h" alt="" coords="760,83,871,111"/>
+<area shape="rect" id="node9" href="$a00071.html" title="opengl.h" alt="" coords="626,470,699,498"/>
+<area shape="rect" id="node19" href="$a00079.html" title="renderer.h" alt="" coords="552,161,633,189"/>
+<area shape="rect" id="node16" href="$a00049.html" title="glassert.h" alt="" coords="808,547,887,575"/>
+<area shape="rect" id="node21" href="$a00059.html" title="glmesh.h" alt="" coords="278,315,353,343"/>
+<area shape="rect" id="node25" href="$a00053.html" title="glentity.h" alt="" coords="499,238,572,266"/>
+<area shape="rect" id="node30" href="$a00055.html" title="gllight.h" alt="" coords="617,238,684,266"/>
+<area shape="rect" id="node22" href="$a00084.html" title="tp_defines.h" alt="" coords="344,470,437,498"/>
+<area shape="rect" id="node23" href="$a00064.html" title="mesh.h" alt="" coords="238,393,303,421"/>
+<area shape="rect" id="node24" href="$a00051.html" title="gldrawable.h" alt="" coords="117,393,213,421"/>
+<area shape="rect" id="node26" href="$a00057.html" title="glmaterial.h" alt="" coords="491,315,580,343"/>
+<area shape="rect" id="node27" href="$a00082.html" title="texture.h" alt="" coords="478,393,551,421"/>
+</map>

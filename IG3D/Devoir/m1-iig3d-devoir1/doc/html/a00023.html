@@ -1,0 +1,1964 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>M1 Informatique - IG3D - Introduction à openGL: Référence de la classe mtl_parser</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://www.mathjax.org/mathjax/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - IG3D - Introduction à openGL
+   &#160;<span id="projectnumber">2013-2014</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00023.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Types publics</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="a00174.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe mtl_parser<div class="ingroups"><a class="el" href="a00094.html">Alias/Wavefront OBJ and MTL file format.</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Class to parse MTL file.  
+ <a href="a00023.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00066_source.html">objfileparser.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de mtl_parser:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00175.png" border="0" usemap="#mtl__parser_coll__map" alt="Collaboration graph"/></div>
+<map name="mtl__parser_coll__map" id="mtl__parser_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Types publics</h2></td></tr>
+<tr class="memitem:a75d959e49115b9725f45898e8e2e0953"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a75d959e49115b9725f45898e8e2e0953">ParseOptions</a> { <a class="el" href="a00023.html#a75d959e49115b9725f45898e8e2e0953a0831009eec8e23f5d0f71a33663c611b">parse_blank_lines_as_comment</a> = 1 &lt;&lt; 0, 
+<a class="el" href="a00023.html#a75d959e49115b9725f45898e8e2e0953ace51bb6eea9b3bc170e9f4f16bcecc52">texture_filenameonly</a> = 1 &lt;&lt; 1
+ }</td></tr>
+<tr class="separator:a75d959e49115b9725f45898e8e2e0953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c541473642bbabf661e7f95e73c6609"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(std::size_t, const <br class="typebreak"/>
+std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a4c541473642bbabf661e7f95e73c6609">info_callback_type</a></td></tr>
+<tr class="separator:a4c541473642bbabf661e7f95e73c6609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa42ae2d4b09825dbee2174ff7702d88"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(std::size_t, const <br class="typebreak"/>
+std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#afa42ae2d4b09825dbee2174ff7702d88">warning_callback_type</a></td></tr>
+<tr class="separator:afa42ae2d4b09825dbee2174ff7702d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3022887ff1bfc15328d646fa17db71"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(std::size_t, const <br class="typebreak"/>
+std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#afc3022887ff1bfc15328d646fa17db71">error_callback_type</a></td></tr>
+<tr class="separator:afc3022887ff1bfc15328d646fa17db71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf25be941b83d2519777e5f70f43bb91"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#acf25be941b83d2519777e5f70f43bb91">material_name_callback_type</a></td></tr>
+<tr class="separator:acf25be941b83d2519777e5f70f43bb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7787fe67599f661a4908438dc9b2ae77"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <br class="typebreak"/>
+<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a7787fe67599f661a4908438dc9b2ae77">material_Ka_callback_type</a></td></tr>
+<tr class="separator:a7787fe67599f661a4908438dc9b2ae77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52fc4047475acf1e360ca463af0409de"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <br class="typebreak"/>
+<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a52fc4047475acf1e360ca463af0409de">material_Kd_callback_type</a></td></tr>
+<tr class="separator:a52fc4047475acf1e360ca463af0409de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ed1480c9aafefb7267238505b87c65"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <br class="typebreak"/>
+<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a53ed1480c9aafefb7267238505b87c65">material_Ks_callback_type</a></td></tr>
+<tr class="separator:a53ed1480c9aafefb7267238505b87c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c5f552e0e8b102d2051201be5ebcfb1"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <br class="typebreak"/>
+<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a0c5f552e0e8b102d2051201be5ebcfb1">material_Tf_callback_type</a></td></tr>
+<tr class="separator:a0c5f552e0e8b102d2051201be5ebcfb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf277206043fb5cba04c0e0c762cda7e"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00094.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#adf277206043fb5cba04c0e0c762cda7e">material_Illum_callback_type</a></td></tr>
+<tr class="separator:adf277206043fb5cba04c0e0c762cda7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bbe386f62049dcd789be4f462a30d34"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a1bbe386f62049dcd789be4f462a30d34">material_dissolve_callback_type</a></td></tr>
+<tr class="separator:a1bbe386f62049dcd789be4f462a30d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12811f3c906991359db89a699759ac43"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a12811f3c906991359db89a699759ac43">material_shininess_callback_type</a></td></tr>
+<tr class="separator:a12811f3c906991359db89a699759ac43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af20dbbcf037018db35d2dec930f60a3f"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#af20dbbcf037018db35d2dec930f60a3f">material_sharpness_callback_type</a></td></tr>
+<tr class="separator:af20dbbcf037018db35d2dec930f60a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada97976eaa160d1579ebfc734f82ea33"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ada97976eaa160d1579ebfc734f82ea33">material_ior_callback_type</a></td></tr>
+<tr class="separator:ada97976eaa160d1579ebfc734f82ea33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6214371b90a32ed06d51707d79d865f"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aa6214371b90a32ed06d51707d79d865f">material_map_Ka_callback_type</a></td></tr>
+<tr class="separator:aa6214371b90a32ed06d51707d79d865f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794b04e6d4c9792016e8f8ed6f1b46bd"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a794b04e6d4c9792016e8f8ed6f1b46bd">material_map_Kd_callback_type</a></td></tr>
+<tr class="separator:a794b04e6d4c9792016e8f8ed6f1b46bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e279d2336ffd24a29fece8b73ae111"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ae4e279d2336ffd24a29fece8b73ae111">material_map_Ks_callback_type</a></td></tr>
+<tr class="separator:ae4e279d2336ffd24a29fece8b73ae111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9d5f62fc72f94a3df4db5f2b3683c8f"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ad9d5f62fc72f94a3df4db5f2b3683c8f">material_map_Ns_callback_type</a></td></tr>
+<tr class="separator:ad9d5f62fc72f94a3df4db5f2b3683c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc3458c17c999a5cbbfb6d1edee6adbf"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#adc3458c17c999a5cbbfb6d1edee6adbf">material_map_d_callback_type</a></td></tr>
+<tr class="separator:adc3458c17c999a5cbbfb6d1edee6adbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4b0f28315a8a25b7cd42553e350f829"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ad4b0f28315a8a25b7cd42553e350f829">material_dispmap_callback_type</a></td></tr>
+<tr class="separator:ad4b0f28315a8a25b7cd42553e350f829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e20937a63e18af0fd968d0f4948ee5"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ae8e20937a63e18af0fd968d0f4948ee5">material_decalmap_callback_type</a></td></tr>
+<tr class="separator:ae8e20937a63e18af0fd968d0f4948ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c4b5f8e8bc24f985569198c88c02267"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a4c4b5f8e8bc24f985569198c88c02267">material_bumpmap_callback_type</a></td></tr>
+<tr class="separator:a4c4b5f8e8bc24f985569198c88c02267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e09129aa1e7c3f41ca50be4c1c3c988"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a8e09129aa1e7c3f41ca50be4c1c3c988">material_reflmap_callback_type</a></td></tr>
+<tr class="separator:a8e09129aa1e7c3f41ca50be4c1c3c988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd2cbfbdfb2df7b04c4164cdf92c95c"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a5dd2cbfbdfb2df7b04c4164cdf92c95c">material_normalmap_callback_type</a></td></tr>
+<tr class="separator:a5dd2cbfbdfb2df7b04c4164cdf92c95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6535fc6855ac24c7ea920b75172e1bf8"><td class="memItemLeft" align="right" valign="top">typedef std::tr1::function<br class="typebreak"/>
+&lt; void(const std::string &amp;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a6535fc6855ac24c7ea920b75172e1bf8">comment_callback_type</a></td></tr>
+<tr class="separator:a6535fc6855ac24c7ea920b75172e1bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ab69a70383bb62f7fcc9fe9a501eba"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aa4ab69a70383bb62f7fcc9fe9a501eba">flags_type</a></td></tr>
+<tr class="separator:aa4ab69a70383bb62f7fcc9fe9a501eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a5e5e4fca2db7a37de6b06dd0dce57bfa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a5e5e4fca2db7a37de6b06dd0dce57bfa">mtl_parser</a> (<a class="el" href="a00023.html#aa4ab69a70383bb62f7fcc9fe9a501eba">flags_type</a> flags=0)</td></tr>
+<tr class="separator:a5e5e4fca2db7a37de6b06dd0dce57bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2732d6f92b18397b3fb191a955ed3b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#af2732d6f92b18397b3fb191a955ed3b4">info_callback</a> (const <a class="el" href="a00023.html#a4c541473642bbabf661e7f95e73c6609">info_callback_type</a> &amp;info_callback)</td></tr>
+<tr class="separator:af2732d6f92b18397b3fb191a955ed3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6e027ff93fde1d0c097f1761589482"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#acf6e027ff93fde1d0c097f1761589482">warning_callback</a> (const <a class="el" href="a00023.html#afa42ae2d4b09825dbee2174ff7702d88">warning_callback_type</a> &amp;warning_callback)</td></tr>
+<tr class="separator:acf6e027ff93fde1d0c097f1761589482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee382164283fabb36f0f5ed41f1e67c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a0ee382164283fabb36f0f5ed41f1e67c">error_callback</a> (const <a class="el" href="a00023.html#afc3022887ff1bfc15328d646fa17db71">error_callback_type</a> &amp;error_callback)</td></tr>
+<tr class="separator:a0ee382164283fabb36f0f5ed41f1e67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099e09ca292b2bb6294cf8f3186e4adf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a099e09ca292b2bb6294cf8f3186e4adf">material_name_callback</a> (const <a class="el" href="a00023.html#acf25be941b83d2519777e5f70f43bb91">material_name_callback_type</a> &amp;name_callback)</td></tr>
+<tr class="separator:a099e09ca292b2bb6294cf8f3186e4adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac9f9b19eacdf77939a13169c3da1ed5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aac9f9b19eacdf77939a13169c3da1ed5">material_Ka_callback</a> (const <a class="el" href="a00023.html#a7787fe67599f661a4908438dc9b2ae77">material_Ka_callback_type</a> &amp;Ka_callback)</td></tr>
+<tr class="separator:aac9f9b19eacdf77939a13169c3da1ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87494ae4f219f4a38c59e45f9cb4c65f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a87494ae4f219f4a38c59e45f9cb4c65f">material_Kd_callback</a> (const <a class="el" href="a00023.html#a52fc4047475acf1e360ca463af0409de">material_Kd_callback_type</a> &amp;Kd_callback)</td></tr>
+<tr class="separator:a87494ae4f219f4a38c59e45f9cb4c65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b7860d04f1c14695a549020953673b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a54b7860d04f1c14695a549020953673b">material_Ks_callback</a> (const <a class="el" href="a00023.html#a53ed1480c9aafefb7267238505b87c65">material_Ks_callback_type</a> &amp;Ks_callback)</td></tr>
+<tr class="separator:a54b7860d04f1c14695a549020953673b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229d9596f50a0f76136ac8e90632cd7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a229d9596f50a0f76136ac8e90632cd7a">material_Tf_callback</a> (const <a class="el" href="a00023.html#a0c5f552e0e8b102d2051201be5ebcfb1">material_Tf_callback_type</a> &amp;Tf_callback)</td></tr>
+<tr class="separator:a229d9596f50a0f76136ac8e90632cd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c89ce5517d12cd2c0b1f4ac60a4c482"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a8c89ce5517d12cd2c0b1f4ac60a4c482">material_Illum_callback</a> (const <a class="el" href="a00023.html#adf277206043fb5cba04c0e0c762cda7e">material_Illum_callback_type</a> &amp;Illum_callback)</td></tr>
+<tr class="separator:a8c89ce5517d12cd2c0b1f4ac60a4c482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a6a424d890c37742656665204c84cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a22a6a424d890c37742656665204c84cc">material_dissolve_callback</a> (const <a class="el" href="a00023.html#a1bbe386f62049dcd789be4f462a30d34">material_dissolve_callback_type</a> &amp;dissolve_callback)</td></tr>
+<tr class="separator:a22a6a424d890c37742656665204c84cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc2ee0068dcdacaea7ee82d180eea37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#adcc2ee0068dcdacaea7ee82d180eea37">material_shininess_callback</a> (const <a class="el" href="a00023.html#a12811f3c906991359db89a699759ac43">material_shininess_callback_type</a> &amp;shininess_callback)</td></tr>
+<tr class="separator:adcc2ee0068dcdacaea7ee82d180eea37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91aa519dfcae51a9fa24becef731703e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a91aa519dfcae51a9fa24becef731703e">material_sharpness_callback</a> (const <a class="el" href="a00023.html#af20dbbcf037018db35d2dec930f60a3f">material_sharpness_callback_type</a> &amp;sharpness_callback)</td></tr>
+<tr class="separator:a91aa519dfcae51a9fa24becef731703e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58694d5dcf3cd789be1ad9dd250993b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a58694d5dcf3cd789be1ad9dd250993b2">material_ior_callback</a> (const <a class="el" href="a00023.html#ada97976eaa160d1579ebfc734f82ea33">material_ior_callback_type</a> &amp;ior_callback)</td></tr>
+<tr class="separator:a58694d5dcf3cd789be1ad9dd250993b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8eda373725a598f225f6ffee725871b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ae8eda373725a598f225f6ffee725871b">material_map_Ka_callback</a> (const <a class="el" href="a00023.html#aa6214371b90a32ed06d51707d79d865f">material_map_Ka_callback_type</a> &amp;map_Ka_callback)</td></tr>
+<tr class="separator:ae8eda373725a598f225f6ffee725871b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0028bc1cd6ea73a8f6e3107a2520a0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ad0028bc1cd6ea73a8f6e3107a2520a0d">material_map_Kd_callback</a> (const <a class="el" href="a00023.html#a794b04e6d4c9792016e8f8ed6f1b46bd">material_map_Kd_callback_type</a> &amp;map_Kd_callback)</td></tr>
+<tr class="separator:ad0028bc1cd6ea73a8f6e3107a2520a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa492a33cd47c05c65b97bd419d51d742"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aa492a33cd47c05c65b97bd419d51d742">material_map_Ks_callback</a> (const <a class="el" href="a00023.html#ae4e279d2336ffd24a29fece8b73ae111">material_map_Ks_callback_type</a> &amp;map_Ks_callback)</td></tr>
+<tr class="separator:aa492a33cd47c05c65b97bd419d51d742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0413dcb5dce0396450d9cbc018d6a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a7e0413dcb5dce0396450d9cbc018d6a5">material_map_Ns_callback</a> (const <a class="el" href="a00023.html#ad9d5f62fc72f94a3df4db5f2b3683c8f">material_map_Ns_callback_type</a> &amp;map_Ns_callback)</td></tr>
+<tr class="separator:a7e0413dcb5dce0396450d9cbc018d6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e02f64eea223bc088c61d8e01d3e958"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a8e02f64eea223bc088c61d8e01d3e958">material_map_d_callback</a> (const <a class="el" href="a00023.html#adc3458c17c999a5cbbfb6d1edee6adbf">material_map_d_callback_type</a> &amp;map_d_callback)</td></tr>
+<tr class="separator:a8e02f64eea223bc088c61d8e01d3e958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af388fca5d23867845805d722bda86dfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#af388fca5d23867845805d722bda86dfc">material_dispmap_callback</a> (const <a class="el" href="a00023.html#ad4b0f28315a8a25b7cd42553e350f829">material_dispmap_callback_type</a> &amp;dispmap_callback)</td></tr>
+<tr class="separator:af388fca5d23867845805d722bda86dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa3283ca0dee14b76034aa01dc431b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a4fa3283ca0dee14b76034aa01dc431b5">material_decalmap_callback</a> (const <a class="el" href="a00023.html#ae8e20937a63e18af0fd968d0f4948ee5">material_decalmap_callback_type</a> &amp;decalmap_callback)</td></tr>
+<tr class="separator:a4fa3283ca0dee14b76034aa01dc431b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a172ff810f6463ab03da9b6e6da4e90f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a172ff810f6463ab03da9b6e6da4e90f9">material_bumpmap_callback</a> (const <a class="el" href="a00023.html#a4c4b5f8e8bc24f985569198c88c02267">material_bumpmap_callback_type</a> &amp;bumpmap_callback)</td></tr>
+<tr class="separator:a172ff810f6463ab03da9b6e6da4e90f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaebec16072e89b232c6d73bc138e57fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aaebec16072e89b232c6d73bc138e57fd">material_reflmap_callback</a> (const <a class="el" href="a00023.html#a8e09129aa1e7c3f41ca50be4c1c3c988">material_reflmap_callback_type</a> &amp;reflmap_callback)</td></tr>
+<tr class="separator:aaebec16072e89b232c6d73bc138e57fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa167ac5bd2efb8fd4a3938713d86fdbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aa167ac5bd2efb8fd4a3938713d86fdbf">material_normalmap_callback</a> (const <a class="el" href="a00023.html#a5dd2cbfbdfb2df7b04c4164cdf92c95c">material_normalmap_callback_type</a> &amp;normalmap_callback)</td></tr>
+<tr class="separator:aa167ac5bd2efb8fd4a3938713d86fdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e5340f01e656183cfc8033b21897d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ad0e5340f01e656183cfc8033b21897d3">comment_callback</a> (const <a class="el" href="a00023.html#a6535fc6855ac24c7ea920b75172e1bf8">comment_callback_type</a> &amp;comment_callback)</td></tr>
+<tr class="separator:ad0e5340f01e656183cfc8033b21897d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafa92a7789eb9eb29d7eaa9fec52d96d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aafa92a7789eb9eb29d7eaa9fec52d96d">parse</a> (std::istream &amp;istream)</td></tr>
+<tr class="separator:aafa92a7789eb9eb29d7eaa9fec52d96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a620db3a256dd6c1a9bd9f80c242aff62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a620db3a256dd6c1a9bd9f80c242aff62">parse</a> (const std::string &amp;filename)</td></tr>
+<tr class="separator:a620db3a256dd6c1a9bd9f80c242aff62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:aa56342618907fbd6b5ccd6830820b46b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#aa4ab69a70383bb62f7fcc9fe9a501eba">flags_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aa56342618907fbd6b5ccd6830820b46b">flags_</a></td></tr>
+<tr class="separator:aa56342618907fbd6b5ccd6830820b46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79e5152d14849484beaca4bfccf76c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#a4c541473642bbabf661e7f95e73c6609">info_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ac79e5152d14849484beaca4bfccf76c3">info_callback_</a></td></tr>
+<tr class="separator:ac79e5152d14849484beaca4bfccf76c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e9f1caadfcf3478350ebceee0656048"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#afa42ae2d4b09825dbee2174ff7702d88">warning_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a9e9f1caadfcf3478350ebceee0656048">warning_callback_</a></td></tr>
+<tr class="separator:a9e9f1caadfcf3478350ebceee0656048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a39855abe0d4ab60338bfebc1824dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#afc3022887ff1bfc15328d646fa17db71">error_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ae8a39855abe0d4ab60338bfebc1824dd">error_callback_</a></td></tr>
+<tr class="separator:ae8a39855abe0d4ab60338bfebc1824dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fe9acbb99d5909f73501dc0ca0b66b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#acf25be941b83d2519777e5f70f43bb91">material_name_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a44fe9acbb99d5909f73501dc0ca0b66b">material_name_callback_</a></td></tr>
+<tr class="separator:a44fe9acbb99d5909f73501dc0ca0b66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c3edc6f68f92aabef97562a1f68847"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#a7787fe67599f661a4908438dc9b2ae77">material_Ka_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a20c3edc6f68f92aabef97562a1f68847">material_Ka_callback_</a></td></tr>
+<tr class="separator:a20c3edc6f68f92aabef97562a1f68847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3cc5aa8ce7d6c2f6dc70a8b9b86553"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#a52fc4047475acf1e360ca463af0409de">material_Kd_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a4b3cc5aa8ce7d6c2f6dc70a8b9b86553">material_Kd_callback_</a></td></tr>
+<tr class="separator:a4b3cc5aa8ce7d6c2f6dc70a8b9b86553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b5b91fd67ab60550ef8701b61271d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#a53ed1480c9aafefb7267238505b87c65">material_Ks_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a32b5b91fd67ab60550ef8701b61271d8">material_Ks_callback_</a></td></tr>
+<tr class="separator:a32b5b91fd67ab60550ef8701b61271d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a5a501431d0915753268b72ce2970c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#a0c5f552e0e8b102d2051201be5ebcfb1">material_Tf_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#aa1a5a501431d0915753268b72ce2970c">material_Tf_callback_</a></td></tr>
+<tr class="separator:aa1a5a501431d0915753268b72ce2970c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac44b0111115d80d70c7ae50a4c3c61ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#adf277206043fb5cba04c0e0c762cda7e">material_Illum_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ac44b0111115d80d70c7ae50a4c3c61ba">material_Illum_callback_</a></td></tr>
+<tr class="separator:ac44b0111115d80d70c7ae50a4c3c61ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a896eaee58540f4eae8cef100b6d5a02d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#a1bbe386f62049dcd789be4f462a30d34">material_dissolve_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a896eaee58540f4eae8cef100b6d5a02d">material_dissolve_callback_</a></td></tr>
+<tr class="separator:a896eaee58540f4eae8cef100b6d5a02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abad99fa152d993320d4dd55cfca1566d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#a12811f3c906991359db89a699759ac43">material_shininess_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#abad99fa152d993320d4dd55cfca1566d">material_shininess_callback_</a></td></tr>
+<tr class="separator:abad99fa152d993320d4dd55cfca1566d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a375d7cedc9f379610fdee16836e65f0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#af20dbbcf037018db35d2dec930f60a3f">material_sharpness_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a375d7cedc9f379610fdee16836e65f0b">material_sharpness_callback_</a></td></tr>
+<tr class="separator:a375d7cedc9f379610fdee16836e65f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f130dc2427f210b69be7d6f4feb803b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#ada97976eaa160d1579ebfc734f82ea33">material_ior_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a6f130dc2427f210b69be7d6f4feb803b">material_ior_callback_</a></td></tr>
+<tr class="separator:a6f130dc2427f210b69be7d6f4feb803b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0609074ae9d4e223e0078e3bf957b65c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#aa6214371b90a32ed06d51707d79d865f">material_map_Ka_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a0609074ae9d4e223e0078e3bf957b65c">material_map_Ka_callback_</a></td></tr>
+<tr class="separator:a0609074ae9d4e223e0078e3bf957b65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07be9cde8ba8fe5e0237abd870c7fcca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#a794b04e6d4c9792016e8f8ed6f1b46bd">material_map_Kd_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a07be9cde8ba8fe5e0237abd870c7fcca">material_map_Kd_callback_</a></td></tr>
+<tr class="separator:a07be9cde8ba8fe5e0237abd870c7fcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b68fa3f8dd530385843d86f7e74e63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#ae4e279d2336ffd24a29fece8b73ae111">material_map_Ks_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#af1b68fa3f8dd530385843d86f7e74e63">material_map_Ks_callback_</a></td></tr>
+<tr class="separator:af1b68fa3f8dd530385843d86f7e74e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb3f797c61f328b8d7e22dbb8d16a79f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#ad9d5f62fc72f94a3df4db5f2b3683c8f">material_map_Ns_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#abb3f797c61f328b8d7e22dbb8d16a79f">material_map_Ns_callback_</a></td></tr>
+<tr class="separator:abb3f797c61f328b8d7e22dbb8d16a79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3313128974e34bb61f6c57bee7ef8659"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#adc3458c17c999a5cbbfb6d1edee6adbf">material_map_d_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a3313128974e34bb61f6c57bee7ef8659">material_map_d_callback_</a></td></tr>
+<tr class="separator:a3313128974e34bb61f6c57bee7ef8659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e4e38ca9022b585ca8708693f072d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#ad4b0f28315a8a25b7cd42553e350f829">material_dispmap_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a15e4e38ca9022b585ca8708693f072d8">material_dispmap_callback_</a></td></tr>
+<tr class="separator:a15e4e38ca9022b585ca8708693f072d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe1ebc59d8bcc1e8dab1d6b021769d0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#ae8e20937a63e18af0fd968d0f4948ee5">material_decalmap_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#abe1ebc59d8bcc1e8dab1d6b021769d0c">material_decalmap_callback_</a></td></tr>
+<tr class="separator:abe1ebc59d8bcc1e8dab1d6b021769d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2470ab0b4192ae40fd52f8d4eff2b61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#a4c4b5f8e8bc24f985569198c88c02267">material_bumpmap_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ad2470ab0b4192ae40fd52f8d4eff2b61">material_bumpmap_callback_</a></td></tr>
+<tr class="separator:ad2470ab0b4192ae40fd52f8d4eff2b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad216ea0b0dfae5c6ffab07418567276e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#a8e09129aa1e7c3f41ca50be4c1c3c988">material_reflmap_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ad216ea0b0dfae5c6ffab07418567276e">material_reflmap_callback_</a></td></tr>
+<tr class="separator:ad216ea0b0dfae5c6ffab07418567276e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab63e2697abf9fc2dc520361f4500b67a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#a5dd2cbfbdfb2df7b04c4164cdf92c95c">material_normalmap_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#ab63e2697abf9fc2dc520361f4500b67a">material_normalmap_callback_</a></td></tr>
+<tr class="separator:ab63e2697abf9fc2dc520361f4500b67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10cafef340adfd65c8cf7469c5273884"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00023.html#a6535fc6855ac24c7ea920b75172e1bf8">comment_callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html#a10cafef340adfd65c8cf7469c5273884">comment_callback_</a></td></tr>
+<tr class="separator:a10cafef340adfd65c8cf7469c5273884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Class to parse MTL file. </p>
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00048">48</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+</div><h2 class="groupheader">Documentation des définitions de type membres</h2>
+<a class="anchor" id="a6535fc6855ac24c7ea920b75172e1bf8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00023.html#a6535fc6855ac24c7ea920b75172e1bf8">comment_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00077">77</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc3022887ff1bfc15328d646fa17db71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (std::size_t, const std::string&amp;) &gt; <a class="el" href="a00023.html#afc3022887ff1bfc15328d646fa17db71">error_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00052">52</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4ab69a70383bb62f7fcc9fe9a501eba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="a00023.html#aa4ab69a70383bb62f7fcc9fe9a501eba">flags_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00079">79</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c541473642bbabf661e7f95e73c6609"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (std::size_t, const std::string&amp;) &gt; <a class="el" href="a00023.html#a4c541473642bbabf661e7f95e73c6609">info_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00050">50</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c4b5f8e8bc24f985569198c88c02267"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00023.html#a4c4b5f8e8bc24f985569198c88c02267">material_bumpmap_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00073">73</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8e20937a63e18af0fd968d0f4948ee5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00023.html#ae8e20937a63e18af0fd968d0f4948ee5">material_decalmap_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00072">72</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad4b0f28315a8a25b7cd42553e350f829"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00023.html#ad4b0f28315a8a25b7cd42553e350f829">material_dispmap_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00071">71</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1bbe386f62049dcd789be4f462a30d34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00023.html#a1bbe386f62049dcd789be4f462a30d34">material_dissolve_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00061">61</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adf277206043fb5cba04c0e0c762cda7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00094.html#gaa511d4e3e646072967e8a42dc6c54194">index_type</a>) &gt; <a class="el" href="a00023.html#adf277206043fb5cba04c0e0c762cda7e">material_Illum_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00060">60</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ada97976eaa160d1579ebfc734f82ea33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt; <a class="el" href="a00023.html#ada97976eaa160d1579ebfc734f82ea33">material_ior_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00064">64</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7787fe67599f661a4908438dc9b2ae77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt; <a class="el" href="a00023.html#a7787fe67599f661a4908438dc9b2ae77">material_Ka_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00056">56</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a52fc4047475acf1e360ca463af0409de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt; <a class="el" href="a00023.html#a52fc4047475acf1e360ca463af0409de">material_Kd_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00057">57</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a53ed1480c9aafefb7267238505b87c65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt; <a class="el" href="a00023.html#a53ed1480c9aafefb7267238505b87c65">material_Ks_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00058">58</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc3458c17c999a5cbbfb6d1edee6adbf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00023.html#adc3458c17c999a5cbbfb6d1edee6adbf">material_map_d_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00070">70</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6214371b90a32ed06d51707d79d865f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00023.html#aa6214371b90a32ed06d51707d79d865f">material_map_Ka_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00066">66</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a794b04e6d4c9792016e8f8ed6f1b46bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00023.html#a794b04e6d4c9792016e8f8ed6f1b46bd">material_map_Kd_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00067">67</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4e279d2336ffd24a29fece8b73ae111"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00023.html#ae4e279d2336ffd24a29fece8b73ae111">material_map_Ks_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00068">68</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9d5f62fc72f94a3df4db5f2b3683c8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00023.html#ad9d5f62fc72f94a3df4db5f2b3683c8f">material_map_Ns_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00069">69</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acf25be941b83d2519777e5f70f43bb91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00023.html#acf25be941b83d2519777e5f70f43bb91">material_name_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00054">54</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5dd2cbfbdfb2df7b04c4164cdf92c95c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00023.html#a5dd2cbfbdfb2df7b04c4164cdf92c95c">material_normalmap_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00075">75</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e09129aa1e7c3f41ca50be4c1c3c988"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (const std::string&amp;) &gt; <a class="el" href="a00023.html#a8e09129aa1e7c3f41ca50be4c1c3c988">material_reflmap_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00074">74</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af20dbbcf037018db35d2dec930f60a3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt; <a class="el" href="a00023.html#af20dbbcf037018db35d2dec930f60a3f">material_sharpness_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00063">63</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a12811f3c906991359db89a699759ac43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt; <a class="el" href="a00023.html#a12811f3c906991359db89a699759ac43">material_shininess_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00062">62</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c5f552e0e8b102d2051201be5ebcfb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (<a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>, <a class="el" href="a00094.html#ga4006252ff6772953667c24fa548f20ed">float_type</a>) &gt; <a class="el" href="a00023.html#a0c5f552e0e8b102d2051201be5ebcfb1">material_Tf_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00059">59</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa42ae2d4b09825dbee2174ff7702d88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tr1::function&lt; void (std::size_t, const std::string&amp;) &gt; <a class="el" href="a00023.html#afa42ae2d4b09825dbee2174ff7702d88">warning_callback_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00051">51</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des énumérations membres</h2>
+<a class="anchor" id="a75d959e49115b9725f45898e8e2e0953"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00023.html#a75d959e49115b9725f45898e8e2e0953">ParseOptions</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a75d959e49115b9725f45898e8e2e0953a0831009eec8e23f5d0f71a33663c611b"></a>parse_blank_lines_as_comment</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a75d959e49115b9725f45898e8e2e0953ace51bb6eea9b3bc170e9f4f16bcecc52"></a>texture_filenameonly</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00081">81</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a5e5e4fca2db7a37de6b06dd0dce57bfa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html">mtl_parser</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aa4ab69a70383bb62f7fcc9fe9a501eba">flags_type</a>&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00429">429</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="ad0e5340f01e656183cfc8033b21897d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void comment_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#a6535fc6855ac24c7ea920b75172e1bf8">comment_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>comment_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ee382164283fabb36f0f5ed41f1e67c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void error_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#afc3022887ff1bfc15328d646fa17db71">error_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>error_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00339">339</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af2732d6f92b18397b3fb191a955ed3b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void info_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#a4c541473642bbabf661e7f95e73c6609">info_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>info_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00331">331</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a172ff810f6463ab03da9b6e6da4e90f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_bumpmap_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#a4c4b5f8e8bc24f985569198c88c02267">material_bumpmap_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>bumpmap_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00412">412</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4fa3283ca0dee14b76034aa01dc431b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_decalmap_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ae8e20937a63e18af0fd968d0f4948ee5">material_decalmap_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>decalmap_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00408">408</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af388fca5d23867845805d722bda86dfc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_dispmap_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ad4b0f28315a8a25b7cd42553e350f829">material_dispmap_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>dispmap_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00404">404</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a22a6a424d890c37742656665204c84cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_dissolve_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#a1bbe386f62049dcd789be4f462a30d34">material_dissolve_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>dissolve_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00367">367</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c89ce5517d12cd2c0b1f4ac60a4c482"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_Illum_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#adf277206043fb5cba04c0e0c762cda7e">material_Illum_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>Illum_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00363">363</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a58694d5dcf3cd789be1ad9dd250993b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_ior_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ada97976eaa160d1579ebfc734f82ea33">material_ior_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ior_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00379">379</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac9f9b19eacdf77939a13169c3da1ed5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_Ka_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#a7787fe67599f661a4908438dc9b2ae77">material_Ka_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>Ka_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00347">347</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a87494ae4f219f4a38c59e45f9cb4c65f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_Kd_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#a52fc4047475acf1e360ca463af0409de">material_Kd_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>Kd_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00351">351</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a54b7860d04f1c14695a549020953673b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_Ks_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#a53ed1480c9aafefb7267238505b87c65">material_Ks_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>Ks_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00355">355</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e02f64eea223bc088c61d8e01d3e958"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_map_d_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#adc3458c17c999a5cbbfb6d1edee6adbf">material_map_d_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>map_d_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00400">400</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8eda373725a598f225f6ffee725871b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_map_Ka_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#aa6214371b90a32ed06d51707d79d865f">material_map_Ka_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>map_Ka_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00384">384</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad0028bc1cd6ea73a8f6e3107a2520a0d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_map_Kd_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#a794b04e6d4c9792016e8f8ed6f1b46bd">material_map_Kd_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>map_Kd_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00388">388</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa492a33cd47c05c65b97bd419d51d742"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_map_Ks_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ae4e279d2336ffd24a29fece8b73ae111">material_map_Ks_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>map_Ks_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00392">392</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e0413dcb5dce0396450d9cbc018d6a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_map_Ns_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ad9d5f62fc72f94a3df4db5f2b3683c8f">material_map_Ns_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>map_Ns_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00396">396</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a099e09ca292b2bb6294cf8f3186e4adf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_name_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#acf25be941b83d2519777e5f70f43bb91">material_name_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>name_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00343">343</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa167ac5bd2efb8fd4a3938713d86fdbf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_normalmap_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#a5dd2cbfbdfb2df7b04c4164cdf92c95c">material_normalmap_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>normalmap_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00420">420</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaebec16072e89b232c6d73bc138e57fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_reflmap_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#a8e09129aa1e7c3f41ca50be4c1c3c988">material_reflmap_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>reflmap_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00416">416</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a91aa519dfcae51a9fa24becef731703e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_sharpness_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#af20dbbcf037018db35d2dec930f60a3f">material_sharpness_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>sharpness_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00375">375</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adcc2ee0068dcdacaea7ee82d180eea37"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_shininess_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#a12811f3c906991359db89a699759ac43">material_shininess_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>shininess_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00371">371</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a229d9596f50a0f76136ac8e90632cd7a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void material_Tf_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#a0c5f552e0e8b102d2051201be5ebcfb1">material_Tf_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>Tf_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00359">359</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aafa92a7789eb9eb29d7eaa9fec52d96d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool parse </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>istream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00065_source.html#l01044">1044</a> du fichier <a class="el" href="a00065_source.html">objfileparser.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a620db3a256dd6c1a9bd9f80c242aff62"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool parse </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00424">424</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acf6e027ff93fde1d0c097f1761589482"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void warning_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#afa42ae2d4b09825dbee2174ff7702d88">warning_callback_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>warning_callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00335">335</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a10cafef340adfd65c8cf7469c5273884"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#a6535fc6855ac24c7ea920b75172e1bf8">comment_callback_type</a> comment_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00141">141</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8a39855abe0d4ab60338bfebc1824dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#afc3022887ff1bfc15328d646fa17db71">error_callback_type</a> error_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00120">120</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa56342618907fbd6b5ccd6830820b46b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#aa4ab69a70383bb62f7fcc9fe9a501eba">flags_type</a> flags_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00117">117</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac79e5152d14849484beaca4bfccf76c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#a4c541473642bbabf661e7f95e73c6609">info_callback_type</a> info_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00118">118</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2470ab0b4192ae40fd52f8d4eff2b61"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#a4c4b5f8e8bc24f985569198c88c02267">material_bumpmap_callback_type</a> material_bumpmap_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00138">138</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abe1ebc59d8bcc1e8dab1d6b021769d0c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#ae8e20937a63e18af0fd968d0f4948ee5">material_decalmap_callback_type</a> material_decalmap_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00137">137</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a15e4e38ca9022b585ca8708693f072d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#ad4b0f28315a8a25b7cd42553e350f829">material_dispmap_callback_type</a> material_dispmap_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00136">136</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a896eaee58540f4eae8cef100b6d5a02d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#a1bbe386f62049dcd789be4f462a30d34">material_dissolve_callback_type</a> material_dissolve_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00127">127</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac44b0111115d80d70c7ae50a4c3c61ba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#adf277206043fb5cba04c0e0c762cda7e">material_Illum_callback_type</a> material_Illum_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00126">126</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f130dc2427f210b69be7d6f4feb803b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#ada97976eaa160d1579ebfc734f82ea33">material_ior_callback_type</a> material_ior_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00130">130</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a20c3edc6f68f92aabef97562a1f68847"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#a7787fe67599f661a4908438dc9b2ae77">material_Ka_callback_type</a> material_Ka_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00122">122</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b3cc5aa8ce7d6c2f6dc70a8b9b86553"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#a52fc4047475acf1e360ca463af0409de">material_Kd_callback_type</a> material_Kd_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00123">123</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a32b5b91fd67ab60550ef8701b61271d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#a53ed1480c9aafefb7267238505b87c65">material_Ks_callback_type</a> material_Ks_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00124">124</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3313128974e34bb61f6c57bee7ef8659"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#adc3458c17c999a5cbbfb6d1edee6adbf">material_map_d_callback_type</a> material_map_d_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00135">135</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0609074ae9d4e223e0078e3bf957b65c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#aa6214371b90a32ed06d51707d79d865f">material_map_Ka_callback_type</a> material_map_Ka_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00131">131</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a07be9cde8ba8fe5e0237abd870c7fcca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#a794b04e6d4c9792016e8f8ed6f1b46bd">material_map_Kd_callback_type</a> material_map_Kd_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00132">132</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af1b68fa3f8dd530385843d86f7e74e63"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#ae4e279d2336ffd24a29fece8b73ae111">material_map_Ks_callback_type</a> material_map_Ks_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00133">133</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abb3f797c61f328b8d7e22dbb8d16a79f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#ad9d5f62fc72f94a3df4db5f2b3683c8f">material_map_Ns_callback_type</a> material_map_Ns_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00134">134</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a44fe9acbb99d5909f73501dc0ca0b66b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#acf25be941b83d2519777e5f70f43bb91">material_name_callback_type</a> material_name_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00121">121</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab63e2697abf9fc2dc520361f4500b67a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#a5dd2cbfbdfb2df7b04c4164cdf92c95c">material_normalmap_callback_type</a> material_normalmap_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00140">140</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad216ea0b0dfae5c6ffab07418567276e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#a8e09129aa1e7c3f41ca50be4c1c3c988">material_reflmap_callback_type</a> material_reflmap_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00139">139</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a375d7cedc9f379610fdee16836e65f0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#af20dbbcf037018db35d2dec930f60a3f">material_sharpness_callback_type</a> material_sharpness_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00129">129</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abad99fa152d993320d4dd55cfca1566d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#a12811f3c906991359db89a699759ac43">material_shininess_callback_type</a> material_shininess_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00128">128</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1a5a501431d0915753268b72ce2970c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#a0c5f552e0e8b102d2051201be5ebcfb1">material_Tf_callback_type</a> material_Tf_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00125">125</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e9f1caadfcf3478350ebceee0656048"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#afa42ae2d4b09825dbee2174ff7702d88">warning_callback_type</a> warning_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00066_source.html#l00119">119</a> du fichier <a class="el" href="a00066_source.html">objfileparser.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="a00066_source.html">objfileparser.h</a></li>
+<li><a class="el" href="a00065_source.html">objfileparser.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00087.html">loaders</a></li><li class="navelem"><a class="el" href="a00088.html">obj_mtl</a></li><li class="navelem"><a class="el" href="a00023.html">mtl_parser</a></li>
+    <li class="footer">Généré le Jeudi Février 13 2014 15:22:46 pour M1 Informatique - IG3D - Introduction à openGL par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>

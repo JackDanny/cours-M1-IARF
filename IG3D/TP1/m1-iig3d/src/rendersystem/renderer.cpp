@@ -201,10 +201,10 @@ void Renderer::initGeometry()
     Icosahedre *obj = new Icosahedre();
     obj->generateMesh();
     */
-    /*
+
     Geodesique *obj = new Geodesique();
     obj->generateMesh();
-    */
+
 
     GlMesh *mesh_plane = new GlMesh(*obj);
     meshes_.push_back(mesh_plane);

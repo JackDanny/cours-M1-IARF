@@ -1,0 +1,777 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>M1 Informatique - IG3D - Introduction à openGL: Référence de la classe Mesh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://www.mathjax.org/mathjax/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - IG3D - Introduction à openGL
+   &#160;<span id="projectnumber">2013-2014</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00020.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-types">Types protégés</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a> &#124;
+<a href="a00167.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Mesh<div class="ingroups"><a class="el" href="a00093.html">Data loading software components.</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Represents a triangular mesh as an array of vertex and an array of triangluar faces.  
+ <a href="a00020.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00064_source.html">mesh.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe d'héritage de Mesh:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00168.png" border="0" usemap="#_mesh_inherit__map" alt="Inheritance graph"/></div>
+<map name="_mesh_inherit__map" id="_mesh_inherit__map">
+<area shape="rect" id="node2" href="a00031.html" title="OBJ smooth group. " alt="" coords="4,409,128,490"/><area shape="rect" id="node3" href="a00036.html" title="A mesh with OpenGL rendering capabilities. " alt="" coords="152,361,305,538"/><area shape="rect" id="node4" href="a00041.html" title="{ParametricMesh\n||+ ParametricMesh()\l+ generateMesh()\l# evalSurface()\l# toLinear()\l}" alt="" coords="331,385,469,514"/><area shape="rect" id="node5" href="a00039.html" title="{ParametricCone\n||+ ParametricCone()\l# evalSurface()\l}" alt="" coords="160,587,297,685"/><area shape="rect" id="node6" href="a00040.html" title="{ParametricCylindre\n||+ ParametricCylindre()\l# evalSurface()\l}" alt="" coords="322,587,477,685"/><area shape="rect" id="node7" href="a00042.html" title="{ParametricSphere\n||+ ParametricSphere()\l# evalSurface()\l}" alt="" coords="501,587,649,685"/></map>
+</div>
+<div class="dynheader">
+Graphe de collaboration de Mesh:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00169.png" border="0" usemap="#_mesh_coll__map" alt="Collaboration graph"/></div>
+<map name="_mesh_coll__map" id="_mesh_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html">TriangleIndex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal triangle representation : three integer indices.  <a href="a00021.html#details">Plus de détails...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html">Vertex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal vertex representation : position (vec3), normal (vec3) and texcoord (vec2)  <a href="a00022.html#details">Plus de détails...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a2a23c7c0c4e0da252b7bc0e13b6f81d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a2a23c7c0c4e0da252b7bc0e13b6f81d8">Mesh</a> ()</td></tr>
+<tr class="memdesc:a2a23c7c0c4e0da252b7bc0e13b6f81d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a2a23c7c0c4e0da252b7bc0e13b6f81d8">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a2a23c7c0c4e0da252b7bc0e13b6f81d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d5ef68aeda6e06c567950749cb848e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a63d5ef68aeda6e06c567950749cb848e">Mesh</a> (const std::vector&lt; float &gt; &amp;vertexBuffer, const std::vector&lt; int &gt; &amp;triangleBuffer, const std::vector&lt; int &gt; &amp;quadBuffer, bool hasNormals, bool hasTextureCoords)</td></tr>
+<tr class="memdesc:a63d5ef68aeda6e06c567950749cb848e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor from basic geometric data.  <a href="#a63d5ef68aeda6e06c567950749cb848e">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a63d5ef68aeda6e06c567950749cb848e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca51f7fdeb38552c4aa32a5a01c8ef8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#acca51f7fdeb38552c4aa32a5a01c8ef8">Mesh</a> (const <a class="el" href="a00020.html">Mesh</a> &amp;mesh)</td></tr>
+<tr class="memdesc:acca51f7fdeb38552c4aa32a5a01c8ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy contructor.  <a href="#acca51f7fdeb38552c4aa32a5a01c8ef8">Plus de détails...</a><br/></td></tr>
+<tr class="separator:acca51f7fdeb38552c4aa32a5a01c8ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e26384cfb03023e7dc2e5419baf813f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a6e26384cfb03023e7dc2e5419baf813f">~Mesh</a> ()</td></tr>
+<tr class="memdesc:a6e26384cfb03023e7dc2e5419baf813f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a6e26384cfb03023e7dc2e5419baf813f">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a6e26384cfb03023e7dc2e5419baf813f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6794699ad8adb947491bc05478b7e76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ab6794699ad8adb947491bc05478b7e76">getData</a> (std::vector&lt; float &gt; &amp;vertexBuffer, std::vector&lt; int &gt; &amp;triangleBuffer, bool &amp;parametrized)</td></tr>
+<tr class="memdesc:ab6794699ad8adb947491bc05478b7e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the mesh data in raw format.  <a href="#ab6794699ad8adb947491bc05478b7e76">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ab6794699ad8adb947491bc05478b7e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa274943a35e8df10c93d6e8a168fa20b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00020.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#aa274943a35e8df10c93d6e8a168fa20b">operator+=</a> (const <a class="el" href="a00020.html">Mesh</a> &amp;m)</td></tr>
+<tr class="memdesc:aa274943a35e8df10c93d6e8a168fa20b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenates 2 meshes.  <a href="#aa274943a35e8df10c93d6e8a168fa20b">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aa274943a35e8df10c93d6e8a168fa20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff474f8ed7b8c80cf26db24e8c5822e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#abff474f8ed7b8c80cf26db24e8c5822e">nbVertices</a> () const </td></tr>
+<tr class="memdesc:abff474f8ed7b8c80cf26db24e8c5822e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of vertices in the mesh.  <a href="#abff474f8ed7b8c80cf26db24e8c5822e">Plus de détails...</a><br/></td></tr>
+<tr class="separator:abff474f8ed7b8c80cf26db24e8c5822e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a044b98f8769708d910cfcf873d4c6a23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a044b98f8769708d910cfcf873d4c6a23">nbTriangles</a> () const </td></tr>
+<tr class="memdesc:a044b98f8769708d910cfcf873d4c6a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of vertices in the mesh.  <a href="#a044b98f8769708d910cfcf873d4c6a23">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a044b98f8769708d910cfcf873d4c6a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438f12951af46e77d25d7fe3ead0c074"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a438f12951af46e77d25d7fe3ead0c074">printfInfo</a> () const </td></tr>
+<tr class="memdesc:a438f12951af46e77d25d7fe3ead0c074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints basic information about the mesh on stderr.  <a href="#a438f12951af46e77d25d7fe3ead0c074">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a438f12951af46e77d25d7fe3ead0c074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Types protégés</h2></td></tr>
+<tr class="memitem:a93c9bd1580cb4b210b704c41351f76f0"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00022.html">Vertex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a93c9bd1580cb4b210b704c41351f76f0">VertexArray</a></td></tr>
+<tr class="separator:a93c9bd1580cb4b210b704c41351f76f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3679dc4caa6b5670fda7c8d9f6e8987"><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
+&lt; <a class="el" href="a00021.html">TriangleIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ae3679dc4caa6b5670fda7c8d9f6e8987">TriangleIndexArray</a></td></tr>
+<tr class="separator:ae3679dc4caa6b5670fda7c8d9f6e8987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr class="memitem:a858d9e05a6524ecb1548e611ae8416ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a858d9e05a6524ecb1548e611ae8416ed">computeNormals</a> (void)</td></tr>
+<tr class="memdesc:a858d9e05a6524ecb1548e611ae8416ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute smothed normals at each vertex.  <a href="#a858d9e05a6524ecb1548e611ae8416ed">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a858d9e05a6524ecb1548e611ae8416ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
+<tr class="memitem:ae00118ab77143947b2d1214948412075"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00020.html#a93c9bd1580cb4b210b704c41351f76f0">VertexArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ae00118ab77143947b2d1214948412075">vertices_</a></td></tr>
+<tr class="separator:ae00118ab77143947b2d1214948412075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05cd47b55e03690d2125c53e136ecbf0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a05cd47b55e03690d2125c53e136ecbf0">nbVertices_</a></td></tr>
+<tr class="separator:a05cd47b55e03690d2125c53e136ecbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1b8798fff22c5d77072d998fcdb558"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00020.html#ae3679dc4caa6b5670fda7c8d9f6e8987">TriangleIndexArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a6f1b8798fff22c5d77072d998fcdb558">triangles_</a></td></tr>
+<tr class="separator:a6f1b8798fff22c5d77072d998fcdb558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa705a64078dca9543773cac64011caa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#aaa705a64078dca9543773cac64011caa">nbTriangles_</a></td></tr>
+<tr class="separator:aaa705a64078dca9543773cac64011caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4531a7f678d13625a554ad6c1b849603"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a4531a7f678d13625a554ad6c1b849603">hasTextureCoords_</a></td></tr>
+<tr class="separator:a4531a7f678d13625a554ad6c1b849603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ce7be4a55305402611ad8cd6553664"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a29ce7be4a55305402611ad8cd6553664">hasNormal_</a></td></tr>
+<tr class="separator:a29ce7be4a55305402611ad8cd6553664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Represents a triangular mesh as an array of vertex and an array of triangluar faces. </p>
+<p>In the vertex buffer, datas are interleaved (x,y,z,nx,ny,nz,u,v) when auxiliary data are present ((nx,ny,nz) or (u,v)) </p>
+
+<p>Définition à la ligne <a class="el" href="a00064_source.html#l00034">34</a> du fichier <a class="el" href="a00064_source.html">mesh.h</a>.</p>
+</div><h2 class="groupheader">Documentation des définitions de type membres</h2>
+<a class="anchor" id="ae3679dc4caa6b5670fda7c8d9f6e8987"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="a00021.html">TriangleIndex</a>&gt; <a class="el" href="a00020.html#ae3679dc4caa6b5670fda7c8d9f6e8987">TriangleIndexArray</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00064_source.html#l00146">146</a> du fichier <a class="el" href="a00064_source.html">mesh.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a93c9bd1580cb4b210b704c41351f76f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="a00022.html">Vertex</a>&gt; <a class="el" href="a00020.html#a93c9bd1580cb4b210b704c41351f76f0">VertexArray</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00064_source.html#l00145">145</a> du fichier <a class="el" href="a00064_source.html">mesh.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a2a23c7c0c4e0da252b7bc0e13b6f81d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00020.html">Mesh</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+<p>Creates an empty mesh. </p>
+
+<p>Définition à la ligne <a class="el" href="a00063_source.html#l00026">26</a> du fichier <a class="el" href="a00063_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a63d5ef68aeda6e06c567950749cb848e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00020.html">Mesh</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertexBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>triangleBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>quadBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasNormals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasTextureCoords</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor from basic geometric data. </p>
+<p>Creates the triangluar mesh from a vertex array and triangle or quad array. Vertices are described by (x,y,z,nx,ny,nz,u,v), (x,y,z,nx,ny,nz) or (x,y,z) depending of the values of hasNormals and hasTextureCoords. </p>
+
+<p>Définition à la ligne <a class="el" href="a00063_source.html#l00030">30</a> du fichier <a class="el" href="a00063_source.html">mesh.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00063_source.html#l00106">Mesh::computeNormals()</a>, <a class="el" href="a00064_source.html#l00152">Mesh::nbTriangles_</a>, <a class="el" href="a00064_source.html#l00149">Mesh::nbVertices_</a>, <a class="el" href="a00064_source.html#l00115">Mesh::Vertex::normal_</a>, <a class="el" href="a00064_source.html#l00116">Mesh::Vertex::texcoord_</a>, <a class="el" href="a00064_source.html#l00151">Mesh::triangles_</a>, et <a class="el" href="a00064_source.html#l00148">Mesh::vertices_</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00020_a63d5ef68aeda6e06c567950749cb848e_cgraph.png" border="0" usemap="#a00020_a63d5ef68aeda6e06c567950749cb848e_cgraph" alt=""/></div>
+<map name="a00020_a63d5ef68aeda6e06c567950749cb848e_cgraph" id="a00020_a63d5ef68aeda6e06c567950749cb848e_cgraph">
+<area shape="rect" id="node2" href="a00020.html#a858d9e05a6524ecb1548e611ae8416ed" title="Compute smothed normals at each vertex. " alt="" coords="107,5,229,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acca51f7fdeb38552c4aa32a5a01c8ef8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00020.html">Mesh</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00020.html">Mesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy contructor. </p>
+
+<p>Définition à la ligne <a class="el" href="a00064_source.html#l00057">57</a> du fichier <a class="el" href="a00064_source.html">mesh.h</a>.</p>
+
+<p>Références <a class="el" href="a00064_source.html#l00155">Mesh::hasNormal_</a>, <a class="el" href="a00064_source.html#l00154">Mesh::hasTextureCoords_</a>, <a class="el" href="a00064_source.html#l00152">Mesh::nbTriangles_</a>, <a class="el" href="a00064_source.html#l00149">Mesh::nbVertices_</a>, <a class="el" href="a00064_source.html#l00151">Mesh::triangles_</a>, et <a class="el" href="a00064_source.html#l00148">Mesh::vertices_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e26384cfb03023e7dc2e5419baf813f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="a00020.html">Mesh</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+<p>Définition à la ligne <a class="el" href="a00063_source.html#l00098">98</a> du fichier <a class="el" href="a00063_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a858d9e05a6524ecb1548e611ae8416ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void computeNormals </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute smothed normals at each vertex. </p>
+
+<p>Définition à la ligne <a class="el" href="a00063_source.html#l00106">106</a> du fichier <a class="el" href="a00063_source.html">mesh.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00064_source.html#l00115">Mesh::Vertex::normal_</a>, <a class="el" href="a00064_source.html#l00114">Mesh::Vertex::position_</a>, <a class="el" href="a00064_source.html#l00151">Mesh::triangles_</a>, et <a class="el" href="a00064_source.html#l00148">Mesh::vertices_</a>.</p>
+
+<p>Référencé par <a class="el" href="a00063_source.html#l00030">Mesh::Mesh()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00020_a858d9e05a6524ecb1548e611ae8416ed_icgraph.png" border="0" usemap="#a00020_a858d9e05a6524ecb1548e611ae8416ed_icgraph" alt=""/></div>
+<map name="a00020_a858d9e05a6524ecb1548e611ae8416ed_icgraph" id="a00020_a858d9e05a6524ecb1548e611ae8416ed_icgraph">
+<area shape="rect" id="node2" href="a00020.html#a63d5ef68aeda6e06c567950749cb848e" title="Constructor from basic geometric data. " alt="" coords="176,5,230,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6794699ad8adb947491bc05478b7e76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void getData </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertexBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>triangleBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>parametrized</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the mesh data in raw format. </p>
+
+<p>Définition à la ligne <a class="el" href="a00063_source.html#l00129">129</a> du fichier <a class="el" href="a00063_source.html">mesh.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00064_source.html#l00154">Mesh::hasTextureCoords_</a>, <a class="el" href="a00064_source.html#l00151">Mesh::triangles_</a>, et <a class="el" href="a00064_source.html#l00148">Mesh::vertices_</a>.</p>
+
+<p>Référencé par <a class="el" href="a00059_source.html#l00041">GlMesh::getData()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00020_ab6794699ad8adb947491bc05478b7e76_icgraph.png" border="0" usemap="#a00020_ab6794699ad8adb947491bc05478b7e76_icgraph" alt=""/></div>
+<map name="a00020_ab6794699ad8adb947491bc05478b7e76_icgraph" id="a00020_ab6794699ad8adb947491bc05478b7e76_icgraph">
+<area shape="rect" id="node2" href="a00036.html#ab6794699ad8adb947491bc05478b7e76" title="rendersystem::GlMesh\l::getData" alt="" coords="124,5,279,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a044b98f8769708d910cfcf873d4c6a23"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nbTriangles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of vertices in the mesh. </p>
+
+<p>Définition à la ligne <a class="el" href="a00064_source.html#l00094">94</a> du fichier <a class="el" href="a00064_source.html">mesh.h</a>.</p>
+
+<p>Références <a class="el" href="a00064_source.html#l00152">Mesh::nbTriangles_</a>.</p>
+
+<p>Référencé par <a class="el" href="a00070_source.html#l00055">ObjMesh::addSmoothGroup()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00020_a044b98f8769708d910cfcf873d4c6a23_icgraph.png" border="0" usemap="#a00020_a044b98f8769708d910cfcf873d4c6a23_icgraph" alt=""/></div>
+<map name="a00020_a044b98f8769708d910cfcf873d4c6a23_icgraph" id="a00020_a044b98f8769708d910cfcf873d4c6a23_icgraph">
+<area shape="rect" id="node2" href="a00030.html#a9164e7f5a44ef57583f9256f843b1527" title="loaders::obj_mtl::ObjMesh\l::addSmoothGroup" alt="" coords="144,243,320,287"/><area shape="rect" id="node3" href="a00094.html#ga46e8d1f27326d18e5d72c638593b78bb" title="loaders::obj_mtl::ObjLoader\l::addVerticeNormalTexturePart" alt="" coords="381,5,584,49"/><area shape="rect" id="node8" href="a00094.html#ga41cfa418f3332378833540f18e9c2c86" title="loaders::obj_mtl::ObjLoader\l::addVerticeNormalPart" alt="" coords="390,73,575,117"/><area shape="rect" id="node9" href="a00094.html#gac5ccd0a395f4cd80817f5e9b62d08c7c" title="loaders::obj_mtl::ObjLoader\l::addVerticeTexturePart" alt="" coords="390,141,575,185"/><area shape="rect" id="node10" href="a00094.html#gaa7e542e6c72b4bbac36c2ec56b5ae0ad" title="loaders::obj_mtl::ObjLoader\l::addVerticePart" alt="" coords="390,209,575,253"/><area shape="rect" id="node11" href="a00094.html#gab9d6ef6b7b658014c8267e2a8497cb68" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeNormalTexturePart" alt="" coords="368,277,597,321"/><area shape="rect" id="node12" href="a00094.html#ga068e536d6aa068dfd109f862cfd17b84" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeNormalPart" alt="" coords="390,345,576,389"/><area shape="rect" id="node13" href="a00094.html#gae3ea1dfbc37a05bebd977b5ba003eb69" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeTexturePart" alt="" coords="389,413,576,457"/><area shape="rect" id="node14" href="a00094.html#gaca43bd93250aec9113172ddcb415376c" title="loaders::obj_mtl::ObjLoader\l::addRawVerticePart" alt="" coords="390,481,575,525"/><area shape="rect" id="node4" href="a00094.html#gaab2a186f26924656a41cac89527cdc0e" title="loaders::obj_mtl::ObjLoader\l::getObjects" alt="" coords="646,243,831,287"/><area shape="rect" id="node5" href="a00043.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="880,243,1045,287"/><area shape="rect" id="node6" href="a00043.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="1093,243,1259,287"/><area shape="rect" id="node7" href="a00019.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="1308,243,1452,287"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abff474f8ed7b8c80cf26db24e8c5822e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nbVertices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of vertices in the mesh. </p>
+
+<p>Définition à la ligne <a class="el" href="a00064_source.html#l00087">87</a> du fichier <a class="el" href="a00064_source.html">mesh.h</a>.</p>
+
+<p>Références <a class="el" href="a00064_source.html#l00149">Mesh::nbVertices_</a>.</p>
+
+<p>Référencé par <a class="el" href="a00070_source.html#l00055">ObjMesh::addSmoothGroup()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00020_abff474f8ed7b8c80cf26db24e8c5822e_icgraph.png" border="0" usemap="#a00020_abff474f8ed7b8c80cf26db24e8c5822e_icgraph" alt=""/></div>
+<map name="a00020_abff474f8ed7b8c80cf26db24e8c5822e_icgraph" id="a00020_abff474f8ed7b8c80cf26db24e8c5822e_icgraph">
+<area shape="rect" id="node2" href="a00030.html#a9164e7f5a44ef57583f9256f843b1527" title="loaders::obj_mtl::ObjMesh\l::addSmoothGroup" alt="" coords="139,243,315,287"/><area shape="rect" id="node3" href="a00094.html#ga46e8d1f27326d18e5d72c638593b78bb" title="loaders::obj_mtl::ObjLoader\l::addVerticeNormalTexturePart" alt="" coords="376,5,579,49"/><area shape="rect" id="node8" href="a00094.html#ga41cfa418f3332378833540f18e9c2c86" title="loaders::obj_mtl::ObjLoader\l::addVerticeNormalPart" alt="" coords="385,73,570,117"/><area shape="rect" id="node9" href="a00094.html#gac5ccd0a395f4cd80817f5e9b62d08c7c" title="loaders::obj_mtl::ObjLoader\l::addVerticeTexturePart" alt="" coords="385,141,570,185"/><area shape="rect" id="node10" href="a00094.html#gaa7e542e6c72b4bbac36c2ec56b5ae0ad" title="loaders::obj_mtl::ObjLoader\l::addVerticePart" alt="" coords="385,209,570,253"/><area shape="rect" id="node11" href="a00094.html#gab9d6ef6b7b658014c8267e2a8497cb68" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeNormalTexturePart" alt="" coords="363,277,592,321"/><area shape="rect" id="node12" href="a00094.html#ga068e536d6aa068dfd109f862cfd17b84" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeNormalPart" alt="" coords="384,345,570,389"/><area shape="rect" id="node13" href="a00094.html#gae3ea1dfbc37a05bebd977b5ba003eb69" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeTexturePart" alt="" coords="384,413,571,457"/><area shape="rect" id="node14" href="a00094.html#gaca43bd93250aec9113172ddcb415376c" title="loaders::obj_mtl::ObjLoader\l::addRawVerticePart" alt="" coords="385,481,570,525"/><area shape="rect" id="node4" href="a00094.html#gaab2a186f26924656a41cac89527cdc0e" title="loaders::obj_mtl::ObjLoader\l::getObjects" alt="" coords="641,243,826,287"/><area shape="rect" id="node5" href="a00043.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="875,243,1040,287"/><area shape="rect" id="node6" href="a00043.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="1088,243,1253,287"/><area shape="rect" id="node7" href="a00019.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="1302,243,1447,287"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa274943a35e8df10c93d6e8a168fa20b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00020.html">Mesh</a> &amp; operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00020.html">Mesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Concatenates 2 meshes. </p>
+
+<p>Définition à la ligne <a class="el" href="a00063_source.html#l00154">154</a> du fichier <a class="el" href="a00063_source.html">mesh.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00064_source.html#l00152">Mesh::nbTriangles_</a>, <a class="el" href="a00064_source.html#l00149">Mesh::nbVertices_</a>, <a class="el" href="a00064_source.html#l00151">Mesh::triangles_</a>, et <a class="el" href="a00064_source.html#l00148">Mesh::vertices_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a438f12951af46e77d25d7fe3ead0c074"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printfInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints basic information about the mesh on stderr. </p>
+
+<p>Définition à la ligne <a class="el" href="a00063_source.html#l00102">102</a> du fichier <a class="el" href="a00063_source.html">mesh.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00064_source.html#l00155">Mesh::hasNormal_</a>, <a class="el" href="a00064_source.html#l00154">Mesh::hasTextureCoords_</a>, <a class="el" href="a00064_source.html#l00152">Mesh::nbTriangles_</a>, et <a class="el" href="a00064_source.html#l00149">Mesh::nbVertices_</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a29ce7be4a55305402611ad8cd6553664"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hasNormal_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00064_source.html#l00155">155</a> du fichier <a class="el" href="a00064_source.html">mesh.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00074_source.html#l00013">ParametricMesh::generateMesh()</a>, <a class="el" href="a00064_source.html#l00057">Mesh::Mesh()</a>, et <a class="el" href="a00063_source.html#l00102">Mesh::printfInfo()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4531a7f678d13625a554ad6c1b849603"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hasTextureCoords_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00064_source.html#l00154">154</a> du fichier <a class="el" href="a00064_source.html">mesh.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00074_source.html#l00013">ParametricMesh::generateMesh()</a>, <a class="el" href="a00063_source.html#l00129">Mesh::getData()</a>, <a class="el" href="a00064_source.html#l00057">Mesh::Mesh()</a>, et <a class="el" href="a00063_source.html#l00102">Mesh::printfInfo()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa705a64078dca9543773cac64011caa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nbTriangles_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00064_source.html#l00152">152</a> du fichier <a class="el" href="a00064_source.html">mesh.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00024">GlMesh::compileGL()</a>, <a class="el" href="a00058_source.html#l00087">GlMesh::drawGL()</a>, <a class="el" href="a00074_source.html#l00013">ParametricMesh::generateMesh()</a>, <a class="el" href="a00063_source.html#l00030">Mesh::Mesh()</a>, <a class="el" href="a00064_source.html#l00094">Mesh::nbTriangles()</a>, <a class="el" href="a00063_source.html#l00154">Mesh::operator+=()</a>, et <a class="el" href="a00063_source.html#l00102">Mesh::printfInfo()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a05cd47b55e03690d2125c53e136ecbf0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nbVertices_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00064_source.html#l00149">149</a> du fichier <a class="el" href="a00064_source.html">mesh.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00024">GlMesh::compileGL()</a>, <a class="el" href="a00074_source.html#l00013">ParametricMesh::generateMesh()</a>, <a class="el" href="a00063_source.html#l00030">Mesh::Mesh()</a>, <a class="el" href="a00064_source.html#l00087">Mesh::nbVertices()</a>, <a class="el" href="a00063_source.html#l00154">Mesh::operator+=()</a>, et <a class="el" href="a00063_source.html#l00102">Mesh::printfInfo()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f1b8798fff22c5d77072d998fcdb558"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00020.html#ae3679dc4caa6b5670fda7c8d9f6e8987">TriangleIndexArray</a> triangles_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00064_source.html#l00151">151</a> du fichier <a class="el" href="a00064_source.html">mesh.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00024">GlMesh::compileGL()</a>, <a class="el" href="a00063_source.html#l00106">Mesh::computeNormals()</a>, <a class="el" href="a00074_source.html#l00013">ParametricMesh::generateMesh()</a>, <a class="el" href="a00063_source.html#l00129">Mesh::getData()</a>, <a class="el" href="a00063_source.html#l00030">Mesh::Mesh()</a>, et <a class="el" href="a00063_source.html#l00154">Mesh::operator+=()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae00118ab77143947b2d1214948412075"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00020.html#a93c9bd1580cb4b210b704c41351f76f0">VertexArray</a> vertices_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00064_source.html#l00148">148</a> du fichier <a class="el" href="a00064_source.html">mesh.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00058_source.html#l00024">GlMesh::compileGL()</a>, <a class="el" href="a00063_source.html#l00106">Mesh::computeNormals()</a>, <a class="el" href="a00074_source.html#l00013">ParametricMesh::generateMesh()</a>, <a class="el" href="a00063_source.html#l00129">Mesh::getData()</a>, <a class="el" href="a00063_source.html#l00030">Mesh::Mesh()</a>, et <a class="el" href="a00063_source.html#l00154">Mesh::operator+=()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="a00064_source.html">mesh.h</a></li>
+<li><a class="el" href="a00063_source.html">mesh.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00087.html">loaders</a></li><li class="navelem"><a class="el" href="a00020.html">Mesh</a></li>
+    <li class="footer">Généré le Jeudi Février 13 2014 15:22:46 pour M1 Informatique - IG3D - Introduction à openGL par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>

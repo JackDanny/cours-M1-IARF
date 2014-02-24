@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>M1 Informatique - IG3D - Introduction à openGL: Scéance 4 : calcul de l&#39;éclairage.</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://www.mathjax.org/mathjax/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - IG3D - Introduction à openGL
+   &#160;<span id="projectnumber">2013-2014</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li class="current"><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00010.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Scéance 4 : calcul de l'éclairage. </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Lors de cette scéance, nous allons programmer, à l'aide des <em>shaders</em>, le calcul de l'éclairage d'une scène.</p>
+<p>Tout d'abord, récupérer <a href="../../corrigeTP1a3.tgz">ici</a> le corrigé des 3 premières scéances de TP, corrigé étendu afin de préparer le calcul de l'éclairage. Les fichiers <a class="el" href="a00078.html">renderer.cpp</a> <a class="el" href="a00079.html">renderer.h</a> doivent remplacer les anciens fichiers dans le répertoire src/rendersystem, les fichiers vertexdefault.glsl et fragmentdefault.glsl doivent remplacer les anciens fichiers dans le répertoire shaders. Nous vous encourageons à regarder de près les modifications qui ont été faites, principalement l'introduction des classes rendersystem::MyGLMaterial et rendersystem::MyGlEntity.</p>
+<p>Dans la nouvelle mouture de notre moteur minimal, le Renderer dessine une liste d'entités (instances de la classe rendersystem::MyGlEntity). Une entité Correspond à un maillage, auquel est associé une apparence (un matériau défini par la classe rendersystem::MyGLMaterial) et une transformation géométrique pour la disposer dans la scène. Ainsi, il est possible de construire des scènes complexes simplement, en plaçant différents objets 3D dans l'espace.</p>
+<p>Afin de mieux apréhender le principe de composition de scène, étudier, dans la méthode <a class="el" href="a00043.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. ">rendersystem::Renderer::initGeometry()</a> comment est créé le repère OXYZ de la scène.</p>
+<p>L'objectif de cette séance de TP est d'implanter, dans les shader, le calcul de l'éclairage par le modèle de Blinn-Phong. Ce modèle repose sur le calcul et la combinaison de deux types de réflexions de la lumière : une réflexion diffuse, proportionelle au cosinus de l'angle entre la normale à la surface et la direction de lumière, et une reflexion spéculaire, proportionelle au cosinus de l'angle entre la normale et la bissectrice des directions de vue et d'éclairage.</p>
+<p>Dans ce modèle d'éclairage, les matériaux sont définis par trois propriétés : la couleur de base de l'objet, contrôlant la réflexion diffuse et notée <b>materialKd</b>, la couleur de la reflexion spéculaire, notée <b>materialKs</b>, et la rugosité de la réflexion spéculaire, notée <b>materialNs</b>.</p>
+<p>En un point \(X\), de normale \(\overrightarrow{N}\), vu depuis la position \(O\) et éclairé depuis la position \(S\), la couleur se calcule de la manière suivante :</p>
+<ol>
+<li>
+Calcul de la direction de vue \(\overrightarrow{V} = \frac{\overrightarrow{XO}}{|\overrightarrow{XO}|}\) </li>
+<li>
+Calcul de la direction de d'éclairage \(\overrightarrow{L} = \frac{\overrightarrow{XS}}{|\overrightarrow{XS}|}\) </li>
+<li>
+Calcul de la bissectrice \(\overrightarrow{H} = \frac{\overrightarrow{V}+\overrightarrow{L}}{|\overrightarrow{V}+\overrightarrow{L}|}\) </li>
+<li>
+Calcul de \(cosTheta = \overrightarrow{N}.\overrightarrow{L}\) et de \(cosAlpha = \overrightarrow{N}.\overrightarrow{H}\) </li>
+<li>
+Calcul de la couleur : \(Color = \left( materialKd + materialKs \times cosAlpha^{materialNs}\right) \times cosTheta\) </li>
+</ol>
+<p>A la fin de cette séance de travaux pratiques, vos shaders sauront exploiter les paramètres d'éclairage définis par la méthode <a class="el" href="a00043.html#abe1317bc098889c2e1accbc2b0f76a3f" title="Render the scene. ">rendersystem::Renderer::render()</a> et correspondant à un éclairage photographique 3 points (Key, Fill, Back) utilisé en studio photo ou en extérieur. Nous laissons les étudiants se renseigner sur cette technique d'éclairage qui fera l'objet de devoir numéro 2. Nous attirons l'attention que ni les positions des sources, ni leur couleurs sont correctement positionnées pour le moment mais que l'on pourra observer, en fin de séance, les avantages de cette technique d'éclairage.</p>
+<h1><a class="anchor" id="sujet"></a>
+Travail à réaliser</h1>
+<h2><a class="anchor" id="bootstrap"></a>
+Mise en place des fonctions</h2>
+<p>Dans un premier temps, nous allons programmer, dans les shaders, le calcul de l'éclairage pour une source de type headlight, dont la position est, dans le repère de vue, \((0.0, 0.0, 0.0)\) et dont la couleur est \((1.0, 1.0, 1.0)\)</p>
+<p>Les opérations de calcul vont être séparées en deux groupes, un groupe calculée dans le vertex shader, l'autre calculé dans le fragment shader. Ce découpage est lié aux données manipulées lors des différents calcul.</p>
+<p>Les opérations 1, 2 et 3 de l'algorithme de calcul décrit ci-dessus vont être programmées dans le vertex shader. En effet, ces opérations reposent sur une données liée au sommet : sa position. Dans le fichier vertexdefault.glsl, programmez en GLSL la fonction </p>
+<pre class="fragment">void computeLightingVectorsInView(in vec3 posInView, in vec3 lightPosition, out vec3 lightDir, out vec3 halfVec)
+</pre><p>qui, à partir des positions du sommet <em>posInView</em> et de la source de lumière <em>lightPosition</em>, toutes deux exprimées dans le repère de la vue, calcule les vecteur <em>lightDir</em> et <em>halfVec</em> représentant la direction d'éclairage et la bissectrice.</p>
+<p>Dans la fonction main, calculer dans les paramètres en sortie <em>lightDirInView[0]</em> et <em>halfVecInView[0]</em> les informations pour une source headlight.</p>
+<p>Les opérations 4 et 5 vont êtres programmées dans le fragment shaders puisqu'elle calculent la couleur du fragment. Elles seront calculées à partir des informations calculées par sommet et interpolées par le rasterizer sur chaque fragment. Dans un premier temps, on n'utilisera que les informations <em>lightDirInView[0]</em> et <em>halfVecInView[0]</em>. Dans le fichier fragmentdefault.glsl, programmez en GLSL la fonction </p>
+<pre class="fragment">vec3 blinnPhongLighting (in vec3 kd, in vec3 ks, in float ns, in vec3 normal, in vec3 lightVector, in vec3 halfVector)
+</pre><p> qui, à partir des données de matériau <em>kd</em>, <em>ks</em> et <em>ns</em>, des données géométriques <em>normal</em>, <em>lightVector</em> et <em>halfVector</em> calcule la couleur d'un point. Dans la fonction maindu fragment shader, calculer la couleur du fragment en utilisant votre fonction <em>blinnPhongLighting</em>.</p>
+<p>Observer sur les images que vous obtenez les contributions individuelles des différentes composantes du modèle d'éclairage</p>
+<h2><a class="anchor" id="light"></a>
+Eclairage 3 points : Key, Fill, Back</h2>
+<p>En utilisant les paramètres et variables uniformes définies dans les shaders et positionnées par le renderer, mettez en place l'éclairage 3 points de notre chameau. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Généré le Jeudi Février 13 2014 15:22:46 pour M1 Informatique - IG3D - Introduction à openGL par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>

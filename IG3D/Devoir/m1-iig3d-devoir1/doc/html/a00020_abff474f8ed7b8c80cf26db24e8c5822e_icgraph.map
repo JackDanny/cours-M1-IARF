@@ -1,0 +1,15 @@
+<map id="nbVertices" name="nbVertices">
+<area shape="rect" id="node2" href="$a00030.html#a9164e7f5a44ef57583f9256f843b1527" title="loaders::obj_mtl::ObjMesh\l::addSmoothGroup" alt="" coords="139,243,315,287"/>
+<area shape="rect" id="node3" href="$a00094.html#ga46e8d1f27326d18e5d72c638593b78bb" title="loaders::obj_mtl::ObjLoader\l::addVerticeNormalTexturePart" alt="" coords="376,5,579,49"/>
+<area shape="rect" id="node8" href="$a00094.html#ga41cfa418f3332378833540f18e9c2c86" title="loaders::obj_mtl::ObjLoader\l::addVerticeNormalPart" alt="" coords="385,73,570,117"/>
+<area shape="rect" id="node9" href="$a00094.html#gac5ccd0a395f4cd80817f5e9b62d08c7c" title="loaders::obj_mtl::ObjLoader\l::addVerticeTexturePart" alt="" coords="385,141,570,185"/>
+<area shape="rect" id="node10" href="$a00094.html#gaa7e542e6c72b4bbac36c2ec56b5ae0ad" title="loaders::obj_mtl::ObjLoader\l::addVerticePart" alt="" coords="385,209,570,253"/>
+<area shape="rect" id="node11" href="$a00094.html#gab9d6ef6b7b658014c8267e2a8497cb68" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeNormalTexturePart" alt="" coords="363,277,592,321"/>
+<area shape="rect" id="node12" href="$a00094.html#ga068e536d6aa068dfd109f862cfd17b84" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeNormalPart" alt="" coords="384,345,570,389"/>
+<area shape="rect" id="node13" href="$a00094.html#gae3ea1dfbc37a05bebd977b5ba003eb69" title="loaders::obj_mtl::ObjLoader\l::addRawVerticeTexturePart" alt="" coords="384,413,571,457"/>
+<area shape="rect" id="node14" href="$a00094.html#gaca43bd93250aec9113172ddcb415376c" title="loaders::obj_mtl::ObjLoader\l::addRawVerticePart" alt="" coords="385,481,570,525"/>
+<area shape="rect" id="node4" href="$a00094.html#gaab2a186f26924656a41cac89527cdc0e" title="loaders::obj_mtl::ObjLoader\l::getObjects" alt="" coords="641,243,826,287"/>
+<area shape="rect" id="node5" href="$a00043.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="875,243,1040,287"/>
+<area shape="rect" id="node6" href="$a00043.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="1088,243,1253,287"/>
+<area shape="rect" id="node7" href="$a00019.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="1302,243,1447,287"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="handleMouseEvent" name="handleMouseEvent">
+<area shape="rect" id="node2" href="$a00019.html#a69f8b856a74f015b817c36689f9aa18a" title="gui::OpenGLWidget::\lmouseMoveEvent" alt="" coords="190,5,335,49"/>
+<area shape="rect" id="node3" href="$a00019.html#a3571373ca6fedac4299977ab5fa2b88a" title="gui::OpenGLWidget::\lmousePressEvent" alt="" coords="190,73,335,117"/>
+<area shape="rect" id="node4" href="$a00019.html#a6be117e92e9375a28092144242dd29a4" title="gui::OpenGLWidget::\lmouseReleaseEvent" alt="" coords="190,141,335,185"/>
+</map>

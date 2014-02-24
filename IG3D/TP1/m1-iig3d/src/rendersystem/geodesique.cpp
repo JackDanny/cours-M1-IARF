@@ -67,7 +67,7 @@ void Geodesique::generateMesh() {
 
 
 
-        subdivide(vec1,vec2,vec3,1);
+        subdivide(vec1,vec2,vec3,5);
 
     }
 
