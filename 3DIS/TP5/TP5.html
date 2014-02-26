@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>TP 5 : Transformée en ondelette</title></head><body>
+<h1 style="text-align: center;">M1 3DIS<br>
+</h1>
+<h1 style="text-align: center;">TP 5 : Transformée en ondelette</h1>
+
+<br>
+<img alt="" src="TP5_files/TP5I01.jpg" style="width: 400px; height: 400px;" align="middle">&nbsp;&nbsp; Charger l'image ci-contre dans
+l'environnement de Matlab.<br>
+<br>
+<h2>I. Transformée en Ondelettes Discrète</h2>
+<br>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;">En appliquant le principe de la
+décomposition dyadique bidimensionnelle
+vue en cours avec pour filtre passe-bas <span style="font-family: monospace;">fb=[0.5 0.5]</span> et pour filtre
+passe-haut <span style="font-family: monospace;">fh=[0.5 -0.5]</span>,&nbsp; implémenter une commande
+"wavelet" qui
+construit l'encodage correspondant. Cette commande recevra deux
+paramètres
+: l'image à encoder, et le nombre de niveaux dans la
+decomposition
+dyadique.<br>
+      <br>
+      <span style="font-family: monospace;">function
+imw=wavelet(img,ordre)</span><br>
+      <br>
+Exemple : l'appel ci-dessous doit produire l'image ci-contre :<br>
+      <br>
+      <span style="font-family: monospace;">imw=wavelet(img,3);</span><br style="font-family: monospace;">
+      <span style="font-family: monospace;">imshow(imw,colormap(gray(256)));&nbsp;&nbsp;&nbsp;&nbsp;
+      <br>
+      <br>
+      </span>L&#8217;image que vous obtiendrez sera plus obscure et moins
+contrastée. La luminosité a été
+réhaussée ici pour rendre lisible les
+coefficients de haute fréquence.</td>
+      <td style="vertical-align: top;"><img alt="" src="TP5_files/TP5I02.jpg" style="width: 426px; height: 445px;"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h2>II. Transformée inverse</h2>
+Etablissez le procédé permettant de calculer la
+transformée inverse. Implémentez-le sous la forme d'une
+commande recevant deux paramètres : l'image à décoder
+et le nombre de niveaux employés pour la décomposition
+dyadique.<br>
+<br style="font-family: monospace;">
+<span style="font-family: monospace;">function img=invwavelet(imw,ordre)</span><br>
+<br>
+L'appel ci-dessous doit permettre d'obtenir l'affichage de l'image de
+départ :<br>
+<br>
+<span style="font-family: monospace;">img2=invwavelet(imw,3);</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">imshow(img2,colormap(gray(256)));</span><br>
+<h2>III. Quantification fréquentielle</h2>
+Les coefficients correspondants aux hautes fréquences, obtenus
+après chaque étape de la décomposition dyadique,
+peuvent être codés grossièrement sans
+générer de pertes significatives concernant la
+qualité de l'image.<br>
+Ecrire la commande quantifw recevant deux paramètres : l'image
+transformée à quantifier et le nombres de niveaux
+utilisés lors de la décomposition dyadique, produisant en
+sortie l'approximation de cette image en fréquences.<br>
+Pour cela, à chaque niveau de la décomposition dyadique,
+tous les coefficients, à l'exception de ceux qui codent les
+basses fréquences horizontales et verticales, seront
+approximés par le multiple immédiatement inférieur
+de la valeur : <span style="font-family: monospace;">quantum =
+2^(niveau-1)</span><br>
+Calculer l'erreur quadratique moyenne de reconstruction de l'image
+non-quantifiée par rapport à l'image de départ.
+Puis calculer l'erreur quadratique moyenne de reconstruction de l'image
+quantifiée par rapport à l'image de départ.
+Comparer visuellement les résultats (quantifiée, et
+non-quantifiée).<br>
+<br>
+Pour le calcul de l'erreur quadratique, vous pouvez employer la formule
+suivante :<br>
+<br style="font-family: monospace;">
+<span style="font-family: monospace;">sum(sum((img_depart -
+img_arrivee).^2)) /</span><span style="font-family: monospace;">
+(size(img_depart)(1)*size(img_depart)(2))</span><br>
+<br>
+On obtient une erreur quadratique moyenne sur l'image quantifiée
+reconstruite d'environ 3. Cette erreur doit être nulle lorsqu'on
+reconstruit l'image sans quantification. <br>
+<h2>Source</h2>
+Sujet de TP crée par Philippe Joly pour le M1 TC4 en 2007-2011<br>
+</body></html>

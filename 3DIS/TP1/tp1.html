@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>3DIS TP n°1</title></head><body>
+<h1 style="text-align: center; font-family: Helvetica,Arial,sans-serif;">M1 3DIS - TP n°1</h1>
+<br style="font-family: Helvetica,Arial,sans-serif;">
+<h2 style="font-family: Helvetica,Arial,sans-serif;">I. Manipulation de fichiers numeriques</h2>
+<ol>
+  <li style="font-family: Helvetica,Arial,sans-serif;">Signal audio<br>
+    <span style="font-family: Courier New,Courier,monospace;">[signal,fs,q,options] = wavread(&#8217;diner.wav&#8217;) ;</span><br style="font-family: Times New Roman,Times,serif;">
+    <br style="font-family: Times New Roman,Times,serif;">
+    <ul style="font-family: Times New Roman,Times,serif;">
+      <li>Chargez le signal et précisez les valeurs de fréquence d'échantillonage, de quantification et de canaux.</li>
+      <li>Affichez graphiquement le signal.</li>
+      <li>Affichez les 10 premières valeurs du signal qui sont différentes de 0 (trouvez le premier indice different de zero avec la commande find par exemple ou bien graphiquement)</li>
+      <li>Superposez à l'affichage standard le signal en croix rouges sans qu'ils soient reliés par des droites</li>
+      <li>Transformez les donées de flottants en entiers (par défaut le format WAV stocke les information en normalisant entre -1 et 1)</li>
+    </ul>
+  </li>
+  <li><span style="font-family: Helvetica,Arial,sans-serif;">Image</span><br style="font-family: Times New Roman,Times,serif;">
+    <font style="font-family: Times New Roman,Times,serif;" face="Helvetica, Arial, sans-serif"><span style="font-family: Courier New,Courier,monospace;">img=imread('photo.jpg');</span><br style="font-family: Courier New,Courier,monospace;"><span style="font-family: Courier New,Courier,monospace;">
+image(img);</span><br>
+    </font>
+    <ul>
+      <li>Chargez le signal et précisez les paramètres de l'image. Affichez l'image.</li>
+      <li>Affichez les premières valeurs des pixels de l'image</li>
+    </ul>
+  </li>
+</ol>
+<h2>II. Quantification, échantillonnage</h2>
+<ul>
+  <li>Ecrivez une fonction qui permette de sous quantifier un fichier
+audio. Testez le avec un quantification de 12, 8 et 4 bits. Que
+pensez-vous de la qualité du son résultant ?<br>
+  Si vous n'avez pas de sortie audio, utilisez la fonction wavwrite pour enregistrer le résultat et pour pouvoir l'écouter ailleurs</li>
+  <li>Ecrivez une fonction qui permette de sous-échantilloner un fichier audio. Testez-le avec un sous-échantillonage x2 et x4. Que remarquez-vous comme conséquence sur les sons ?</li>
+  <li>Ecrivez une fonction qui permette la sous-quantification d'une image en ne gardant que les n bits de poids fort.</li>
+</ul>
+<br>
+</body></html>

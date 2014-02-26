@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>M1 info 3DIS TP2</title></head><body>
+<h1 style="text-align: center;">M1 info 3DIS TP2</h1>
+<div style="text-align: center;">
+<h2><span style="font-weight: bold;">Décomposition en fréquences d'un fichier audio</span></h2>
+<span style="font-weight: bold;"></span></div>
+<h2><b>I. Génération d'un signal<o:p></o:p></b></h2>
+<p class="MsoNormal" style="text-align: justify;"><o:p>&nbsp;</o:p>La
+première partie de ce TP va
+consister à produire un signal légèrement
+bruité comportant des notes de
+musiques. Le signal à générer consistera en la
+séquence : [Silence] [DO3]
+[Silence] [MI3] [Silence] [SOL3] [Silence] [DO4] [Silence]. Ceci est
+une arpège
+de la gamme naturelle en Do majeur.</p>
+<p class="MsoNormal" style="text-align: justify;"><span style="">&nbsp;&nbsp;&nbsp;
+</span>* Un [Silence] sera une séquence de 100 ms
+durant laquelle le signal comporte seulement du bruit.</p>
+<p class="MsoNormal" style="text-align: justify;"><span style="">&nbsp;&nbsp;&nbsp;
+</span>* Un [DO3] sera une séquence d'1 seconde
+durant laquelle le signal représente une sinusoïde de
+fréquence 264 Hz bruitée.</p>
+<p class="MsoNormal" style="text-align: justify;"><span style="">&nbsp;&nbsp;&nbsp;
+</span>* Un [MI3] sera une séquence d'1 seconde
+durant laquelle le signal représente une sinusoïde de
+fréquence 330 Hz bruitée.</p>
+<p class="MsoNormal" style="text-align: justify;"><span style="">&nbsp;&nbsp;&nbsp;
+</span>* Un [SOL3] sera une séquence d'1 seconde
+durant laquelle le signal représente une sinusoïde de
+fréquence 396 Hz bruitée.</p>
+<p class="MsoNormal" style="text-align: justify;"><span style="">&nbsp;&nbsp;&nbsp;
+</span>* Un [DO4] sera une séquence d'1 seconde
+durant laquelle le signal représente une sinusoïde de
+fréquence 528 Hz bruitée.</p>
+<p class="MsoNormal" style="text-align: justify;">Pour les notes DO3,
+MI3, SOL3 et DO4,
+l'amplitude de la sinusoïde sera comprise entre -0.8 et +0.8.</p>
+<p class="MsoNormal" style="text-align: justify;">Générer
+un signal S1 sans bruit
+dans un premier temps, décrivant cette mélodie, à
+raison de 8000 échantillons
+par seconde.</p>
+<p class="MsoNormal" style="text-align: justify;">Générer
+ensuite un signal S2,
+correspondant à S1 auquel on associe un bruit additionnel. Ce
+bruit<span style="">&nbsp; </span>consistera à ajouter une
+valeur aléatoire
+comprise<span style="">&nbsp; </span>-0.2 et 0,2 à S1.</p>
+<h2><b>II. Calcul du spectrogramme<o:p></o:p></b></h2>
+<table style="width: 100%; text-align: left;" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><img alt="Spectrogramme de quatre notes" src="TP2_files/spectro_notes.jpg" style="width: 287px; height: 162px;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+Calculer le spectrogramme de S1
+et de S2 sur des fenêtres glissantes de w=1024
+échantillons avec un pas p=100
+échantillons. Représentez bien les hautes fréquences sur le haut du graphique.&nbsp; Testez d'autres valeurs de w et de p.
+Interprétez leur rôle.
+Vérifiez que les coefficients d'amplitude la plus
+élevée se situent
+effectivement à l'emplacement attendu.</td>
+    </tr>
+  </tbody>
+</table>
+<p class="MsoNormal" style="text-align: justify;"><br>
+</p>
+<h2><b>III. Autres signaux<o:p></o:p></b></h2>
+<ul>
+  <li>Composer un signal
+musical à
+votre convenance et observez le spectrogramme correspondant. Pour
+information,
+le tableau ci-dessous donne la liste des frequences des notes de
+musique de la
+gamme naturelle :</li>
+</ul>
+
+<p class="MsoNormal" style="text-align: justify;"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal" style="text-align: justify;">Do2<span style="">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Ré2<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Mi2<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Fa2<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Sol2<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>La2<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Si2<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Do3<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>Ré3<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Mi3<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Fa3<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Sol3<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>La3</p>
+<p class="MsoNormal" style="text-align: justify;">132<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>148,5<span style="">&nbsp;&nbsp; </span>165<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>176<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>198<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>220<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>237,6<span style="">&nbsp;&nbsp; </span>264<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>297<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>330<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>352<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>396,0<span style="">&nbsp;&nbsp; </span>440,0</p>
+<p class="MsoNormal" style="text-align: justify;"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal" style="text-align: justify;">Si3<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Do4<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>Ré4<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Mi4<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Fa4<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Sol4<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>La4<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Si4</p>
+<p class="MsoNormal" style="text-align: justify;">475,2<span style="">&nbsp;&nbsp;
+</span>528<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>594<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>660<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>704<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>792<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>880<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>950,4<br>
+</p>
+<ul>
+  <li>Utiliser le fichier de parole du TP1 pour en visualiser le
+spectrogramme. Qu'en tirez-vous comme conclusion sur les
+caractéristiques de la parole ?<br>
+  </li>
+</ul>
+<h2>IV. Références</h2>
+<p class="MsoNormal" style="text-align: justify;">Ce sujet a été crée par Philippe Joly pour le <a href="http://www.irit.fr/%7EPhilippe.Joly/Teaching/M1TC4/TP4.html" target="_blank">M1 TC4</a> en 2010.<br>
+</p>
+
+
+
+</body></html>

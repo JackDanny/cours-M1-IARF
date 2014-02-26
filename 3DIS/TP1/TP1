@@ -1,0 +1,400 @@
+ 
+M1 3DIS - TP n°1
+
+I. Manipulation de fichiers numeriques
+
+    Signal audio
+    [signal,fs,q,options] = wavread(’diner.wav’) ;
+
+        Chargez le signal et précisez les valeurs de fréquence d'échantillonage, de quantification et de canaux.
+        Affichez graphiquement le signal.
+        Affichez les 10 premières valeurs du signal qui sont différentes de 0 (trouvez le premier indice different de zero avec la commande find par exemple ou bien graphiquement)
+        Superposez à l'affichage standard le signal en croix rouges sans qu'ils soient reliés par des droites
+        Transformez les donées de flottants en entiers (par défaut le format WAV stocke les information en normalisant entre -1 et 1)
+    Image
+    img=imread('photo.jpg');
+    image(img);
+        Chargez le signal et précisez les paramètres de l'image. Affichez l'image.
+        Affichez les premières valeurs des pixels de l'image
+
+II. Quantification, échantillonnage
+
+    Ecrivez une fonction qui permette de sous quantifier un fichier audio. Testez le avec un quantification de 12, 8 et 4 bits. Que pensez-vous de la qualité du son résultant ?
+    Si vous n'avez pas de sortie audio, utilisez la fonction wavwrite pour enregistrer le résultat et pour pouvoir l'écouter ailleurs
+    Ecrivez une fonction qui permette de sous-échantilloner un fichier audio. Testez-le avec un sous-échantillonage x2 et x4. Que remarquez-vous comme conséquence sur les sons ?
+    Ecrivez une fonction qui permette la sous-quantification d'une image en ne gardant que les n bits de poids fort.
+
+
+    
+    signal*2^15
+    
+    pour avoir des entiers
+    
+    fs =
+
+       22050
+       
+    q =
+
+    16
+    
+    options = 
+
+    fmt: [1x1 struct]
+    
+    size signal
+
+ans =
+
+     1     6
+
+
+     
+     options.fmt
+     
+      wFormatTag: 1
+      nChannels: 1
+     nSamplesPerSec: 22050
+    nAvgBytesPerSec: 44100
+        nBlockAlign: 2
+     nBitsPerSample: 16
+     
+     
+          plot (signal)
+          
+          X=find(signal)
+          
+          X(1)
+          
+          signal2=signal(X(1):X(1)+10)
+          
+          hold on 
+          
+          plot...
+          
+          hold off
+          
+          figure
+plot(signal2)
+figure
+plot(signal)
+
+signal3 = signal.*power(2,15)
+
+plot(signal3,'rx')
+
+signal2=signal3(X(1):X(1)+10)
+plot(signal2,'rx')
+
+X=imread('photo.jpg');
+
+size(X)
+
+image(X(1:500,1:500,1:3))
+
+
+
+signal.*power(2,11)
+
+signal2=signal.*power(2,11)
+signal3=floor(signal2)
+signal3=signal3./power(2,11)
+wavwrite(signal3,22050,'son12bits')
+
+
+signal2=signal.*power(2,7)
+signal3=floor(signal2)
+signal3=signal3./power(2,7)
+wavwrite(signal3,22050,'son8bits')
+
+signal2=signal.*power(2,7)
+signal3=floor(signal2)
+signal3=signal3./power(2,7)
+wavwrite(signal3,22050,'son8bits')
+
+
+
+signal2=signal.*power(2,3)
+signal3=floor(signal2)
+signal3=signal3./power(2,3)
+wavwrite(signal3,22050,'son4bits')
+
+signal2=signal.*power(2,1)
+signal3=floor(signal2)
+signal3=signal3./power(2,1)
+wavwrite(signal3,22050,'son2bits')
+
+sous echantillonage
+
+fs=22050
+signal2=signal(1:2:size(signal))
+wavwrite(signal2,fs.,'sonechantillonex2')
+     
+signal2=signal(1:4:size(signal))
+wavwrite(signal2,fs,'sonechantillonex4')
+     
+
+
+     
+     
+img=imread('photo.jpg');
+
+img=img./255
+img=floor(img)
+img=img.*255
+
+image(img)
+
+r=img(:,:,1)
+g=img(:,:,2)
+b=img(:,:,3)
+
+r=r/2
+r=floor(r)
+r=r*2
+
+g=g/2
+g=floor(g)
+g=g*2
+
+b=b/2
+b=floor(b)
+b=b*2
+ 
+img2=img(:,:,(r,g,b))
+
+historique des commandes:
+
+%-- 24/02/14 10:09 --%
+ls
+cd 3DIS/
+[signal,fs,q,options] = wavread(’diner.wav’) ;
+[signal,fs,q,options] = wavread('diner.wav') ;
+signal
+fs
+q
+options
+size signal
+plot signal
+plot (signal)
+signal
+size(signal)
+help waveread
+man waveread
+help waveread
+help wavread
+[signal,fs,q,options] = wavread(diner.wav,3) ;
+[signal,fs,q,options] = wavread('diner.wav',3) ;
+sia = wavread('diner.wav')
+siz = wavread('diner.wav')
+help wavread
+size(siz)
+siz = wavread('diner.wav',1)
+siz = wavread('diner.wav',5)
+[signal,fs,q,options] = wavread('diner.wav') ;
+options
+[signal,fs,q,options] = wavread('diner.wav') ;
+options.info
+options
+options.inf
+options
+options.fmt
+help find
+find signal
+find(signal)
+[signal,fs,q,options] = wavread('diner.wav') ;
+find(signal)[0]
+find(signal)
+help find
+X=find(signal)
+X(0)
+X[0]
+X(1)
+[1,2,3]
+Y=[1,2,3]
+find(Y)
+Y(1)
+X=find(signal)
+X=find(signal)(1)
+X=(find(signal))(1)
+X=find(signal)
+signal2=signal(X(1),size(signal(1))
+signal2=signal(X(1):size(signal(1)))
+signal2=signal(X(1)::size(signal(1)))
+X(1)
+size(signal)(1)
+size(signal)
+signal2=signal(X(1)::size(signal))
+signal2=signal(X(1):size(signal))
+plot signal2
+plot(signal2)
+plot(signal)
+figure
+plot(signal2)
+figure
+plot(signal)
+signal2=signal(X(1):X(1)+10)
+signal3 = signal.*(2**15))
+signal3 = signal.*(2**15)
+signal3 = signal.*pow(2,15)
+signal3 = signal.*power(2,15)
+signal2=signal(X(1):X(1)+10)
+signal2=signal3(X(1):X(1)+10)
+help plot
+plot(signal3,'rx')
+signal2=signal3(X(1):X(1)+10)
+plot(signal2,'rx')
+img=imread('photo.jpg');
+image(img);
+imshow(img);
+image(img);
+help image
+A=image(img);
+A
+img=imread('photo.jpg');
+img
+help imread
+img.fmt
+help imread
+img=imread('photo.jpg',fmt);
+img=imread('photo.jpg','fmt');
+[X,Y]=imread('photo.jpg','fmt');
+[X,Y]=imread('photo.jpg');
+X
+Y
+[X]=imread('photo.jpg');
+X=imread('photo.jpg');
+size X
+size(X)
+X(1:5,1:5,1:5)
+s=X(1:5,1:5,1:5)
+s=X(1:5)
+s=X(1:5,1:5)
+s=X(1:5,1:5,1:5)
+s=X(1:5,1:5)
+s=X(1:10,1:10)
+X
+s=X(1:10,1:10)
+s=X(1:50,1:50)
+image(X(1:50,1:50))
+image(X(1:100,1:100))
+image(X(1:1000,1:1000))
+image(X(1:200,1:200))
+image(X(1:500,1:500))
+image(X)
+image(X(1:500,1:500))
+figure
+image(X)
+image(X(1:500,1:500,1:3))
+signal
+size(signal)
+signal2 = signal.*power(2,15)
+signal
+signal.*power(2,11)
+signal.*power(2,15)
+signal.*power(2,12)
+signal.*power(2,15)
+signal.*power(2,11)
+signal2=signal.*power(2,11)
+floor(signal2)
+signal3=floor(signal2)
+wavwrite(signal3,'son 12 bits')
+help wavwrite
+wavwrite(signal3,22050,12,'son 12 bits')
+wavwrite(signal3,22050,12,'son 12 bits.wav')
+wavwrite(signal3,22050,12,'son_12_bits')
+wavwrite(signal3,22050,12,'son_12_bits.wav')
+wavwrite(signal3,22050,12,'son_12_bits')
+wavwrite(signal3,22050,'son_12_bits')
+wavwrite(signal3,22050,'son12bits')
+signal3
+signal3=signal3./power(2,11)
+wavwrite(signal3,22050,'son12bits')
+wavwrite(signal3,22050,12,'son12bits')
+wavwrite(signal3,22050,'son12bits')
+signal2=signal.*power(2,11)
+signal2=signal.*power(2,7)
+signal3=floor(signal2)
+signal3=signal3./power(2,7)
+wavwrite(signal3,22050,'son8bits')
+whos
+signal2=signal.*power(2,3)
+signal3=floor(signal2)
+signal3=signal3./power(2,3)
+wavwrite(signal3,22050,'son4bits')
+signal2=signal.*power(2,1)
+signal3=floor(signal2)
+signal3=signal3./power(2,1)
+wavwrite(signal3,22050,'son2bits')
+signal2=signal(1:2:size(signal))
+size(signal)
+size(signal2)
+signal2=signal(1:2:size(signal))
+wavwrite(signal2,fs./2,'sonechantilloné*2')
+signal2=signal(1:4:size(signal))
+wavwrite(signal2,fs./4,'sonechantilloné*4')
+fs=22050
+signal2=signal(1:4:size(signal))
+wavwrite(signal2,fs./4,'sonechantilloné*4')
+signal2=signal(1:2:size(signal))
+wavwrite(signal2,fs./2,'sonechantilloné*2')
+signal2=signal(1:4:size(signal))
+wavwrite(signal2,fs./4,'sonechantilloné*4')
+signal2=signal(1:4:size(signal))
+wavwrite(signal2,fs./4,'sonechantillonex4')
+signal2=signal(1:4:size(signal))
+wavwrite(signal2,fs./4.,'sonechantillonex4')
+signal2=signal(1:4:size(signal))
+wavwrite(signal2,floor(fs./4.),'sonechantillonex4')
+signal2=signal(1:4:size(signal))
+wavwrite(signal2,fs.,'sonechantillonex4')
+signal2=signal(1:4:size(signal))
+wavwrite(signal2,fs,'sonechantillonex4')
+signal2=signal(1:4:size(signal))
+wavwrite(signal2,fs,'sonechantillonex4')
+X=imread('photo.jpg');
+X
+x(0,0,0)
+X(0,0,0)
+X(0,0)
+X(0;0)
+X=imread('photo.jpg');
+X
+X(1,1,1)
+X.type
+X.type()
+type(X)
+whos
+img=imread('photo.jpg');
+img(:,:)
+X=img(:,:,1)
+img2=img(:,:,r)
+img=imread('photo.jpg');
+r=img(:,:,1)
+g=img(:,:,2)
+b=img(:,:,3)
+r=r/2
+r=floor(r)
+r=r*2
+g=g/2
+g=floor(g)
+g=g*2
+b=b/2
+b=floor(b)
+b=b*2
+img2=img(:,:,(r,g,b))
+img=imread('photo.jpg');
+img=img./2
+img=floor(img)
+img=img.*2
+image(img)
+img=imread('photo.jpg');
+img=img./4
+img=floor(img)
+img=img.*4
+image(img)
+img=imread('photo.jpg');
+img=img./255
+img=floor(img)
+img=img.*255
+image(img)
