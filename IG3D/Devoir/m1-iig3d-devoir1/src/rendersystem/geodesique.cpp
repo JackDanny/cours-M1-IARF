@@ -1,8 +1,42 @@
 #include "geodesique.h"
 #include <iostream>
+#include <map>
+
+
+
 using namespace std;
 
 namespace rendersystem {
+
+int indiceMap=0;
+
+
+
+struct classcomp {
+    bool operator() (const glm::vec3 v1, const glm::vec3 v2) const
+    {
+        if(v1[0]<v2[0]){
+
+            return true;
+        }
+        else if(v1[0]==v2[0]){
+            if(v1[1]<v2[1]){
+                return true;
+            }
+            else if(v1[1]==v2[1]){
+                if(v1[2]<v2[2]){
+                    return true;
+                }
+            }
+
+        }
+
+        return false;
+
+    }
+};
+
+std::map<glm::vec3,int,classcomp> mymap;
 
 void Geodesique::generateMesh() {
 
@@ -13,24 +47,47 @@ void Geodesique::generateMesh() {
     glm::vec3 xyz;
 
 
+
     float phi=(1+sqrt(5))/2.;
 
-    float vdata[12][3] = {
-        {phi,1,0.0},
-        {phi,-1,0.0},
-        {-phi,1,0.0},
-        {-phi,-1,0.0},
 
-        {1,0,phi},
-        {1,0,-phi},
-        {-1,0,phi},
-        {-1,0,-phi},
 
-        {0,phi,1},
-        {0,phi,-1},
-        {0,-phi,1},
-        {0,-phi,-1}
+    glm::vec3 vdata[12] = {
+        glm::vec3(phi,1,0.0),
+        glm::vec3(phi,-1,0.0),
+        glm::vec3(-phi,1,0.0),
+        glm::vec3(-phi,-1,0.0),
+
+        glm::vec3(1,0,phi),
+        glm::vec3(1,0,-phi),
+        glm::vec3(-1,0,phi),
+        glm::vec3(-1,0,-phi),
+
+        glm::vec3(0,phi,1),
+        glm::vec3(0,phi,-1),
+        glm::vec3(0,-phi,1),
+        glm::vec3(0,-phi,-1)
     };
+    /*
+
+    myset.insert(glm::vec3(phi,1.,0.));
+    myset.insert(glm::vec3(phi,-1.,0.));
+    myset.insert(glm::vec3(-phi,1.,0.));
+    myset.insert(glm::vec3(-phi,-1.,0.));
+
+    myset.insert(glm::vec3(1,0,phi));
+    myset.insert(glm::vec3(1,0,-phi));
+    myset.insert(glm::vec3(-1,0,phi));
+    myset.insert(glm::vec3(-1,0,-phi));
+
+    myset.insert(glm::vec3(0,phi,1));
+    myset.insert(glm::vec3(0,phi,-1));
+    myset.insert(glm::vec3(0,-phi,1));
+    myset.insert(glm::vec3(0,-phi,-1));
+
+    */
+
+
 
     int i;
 
@@ -41,7 +98,7 @@ void Geodesique::generateMesh() {
     };
 
     //rajout pour optimize
-
+    /*
     for(i=0;i<12;i++){
         glm::vec3 pos;
         pos[0]=vdata[i][0];
@@ -55,162 +112,186 @@ void Geodesique::generateMesh() {
 
 
     }
-
+    */
 
     for(i=0;i<20;i++){
-        glm::vec3 vec1;
-        glm::vec3 vec2;
-        glm::vec3 vec3;
+        /*
+        float[3] s1;
+        float[3] s2;
+        float[3] s3;
 
-        vec1[0]=vdata[tindices[i][0]][0];
-        vec1[1]=vdata[tindices[i][0]][1];
-        vec1[2]=vdata[tindices[i][0]][2];
+        it=myset.find(vdata[tindices[i][0]]);
 
-        vec2[0]=vdata[tindices[i][1]][0];
-        vec2[1]=vdata[tindices[i][1]][1];
-        vec2[2]=vdata[tindices[i][1]][2];
+        it=myset.find(vdata[tindices[i][1]]);
 
-        vec3[0]=vdata[tindices[i][2]][0];
-        vec3[1]=vdata[tindices[i][2]][1];
-        vec3[2]=vdata[tindices[i][2]][2];
+        it=myset.find(vdata[tindices[i][1]]);
 
+        ls1[0]=(it+(tindices[i][0]))[0];
+        ls1[1]=(it+(tindices[i][0]))[1];
+        ls1[2]=(it+(tindices[i][0]))[2];
+
+        ls2[0]=(it+(tindices[i][1]))[0];
+        ls2[1]=(it+(tindices[i][1]))[1];
+        ls2[2]=(it+(tindices[i][1]))[2];
+
+        ls3[0]=(it+(tindices[i][2]))[0];
+        ls3[1]=(it+(tindices[i][1]))[1];
+        ls3[2]=(it+(tindices[i][1]))[2];
+        */
+        /*
         vec1=glm::normalize(vec1);
         vec2=glm::normalize(vec2);
         vec3=glm::normalize(vec3);
 
 
+        */
 
 
 
 
-
-        //subdivide(vec1,vec2,vec3,9);
-        subdivideOptimize(tindices[i][0],tindices[i][1],tindices[i][2],9);
+        subdivide(vdata[tindices[i][0]],vdata[tindices[i][1]],vdata[tindices[i][2]],10);
+        //subdivideOptimize2(tindices[i][0],tindices[i][1],tindices[i][2],9);
     }
 
 
 
-
+    cout << "nb sommet = " << vertices_. size();;
+    cout << "\nnb triangles = " << triangles_.size();
+    cout << "\n";
 
     nbVertices_  = vertices_. size();
     nbTriangles_ = triangles_.size();
-    cout << "nb sommet = " << nbVertices_;
-     cout << "\nnb triangles = " << nbTriangles_;
+
     hasNormal_        = true;
     hasTextureCoords_ = true;
 
 }
 
 
-void Geodesique::drawtriangle(glm::vec3 pos1,glm::vec3 pos2,glm::vec3 pos3){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void Geodesique::drawtriangle(glm::vec3 v1,glm::vec3 v2,glm::vec3 v3){
+    std::pair<std::map<glm::vec3,int>::iterator,bool> ret;
+
     loaders::Mesh::Vertex vert;
-    float length=vertices_.size();
+    //float length=vertices_.size();
+    int ind1;
+    int ind2;
+    int ind3;
+    /*
+    float f1[3];
 
+    f1[0]=v1[0];
+    f1[1]=v1[1];
+    f1[2]=v1[2];
+    */
+    ret = mymap.insert( std::pair<glm::vec3,int>(v1,indiceMap) );
 
-    vert.position_ = pos1;
-    vert.normal_ = pos1;
+    if (ret.second==false){
+        ind1=ret.first->second;
+    }
+    else{
+        vert.position_ = v1;
+        vert.normal_ = v1;
+        vertices_.push_back(vert);
+        ind1=indiceMap;
+        indiceMap++;
 
+    }
+    /*
+    float f2[3];
 
-    vertices_.push_back(vert);
+    f2[0]=v2[0];
+    f2[1]=v2[1];
+    f2[2]=v2[2];
+    */
 
-    vert.position_ = pos2;
-    vert.normal_ = pos2;
+    ret = mymap.insert ( std::pair<glm::vec3,int>(v2,indiceMap) );
 
-    vertices_.push_back(vert);
+    if (ret.second==false){
+        ind2=ret.first->second;
+    }
+    else{
+        vert.position_ = v2;
+        vert.normal_ = v2;
+        vertices_.push_back(vert);
+        ind2=indiceMap;
+        indiceMap++;
 
-    vert.position_ = pos3;
-    vert.normal_ = pos3;
-    vertices_.push_back(vert);
+    }
+    /*
+    float f3[3];
 
-    triangles_.push_back( TriangleIndex(length, length+1, length+2) );
+    f3[0]=v3[0];
+    f3[1]=v3[1];
+    f3[2]=v3[2];
+    */
+
+    ret = mymap.insert ( std::pair<glm::vec3,int>(v3,indiceMap) );
+
+    if (ret.second==false){
+        ind3=ret.first->second;
+    }
+    else{
+        vert.position_ = v3;
+        vert.normal_ = v3;
+        vertices_.push_back(vert);
+        ind3=indiceMap;
+        indiceMap++;
+
+    }
+
+    triangles_.push_back(TriangleIndex(ind1, ind2, ind3) );
 }
 
-void Geodesique::subdivide(glm::vec3 pos1,glm::vec3 pos2,glm::vec3 pos3,int depth){
-    glm::vec3 pos4;
-    glm::vec3 pos5;
-    glm::vec3 pos6;
+void Geodesique::subdivide(glm::vec3 v1,glm::vec3 v2,glm::vec3 v3,int depth){
+
 
     if(depth==0){
-        drawtriangle(pos1,pos2,pos3);
+        drawtriangle(v1,v2,v3);
         return;
     }
     else{
-        pos4=pos1+pos2;
-        pos5=pos2+pos3;
-        pos6=pos3+pos1;
-        pos4=glm::normalize(pos4);
-        pos5=glm::normalize(pos5);
-        pos6=glm::normalize(pos6);
-        subdivide(pos1,pos4,pos6,depth-1);
-        subdivide(pos4,pos2,pos5,depth-1);
-        subdivide(pos6,pos5,pos3,depth-1);
-        subdivide(pos4,pos5,pos6,depth-1);
-
-    }
 
 
+        glm::vec3 v4;
+        glm::vec3 v5;
+        glm::vec3 v6;
 
-}
-
-void Geodesique::drawtriangleOptimize(int ind1,int ind2,int ind3){
-
-    triangles_.push_back( TriangleIndex(ind1, ind2, ind3) );
-}
-
-void Geodesique::subdivideOptimize(int ind1,int ind2,int ind3,int depth){
+        v1=glm::normalize(v1);
+        v2=glm::normalize(v2);
+        v3=glm::normalize(v3);
 
 
-    glm::vec3 pos1;
-    glm::vec3 pos2;
-    glm::vec3 pos3;
+        v4=v1+v2;
+        v5=v2+v3;
+        v6=v3+v1;
 
-
-    glm::vec3 pos4;
-    glm::vec3 pos5;
-    glm::vec3 pos6;
-
-    if(depth==0){
-        drawtriangleOptimize(ind1,ind2,ind3);
-        return;
-    }
+        v4=glm::normalize(v4);
+        v5=glm::normalize(v5);
+        v6=glm::normalize(v6);
 
 
 
-    else{
-        float length=vertices_.size();
-        loaders::Mesh::Vertex vert;
 
-        glm::vec3 pos1=vertices_.at(ind1).position_;
-        glm::vec3 pos2=vertices_.at(ind2).position_;
-        glm::vec3 pos3=vertices_.at(ind3).position_;
-        glm::vec3 pos4=pos1+pos2;
-        glm::vec3 pos5=pos2+pos3;
-        glm::vec3 pos6=pos3+pos1;
-
-        pos4=glm::normalize(pos4);
-        pos5=glm::normalize(pos5);
-        pos6=glm::normalize(pos6);
-
-        vert.position_ = pos4;
-        vert.normal_ = pos4;
-        vertices_.push_back(vert);
-
-        int ind4 = length;
-        vert.position_ = pos5;
-        vert.normal_ = pos5;
-        int ind5 = length+1;
-
-        vertices_.push_back(vert);
-
-        vert.position_ = pos6;
-        vert.normal_ = pos6;
-        vertices_.push_back(vert);
-        int ind6 = length+2;
-
-        subdivideOptimize(ind1,ind4,ind6,depth-1);
-        subdivideOptimize(ind4,ind2,ind5,depth-1);
-        subdivideOptimize(ind6,ind5,ind3,depth-1);
-        subdivideOptimize(ind4,ind5,ind6,depth-1);
+        subdivide(v1,v4,v6,depth-1);
+        subdivide(v4,v2,v5,depth-1);
+        subdivide(v6,v5,v3,depth-1);
+        subdivide(v4,v5,v6,depth-1);
 
     }
 
@@ -220,9 +301,3 @@ void Geodesique::subdivideOptimize(int ind1,int ind2,int ind3,int depth){
 
 
 }
-
-
-
-
-
-

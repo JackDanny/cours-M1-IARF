@@ -14,13 +14,11 @@ public:
 
     virtual void generateMesh();
 
-    void drawtriangle(glm::vec3 pos1,glm::vec3 pos2,glm::vec3 pos3);
+    void drawtriangle(glm::vec3 v1,glm::vec3 v2,glm::vec3 v3);
 
-    void subdivide(glm::vec3 pos1,glm::vec3 pos2,glm::vec3 pos3,int depth);
+    void subdivide(glm::vec3 v1,glm::vec3 v2,glm::vec3 v3,int depth);
 
-    void drawtriangleOptimize(int ind1,int ind2,int ind3);
 
-    void subdivideOptimize(int ind1,int ind2,int ind3,int depth);
 
 };
 }
