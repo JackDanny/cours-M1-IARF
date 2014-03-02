@@ -10,6 +10,7 @@ def attente_touche():
 	print("veuillez appuyer sur une touche...")
 	raw_input()
 
+
 def affichage_donnees(data,centres):
 	assert type(data) is list
 	assert type(centres) is list
@@ -38,27 +39,29 @@ def affichage_donnees(data,centres):
 		
 		for index_point in range(len(data[groupe])):
 			point=data[groupe][index_point]
-			plot(point[0],point[1],forme)
+			plot(point[3],forme)
 	hold(False)
 
+
+#on calcule la distance entre deux points seulement avec la valeur de la composante T de TSL
 def calcul_distance(point1, point2):
-	return sqrt((point1[0]-point2[0])**2+(point1[1]-point2[1])**2)
+	return abs(point1[3]-point2[3])
+
 
 def calcul_centroide(liste):
-	# calcul du centroide d'une liste de points passée en argument
-	somme_x = 0.0
-	somme_y = 0.0
-	moyenne_x = 0.0
-	moyenne_y = 0.0
-	nb = len(liste)
-	for point in range(nb):
-		somme_x += liste[point][0]
-		somme_y += liste[point][1]
-	if nb != 0:
-	  moyenne_x = somme_x / nb
-	  moyenne_y = somme_y / nb
-	return [moyenne_x, moyenne_y]
+	# calcul du centroide de la composante T d'une liste de points passée en argument
+	somme_t = 0.0
+	moyenne_t = 0.0
+    nb=len(liste)
+	for point in range(len(liste)):
+		somme_t += liste[point][3]
 
+	if nb != 0:
+	  moyenne_t = somme_t / nb
+	  
+	return [moyenne_t]
+
+'''
 #calcul de l'inertie totale d'une classe sans les coeffs
 def calcul_inertie_totale_nuage(liste):
     #on calcul le centre des points
@@ -72,10 +75,9 @@ def calcul_inertie_totale_nuage(liste):
         inertie += d**2
 
     return inertie
+'''
 
-
-
-
+'''
 #calcul de l'inertie inter classe
 def calcul_inertie_inter(liste,centre):
     inertie_inter=0.;
@@ -100,8 +102,9 @@ def calcul_inertie_inter(liste,centre):
 
 
     return inertie_inter
+'''
 
-
+'''
 #calcule l'inertie totale d'une classe
 def calcul_inertie_classe(liste, centre):
         inertie_totale = 0.
@@ -113,7 +116,9 @@ def calcul_inertie_classe(liste, centre):
 
 
         return inertie_totale
+'''
 
+'''
 
 # calcul de l'inertie intra-classes d'une liste points passée en argument
 def calcul_inertie(liste, centres):
@@ -130,6 +135,8 @@ def calcul_inertie(liste, centres):
             nbPoints+=len(liste[i])
         #on rajoute un coeff = 1/nbPoints pour vérifier la décomposition de Huygens
         return inertie_intra/nbPoints
+'''
+
 
 #pour une matrice, donne l'indice de ligne et de colone de la plus petite valeur
 def argsMinMatrix(liste):
@@ -206,14 +213,11 @@ def init_centres(liste, nbG):
 
 	
 		argsMin=argsMinMatrix(MatDist)
-                #print("la region")
-                #print(argsMin[0])
-                #print("fusionne avec")
-                #print(argsMin[1])
+                
 		x=argsMin[0]
 		y=argsMin[1]
-                #print(" newList")
-                #print(newList)
+               
+
 		newList[x]=newList[x]+newList[x+1+y]
 		del newList[x+1+y]
                 #print(" newList after")
@@ -255,14 +259,16 @@ def kmeans(data,nbGroupes):
 
 	# choix centres initiaux : initialisation plus robuste que le choix aléatoire (question 3)
 
-        centres = init_centres(data, nbGroupes)
-        #centres = [[3.0, -5.0], [1.0, 1.0]]
-        #centres = [[1.0, 2.0], [-2.0, -1.0]]
+    centres = init_centres(data, nbGroupes)
+    
+
+    #centres = [[3.0, -5.0], [1.0, 1.0]]
+    #centres = [[1.0, 2.0], [-2.0, -1.0]]
 	# mise de la liste de point fournie en paramètres sous la forme
 	# d'une liste de groupes : le premier groupe contenant tous les points du départ,
 	# les autres étant vides
 
-        print("calc inertie totale: " + str(calcul_inertie_totale_nuage(data)/len(data)) )
+    #print("calc inertie totale: " + str(calcul_inertie_totale_nuage(data)/len(data)) )
 
 	data = [ data ]
 
@@ -288,41 +294,43 @@ def kmeans(data,nbGroupes):
 		print("Itération = " + str(iteration)) ;
 		print("Données groupées : ") ; print(data) ;
 		print("Centres : ") ; print(centres) ;
-                inertie = calcul_inertie(data, centres)
-                print("inertie: " + str(inertie))
-                print("inertie inter: " + str(calcul_inertie_inter(data,centres)))
+        '''
+        inertie = calcul_inertie(data, centres)
+        print("inertie: " + str(inertie))
         
-		affichage_donnees(data,centres)
-		attente_touche()
+        print("inertie inter: " + str(calcul_inertie_inter(data,centres)))
+        '''
+    #affichage_donnees(data,centres)
+	attente_touche()
 		
 		# 1. reallocation
 		# ... A vous de jouer !
 		# indication : utiliser la fonction argmin renvoie l'indice du min d'une liste 
 		
 		
-		newdata = []
+	newdata = []
 		#newdata est nitialisé par nbGroupes éléments vide
-		for i in range(nbGroupes):
-			newdata.append([])
+	for i in range(nbGroupes):
+		newdata.append([])
 
 		
-		#pour chaque groupe i data
-		for i in range(0,len(data)):
+	#pour chaque groupe i data
+	for i in range(0,len(data)):
 			
-			#pour chaque élémet j de data[i]
-			for j in range(0,len(data[i])):
-				#liste des distances de j par rapports aux centres
-				listDist = []
-				
-				#pour chacun des centre k
-				for k in range(0,len(centres)): 
-					#on calcule et rajoute la distance du point data[i][j] au centre k
-					listDist.append(calcul_distance(data[i][j],centres[k]))
-				#on prend l'indice de l'élément le plus petit de listDist, autrement dit
-				#l'indice du centre le plus proche de data[i][j]
-				minDistList=argmin(listDist)
-				#on rajoute data[i][j] dans le groupe minDistList des nouvelles data
-				newdata[minDistList].append(data[i][j])
+		#pour chaque élémet j de data[i]
+		for j in range(0,len(data[i])):
+			#liste des distances de j par rapports aux centres
+			listDist = []
+			
+			#pour chacun des centre k
+			for k in range(0,len(centres)): 
+				#on calcule et rajoute la distance du point data[i][j] au centre k
+				listDist.append(calcul_distance(data[i][j],centres[k]))
+			#on prend l'indice de l'élément le plus petit de listDist, autrement dit
+			#l'indice du centre le plus proche de data[i][j]
+			minDistList=argmin(listDist)
+			#on rajoute data[i][j] dans le groupe minDistList des nouvelles data
+			newdata[minDistList].append(data[i][j])
 		data=list(newdata)
 
                 #print("reallocation: " + str(data))
@@ -368,10 +376,10 @@ def kmeans(data,nbGroupes):
     
 	return data
 #obs=[[1,0],[7,0],[15,0],[5,0],[2,0]]
-obs = [ [1.0,1.0],[3.0,3.0],[1.0,5.0],[-3.0,5.0],[-5.0,3.0],[-3.0,1.0],[3.0,-1.0],[5.0,-3.0],[3.0,-5.0],[-1.0,-5.0],[-3.0,-3.0],[-1.0,-1.0] ]
+#obs = [ [1.0,1.0],[3.0,3.0],[1.0,5.0],[-3.0,5.0],[-5.0,3.0],[-3.0,1.0],[3.0,-1.0],[5.0,-3.0],[3.0,-5.0],[-1.0,-5.0],[-3.0,-3.0],[-1.0,-1.0] ]
 #obs=[ [1.0,1.0],[3.0,3.0]]
 
-kmeans(obs,2)
+#kmeans(obs,2)
 
 # Exemples de sortie du programme
 

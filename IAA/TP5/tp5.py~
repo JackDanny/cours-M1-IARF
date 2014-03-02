@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # prerequis : librairie pylab installée (regroupe scypy, matplotlib, numpy et ipython)
-
+# codage de la méthode de classification par k plus proches voisins
 
 from pylab import *
 import colorsys
@@ -177,6 +177,67 @@ rgb[..., 0] = np.arange(255)
 rgb[..., 1] = 55
 rgb[..., 2] = 1 - np.arange(255)
 misc.imsave('rgb_gradient.png', rgb)
+'''
+img_rgb=misc.imread('picasso.jpg')
+
+
+
+
+
+#passage à TLS
+img_hls=zeros((len(img_rgb),len(img_rgb[0]),3))
+listePointsTeinte=[]
+for i in range(len(img_rgb)):
+    for j in range(len(img_rgb[0])):
+        hls=colorsys.rgb_to_hls(img_rgb[i][j][0]/255.,img_rgb[i][j][1]/255.,img_rgb[i][j][2]/255.)
+        listePointsTeinte.append((i,j,img_rgb[i][j][0]/255.))
+        '''
+        img_hls[i][j][0]=hls[0]
+        img_hls[i][j][1]=hls[1]
+        img_hls[i][j][2]=hls[2]
+        '''
+
+
+
+        
+
+print("listePointsTeinte=" +str(listePointsTeinte))
+
+
+
+#kmeans(img_rgb,2)
+
+
+
+
+img_rgb2=zeros((len(img_rgb),len(img_rgb[0]),3))
+
+
+for i in range(len(img_rgb2)):
+    for j in range(len(img_rgb2[0])):
+        rgb=colorsys.hls_to_rgb(img_hls[i][j][0],img_hls[i][j][1],img_hls[i][j][2])
+        
+        
+        
+        img_rgb2[i][j][0]=rgb[0]*255
+        img_rgb2[i][j][1]=rgb[1]*255
+        img_rgb2[i][j][2]=rgb[2]*255
+
+
+
+
+
+
+
+
+misc.imsave('picasso2.png', img_rgb2)
+
+
+
+'''
+# img_rgb[i][j][0]=r
+#img_rgb[i][j][1]=g
+#img_rgb[i][j][2]=b
 '''
 
 
