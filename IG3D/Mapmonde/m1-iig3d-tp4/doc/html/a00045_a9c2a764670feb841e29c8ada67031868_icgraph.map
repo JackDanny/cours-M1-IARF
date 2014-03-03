@@ -1,0 +1,5 @@
+<map id="getTime" name="getTime">
+<area shape="rect" id="node2" href="$a00045.html#aedc96a40e844bc2efc8bbef1b0782702" title="start" alt="" coords="123,5,170,33"/>
+<area shape="rect" id="node4" href="$a00045.html#aacf6bf8e121fea8b0a92d7197b73fe27" title="stop" alt="" coords="123,57,170,85"/>
+<area shape="rect" id="node3" href="$a00019.html#ac5cbfafb28ef4c0474ae96437294f547" title="gui::OpenGLWidget::\lpaintGL" alt="" coords="220,23,364,67"/>
+</map>

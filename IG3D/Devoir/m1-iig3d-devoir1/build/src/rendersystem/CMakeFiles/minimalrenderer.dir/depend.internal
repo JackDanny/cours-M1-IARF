@@ -2103,6 +2103,7 @@ src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o
  /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/Devoir/m1-iig3d-devoir1/src/rendersystem/gllight.h
  /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/Devoir/m1-iig3d-devoir1/src/rendersystem/glmaterial.h
  /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/Devoir/m1-iig3d-devoir1/src/rendersystem/glmesh.h
+ /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/Devoir/m1-iig3d-devoir1/src/rendersystem/icosahedre.h
  /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/Devoir/m1-iig3d-devoir1/src/rendersystem/opengl.h
  /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/Devoir/m1-iig3d-devoir1/src/rendersystem/parametricmeshes.h
  /home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/Devoir/m1-iig3d-devoir1/src/rendersystem/renderer.cpp

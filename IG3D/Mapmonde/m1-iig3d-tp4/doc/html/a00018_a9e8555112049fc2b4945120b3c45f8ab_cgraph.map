@@ -1,0 +1,9 @@
+<map id="open" name="open">
+<area shape="rect" id="node2" href="$a00018.html#a0e7976b09c57824b1241e7c3d30a67fd" title="loadFile" alt="" coords="105,39,173,67"/>
+<area shape="rect" id="node3" href="$a00018.html#ad20897c5c8bd47f5d4005989bead0e55" title="reset" alt="" coords="249,13,300,41"/>
+<area shape="rect" id="node7" href="$a00018.html#a4d539fd163f34d90b66ce39e30932cb8" title="setCurrentFile" alt="" coords="222,65,327,93"/>
+<area shape="rect" id="node4" href="$a00018.html#a395cfd3b5286442312051da532ffa579" title="resetCamera" alt="" coords="379,13,477,41"/>
+<area shape="rect" id="node5" href="$a00019.html#a0ca9011af09843d4bcfb7b68c0530101" title="gui::OpenGLWidget::\lresetView" alt="" coords="529,5,674,49"/>
+<area shape="rect" id="node6" href="$a00043.html#aafcf982312922a03e9bb1f072c10b3ca" title="Initialise the viewing configuration. " alt="" coords="723,5,888,49"/>
+<area shape="rect" id="node8" href="$a00018.html#a637f43b7cda3ccf9706f7d5ffec636dc" title="strippedName" alt="" coords="376,65,480,93"/>
+</map>

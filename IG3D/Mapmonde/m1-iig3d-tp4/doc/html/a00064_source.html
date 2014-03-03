@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>M1 Informatique - IG3D - Introduction à openGL:  Fichier source de mesh.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://www.mathjax.org/mathjax/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - IG3D - Introduction à openGL
+   &#160;<span id="projectnumber">2013-2014</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00064_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">mesh.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00064.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *   Copyright (C) 2012 by Mathias Paulin                                  *</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *   Mathias.Paulin@irit.fr                                                *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *                                                                         *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *   This program is free software; you can redistribute it and/or modify  *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *   it under the terms of the GNU General Public License as published by  *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *   the Free Software Foundation; either version 2 of the License, or     *</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *   (at your option) any later version.                                   *</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *                                                                         *</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *   This program is distributed in the hope that it will be useful,       *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *   GNU General Public License for more details.                          *</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *                                                                         *</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *   You should have received a copy of the GNU General Public License     *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *   along with this program; if not, write to the                         *</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *   Free Software Foundation, Inc.,                                       *</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> ***************************************************************************/</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef MESH_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MESH_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;glm/glm.hpp&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>loaders {</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="a00020.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00020.html">Mesh</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="a00020.html#a2a23c7c0c4e0da252b7bc0e13b6f81d8">Mesh</a> ();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="a00020.html#a2a23c7c0c4e0da252b7bc0e13b6f81d8">Mesh</a> (<span class="keyword">const</span> std::vector&lt;float&gt; &amp;vertexBuffer,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;          <span class="keyword">const</span> std::vector&lt;int&gt; &amp;triangleBuffer,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;          <span class="keyword">const</span> std::vector&lt;int&gt; &amp;quadBuffer,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;          <span class="keywordtype">bool</span> hasNormals, <span class="keywordtype">bool</span> hasTextureCoords</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;         );</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="a00020.html#acca51f7fdeb38552c4aa32a5a01c8ef8">   57</a></span>&#160;    <a class="code" href="a00020.html#acca51f7fdeb38552c4aa32a5a01c8ef8">Mesh</a>(<span class="keyword">const</span> <a class="code" href="a00020.html">Mesh</a> &amp;mesh) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="a00020.html#ae00118ab77143947b2d1214948412075">vertices_</a> = mesh.<a class="code" href="a00020.html#ae00118ab77143947b2d1214948412075">vertices_</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="a00020.html#a6f1b8798fff22c5d77072d998fcdb558">triangles_</a> = mesh.<a class="code" href="a00020.html#a6f1b8798fff22c5d77072d998fcdb558">triangles_</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="a00020.html#a05cd47b55e03690d2125c53e136ecbf0">nbVertices_</a> = mesh.<a class="code" href="a00020.html#a05cd47b55e03690d2125c53e136ecbf0">nbVertices_</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="a00020.html#aaa705a64078dca9543773cac64011caa">nbTriangles_</a> = mesh.<a class="code" href="a00020.html#aaa705a64078dca9543773cac64011caa">nbTriangles_</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="a00020.html#a4531a7f678d13625a554ad6c1b849603">hasTextureCoords_</a> = mesh.<a class="code" href="a00020.html#a4531a7f678d13625a554ad6c1b849603">hasTextureCoords_</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="a00020.html#a29ce7be4a55305402611ad8cd6553664">hasNormal_</a> = mesh.<a class="code" href="a00020.html#a29ce7be4a55305402611ad8cd6553664">hasNormal_</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="a00020.html#a6e26384cfb03023e7dc2e5419baf813f">~Mesh</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00020.html#ab6794699ad8adb947491bc05478b7e76">getData</a> ( std::vector&lt;float&gt; &amp;vertexBuffer,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;           std::vector&lt;int&gt; &amp;triangleBuffer,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;           <span class="keywordtype">bool</span> &amp;parametrized</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;         );</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="a00020.html">Mesh</a> &amp; <a class="code" href="a00020.html#aa274943a35e8df10c93d6e8a168fa20b">operator+=</a>(<span class="keyword">const</span> <a class="code" href="a00020.html">Mesh</a> &amp;m);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="a00020.html#abff474f8ed7b8c80cf26db24e8c5822e">   87</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00020.html#abff474f8ed7b8c80cf26db24e8c5822e">nbVertices</a> ()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a00020.html#a05cd47b55e03690d2125c53e136ecbf0">nbVertices_</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="a00020.html#a044b98f8769708d910cfcf873d4c6a23">   94</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00020.html#a044b98f8769708d910cfcf873d4c6a23">nbTriangles</a> ()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a00020.html#aaa705a64078dca9543773cac64011caa">nbTriangles_</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00020.html#a438f12951af46e77d25d7fe3ead0c074">printfInfo</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="a00022.html">  108</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00022.html">Vertex</a> {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="a00022.html#aac78269ab31a3881ad087be74c1babaf">  110</a></span>&#160;        <a class="code" href="a00022.html#aac78269ab31a3881ad087be74c1babaf">Vertex</a> (<span class="keywordtype">void</span>) : <a class="code" href="a00022.html#a6670243e2899763856e82a8162aa91fa">position_</a> (glm::vec3(0.,0.,0.)), <a class="code" href="a00022.html#afc1d39879c32368351fd0c019895bf7a">normal_</a> (glm::vec3(0.,0.,0.)), <a class="code" href="a00022.html#a916b6f684b9dafdba88a661f4d29c9b2">texcoord_</a>(glm::vec2(0.,0.)) {}</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="a00022.html#ac95194c0e650865168c797856ea42249">  111</a></span>&#160;        <a class="code" href="a00022.html#ac95194c0e650865168c797856ea42249">Vertex</a> (<span class="keyword">const</span> glm::vec3&amp; pos) : <a class="code" href="a00022.html#a6670243e2899763856e82a8162aa91fa">position_</a> (pos), <a class="code" href="a00022.html#afc1d39879c32368351fd0c019895bf7a">normal_</a> (glm::vec3(0.,0.,0.)), <a class="code" href="a00022.html#a916b6f684b9dafdba88a661f4d29c9b2">texcoord_</a>(glm::vec2(0.,0.)) {}</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="a00022.html#aecaad09aa3b66b2a436c6afeabdc49e7">  112</a></span>&#160;        <a class="code" href="a00022.html#aecaad09aa3b66b2a436c6afeabdc49e7">~Vertex</a>(){}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="a00022.html#a6670243e2899763856e82a8162aa91fa">  114</a></span>&#160;        glm::vec3 <a class="code" href="a00022.html#a6670243e2899763856e82a8162aa91fa">position_</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="a00022.html#afc1d39879c32368351fd0c019895bf7a">  115</a></span>&#160;        glm::vec3 <a class="code" href="a00022.html#afc1d39879c32368351fd0c019895bf7a">normal_</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="a00022.html#a916b6f684b9dafdba88a661f4d29c9b2">  116</a></span>&#160;        glm::vec2 <a class="code" href="a00022.html#a916b6f684b9dafdba88a661f4d29c9b2">texcoord_</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    };</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="a00021.html">  122</a></span>&#160;    <span class="keyword">class </span><a class="code" href="a00021.html">TriangleIndex</a> {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="a00021.html#a668777e7ea0de470abce2cd6b80e3872">  124</a></span>&#160;        <a class="code" href="a00021.html#a668777e7ea0de470abce2cd6b80e3872">TriangleIndex</a> (<span class="keywordtype">int</span> i0, <span class="keywordtype">int</span> i1, <span class="keywordtype">int</span> i2) {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <a class="code" href="a00021.html#a355d80d629eaf9e21e1303b301abd741">indexes_</a>[0] = i0;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <a class="code" href="a00021.html#a355d80d629eaf9e21e1303b301abd741">indexes_</a>[1] = i1;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <a class="code" href="a00021.html#a355d80d629eaf9e21e1303b301abd741">indexes_</a>[2] = i2;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        };</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="a00021.html#a7a39ebbef0104162f94eda8ae89cdfcd">  129</a></span>&#160;        <a class="code" href="a00021.html#a7a39ebbef0104162f94eda8ae89cdfcd">TriangleIndex</a> (<span class="keyword">const</span> <span class="keywordtype">int</span>* pIds) {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <a class="code" href="a00021.html#a355d80d629eaf9e21e1303b301abd741">indexes_</a>[0] = pIds[0];</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <a class="code" href="a00021.html#a355d80d629eaf9e21e1303b301abd741">indexes_</a>[1] = pIds[1];</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                <a class="code" href="a00021.html#a355d80d629eaf9e21e1303b301abd741">indexes_</a>[2] = pIds[2];</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="a00021.html#a355d80d629eaf9e21e1303b301abd741">  133</a></span>&#160;        };</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="a00021.html#a355d80d629eaf9e21e1303b301abd741">indexes_</a>[3];</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="a00021.html#afd5d644295a973eb1b92aa29de7cdc15">  135</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; <a class="code" href="a00021.html#afd5d644295a973eb1b92aa29de7cdc15">operator[] </a>(<span class="keywordtype">int</span> k) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                assert (k&lt;3);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a00021.html#a355d80d629eaf9e21e1303b301abd741">indexes_</a>[k];</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        }</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="a00021.html#a25ee477a027428b89384810ed0e31a78">  139</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="a00021.html#afd5d644295a973eb1b92aa29de7cdc15">operator[] </a>(<span class="keywordtype">int</span> k)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                assert (k&lt;3);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a00021.html#a355d80d629eaf9e21e1303b301abd741">indexes_</a>[k];</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    };</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="a00020.html#a93c9bd1580cb4b210b704c41351f76f0">  145</a></span>&#160;    <span class="keyword">typedef</span> std::vector&lt;Vertex&gt; <a class="code" href="a00020.html#a93c9bd1580cb4b210b704c41351f76f0">VertexArray</a>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="a00020.html#ae3679dc4caa6b5670fda7c8d9f6e8987">  146</a></span>&#160;    <span class="keyword">typedef</span> std::vector&lt;TriangleIndex&gt; <a class="code" href="a00020.html#ae3679dc4caa6b5670fda7c8d9f6e8987">TriangleIndexArray</a>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="a00020.html#ae00118ab77143947b2d1214948412075">  148</a></span>&#160;    <a class="code" href="a00020.html#a93c9bd1580cb4b210b704c41351f76f0">VertexArray</a> <a class="code" href="a00020.html#ae00118ab77143947b2d1214948412075">vertices_</a>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="a00020.html#a05cd47b55e03690d2125c53e136ecbf0">  149</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00020.html#a05cd47b55e03690d2125c53e136ecbf0">nbVertices_</a>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="a00020.html#a6f1b8798fff22c5d77072d998fcdb558">  151</a></span>&#160;    <a class="code" href="a00020.html#ae3679dc4caa6b5670fda7c8d9f6e8987">TriangleIndexArray</a> <a class="code" href="a00020.html#a6f1b8798fff22c5d77072d998fcdb558">triangles_</a>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="a00020.html#aaa705a64078dca9543773cac64011caa">  152</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00020.html#aaa705a64078dca9543773cac64011caa">nbTriangles_</a>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="a00020.html#a4531a7f678d13625a554ad6c1b849603">  154</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00020.html#a4531a7f678d13625a554ad6c1b849603">hasTextureCoords_</a>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="a00020.html#a29ce7be4a55305402611ad8cd6553664">  155</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00020.html#a29ce7be4a55305402611ad8cd6553664">hasNormal_</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00020.html#a858d9e05a6524ecb1548e611ae8416ed">computeNormals</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;};</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;} <span class="comment">// namespace loaders</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a00022_html_a916b6f684b9dafdba88a661f4d29c9b2"><div class="ttname"><a href="a00022.html#a916b6f684b9dafdba88a661f4d29c9b2">loaders::Mesh::Vertex::texcoord_</a></div><div class="ttdeci">glm::vec2 texcoord_</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00116">mesh.h:116</a></div></div>
+<div class="ttc" id="a00022_html"><div class="ttname"><a href="a00022.html">loaders::Mesh::Vertex</a></div><div class="ttdoc">Internal vertex representation : position (vec3), normal (vec3) and texcoord (vec2) ...</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00108">mesh.h:108</a></div></div>
+<div class="ttc" id="a00021_html_afd5d644295a973eb1b92aa29de7cdc15"><div class="ttname"><a href="a00021.html#afd5d644295a973eb1b92aa29de7cdc15">loaders::Mesh::TriangleIndex::operator[]</a></div><div class="ttdeci">unsigned int &amp; operator[](int k)</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00135">mesh.h:135</a></div></div>
+<div class="ttc" id="a00021_html_a668777e7ea0de470abce2cd6b80e3872"><div class="ttname"><a href="a00021.html#a668777e7ea0de470abce2cd6b80e3872">loaders::Mesh::TriangleIndex::TriangleIndex</a></div><div class="ttdeci">TriangleIndex(int i0, int i1, int i2)</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00124">mesh.h:124</a></div></div>
+<div class="ttc" id="a00020_html_a858d9e05a6524ecb1548e611ae8416ed"><div class="ttname"><a href="a00020.html#a858d9e05a6524ecb1548e611ae8416ed">loaders::Mesh::computeNormals</a></div><div class="ttdeci">void computeNormals(void)</div><div class="ttdoc">Compute smothed normals at each vertex. </div><div class="ttdef"><b>Definition:</b> <a href="a00063_source.html#l00106">mesh.cpp:106</a></div></div>
+<div class="ttc" id="a00020_html_a044b98f8769708d910cfcf873d4c6a23"><div class="ttname"><a href="a00020.html#a044b98f8769708d910cfcf873d4c6a23">loaders::Mesh::nbTriangles</a></div><div class="ttdeci">int nbTriangles() const </div><div class="ttdoc">Returns the number of vertices in the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00094">mesh.h:94</a></div></div>
+<div class="ttc" id="a00020_html_a05cd47b55e03690d2125c53e136ecbf0"><div class="ttname"><a href="a00020.html#a05cd47b55e03690d2125c53e136ecbf0">loaders::Mesh::nbVertices_</a></div><div class="ttdeci">int nbVertices_</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00149">mesh.h:149</a></div></div>
+<div class="ttc" id="a00020_html_a2a23c7c0c4e0da252b7bc0e13b6f81d8"><div class="ttname"><a href="a00020.html#a2a23c7c0c4e0da252b7bc0e13b6f81d8">loaders::Mesh::Mesh</a></div><div class="ttdeci">Mesh()</div><div class="ttdoc">Default constructor. </div><div class="ttdef"><b>Definition:</b> <a href="a00063_source.html#l00026">mesh.cpp:26</a></div></div>
+<div class="ttc" id="a00020_html_ae3679dc4caa6b5670fda7c8d9f6e8987"><div class="ttname"><a href="a00020.html#ae3679dc4caa6b5670fda7c8d9f6e8987">loaders::Mesh::TriangleIndexArray</a></div><div class="ttdeci">std::vector&lt; TriangleIndex &gt; TriangleIndexArray</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00146">mesh.h:146</a></div></div>
+<div class="ttc" id="a00020_html_aaa705a64078dca9543773cac64011caa"><div class="ttname"><a href="a00020.html#aaa705a64078dca9543773cac64011caa">loaders::Mesh::nbTriangles_</a></div><div class="ttdeci">int nbTriangles_</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00152">mesh.h:152</a></div></div>
+<div class="ttc" id="a00020_html_abff474f8ed7b8c80cf26db24e8c5822e"><div class="ttname"><a href="a00020.html#abff474f8ed7b8c80cf26db24e8c5822e">loaders::Mesh::nbVertices</a></div><div class="ttdeci">int nbVertices() const </div><div class="ttdoc">Returns the number of vertices in the mesh. </div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00087">mesh.h:87</a></div></div>
+<div class="ttc" id="a00021_html"><div class="ttname"><a href="a00021.html">loaders::Mesh::TriangleIndex</a></div><div class="ttdoc">Internal triangle representation : three integer indices. </div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00122">mesh.h:122</a></div></div>
+<div class="ttc" id="a00022_html_aecaad09aa3b66b2a436c6afeabdc49e7"><div class="ttname"><a href="a00022.html#aecaad09aa3b66b2a436c6afeabdc49e7">loaders::Mesh::Vertex::~Vertex</a></div><div class="ttdeci">~Vertex()</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00112">mesh.h:112</a></div></div>
+<div class="ttc" id="a00020_html_ae00118ab77143947b2d1214948412075"><div class="ttname"><a href="a00020.html#ae00118ab77143947b2d1214948412075">loaders::Mesh::vertices_</a></div><div class="ttdeci">VertexArray vertices_</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00148">mesh.h:148</a></div></div>
+<div class="ttc" id="a00021_html_a7a39ebbef0104162f94eda8ae89cdfcd"><div class="ttname"><a href="a00021.html#a7a39ebbef0104162f94eda8ae89cdfcd">loaders::Mesh::TriangleIndex::TriangleIndex</a></div><div class="ttdeci">TriangleIndex(const int *pIds)</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00129">mesh.h:129</a></div></div>
+<div class="ttc" id="a00021_html_a355d80d629eaf9e21e1303b301abd741"><div class="ttname"><a href="a00021.html#a355d80d629eaf9e21e1303b301abd741">loaders::Mesh::TriangleIndex::indexes_</a></div><div class="ttdeci">unsigned int indexes_[3]</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00133">mesh.h:133</a></div></div>
+<div class="ttc" id="a00020_html_a93c9bd1580cb4b210b704c41351f76f0"><div class="ttname"><a href="a00020.html#a93c9bd1580cb4b210b704c41351f76f0">loaders::Mesh::VertexArray</a></div><div class="ttdeci">std::vector&lt; Vertex &gt; VertexArray</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00145">mesh.h:145</a></div></div>
+<div class="ttc" id="a00020_html_a6f1b8798fff22c5d77072d998fcdb558"><div class="ttname"><a href="a00020.html#a6f1b8798fff22c5d77072d998fcdb558">loaders::Mesh::triangles_</a></div><div class="ttdeci">TriangleIndexArray triangles_</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00151">mesh.h:151</a></div></div>
+<div class="ttc" id="a00020_html"><div class="ttname"><a href="a00020.html">loaders::Mesh</a></div><div class="ttdoc">Represents a triangular mesh as an array of vertex and an array of triangluar faces. </div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00034">mesh.h:34</a></div></div>
+<div class="ttc" id="a00022_html_ac95194c0e650865168c797856ea42249"><div class="ttname"><a href="a00022.html#ac95194c0e650865168c797856ea42249">loaders::Mesh::Vertex::Vertex</a></div><div class="ttdeci">Vertex(const glm::vec3 &amp;pos)</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00111">mesh.h:111</a></div></div>
+<div class="ttc" id="a00020_html_a438f12951af46e77d25d7fe3ead0c074"><div class="ttname"><a href="a00020.html#a438f12951af46e77d25d7fe3ead0c074">loaders::Mesh::printfInfo</a></div><div class="ttdeci">void printfInfo() const </div><div class="ttdoc">Prints basic information about the mesh on stderr. </div><div class="ttdef"><b>Definition:</b> <a href="a00063_source.html#l00102">mesh.cpp:102</a></div></div>
+<div class="ttc" id="a00020_html_ab6794699ad8adb947491bc05478b7e76"><div class="ttname"><a href="a00020.html#ab6794699ad8adb947491bc05478b7e76">loaders::Mesh::getData</a></div><div class="ttdeci">void getData(std::vector&lt; float &gt; &amp;vertexBuffer, std::vector&lt; int &gt; &amp;triangleBuffer, bool &amp;parametrized)</div><div class="ttdoc">Gets the mesh data in raw format. </div><div class="ttdef"><b>Definition:</b> <a href="a00063_source.html#l00129">mesh.cpp:129</a></div></div>
+<div class="ttc" id="a00020_html_a29ce7be4a55305402611ad8cd6553664"><div class="ttname"><a href="a00020.html#a29ce7be4a55305402611ad8cd6553664">loaders::Mesh::hasNormal_</a></div><div class="ttdeci">bool hasNormal_</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00155">mesh.h:155</a></div></div>
+<div class="ttc" id="a00020_html_a6e26384cfb03023e7dc2e5419baf813f"><div class="ttname"><a href="a00020.html#a6e26384cfb03023e7dc2e5419baf813f">loaders::Mesh::~Mesh</a></div><div class="ttdeci">virtual ~Mesh()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="a00063_source.html#l00098">mesh.cpp:98</a></div></div>
+<div class="ttc" id="a00022_html_a6670243e2899763856e82a8162aa91fa"><div class="ttname"><a href="a00022.html#a6670243e2899763856e82a8162aa91fa">loaders::Mesh::Vertex::position_</a></div><div class="ttdeci">glm::vec3 position_</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00114">mesh.h:114</a></div></div>
+<div class="ttc" id="a00022_html_aac78269ab31a3881ad087be74c1babaf"><div class="ttname"><a href="a00022.html#aac78269ab31a3881ad087be74c1babaf">loaders::Mesh::Vertex::Vertex</a></div><div class="ttdeci">Vertex(void)</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00110">mesh.h:110</a></div></div>
+<div class="ttc" id="a00020_html_a4531a7f678d13625a554ad6c1b849603"><div class="ttname"><a href="a00020.html#a4531a7f678d13625a554ad6c1b849603">loaders::Mesh::hasTextureCoords_</a></div><div class="ttdeci">bool hasTextureCoords_</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00154">mesh.h:154</a></div></div>
+<div class="ttc" id="a00022_html_afc1d39879c32368351fd0c019895bf7a"><div class="ttname"><a href="a00022.html#afc1d39879c32368351fd0c019895bf7a">loaders::Mesh::Vertex::normal_</a></div><div class="ttdeci">glm::vec3 normal_</div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00115">mesh.h:115</a></div></div>
+<div class="ttc" id="a00020_html_acca51f7fdeb38552c4aa32a5a01c8ef8"><div class="ttname"><a href="a00020.html#acca51f7fdeb38552c4aa32a5a01c8ef8">loaders::Mesh::Mesh</a></div><div class="ttdeci">Mesh(const Mesh &amp;mesh)</div><div class="ttdoc">Copy contructor. </div><div class="ttdef"><b>Definition:</b> <a href="a00064_source.html#l00057">mesh.h:57</a></div></div>
+<div class="ttc" id="a00020_html_aa274943a35e8df10c93d6e8a168fa20b"><div class="ttname"><a href="a00020.html#aa274943a35e8df10c93d6e8a168fa20b">loaders::Mesh::operator+=</a></div><div class="ttdeci">Mesh &amp; operator+=(const Mesh &amp;m)</div><div class="ttdoc">Concatenates 2 meshes. </div><div class="ttdef"><b>Definition:</b> <a href="a00063_source.html#l00154">mesh.cpp:154</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ec13e042cd20da37125ade6b56a26b4e.html">fileloaders</a></li><li class="navelem"><a class="el" href="a00064.html">mesh.h</a></li>
+    <li class="footer">Généré le Jeudi Février 13 2014 15:22:46 pour M1 Informatique - IG3D - Introduction à openGL par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>

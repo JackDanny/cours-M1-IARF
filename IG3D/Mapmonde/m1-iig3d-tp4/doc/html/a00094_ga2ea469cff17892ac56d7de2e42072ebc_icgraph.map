@@ -1,0 +1,7 @@
+<map id="material_Kd" name="material_Kd">
+<area shape="rect" id="node2" href="$a00094.html#ga6c96423c9983a3fa68b4caf603b6650f" title="parse_material_library" alt="" coords="147,13,301,41"/>
+<area shape="rect" id="node3" href="$a00094.html#ga980a2a667e8b9970943db084c2077703" title="load" alt="" coords="350,13,397,41"/>
+<area shape="rect" id="node4" href="$a00043.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="445,5,611,49"/>
+<area shape="rect" id="node5" href="$a00043.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="659,5,824,49"/>
+<area shape="rect" id="node6" href="$a00019.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="873,5,1018,49"/>
+</map>

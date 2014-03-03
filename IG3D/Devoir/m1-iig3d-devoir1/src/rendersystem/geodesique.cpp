@@ -8,10 +8,8 @@ using namespace std;
 
 namespace rendersystem {
 
-int indiceMap=0;
 
-
-
+//on déclare une structure faisant office d'opérateur < pour des vec3
 struct classcomp {
     bool operator() (const glm::vec3 v1, const glm::vec3 v2) const
     {
@@ -36,22 +34,29 @@ struct classcomp {
     }
 };
 
+
+
+//on déclare une map comme variable globale
+//la clef est un vec 3 désignant un sommet, la valeur est un int indiquant l'indice du sommet,
+//et on rajoute la structure précédente pour comparer nos vec3 afin de les trier
 std::map<glm::vec3,int,classcomp> mymap;
 
+//l'indice du premier sommet est 0. On le met en variable globale lui aussi
+int indiceMap=0;
+
+//generateMesh va generer le maillage
 void Geodesique::generateMesh() {
 
     triangles_.clear();
     vertices_.clear();
 
     loaders::Mesh::Vertex vert;
-    glm::vec3 xyz;
 
-
-
+    //on se sert du nombre d'or pour les coordonnées des sommets
     float phi=(1+sqrt(5))/2.;
 
 
-
+    //on déclare nos 12 sommets comme vec3
     glm::vec3 vdata[12] = {
         glm::vec3(phi,1,0.0),
         glm::vec3(phi,-1,0.0),
@@ -68,93 +73,29 @@ void Geodesique::generateMesh() {
         glm::vec3(0,-phi,1),
         glm::vec3(0,-phi,-1)
     };
-    /*
-
-    myset.insert(glm::vec3(phi,1.,0.));
-    myset.insert(glm::vec3(phi,-1.,0.));
-    myset.insert(glm::vec3(-phi,1.,0.));
-    myset.insert(glm::vec3(-phi,-1.,0.));
-
-    myset.insert(glm::vec3(1,0,phi));
-    myset.insert(glm::vec3(1,0,-phi));
-    myset.insert(glm::vec3(-1,0,phi));
-    myset.insert(glm::vec3(-1,0,-phi));
-
-    myset.insert(glm::vec3(0,phi,1));
-    myset.insert(glm::vec3(0,phi,-1));
-    myset.insert(glm::vec3(0,-phi,1));
-    myset.insert(glm::vec3(0,-phi,-1));
-
-    */
 
 
 
-    int i;
 
+
+    //on déclare nos triangles initiaux
     uint tindices[20][3] ={
         {2,8,9},{9,8,0},{0,8,4},{4,8,6},{6,8,2},
         {3,11,10},{10,11,1},{1,11,5},{5,11,7},{7,11,3},
         {3,2,7},{7,2,9},{7,9,5},{5,9,0},{5,0,1},{1,0,4},{1,4,10},{10,4,6},{10,6,3},{3,6,2}
     };
 
-    //rajout pour optimize
-    /*
-    for(i=0;i<12;i++){
-        glm::vec3 pos;
-        pos[0]=vdata[i][0];
-        pos[1]=vdata[i][1];
-        pos[2]=vdata[i][2];
-        loaders::Mesh::Vertex vert;
-        pos = glm::normalize(pos);
-        vert.position_ = pos;
-        vert.normal_ = pos;
-        vertices_.push_back(vert);
+    int i;
 
-
-    }
-    */
-
+    //A chaque itération on subdivise
     for(i=0;i<20;i++){
-        /*
-        float[3] s1;
-        float[3] s2;
-        float[3] s3;
-
-        it=myset.find(vdata[tindices[i][0]]);
-
-        it=myset.find(vdata[tindices[i][1]]);
-
-        it=myset.find(vdata[tindices[i][1]]);
-
-        ls1[0]=(it+(tindices[i][0]))[0];
-        ls1[1]=(it+(tindices[i][0]))[1];
-        ls1[2]=(it+(tindices[i][0]))[2];
-
-        ls2[0]=(it+(tindices[i][1]))[0];
-        ls2[1]=(it+(tindices[i][1]))[1];
-        ls2[2]=(it+(tindices[i][1]))[2];
-
-        ls3[0]=(it+(tindices[i][2]))[0];
-        ls3[1]=(it+(tindices[i][1]))[1];
-        ls3[2]=(it+(tindices[i][1]))[2];
-        */
-        /*
-        vec1=glm::normalize(vec1);
-        vec2=glm::normalize(vec2);
-        vec3=glm::normalize(vec3);
-
-
-        */
-
-
-
-
         subdivide(vdata[tindices[i][0]],vdata[tindices[i][1]],vdata[tindices[i][2]],10);
-        //subdivideOptimize2(tindices[i][0],tindices[i][1],tindices[i][2],9);
+
     }
 
 
-
+    //A la fin, lorsqu'on ferme la fenêtre etc... on affiche le nb de sommet afin
+    //d'être certain.
     cout << "nb sommet = " << vertices_. size();;
     cout << "\nnb triangles = " << triangles_.size();
     cout << "\n";
@@ -168,58 +109,44 @@ void Geodesique::generateMesh() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Rajout d'un triangle et éventuellement de sommets dans le maillage
 void Geodesique::drawtriangle(glm::vec3 v1,glm::vec3 v2,glm::vec3 v3){
+    //structure servant pour l'itération, je le recrache d'un exemple de
+    //http://www.cplusplus.com/reference/map/map/insert/
     std::pair<std::map<glm::vec3,int>::iterator,bool> ret;
 
     loaders::Mesh::Vertex vert;
-    //float length=vertices_.size();
+    //les indices des trois sommets. ça sert pour insérer le triangle.
     int ind1;
     int ind2;
     int ind3;
-    /*
-    float f1[3];
 
-    f1[0]=v1[0];
-    f1[1]=v1[1];
-    f1[2]=v1[2];
-    */
+    //on essaie d'insérer le couple (v1,indiceMap)
+    //ret pointe vers la position où se trouve le sommet en question s'il y est
+    //et le rajoute à la bonne position sinon
     ret = mymap.insert( std::pair<glm::vec3,int>(v1,indiceMap) );
 
+    //Si le sommet est dans la map...
     if (ret.second==false){
+        //on récupère l'indice du sommet correspondant
         ind1=ret.first->second;
     }
+
+    //Sinon
     else{
         vert.position_ = v1;
         vert.normal_ = v1;
+
+        //on rajoute le sommet
         vertices_.push_back(vert);
+        //on stocke l'indice du sommet
         ind1=indiceMap;
+        //et on incrémente l'indice
         indiceMap++;
 
     }
-    /*
-    float f2[3];
 
-    f2[0]=v2[0];
-    f2[1]=v2[1];
-    f2[2]=v2[2];
-    */
-
+    //belote...
     ret = mymap.insert ( std::pair<glm::vec3,int>(v2,indiceMap) );
 
     if (ret.second==false){
@@ -233,14 +160,8 @@ void Geodesique::drawtriangle(glm::vec3 v1,glm::vec3 v2,glm::vec3 v3){
         indiceMap++;
 
     }
-    /*
-    float f3[3];
 
-    f3[0]=v3[0];
-    f3[1]=v3[1];
-    f3[2]=v3[2];
-    */
-
+    //rebelote...
     ret = mymap.insert ( std::pair<glm::vec3,int>(v3,indiceMap) );
 
     if (ret.second==false){
@@ -254,40 +175,44 @@ void Geodesique::drawtriangle(glm::vec3 v1,glm::vec3 v2,glm::vec3 v3){
         indiceMap++;
 
     }
-
+    //et 10 de der, on rajoute le triangle
     triangles_.push_back(TriangleIndex(ind1, ind2, ind3) );
 }
 
+
+//on procède ici à une subdivision récursive. On diminue la valeur de la profondeur à chaque
+//itération
 void Geodesique::subdivide(glm::vec3 v1,glm::vec3 v2,glm::vec3 v3,int depth){
 
+    //on normalize nos sommets
+    v1=glm::normalize(v1);
+    v2=glm::normalize(v2);
+    v3=glm::normalize(v3);
 
+    //si profondeur nulle on trace le triangle
     if(depth==0){
         drawtriangle(v1,v2,v3);
-        return;
+
     }
     else{
 
-
+        //on declare 3 vec3. Ce seront nos prochain sommets, situés chacun au milieu des trois segments
+        //formés par v1 v2 et v3
         glm::vec3 v4;
         glm::vec3 v5;
         glm::vec3 v6;
 
-        v1=glm::normalize(v1);
-        v2=glm::normalize(v2);
-        v3=glm::normalize(v3);
 
 
+        //on construit les prochains
         v4=v1+v2;
         v5=v2+v3;
         v6=v3+v1;
 
-        v4=glm::normalize(v4);
-        v5=glm::normalize(v5);
-        v6=glm::normalize(v6);
+        //pas besoin de les normaliser ici, car ils se normaliseront dès le debut de
+        //subdivide
 
-
-
-
+        //chacune des faces se subdivisent en 4. On diminue aussi la profondeur
         subdivide(v1,v4,v6,depth-1);
         subdivide(v4,v2,v5,depth-1);
         subdivide(v6,v5,v3,depth-1);

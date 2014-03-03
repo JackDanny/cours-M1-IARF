@@ -1,0 +1,6 @@
+<map id="addVerticeNormalTexturePart" name="addVerticeNormalTexturePart">
+<area shape="rect" id="node2" href="$a00094.html#gaab2a186f26924656a41cac89527cdc0e" title="getObjects" alt="" coords="251,13,336,41"/>
+<area shape="rect" id="node3" href="$a00043.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="384,5,549,49"/>
+<area shape="rect" id="node4" href="$a00043.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="597,5,763,49"/>
+<area shape="rect" id="node5" href="$a00019.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="812,5,956,49"/>
+</map>

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'openglwidget.h'
 **
-** Created: Sat Feb 15 11:32:59 2014
+** Created: Mon Mar 3 04:57:02 2014
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.1)
 **
 ** WARNING! All changes made in this file will be lost!

@@ -2102,6 +2102,7 @@ src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o: ../src/rendersys
 src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o: ../src/rendersystem/gllight.h
 src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o: ../src/rendersystem/glmaterial.h
 src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o: ../src/rendersystem/glmesh.h
+src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o: ../src/rendersystem/icosahedre.h
 src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o: ../src/rendersystem/opengl.h
 src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o: ../src/rendersystem/parametricmeshes.h
 src/rendersystem/CMakeFiles/minimalrenderer.dir/renderer.cpp.o: ../src/rendersystem/renderer.cpp

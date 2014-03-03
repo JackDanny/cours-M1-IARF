@@ -1,0 +1,2 @@
+/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/Mapmonde/m1-iig3d-tp4/build/src/fileloaders/CMakeFiles/fileloaders.dir
+/home/jackdanny/Bureau/M1_IARF/cours-M1-IARF/IG3D/Mapmonde/m1-iig3d-tp4/build/src/rendersystem/CMakeFiles/minimalrenderer.dir

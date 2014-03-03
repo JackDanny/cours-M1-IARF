@@ -1,0 +1,607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>M1 Informatique - IG3D - Introduction à openGL: Référence de la classe Texture</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://www.mathjax.org/mathjax/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - IG3D - Introduction à openGL
+   &#160;<span id="projectnumber">2013-2014</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00044.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-attribs">Attributs publics</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="a00223.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Texture</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="a00082_source.html">texture.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de Texture:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00224.png" border="0" usemap="#_texture_coll__map" alt="Collaboration graph"/></div>
+<map name="_texture_coll__map" id="_texture_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:ad2f421c349a3529a5cf77c8f571829d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#ad2f421c349a3529a5cf77c8f571829d5">Texture</a> (std::string filename)</td></tr>
+<tr class="separator:ad2f421c349a3529a5cf77c8f571829d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ca05fb59a7b7ed6d1e0703bf5f68c09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a7ca05fb59a7b7ed6d1e0703bf5f68c09">Texture</a> (unsigned char color[3])</td></tr>
+<tr class="separator:a7ca05fb59a7b7ed6d1e0703bf5f68c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6424f78c6c6c182d1898f7095ab1a4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#aa6424f78c6c6c182d1898f7095ab1a4f">initGL</a> (int bytesperpixel, int width, int height, int format, int type, unsigned char *data)</td></tr>
+<tr class="separator:aa6424f78c6c6c182d1898f7095ab1a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e4bc6cb29baeff99f02cc1dafd631d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#ac6e4bc6cb29baeff99f02cc1dafd631d">useMipMap</a> (GLenum minFliter, GLenum magFilter)</td></tr>
+<tr class="separator:ac6e4bc6cb29baeff99f02cc1dafd631d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2452b8ee8a460c85e476d4e253b0402e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a2452b8ee8a460c85e476d4e253b0402e">setFilter</a> (GLenum minFliter, GLenum magFilter)</td></tr>
+<tr class="separator:a2452b8ee8a460c85e476d4e253b0402e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7b7d42bb8ee35789267ba55d9f0d98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a3d7b7d42bb8ee35789267ba55d9f0d98">setClamp</a> (GLenum warpS, GLenum warpT)</td></tr>
+<tr class="separator:a3d7b7d42bb8ee35789267ba55d9f0d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a406ca5ee024d1ab9ec31539646d0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a48a406ca5ee024d1ab9ec31539646d0f">bind</a> (int unit)</td></tr>
+<tr class="separator:a48a406ca5ee024d1ab9ec31539646d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd6f5a96844ada2048f7a24855a4068d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#acd6f5a96844ada2048f7a24855a4068d">deleteGL</a> ()</td></tr>
+<tr class="separator:acd6f5a96844ada2048f7a24855a4068d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc95b520c88f4dfdcc613e2763b95ec0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#acc95b520c88f4dfdcc613e2763b95ec0">getPixel</a> (float u, float v, glm::vec3 &amp;color)</td></tr>
+<tr class="separator:acc95b520c88f4dfdcc613e2763b95ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Attributs publics</h2></td></tr>
+<tr class="memitem:adfc5056e022998c4b677377e142c1388"><td class="memItemLeft" align="right" valign="top">unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#adfc5056e022998c4b677377e142c1388">pixels_</a></td></tr>
+<tr class="separator:adfc5056e022998c4b677377e142c1388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac08c8d5039094bb961e4eb8f6f96dac7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#ac08c8d5039094bb961e4eb8f6f96dac7">format_</a></td></tr>
+<tr class="separator:ac08c8d5039094bb961e4eb8f6f96dac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fc12aad37d84d50ca3b0001196e64bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a5fc12aad37d84d50ca3b0001196e64bd">pixOrder_</a></td></tr>
+<tr class="separator:a5fc12aad37d84d50ca3b0001196e64bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2af7588ca87bfadebd74fb4939e64dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#ad2af7588ca87bfadebd74fb4939e64dc">width_</a></td></tr>
+<tr class="separator:ad2af7588ca87bfadebd74fb4939e64dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a159d389017b03a58e3508186fb445"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a45a159d389017b03a58e3508186fb445">height_</a></td></tr>
+<tr class="separator:a45a159d389017b03a58e3508186fb445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a859679fb9b780d401078a5d02e9b5531"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00044.html#a859679fb9b780d401078a5d02e9b5531">mTexId</a></td></tr>
+<tr class="separator:a859679fb9b780d401078a5d02e9b5531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock">
+<p>Définition à la ligne <a class="el" href="a00082_source.html#l00013">13</a> du fichier <a class="el" href="a00082_source.html">texture.h</a>.</p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="ad2f421c349a3529a5cf77c8f571829d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00044.html">Texture</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00081_source.html#l00006">6</a> du fichier <a class="el" href="a00081_source.html">texture.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00081_source.html#l00021">Texture::initGL()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00044_ad2f421c349a3529a5cf77c8f571829d5_cgraph.png" border="0" usemap="#a00044_ad2f421c349a3529a5cf77c8f571829d5_cgraph" alt=""/></div>
+<map name="a00044_ad2f421c349a3529a5cf77c8f571829d5_cgraph" id="a00044_ad2f421c349a3529a5cf77c8f571829d5_cgraph">
+<area shape="rect" id="node2" href="a00044.html#aa6424f78c6c6c182d1898f7095ab1a4f" title="initGL" alt="" coords="120,5,176,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ca05fb59a7b7ed6d1e0703bf5f68c09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00044.html">Texture</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>color</em>[3]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00081_source.html#l00017">17</a> du fichier <a class="el" href="a00081_source.html">texture.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00081_source.html#l00021">Texture::initGL()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00044_a7ca05fb59a7b7ed6d1e0703bf5f68c09_cgraph.png" border="0" usemap="#a00044_a7ca05fb59a7b7ed6d1e0703bf5f68c09_cgraph" alt=""/></div>
+<map name="a00044_a7ca05fb59a7b7ed6d1e0703bf5f68c09_cgraph" id="a00044_a7ca05fb59a7b7ed6d1e0703bf5f68c09_cgraph">
+<area shape="rect" id="node2" href="a00044.html#aa6424f78c6c6c182d1898f7095ab1a4f" title="initGL" alt="" coords="120,5,176,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a48a406ca5ee024d1ab9ec31539646d0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bind </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>unit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00081_source.html#l00061">61</a> du fichier <a class="el" href="a00081_source.html">texture.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00049_source.html#l00051">glAssert</a>, et <a class="el" href="a00082_source.html#l00014">Texture::mTexId</a>.</p>
+
+<p>Référencé par <a class="el" href="a00056_source.html#l00014">GlMaterial::bindGL()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00044_a48a406ca5ee024d1ab9ec31539646d0f_icgraph.png" border="0" usemap="#a00044_a48a406ca5ee024d1ab9ec31539646d0f_icgraph" alt=""/></div>
+<map name="a00044_a48a406ca5ee024d1ab9ec31539646d0f_icgraph" id="a00044_a48a406ca5ee024d1ab9ec31539646d0f_icgraph">
+<area shape="rect" id="node2" href="a00035.html#a8ebc590927a1b510c4d0f4bb20954cec" title="rendersystem::GlMaterial\l::bindGL" alt="" coords="102,5,272,49"/><area shape="rect" id="node3" href="a00034.html#a107c4a0c244e5667ba07ad6dadded326" title="rendersystem::GlEntity\l::drawGL" alt="" coords="321,5,477,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acd6f5a96844ada2048f7a24855a4068d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deleteGL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00081_source.html#l00068">68</a> du fichier <a class="el" href="a00081_source.html">texture.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00082_source.html#l00014">Texture::mTexId</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acc95b520c88f4dfdcc613e2763b95ec0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void getPixel </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::vec3 &amp;&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00081_source.html#l00074">74</a> du fichier <a class="el" href="a00081_source.html">texture.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00082_source.html#l00037">Texture::format_</a>, <a class="el" href="a00082_source.html#l00040">Texture::height_</a>, <a class="el" href="a00082_source.html#l00036">Texture::pixels_</a>, <a class="el" href="a00082_source.html#l00038">Texture::pixOrder_</a>, et <a class="el" href="a00082_source.html#l00039">Texture::width_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6424f78c6c6c182d1898f7095ab1a4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initGL </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bytesperpixel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00081_source.html#l00021">21</a> du fichier <a class="el" href="a00081_source.html">texture.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00082_source.html#l00037">Texture::format_</a>, <a class="el" href="a00049_source.html#l00051">glAssert</a>, <a class="el" href="a00082_source.html#l00040">Texture::height_</a>, <a class="el" href="a00082_source.html#l00014">Texture::mTexId</a>, <a class="el" href="a00082_source.html#l00036">Texture::pixels_</a>, <a class="el" href="a00082_source.html#l00038">Texture::pixOrder_</a>, et <a class="el" href="a00082_source.html#l00039">Texture::width_</a>.</p>
+
+<p>Référencé par <a class="el" href="a00081_source.html#l00006">Texture::Texture()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00044_aa6424f78c6c6c182d1898f7095ab1a4f_icgraph.png" border="0" usemap="#a00044_aa6424f78c6c6c182d1898f7095ab1a4f_icgraph" alt=""/></div>
+<map name="a00044_aa6424f78c6c6c182d1898f7095ab1a4f_icgraph" id="a00044_aa6424f78c6c6c182d1898f7095ab1a4f_icgraph">
+<area shape="rect" id="node2" href="a00044.html#ad2f421c349a3529a5cf77c8f571829d5" title="Texture" alt="" coords="110,5,175,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d7b7d42bb8ee35789267ba55d9f0d98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setClamp </td>
+          <td>(</td>
+          <td class="paramtype">GLenum&#160;</td>
+          <td class="paramname"><em>warpS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&#160;</td>
+          <td class="paramname"><em>warpT</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00081_source.html#l00054">54</a> du fichier <a class="el" href="a00081_source.html">texture.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2452b8ee8a460c85e476d4e253b0402e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setFilter </td>
+          <td>(</td>
+          <td class="paramtype">GLenum&#160;</td>
+          <td class="paramname"><em>minFliter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&#160;</td>
+          <td class="paramname"><em>magFilter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00081_source.html#l00048">48</a> du fichier <a class="el" href="a00081_source.html">texture.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00049_source.html#l00051">glAssert</a>, et <a class="el" href="a00082_source.html#l00014">Texture::mTexId</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6e4bc6cb29baeff99f02cc1dafd631d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void useMipMap </td>
+          <td>(</td>
+          <td class="paramtype">GLenum&#160;</td>
+          <td class="paramname"><em>minFliter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&#160;</td>
+          <td class="paramname"><em>magFilter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00081_source.html#l00040">40</a> du fichier <a class="el" href="a00081_source.html">texture.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00049_source.html#l00051">glAssert</a>, et <a class="el" href="a00082_source.html#l00014">Texture::mTexId</a>.</p>
+
+<p>Référencé par <a class="el" href="a00078_source.html#l00106">Renderer::initGeometry()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00044_ac6e4bc6cb29baeff99f02cc1dafd631d_icgraph.png" border="0" usemap="#a00044_ac6e4bc6cb29baeff99f02cc1dafd631d_icgraph" alt=""/></div>
+<map name="a00044_ac6e4bc6cb29baeff99f02cc1dafd631d_icgraph" id="a00044_ac6e4bc6cb29baeff99f02cc1dafd631d_icgraph">
+<area shape="rect" id="node2" href="a00043.html#a3d7b3e6e127d37369ab24d53127b8f6b" title="Initialise the geometric content. " alt="" coords="144,5,309,49"/><area shape="rect" id="node3" href="a00043.html#ae8316182754a20571b5294b42994eb00" title="Initialise all the resources needed for rendering : shaders, geometries, teture, ... " alt="" coords="357,5,523,49"/><area shape="rect" id="node4" href="a00019.html#a2d3d45239c78255c23a70ca558b4d4f1" title="gui::OpenGLWidget::\linitializeGL" alt="" coords="572,5,716,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="ac08c8d5039094bb961e4eb8f6f96dac7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int format_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00082_source.html#l00037">37</a> du fichier <a class="el" href="a00082_source.html">texture.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00081_source.html#l00074">Texture::getPixel()</a>, et <a class="el" href="a00081_source.html#l00021">Texture::initGL()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45a159d389017b03a58e3508186fb445"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int height_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00082_source.html#l00040">40</a> du fichier <a class="el" href="a00082_source.html">texture.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00081_source.html#l00074">Texture::getPixel()</a>, et <a class="el" href="a00081_source.html#l00021">Texture::initGL()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a859679fb9b780d401078a5d02e9b5531"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint mTexId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00082_source.html#l00014">14</a> du fichier <a class="el" href="a00082_source.html">texture.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00081_source.html#l00061">Texture::bind()</a>, <a class="el" href="a00081_source.html#l00068">Texture::deleteGL()</a>, <a class="el" href="a00081_source.html#l00021">Texture::initGL()</a>, <a class="el" href="a00081_source.html#l00048">Texture::setFilter()</a>, et <a class="el" href="a00081_source.html#l00040">Texture::useMipMap()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adfc5056e022998c4b677377e142c1388"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char* pixels_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00082_source.html#l00036">36</a> du fichier <a class="el" href="a00082_source.html">texture.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00081_source.html#l00074">Texture::getPixel()</a>, et <a class="el" href="a00081_source.html#l00021">Texture::initGL()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5fc12aad37d84d50ca3b0001196e64bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pixOrder_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00082_source.html#l00038">38</a> du fichier <a class="el" href="a00082_source.html">texture.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00081_source.html#l00074">Texture::getPixel()</a>, et <a class="el" href="a00081_source.html#l00021">Texture::initGL()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2af7588ca87bfadebd74fb4939e64dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int width_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00082_source.html#l00039">39</a> du fichier <a class="el" href="a00082_source.html">texture.h</a>.</p>
+
+<p>Référencé par <a class="el" href="a00081_source.html#l00074">Texture::getPixel()</a>, et <a class="el" href="a00081_source.html#l00021">Texture::initGL()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="a00082_source.html">texture.h</a></li>
+<li><a class="el" href="a00081_source.html">texture.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00090.html">rendersystem</a></li><li class="navelem"><a class="el" href="a00044.html">Texture</a></li>
+    <li class="footer">Généré le Jeudi Février 13 2014 15:22:46 pour M1 Informatique - IG3D - Introduction à openGL par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>

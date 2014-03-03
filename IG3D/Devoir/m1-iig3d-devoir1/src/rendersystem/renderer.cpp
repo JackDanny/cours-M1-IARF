@@ -17,7 +17,7 @@
 #include "glmaterial.h"
 #include "parametricmeshes.h"
 #include "geodesique.h"
-
+#include "icosahedre.h"
 
 
 
@@ -385,7 +385,7 @@ void Renderer::initGeometry()
 
     */
 
-
+    //Icosahedre *obj = new Icosahedre();
     Geodesique *obj = new Geodesique();
     obj->generateMesh();
 

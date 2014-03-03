@@ -227,11 +227,18 @@ void Renderer::initGeometry()
     // Plan sol
     {
         GlMaterial *planeMaterial = new GlMaterial(glm::vec3(0.08f, 0.08f, 1.0f), glm::vec3(1.f, 1.f, 1.f), 50.f);
+
+
+
         unsigned char bluegrey[3];
         bluegrey[0] = bluegrey[1] = 204;
         bluegrey[2] = 255;
-        Texture *theTex = new Texture(bluegrey);
-        planeMaterial->setTexture(theTex);
+        //Texture *theTex = new Texture(bluegrey);
+        //planeMaterial->setTexture(theTex);
+        Texture *planeTex = new Texture("../data/rustbin.jpg");
+        planeTex->useMipMap(GL_NEAREST_MIPMAP_LINEAR, GL_LINEAR);
+        planeMaterial->setTexture(planeTex);
+
 
         glm::mat4 planeTransformation = glm::rotate(theTransformation, -90.f,  glm::vec3(1.f, 0.f, 0.f));
         planeTransformation = glm::translate(planeTransformation, glm::vec3(0.f, 0.f, -0.25f));
@@ -328,7 +335,9 @@ void Renderer::initGeometry()
 
     // Définir le matériau (GlMaterial), le meme pour tous les objets du Camel
     GlMaterial *camelMaterial = new GlMaterial(glm::vec3(0.8f, 0.7f, 0.5f), glm::vec3(0.1f, 0.1f, 0.1f), 25.f);
-
+    Texture *camelTex = new Texture("../data/diffus.png");
+    camelTex->useMipMap(GL_NEAREST_MIPMAP_LINEAR, GL_LINEAR);
+    camelMaterial->setTexture(camelTex);
 
 
 
@@ -358,6 +367,7 @@ void Renderer::initGeometry()
     std::vector<loaders::Mesh*> trashbin;
     loader = new loaders::obj_mtl::ObjLoader;
     if (!loader->load("../data/trashbin.obj", reason))
+
         std::cerr << "File not loaded. Reason : " << std::endl << reason.toStdString() << std::endl;
     else
         loader->getObjects(trashbin);
