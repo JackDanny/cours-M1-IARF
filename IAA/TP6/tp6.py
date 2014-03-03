@@ -11,7 +11,7 @@ from scipy import misc
 
 execfile('kmeansTeinte.py')
 
-img_rgb=misc.imread('matisse.jpg')
+img_rgb=misc.imread('miro.jpg')
 
 
 
@@ -34,7 +34,7 @@ for i in range(len(img_rgb)):
 
 
 print("lancement des kmeans...\n")
-(listePointsTeinte,centres)=kmeans(listePointsTeinte,20)  
+(listePointsTeinte,centres)=kmeans(listePointsTeinte,4)  
 
 
 
@@ -69,7 +69,7 @@ for i in range(len(img_rgb2)):
 
 
 print("\nenregistrement de l'image...\n")
-misc.imsave('matisse_20_teinte_1.jpg', img_rgb2)
+misc.imsave('miro_4_teinte_1.jpg', img_rgb2)
 
 
 
