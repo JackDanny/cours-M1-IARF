@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<head>
+<title>NetLogo Help: 
+        runresult
+      </title>
+
+    <link rel="stylesheet" href="../netlogo.css" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<style type="text/css">
+ p { margin-left: 1.5em ; }
+ h3 { font-size: 115% ; }
+ h4 { font-size: 100% ; margin-left: 1.5em ; background: white ; }
+</style>
+</head>
+<body>
+      <h3>
+        <a name="runresult" id="runresult">runresult</a>
+      </h3>
+      <h4>
+        runresult <i>string</i>
+      </h4>
+      <p>
+        This agent interprets the given string as a NetLogo reporter and
+        runs it, reporting the result obtained.
+      <p>
+        The code runs in the agent's current context, which means it
+        has access to the values of local variables, &quot;myself&quot;,
+        and so on.
+      <p>
+        The code must be compiled first which takes time, however, compiled
+        bits of code are cached by NetLogo and thus using
+        <tt>runresult</tt> on the same string over and over is much faster
+        than running on different bits of code.
+      <p>
+        See also <a href="../dictionary.html#run">run</a>.
+      <p>
+        Note that running code through <tt>run</tt> or <tt>runresult</tt>
+        may be many times slower than running the same code directly.
+      
+<p>Take me to the full <a href="../index2.html">NetLogo Dictionary</a>
+</body>
+</html>

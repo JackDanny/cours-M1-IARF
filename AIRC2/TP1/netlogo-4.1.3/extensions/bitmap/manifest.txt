@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Extension-Name: bitmap
+Class-Manager: org.nlogo.extensions.bitmap.BitmapExtension

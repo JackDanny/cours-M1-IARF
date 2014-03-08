@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<head>
+<title>NetLogo Help: 
+        sort-by
+      </title>
+
+    <link rel="stylesheet" href="../netlogo.css" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<style type="text/css">
+ p { margin-left: 1.5em ; }
+ h3 { font-size: 115% ; }
+ h4 { font-size: 100% ; margin-left: 1.5em ; background: white ; }
+</style>
+</head>
+<body>
+      <h3>
+        <a name="sort-by" id="sort-by">sort-by</a>
+      </h3>
+      <h4>
+        sort-by [<i>reporter</i>] <i>list</i>
+        <br>
+        sort-by [<i>reporter</i>] <i>agentset</i>
+      </h4>
+      <p>
+        If the input is a list, reports a new list containing the same
+        items as the input list, in a sorted order defined by the boolean
+        (true or false) <i>reporter</i>.
+      <p>
+        In <i>reporter</i>, use <tt>?1</tt> and <tt>?2</tt> to refer to the
+        two objects being compared. <i>reporter</i> should be true if
+        <tt>?1</tt> comes strictly before <tt>?2</tt> in the desired sort
+        order, and false otherwise.
+      <p>
+        If the input is an agentset or a list of agents, reports a list
+        (never an agentset) of agents.
+      <p>
+        The sort is stable, that is, the order of items considered equal by
+        the reporter is not disturbed.
+      <pre>
+show sort-by [?1 &lt; ?2] [3 1 4 2]
+=&gt; [1 2 3 4]
+show sort-by [?1 &gt; ?2] [3 1 4 2]
+=&gt; [4 3 2 1]
+show sort-by [length ?1 &lt; length ?2] [&quot;Grumpy&quot; &quot;Doc&quot; &quot;Happy&quot;]
+=&gt; [&quot;Doc&quot; &quot;Happy&quot; &quot;Grumpy&quot;]
+foreach sort-by [[size] of ?1 &lt; [size] of ?2] turtles
+  [ ask ? [ do-something ] ]
+;; turtles run &quot;do-something&quot; one at a time, in
+;; ascending order by size
+</pre>
+    
+<p>Take me to the full <a href="../index2.html">NetLogo Dictionary</a>
+</body>
+</html>

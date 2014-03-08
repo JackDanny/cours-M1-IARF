@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<title>
+      NetLogo 4.1.3 User Manual: What's New?
+    </title>
+    <link rel="stylesheet" href="netlogo.css" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <h1>
+      What's New?
+    </h1>
+    <div class="version">
+      NetLogo 4.1.3 User Manual&nbsp;&nbsp;&nbsp;
+    </div>
+    <p>
+      Feedback from users is very valuable to us in designing and improving
+      NetLogo. We'd like to hear from you. Please send comments,
+      suggestions, and questions to <a href=
+      "mailto:feedback@ccl.northwestern.edu">feedback@ccl.northwestern.edu</a>,
+      and bug reports to <a href=
+      "mailto:bugs@ccl.northwestern.edu">bugs@ccl.northwestern.edu</a>.
+    <h2>
+      Version 4.1.3 (April 2011)
+    </h2>
+    <ul>
+      <li>improvements:
+        <ul>
+          <li>the GIS extension now works in applets
+          <li>new Code Example: Label Position Example
+          </ul>
+      <li>fixes:
+        <ul>
+          <li>fixed bug in <tt>diffuse</tt> primitive causing it to fail in
+          vertical cylinder worlds
+          <li>fixed bugs where aborting a BehaviorSpace experiment could
+          cause an error or memory leak
+          <li>fixed bug where a turtle forever button could fail if
+          multiple buttons were pressed quickly
+          <li>fixed bug in <tt>scale-color</tt> primitive where rounding
+          could cause an out-of-range color to be reported
+          <li>fixed matrix extension bug where matrix creation primitives
+          didn't sanity check their inputs
+          <li>fixed GoGo extension bug where failed initialization of GoGo
+          led to subsequent errors
+          <li>fixed intermittent plotting bug
+          <li>for Windows users, bundle Java 6 Update 24
+          </ul>
+      <li>API changes:
+        <ul>
+          <li>controlling API now allows a new model to be opened in an
+          existing InterfaceComponent
+          <li>controlling API now supports attaching listeners to receive
+          notifications of user actions
+          </ul>
+      </ul>
+    <h2>
+      Version 4.1.2 (December 2010)
+    </h2>
+    <ul>
+      <li>fixes:
+        <ul>
+          <li>Windows installer now adds NetLogo 3D to the Start menu
+          <li>fixed BehaviorSpace issue where compile errors in experiment
+          setups caused exceptions
+          <li>fixed regression in 4.1.1 where extension-defined data types
+          could cause errors in the GUI (e.g. in agent monitors)
+          <li>fixed extensions issues where NetLogo could get confused
+          about what extensions are active
+          <li>fixed NetLogo 3D so the <tt>stamp</tt> command works for
+          links
+          <li>fixed bug where <tt>pow</tt> primitive could give NaN result
+          <li>fixed bug where the F1 key didn't work on several
+          primitives
+          <li>fixed bitmap extension so importing works in applets
+          <li>fixed bugs where typing certain combinations of keys or
+          characters in the Command Center caused exceptions
+          <li>fixed agentset building primitives to give correct error
+          messages on invalid inputs
+          <li>fixed bug where logging of global variables didn't work
+          under Java Web Start
+          <li>fixed matrix extension issue where <tt>matrix:dimensions</tt>
+          was incorrectly typed
+          <li>HubNet clients now limit the rate at which they send
+          messages, to conserve bandwidth
+          <li>for Windows users, bundle Java 6 Update 22
+          <li>GIS extension now includes license information
+          </ul>
+      <li>API changes:
+        <ul>
+          <li>extensions API: deprecated runCommand and runReporter methods
+          <li>controlling API: added possibleViewUpdate() and
+          tickCounterChanged() methods to NetLogoListener
+          <li>logging: changes to the tick counter are now logged (exactly
+          as if <tt>ticks</tt> was a global variable)
+          </ul>
+      </ul>
+    <h2>
+      Version 4.1.1 (August 2010)
+    </h2>
+    <ul>
+      <li>additions:
+        <ul>
+          <li>new matrix extension for matrix manipulation
+          <li>new <tt>behaviorspace-run-number</tt> reporter
+          <li>new biology model: Flocking Vee Formations
+          <li>new Donate item on Help menu
+          </ul>
+      <li>fixes:
+        <ul>
+          <li>fixed models: Dining Philosophers, Sandpile 3D, Shepherds,
+          Connected Chemistry 8 Gas Particle Sandbox
+          <li>on Windows, bundle Java 6 Update 21
+          <li>fixed embedding API bug where two models could not be
+          embedded in the same window
+          <li>fixed bug where in worlds with certain unusual combinations
+          of settings, passing specific unusual inputs (involving patch
+          boundaries) to primitives including <tt>patch-at</tt> and
+          <tt>patch-at-heading-and-distance</tt> could cause a Java
+          exception
+          <li>fixed bug causing some models with plots to intermittently
+          produce spurious error messages
+          <li>fixed (we hope) intermittent bug where editing code in the
+          procedures tab or command center could cause spurious
+          ArrayIndexOutOfBoundsException errors
+          <li>fixed bug in 2D view where partially transparent turtles were
+          sometimes rendered incorrectly in some sizes
+          <li>fixed bug where saved applets that used extensions didn't
+          load additional jars used by the extension
+          <li>fixed bug where closing a browser window containing applet
+          could cause a spurious error dialog to appear
+          <li>fixed bug where the <tt>link</tt> primitive could fail when
+          given a non-existent turtle number
+          <li>fixed bug where the mini views in agent inspectors could have
+          incorrect appearance with very small patch grids
+          <li>fixed bug where the context menu on the view in applets
+          contained some non-working items
+          <li>fixed bug where movie primitives didn't fail gracefully
+          when used in parallel BehaviorSpace runs
+          <li>fixed bug where changing a plot pen's mode on the fly
+          didn't refresh the plot
+          <li>fixed bug causing models using links not to work in the
+          NetLogo Logging application
+          <li>fixed bug where <tt>new-seed</tt> primitive could
+          theoretically return duplicate seeds in a parallel BehaviorSpace
+          experiment
+          <li>fixed sound extension bug where the wrong instrument
+          sometimes played
+          <li>fixed bug where using follow could cause turtle labels not to
+          be drawn
+          <li>fixed bug where the <tt>remove</tt> primitive didn't fail
+          gracefully if given incorrect input
+          <li>fixed HubNet bug where the drawing layer wasn't always
+          mirrored to clients
+          <li>fixed GIS extension bug where clipping of coordinates to
+          user's GIS envelope was causing errors saving link datasets
+          <li>fixed bitmap extension so it works in applets
+          <li>on Mac OS X, always force use of the Quartz renderer not the
+          Sun renderer
+          </ul>
+      </ul>
+    <h2>
+      Version 4.1 (December 2009)
+    </h2>
+    <ul>
+      <li>system:
+        <ul>
+          <li>NetLogo 3D is no longer a separate download (but is still a
+          separate application)
+          <li>Java 5 or higher is now required
+          <li>NetLogo and its applets no longer support Mac OS X 10.2, Mac
+          OS X 10.3, Windows 98, or Windows ME
+          <li>the Windows installer and launcher are new and should be
+          compatible with more systems
+          <li>on Windows, we now bundle Java 6 (instead of Java 5)
+          <li>on 64-bit Linux, 3D now works
+          <li>on Mac OS X, the application now works with 64-bit Java
+          (though by default it still runs in 32-bit)
+          <li>BehaviorSpace is now free and open source software (under the
+          LGPL)
+          </ul>
+      <li>features:
+        <ul>
+          <li>BehaviorSpace is now multi-threaded so runs happen in
+          parallel
+          <li>Controlling API now supports embedding of models in a
+          surrounding application
+          <li>automatic indenter for code in the Procedures tab
+          <li>Models Library dialog now offers searching
+          <li>links, turtles, and the drawing may now be partially
+          transparent (RGB colors only, 2D view only)
+          <li>agent monitors now include a mini-view centered on the agent
+          <li>extensions that use additional jars now work in applets
+          <li>the sound extension is now supported in applets
+          <li>new <tt>resize-world</tt> and <tt>set-patch-size</tt>
+          commands allow changing the dimensions of the patch grid
+          <li>applet web pages now include color-coded Procedures tab
+          contents
+          <li>new bitmap and QTJ (QuickTime for Java) extensions allow
+          importing image and video data
+          <li>the GoGo extension now supports &quot;burst mode&quot;
+          </ul>
+      <li>language changes:
+        <ul>
+          <li>
+            <tt>set [variable] of ...</tt> is no longer allowed; use
+            <tt>ask ... [ set variable ... ]</tt> instead
+          <li>the <tt>with-min</tt> and <tt>with-max</tt> primitives now
+          have the same precedence as <tt>with</tt>
+          </ul>
+      <li>user interface changes:
+        <ul>
+          <li>new menu item on Tools menu closes all agent monitors
+          <li>new NetLogo Users Group item on Help menu
+          <li>the snap-to-grid setting in the Interface tab is now saved
+          with the model
+          <li>turning off turtle and link shapes is no longer supported
+          <li>the 3D and 2D views may now both be active at the same time
+          (for 2D models)
+          <li>improved fonts on Windows
+          <li>improved look-and-feel on Linux
+          </ul>
+      <li>bug fixes:
+        <ul>
+          <li>a single web page may now contain multiple NetLogo applets
+          <li>the <tt>__includes</tt> keyword now works in applets
+          <li>the profiler extension is now much faster
+          <li>fixed system dynamics modeler bug where incorrectly
+          parenthesized code was generated for some expressions
+          <li>fixed system dynamics modeler bug where some models did not
+          work correctly when run in headless mode
+          <li>the array and table extensions are now fully compatible with
+          exporting and importing worlds
+          <li>some link primitives are now faster on dense networks
+          <li>fixed bug where using the <tt>precision</tt> primitive with
+          negative precisions could give non-integer results
+          <li>improved error detection on extremely large integers
+          <li>fixed bug in <tt>forward</tt> primitive in non-toroidal
+          worlds
+          <li>fixed bug where link agentsets sometimes behaved incorrectly
+          when links died
+          <li>fixed bug in world importing where links stored in agent
+          variables weren't imported correctly
+          <li>fixed bug in <tt>run</tt> and <tt>runresult</tt> primitives
+          where running the same string from different procedures could
+          cause a Java exception
+          <li>fixed bug where in some situations zero wasn't always
+          considered equal to itself (e.g. in the
+          <tt>remove-duplicates</tt> primitive)
+          <li>fixed bug affecting 3D models where <tt>layout-circle</tt>
+          and <tt>tie</tt> could cause a Java exception
+          <li>fixed bug where the NetLogo window tended to jump between
+          monitors on multiple-monitor systems
+          <li>fixed bug in text editing where a single edit sometimes
+          required multiple Undo actions to undo
+          <li>fixed bug where <tt>export-interface</tt> didn't always
+          work properly on Windows and Linux
+          <li>fixed bug where extensions that use native libraries (e.g.
+          GoGo) could not be reloaded
+          </ul>
+      <li>HubNet:
+        <ul>
+          <li>the HubNet client is now available as a Java applet which can
+          be embedded in web pages, so users can participate in an activity
+          without installing NetLogo
+          <li>new feature: support for individualized client views, via:
+            <ul>
+              <li>client overrides (<tt>hubnet-send-override</tt>)
+              <li>client perspectives (<tt>hubnet-send-watch</tt>,
+              <tt>hubnet-send-follow</tt>)
+              </ul>
+          <li>new commands <tt>hubnet-send-message</tt>,
+          <tt>hubnet-broadcast-message</tt>,
+          <tt>hubnet-send-clear-output</tt>, and
+          <tt>hubnet-broadcast-clear-output</tt>
+          <li>new event type: mouse up events are now sent
+          <li>fixed longstanding performance issue that was causing
+          activities to use excessive amounts of bandwidth (especially
+          activities with many monitors)
+          <li>assorted bugfixes to view mirroring and plot mirroring
+          <li>removed obsolete <tt>hubnet-send-view</tt> command
+          <li>new activity: Memory HubNet
+          <li>improved activity: Sampler (overhauled, now verified)
+          <li>improved Code Example: Template
+          <li>new Code Examples: Client Perspective Example, Client
+          Overrides Example
+          </ul>
+      <li>models:
+        <ul>
+          <li>NIELS suite of electromagnetism models expanded and revamped,
+          and is now found in Curricular Models
+          <li>new biology model: Sunflower Emergent
+          <li>new social science models: Sugarscape 1, 2 and 3
+          <li>new computer science models: Simulated Annealing, PageRank
+          <li>new game: Projectile Attack
+          <li>new code examples: Move Towards Target Example, Transparency
+          Example
+          <li>new evolution model: Bug Hunt Drift (in Curricular Models)
+          <li>new ProbLab probability models (in Curricular Models): Histo
+          Blocks, 4 Blocks, 4 Block Stalagmites, 4 Block Two Stalagmites,
+          Sampler Solo
+          <li>improved evolution models: Bug Hunt Camouflage (includes RGB
+          genes, measure of genetic variance), Bird Breeder (conceptual
+          fix), Bug Hunt Speeds (overhaul)
+          <li>improved Biology models: Daisyworld (bugfix), Flocking
+          (bugfix), Wolf Sheep Predation (bugfix)
+          <li>improved Earth Science model: Percolation (colors, clarified
+          info)
+          <li>improved Computer Science models: Artificial Neural Net (code
+          overhaul), Dining Philosophers (simplified)
+          <li>improved chemistry models: Simple Kinetics 1 &amp; 2
+          (bugfix), Connected Chemistry 3 Circular Particles (bugfix)
+          <li>improved code examples: Moore and Von Neumann Example
+          (simpler code)
+          </ul>
+      <li>BehaviorSpace fixes:
+        <ul>
+          <li>stop conditions now run without affecting the main random
+          generator
+          <li>reduced memory usage when not generating spreadsheet output
+          <li>aborting an experiment no longer discards accumulated
+          spreadsheet output
+          <li>the options for running from the command line have changed
+          (table output is no longer generated by default)
+          <li>improved error reporting when running headless
+          </ul>
+      <li>extensions API:
+        <ul>
+          <li>the interfaces in <tt>org.nlogo.api</tt> involving agents and
+          agentsets now have many additional methods
+          <li>extensions that define custom data types can now add support
+          for import and export of those types
+          <li>extension primitives may now take a variable number of inputs
+          <li>an example extension written in Scala is now included
+          </ul>
+      </ul>
+    <h2>
+      Version 4.0.5 (December 2009)
+    </h2>
+    <ul>
+      <li>bugfixes
+      </ul>
+    <h2>
+      Version 4.0.4 (November 2008)
+    </h2>
+    <ul>
+      <li>GIS extension for handling geographic data
+      <li>applets now include &quot;powered by NetLogo&quot; notice, linked
+      to NetLogo site
+      <li>bugfixes
+      </ul>
+    <h2>
+      Version 4.0 (September 2007)
+    </h2>
+    <ul>
+      <li>features:
+        <ul>
+          <li>most models now run somewhat faster:
+            <ul>
+              <li>while results vary from model to model, typical speedup
+              is around 1.5x
+              <li>the speedup comes from an improved compiler that now
+              partially compiles NetLogo code into Java byte code
+              </ul>
+          <li>links are now their own type of agent, alongside turtles and
+          patches; this is useful for network models, geometry models, and
+          much else
+          <li>new Link Shapes Editor lets you control the appearance of
+          links
+          <li>logging allows researchers to record students' actions
+          for later analysis
+          <li>built in tick counter for keeping track of model time (see
+          language changes, below)
+          <li>new view update system:
+            <ul>
+              <li>there are now two view update modes, tick-based and
+              continuous
+              <li>continuous is the default when you start up NetLogo;
+              tick-based is the default for most models in the Models
+              Library; continuous update mode is useful for non-tick based
+              models like Termites, but may also be useful during debugging
+              <li>tick-based updates are faster for most models and avoid
+              displaying intermediate state
+              <li>buttons no longer have a &quot;force view update&quot;
+              checkbox; most models should use <tt>tick</tt> and/or
+              <tt>display</tt> instead
+              </ul>
+          <li>improved speed slider:
+            <ul>
+              <li>you can now use the slider to &quot;fast forward&quot; a
+              model (by updating the view less often)
+              <li>in tick-based update mode, going slower pauses between
+              ticks rather than showing intermediate states
+              <li>in continuous update mode, going slower shows
+              intermediate states; you can even go so slow you can watch
+              agents move one at a time
+              </ul>
+          <li>new input boxes in Interface tab permit entering text,
+          numbers, colors, or NetLogo code as model parameters
+          <li>arrays and hash tables are now supported via extensions (see
+          Arrays &amp; Tables section of User Manual)
+          <li>new profiler extension lets you measure the running times of
+          your procedures
+          <li>new experimental <tt>__includes</tt> keyword allows splitting
+          model code into multiple source files
+          <li>color variables can now contain either a NetLogo color or an
+          RGB color (as a list of three numbers)
+          <li>programmable slider bounds (you can now use any NetLogo
+          reporter as the min, max, or increment of a slider)
+          <li>exporting the world now includes all plot data, and when you
+          import a world the contents of plots are restored
+          <li>the sound extension can now play audio files in addition to
+          MIDI sounds
+          <li>notes, monitors and output areas now have editable font size
+          <li>the color of text in notes is now editable, and a note's
+          background may now optionally be transparent
+          <li>&quot;Snap to Grid&quot; in Interface tab
+          <li>added menu items (and F1 keyboard shortcut) for quickly
+          accessing NetLogo Dictionary
+          <li>sliders may now be vertical or horizontal
+          <li>model files with unsaved changes are auto-saved to a
+          temporary files directory, in case of freezes/crashes
+          <li>HubNet clients are much easier to edit now (the client is no
+          longer a separate model)
+          <li>Mathematica-NetLogo link provides a real-time link between
+          Mathematica and NetLogo, for controlling model runs and
+          visualizing and analyzing results after the fact or in real time
+          <li>the <tt>run</tt> and <tt>runresult</tt> primitives are now
+          drastically faster when called repeatedly on the same string
+          <li>internally, lists are now represented as linked lists, not
+          arrays
+          <li>plotting is now supported when running headless
+          </ul>
+      <li>language changes:
+        <ul>
+          <li>the <tt>ask</tt> command now always runs &quot;without
+          interruption&quot;; if you need the old-style concurrent
+          behavior, use <tt>ask-concurrent</tt>
+          <li>turtle who numbers are now never reused until
+          <tt>clear-turtles</tt> or <tt>clear-all</tt>
+          <li>all numbers are now represented internally using double
+          precision floating point
+          <li>the <tt>+</tt> operator only adds numbers now; it doesn't
+          work on strings or lists anymore; models must be changed by hand
+          to use <tt>word</tt> instead for strings and <tt>sentence</tt>
+          instead for numbers
+          <li>
+            <tt>create-turtles</tt> now makes turtles with random headings
+            and colors; to get evenly spaced turtles with sequential colors
+            and id numbers use <tt>create-ordered-turtles</tt>
+            (<tt>cro</tt> for short)
+          <li>extension primitives must now (by default) be referred to
+          using the extension name, e.g. <tt>sound:drums</tt> instead of
+          just <tt>drums</tt>
+          <li>new <tt>uphill</tt>, <tt>uphill4</tt>, <tt>downhill</tt>, and
+          <tt>downhill4</tt> commands for doing hill-climbing replace old
+          reporters with same names
+          <li>new tick counter primitives: <tt>tick</tt>, <tt>ticks</tt>,
+          <tt>tick-advance</tt>, <tt>reset-ticks</tt>
+          <li>new primitive <tt>of</tt> replaces <tt>VARIABLE-of</tt>, <tt>
+            value-from</tt>, <tt>values-from</tt>
+          <li>other new primitives: <tt>all?</tt>, <tt>other</tt>,
+          <tt>move-to</tt>, <tt>turtle-set</tt>, <tt>patch-set</tt>,
+          <tt>link-set</tt>, <tt>no-turtles</tt>, <tt>no-patches</tt>, <tt>
+            no-links</tt>, <tt>tie</tt>, <tt>untie</tt>, <tt>min-n-of</tt>,
+            <tt>max-n-of</tt>, <tt>with-local-randomness</tt>,
+            <tt>file-flush</tt>, <tt>base-colors</tt>,
+            <tt>plot-pen-exists?</tt>, <tt>import-pcolors-rgb</tt>,
+            <tt>netlogo-applet?</tt>
+          </ul>
+      </ul>
+    <h2>
+      Version 3.1 (April 2006)
+    </h2>
+    <ul>
+      <li>topologies (wrapping at world edges now optional)
+      <li>automatically randomized ordering of agentsets
+      <li>experimental link primitives
+      </ul>
+    <h2>
+      Version 3.0 (September 2005)
+    </h2>
+    <ul>
+      <li>3D view (for 2D models)
+      <li>System Dynamics Modeler
+      <li>
+        <tt>follow</tt>, <tt>ride</tt> and <tt>watch</tt> commands for
+        tracking particular agents
+      <li>&quot;drawing layer&quot; for marks left by turtles
+      <li>GoGo extension for robotics and devices
+      <li>buttons take turns now (instead of interleaving their code with
+      each other)
+      </ul>
+    <h2>
+      Version 2.1 (December 2004)
+    </h2>
+    <ul>
+      <li>&quot;headless&quot; mode for command line operation
+      <li>&quot;action keys&quot; let buttons be triggered by keypresses
+      <li>makes QuickTime movies of models
+      <li>add &quot;output area&quot; to models
+      <li>new primitives including <tt>let</tt> and <tt>carefully</tt>
+      </ul>
+    <h2>
+      Version 2.0.2 (August 2004)
+    </h2>
+    <ul>
+      <li>extensions API for writing commands and reporters in Java
+      <li>controlling API for controlling NetLogo from external Java code
+      <li>sound extension for making sounds and music
+      </ul>
+    <h2>
+      Version 2.0 (December 2003)
+    </h2>
+    <ul>
+      <li>full support for Mac OS X and Linux
+      <li>Windows 95, MacOS 8/9 no longer supported
+      <li>fast, flicker-free, non-grid-based graphics
+      <li>strict math mode for identical results cross-platform
+      </ul>
+    <h2>
+      Version 1.3 (June 2003)
+    </h2>
+    <ul>
+      <li>view control strip
+      <li>choosers
+      <li>new primitives including <tt>run</tt>, <tt>runresult</tt>,
+      <tt>map</tt>, <tt>foreach</tt>, <tt>filter</tt>, <tt>reduce</tt>
+      <li>some primitives accept a variable number of inputs
+      </ul>
+    <h2>
+      Version 1.2 (March 2003)
+    </h2>
+    <ul>
+      <li>computer HubNet
+      </ul>
+    <h2>
+      Version 1.1 (July 2002)
+    </h2>
+    <ul>
+      <li>&quot;Save as Applet&quot;
+      <li>printer support
+      <li>Procedures menu
+      <li>scrollable Interface tab
+      </ul>
+    <h2>
+      Version 1.0 (April 2002)
+    </h2>
+    <ul>
+      <li>initial release (after a series of betas)
+      </ul>
+
