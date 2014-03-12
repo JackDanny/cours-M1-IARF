@@ -1,0 +1,32 @@
+
+
+%for i=1 i<size(S1-1) i+100:
+%  m=[m S1(i:i+1024)]
+%end
+m=[];
+m2=[];
+for i=1:100:(length(S1)-1024)
+  
+  a1=abs(fft(S1(i:(i+1023))));
+  extrait=S1(i:(i+1023));
+  a2=abs(fft(extrait.*(hamming(length(extrait)))'));
+  %on prend la partie droite de la fft
+  a1=a1((length(a1)/2):end);
+  a2=a2((length(a2)/2):end);
+  
+  %f=abs(fft(extrait.*hamming(length(extrait)))
+
+  m=[m ; a1];
+  m2=[m2 ; a2];
+  
+  
+end
+%on transpose m
+  m=m';
+  m2=m2';
+
+
+
+
+
+

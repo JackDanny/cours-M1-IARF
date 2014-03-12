@@ -416,36 +416,32 @@ img=imread('photo.jpg');
 imgaux=double(img);
 
 img2=2*floor(imgaux./2);
-img2=uint8(img2)
+img2=uint8(img2);
 imwrite(img2,'img_sq2.jpg','jpg');
 
 img4=2^2*floor(imgaux./2^2);
-img4=uint8(img4)
+img4=uint8(img4);
 imwrite(img4,'img_sq4.jpg','jpg');
 
 img8=2^3*floor(imgaux./2^3);
-img8=uint8(img8)
+img8=uint8(img8);
 imwrite(img8,'img_sq8.jpg','jpg');
 
 img16=2^4*floor(imgaux./2^4);
-img16=uint8(img16)
+img16=uint8(img16);
 imwrite(img16,'img_sq16.jpg','jpg');
 
 img32=2^5*floor(imgaux./2^5);
-img32=uint8(img32)
+img32=uint8(img32);
 imwrite(img32,'img_sq32.jpg','jpg');
 
 img64=2^6*floor(imgaux./2^6);
-img64=uint8(img64)
+img64=uint8(img64);
 imwrite(img64,'img_sq64.jpg','jpg');
 
 img128=2^7*floor(imgaux./2^7);
-img128=uint8(img128)
+img128=uint8(img128);
 imwrite(img128,'img_sq128.jpg','jpg');
-
-img256=2^8*floor(imgaux./2^8);
-img256=uint8(img256)
-imwrite(img256,'img_sq256.jpg','jpg');
 
 
 
