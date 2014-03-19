@@ -1,4 +1,4 @@
-silence=zeros(1,100);
+silence=zeros(1,800);
 
 X=linspace(0,1,8000);
 
@@ -10,7 +10,7 @@ SOL3=sin(2*X*pi*396)*0.8;
 
 DO4=sin(2*X*pi*528)*0.8;
 
-S1=[silence DO3 silence MI3 silence SOL3 silence DO4];
+S1=[silence DO3 silence MI3 silence SOL3 silence DO4 silence];
 
 
 
@@ -63,5 +63,6 @@ end
 fftaux=fft(S1)
 %fftaux=fftaux((length(fftaux)/2):end);
 
-
+% [signal,fs,q,options] = wavread('diner.wav') ;
+% sound(signal,fs)
 
