@@ -7,11 +7,7 @@ p=p/100;
 
 
 p=1-p;
-if 0
-I=imread(imgname);
 
-I=double(I);
-end
 spectrenorm=fft2(I);
 
 spectre=log(abs(fft2(I)));

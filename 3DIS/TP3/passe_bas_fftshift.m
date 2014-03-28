@@ -1,4 +1,4 @@
-function [I2]=passe_haut(p,I)
+function [I2]=passe_bas_fftshift(p,I)
 
 disp(['on supprime ' num2str(p) '% des coeefs'])
 
@@ -8,13 +8,13 @@ p=p/100;
 
 p=1-p;
 
-spectrenorm=fft2(I);
+spectrenorm=fftshift(fft2(I));
 
-spectre=log(abs(fft2(I)));
+spectre=log(abs(fftshift(fft2(I))));
 
 figure()
 %imagesc(spectre)
-colormap(gray)
+colormap(gray(256))
 
 [l,h]=size(spectre);
 
@@ -32,7 +32,7 @@ spectre=spectre.*filtre;
 
 
 imagesc(spectre)
-colormap(gray)
+colormap(gray(256))
 
 
 [l2,h2]=size(spectrenorm);
@@ -47,7 +47,7 @@ filtre(h3:(end-h3),l3:(end-l3))=1.;
 
 spectrenorm=spectrenorm.*filtre;
 
-I2=(ifft2(spectrenorm));
+I2=(ifft2(ifftshift(spectrenorm)));
 
 figure()
 
