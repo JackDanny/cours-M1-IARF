@@ -15,7 +15,7 @@ spectre=log(abs(fft2(I)));
 
 figure()
 %imagesc(spectre)
-colormap(gray)
+colormap(gray(256))
 
 [l,h]=size(spectre);
 
@@ -29,7 +29,7 @@ spectre(h1:(end-h1),l1:(end-l1))=0.;
 
 
 imagesc(spectre)
-colormap(gray)
+colormap(gray(256))
 
 
 [l2,h2]=size(spectrenorm);

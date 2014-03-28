@@ -26,3 +26,6 @@ I4=I2-I3
 fftshift
 
 passe_bas_fftshift(95,I2)
+
+vaut mieux faire un passe haut sans fftshift
+et passe bas avec

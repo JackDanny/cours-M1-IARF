@@ -53,7 +53,7 @@ figure()
 
 
 imagesc(abs(I2))
-colormap(gray)
+colormap(gray(256))
 
 
 
