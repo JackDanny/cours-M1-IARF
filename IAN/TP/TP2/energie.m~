@@ -1,0 +1,17 @@
+function res=energie(S, W, P)
+%S le signal
+%W la fenetre
+%P le pas (recouvrement)
+
+res=[];
+for i=1:P:(length(S)-W)
+  extrait=S(i:(i+(W-1)));
+  
+  a1=extrait.*extrait;
+  
+  a2=sum(a1)./length(a1);
+  
+  res=[res , a2];
+
+  
+end

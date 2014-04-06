@@ -1,0 +1,45 @@
+TFD
+
+lecture du signal-> Wavread -> renvoie signal et frequence d'échantillonage (on aura 1024 points)
+
+fenêtre de Hamming -> fen-ham = hamming(1024), nbr de pts d'echantillons
+
+signal fenêtré -> sig-fen-ham = signal.*fen_ham
+
+TF -> fft_sig = abs(fft(signal))
+
+affichage -> figure; subplot(5,1,1);
+
+t= (0:length(signal)-1)/fe;
+plot(t,signal)
+legend('signal')
+
+xlabel('Temps(en s)');
+y label('amplitude')
+
+
+Appliquer ce qu'on a vu en cours
+
+comparer results:
+
+le mieux c'est Hamming
+
+
+energie:
+
+calculer l'energie toutes les 10 ms
+
+fenetre=160 pts
+
+
+avec recouvrement=1/2fenetre
+
+nrj_log(x)=10*log10(nrj(x))
+
+correlation: xcor
+
+chercher F0 entre 50 et 500 Hz
+
+
+
+
