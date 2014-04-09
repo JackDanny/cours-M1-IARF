@@ -1,0 +1,25 @@
+1/16 x [1 2 1 ; 2 4 2 ; 1 2 1]
+
+F=1/16 * [1 2 1 ; 2 4 2 ; 1 2 1]
+
+F2=[-1 -1 -1 ; -1 9 -1 ; -1 -1 -1]
+
+I3=imnoise(I,'salt & pepper',0.05)
+
+[s,fs]=wavread('vinyle.wav');
+
+tfs=fft(s)
+
+l=length(tfs)
+
+F=complex(zeros(size(tfs)))
+
+F(1:((9/100)*l))=1
+F(end:-1:(end-((9/100)*l)))=1
+
+
+tfs=F.*tfs
+
+
+s2=ifft(tfs)
+
