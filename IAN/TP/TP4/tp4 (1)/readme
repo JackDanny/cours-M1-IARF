@@ -1,0 +1,49 @@
+TP3
+
+spectre lissé ->
+appliquer la FFT sur le cepstre
+
+TP4
+
+dans le fichier Demo.m, il existe 
+l'appel à la fonction "find" (existe pas en s.u3)
+
+remplacer l'appel à find par la valeur 54273.
+
+Puis travailler sur "musique extrait.wav", utiliser la valeur 25089.
+
+
+II
+
+classif de notes de musique
+
+il existe 512 enregistrements de musique (1 enregistrement = 1 note)
+joués par 1 instrument parmis 3
+
+512 enregistrements
+   |                              |
+modeles                         test
+|
+
+clavecin harpe  piano    clavecin  harpe      piano
+6*6       6*6    6*6       6notes  6 notes   6notes
+
+
+1ere classif
+
+1) moyenne des 6 notes modèles de chaque note pour chaque instrument
+2) faire la classif => on reconnait à la fois la note et l'instrument qui l'a produite
+
+2eme classif
+
+1) faire la moyenne des 3*6 notes modeles de chaque note (on mélange les instruments)
+
+2) faire la classif => on reconnait la note mais on a perdu l'info sur l'instrument.
+
+
+
+	  param1 param2 ....
+classif 1
+classif 2
+
+
