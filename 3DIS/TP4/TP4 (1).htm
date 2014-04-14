@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+
+
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>M1 info 3DIS TP4</title></head><body>
+<h1 style="text-align: center;">M1 info 3DIS TP4</h1>
+<div style="text-align: center;">
+<h2><span style="font-weight: bold;">Filtres et convolution</span></h2>
+<span style="font-weight: bold;"></span></div>
+
+
+<h2><b>I. Image</b></h2>
+
+Récupérez l'image ci-dessous (la même que lors du TP précédent) : nous allons lui appliquer différents filtres.<br><br>
+
+<img alt="Image de Lena" src="lena.jpg" style="width: 250px; height: 250px;"><br><br>
+
+
+<h3>I.1 Filtre passe-bas et convolution</h3>
+
+<ul>
+<li>Ecrire une fonction <b><tt>convolution.m</tt></b> qui effectue une convolution d'une image par un filtre linéaire.<br><br></li>
+<li>Tester votre fonction sur l'image de Léna avec le filtre passe-bas 3x3 gaussien : 1/16 x [1 2 1 ; 2 4 2 ; 1 2 1]<br>
+</li>
+</ul>
+
+<b>Remarque</b> : vérifiez que votre fonction est correcte en comparant vos résultats à ceux obtenus avec la fonction Matlab <b><tt>conv2.m</tt></b> 
+<br><br>
+
+
+<h3>I.2 Filtre passe-haut et convolution</h3>
+
+<ul>
+<li>Effectuez le même traitement (en utilisant <b><tt>conv2.m</tt></b> si vous le souhaitez) 	avec le filtre passe-haut 3x3 suivant : [-1 -1 -1 ; -1 9 -1 ; -1 -1 -1]<br><br>
+</li>
+<li>Commentez les résultats en comparant les filtrages passe-haut et passe-bas.<br><br>
+</li></ul>
+
+
+<h3>I.3 Filtre médian</h3>
+
+<ul>
+<li>Comme lors du TP précédent, créez et affichez une image bruitée de
+Lena avec un bruit de type "poivre-et-sel" correspondant à 5% des
+pixels.<br><br></li>
+<li>Programmez et appliquez sur l'image bruitée un filtre médian 3x3.
+Pour simplifier l'algorithme, vous pouvez utiliser les commandes Matlab
+<b><tt>reshape</tt></b> et <b><tt>sort</tt>.</b><br><br></li>
+
+<li>Faites varier le pourcentage de pixels modifiés (poivre et sel) afin de mesurer l'impact du filtre médian.</li></ul>
+
+<h2><b>II. Audio</b></h2>
+
+<h3>II.1 Nettoyage d'un fichier issu d'un vinyle par filtrage passe-bas<br>
+</h3>
+
+Chargez le fichier audio <a href="./vinyle.wav"><tt>vinyle.wav</tt></a>.
+Ecoutez-le. Affichez un spectrogramme (cf. TP2 ou bien utilisez la
+fonction <span style="font-family: monospace; font-weight: bold;">specgram</span> de Matlab). Il y a beaucoup de parasites haute
+fréquence. Nous souhaitons débruiter ce fichier en utilisant un filtre
+passe bas. En utilisant uniquement les fonctions <span style="font-family: monospace; font-weight: bold;">fft</span> et <span style="font-family: monospace; font-weight: bold;">ifft</span>, produisez un
+filtrage qui ne laisse passer que les fréquences inférieures à 4000 Hz.
+<h3>II.2 Filtre coupe-bande ou comment faire du karaoké sur un fichier musical</h3>
+
+<p>Utilisez la boîte à outil Matlab <tt style="font-weight: bold;">FDAtool</tt> pour créer un
+filtre FIR qui vous permettra de supprimer une bonne partie de la voix
+en conservant la musique sur le fichier audio <a href="./extrait.wav"><tt>extrait.wav</tt></a>.
+Exportez le filtre dans un fichier <tt>.m</tt> (le calcul des coefficients b est détaillé dans la fcontion exportée). Vous pouvez utiliser la fonction <tt style="font-weight: bold;">freqz</tt>
+pour afficher la réponse du filtre. Utilisez la fonction <span style="font-weight: bold; font-family: monospace;">filter</span> pour appliquer le filtre. Vous pourriez être amené à changer
+la méthode de calcul du filtre afin d'arriver à une bonne modélisation
+(en particulier si vous souhaitez créer un filtre coupe-bande).
+Pour trouver les bonne fréquences à couper, basez-vous sur l'énergie
+des fréquences contenues dans un signal de parole. Basez-vous sur
+la fréquence moyenne des fichiers de parole (à calculer) pour accentuer le filtre à
+ce niveau.</p>
+
+
+</body></html>

@@ -1,0 +1,21 @@
+pourquoi on peut compresser des images
+
+
+1e filtrage gx*gy
+
+
+
+[a b] [1/2 1/2]=1/2 a + 1/2 b  conv g
+[c d] [1/2 1/2]=
+
+=a'
+
+2e filtrage
+
+... conv [1/2 -1/2] =1/2(1/2a + 1/2b)-1/2(1/2c+1/2d) 
+
+
+a  [1  1  1  1
+b  [1  1 -1 -1
+c  [1  -1  1  -1
+d  [1  -1  -1  1
