@@ -3,11 +3,11 @@ close 'all'
 I=imread('TP5I01.jpg');
 
 %I=double(I);
-I=imread('gar.jpg');
+%I=imread('gar.jpg');
 %I=imread('Cool.jpg')
 %inv
 
-I=rgb2gray(I);
+%I=rgb2gray(I);
 I=double(I);
 %g=[0.5 0.5];
 %h=[-0.5 0.5];

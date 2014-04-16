@@ -14,7 +14,7 @@ I=double(I);
 
 %I2=onde_mat(double(I),h,g)
 
-I3=wavelet(double(I),8);
+I3=wavelet(double(I),7);
 
 I4=invwavelet(I3,7);
 
