@@ -101,7 +101,7 @@ for i =1 : length(y)
     fprintf ('\n');
     
     disp(phrase)
-     %matriceCoutTotal(i,:);
+     matriceCoutTotal(i,:)
 
 end 
 for i=1 : length(y)

@@ -37,23 +37,14 @@ close all;
 
 y= {test_alpha; test_bravo ; test_charlie; test_delta ;test_echo ;test_foxtrott; test_golf; test_hotel; test_india ; test_juliett; test_kilo; test_lima; test_mike};
 nom = {'alpha'; 'bravo'; 'charlie';  'delta'; 'echo'; 'foxtrott'; 'golf';'hotel'; 'india'; 'juliett'; 'kilo' ; 'lima'; 'mike'};
-matriceCoutTotal = [];
 for i =1 : length(y)
-    
+    close all
     x= cell2mat(y(i));
-    [chemin dynamicT coutTotal,ens] = DTW_IAN(x, ref_alpha);
+    [chemin dynamicT coutTotal] = DTW_IAN(x, ref_alpha);
     matriceCoutTotal(i,1) = coutTotal;
-
-      
-    %figure;
-    %imagesc(cell2mat(ens)), xlabel('Test'), ylabel('Ref')
-    %nomFig= [ 'test: ' nom{i} ' ref: alpha'];
-    %figure('Name',nomFig);
-    %imagesc(chemin), xlabel('Test'), ylabel('Ref')
     
     [chemin dynamicT coutTotal] = DTW_IAN(x, ref_bravo);
     matriceCoutTotal(i,2) = coutTotal;
-
     
     [chemin dynamicT coutTotal] = DTW_IAN(x, ref_charlie);
     matriceCoutTotal(i,3) = coutTotal;
@@ -70,17 +61,12 @@ for i =1 : length(y)
     [chemin dynamicT coutTotal] = DTW_IAN(x, ref_golf);
     matriceCoutTotal(i,7) = coutTotal;
     
-
     [chemin dynamicT coutTotal] = DTW_IAN(x, ref_hotel);
     matriceCoutTotal(i,8) = coutTotal;
     
     [chemin dynamicT coutTotal] = DTW_IAN(x, ref_india);
     matriceCoutTotal(i,9) = coutTotal;
     
-    nomFig= [ 'test: ' nom{i} ' ref: india'];
-    figure('Name',nomFig);
-    imagesc(chemin), xlabel('Test'), ylabel('Ref')
-
     [chemin dynamicT coutTotal] = DTW_IAN(x, ref_juliett);
     matriceCoutTotal(i,10) = coutTotal;
     
@@ -92,35 +78,13 @@ for i =1 : length(y)
     
     [chemin dynamicT coutTotal] = DTW_IAN(x, ref_mike);
     matriceCoutTotal(i,13) = coutTotal;
-
-
-
-    [dist,mot]=decision(matriceCoutTotal(i,:),nom);
-
-    phrase=['mot ' nom{i} ' reconnu comme ' mot{1} ' avec distance de ' num2str(dist) ];
-    fprintf ('\n');
-    
-    disp(phrase)
-     %matriceCoutTotal(i,:);
-
+matriceCoutTotal;    
+[mindist,Mot] = decision(matriceCoutTotal(i,:),nom) 
 end 
 for i=1 : length(y)
-    figure('Name',nom{i},'NumberTitle','off')
+    figure, 
     bar(matriceCoutTotal(i,:))
     title(nom{i})
     set(gca,'XTick',[1 2 3 4 5 6 7 8 9 10 11 12 13])
     set(gca,'XTickLabel',{'alpha' , 'bravo' ,'charlie',  'delta' ,'echo' ,'foxtrott' ,'golf' ,'hotel', 'india', 'juliett' ,'kilo' ,'lima' , 'mike'})
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
