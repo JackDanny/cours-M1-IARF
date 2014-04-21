@@ -1,1 +1,0 @@
- function [mindist,Mot] = decision(Ldist,Ldico) 
